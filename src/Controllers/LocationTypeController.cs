@@ -6,20 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 
+
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ContosoCrafts.WebSite.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class LocationController : Controller
+    public class LocationTypeController : Controller
     {
-        public LocationController(JsonFileLocationService locationService) =>
-            LocationService = locationService;
+        public LocationTypeController(JsonFileLocationTypeService locationTypeService) =>
+           LocationTypenService = locationTypeService;
 
-        public JsonFileLocationService LocationService { get; }
+        public JsonFileLocationTypeService LocationTypenService { get; }
 
         [HttpGet]
-        public IEnumerable<Location> Get() => LocationService.GetLocations();
+        public IEnumerable<LocationType> Get() => LocationTypenService.GetLocationTypes();
     }
 }
