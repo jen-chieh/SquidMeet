@@ -9,11 +9,14 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
+        // Initialize user controller
         public UserController(JsonFileUserService userService) => 
             UserService = userService;
 
+        // Data middle tier
         public JsonFileUserService UserService { get; }
 
+        // Get user information from model
         [HttpGet]
         public IEnumerable<UserModel> Get() => UserService.GetUsers();
 
