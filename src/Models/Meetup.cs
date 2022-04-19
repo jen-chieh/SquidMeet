@@ -2,12 +2,14 @@ namespace src.Models
 {
     public class Meetup
     {
-        public Guid MeetupId { get; set; }
-        public string MeetupName { get; set; }
-        public string HostId { get; set; }
-        public ICollection<Attendee> Attendees { get; set; }
-        public ICollection<Product> Product { get; set; }
-        public ICollection<Location> Locations { get; set; }
+        public string meetup_id { get; set; }
+        public string location_id { get; set; }
+        public int index { get; set; }
+        public string Title { get; set; }
+        public string Date { get; set; }    
+        public Attendee Attendees { get; set; }
+        public string Description { get; set; }
+
         public override toString() => JsonSerializer.Serialize<Meetup>(this);
     }
 }
