@@ -3,18 +3,17 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
-    public class Product
+    public class Location
     {
-        public string? Id { get; set; }
-        public string? Maker { get; set; }
-
+        public string? location_id { get; set; }
+        public string? name { get; set; }
+        public int type_id { get; set; }
+        public string? address { get; set; }
         [JsonPropertyName("img")]
         public string? Image { get; set; }
-        public string? Url { get; set; }
-        public string? Title { get; set; }
-        public string? Description { get; set; }
-        public int[]? Ratings { get; set; }
+      
+        public int[]? rating { get; set; }
 
-        public override string ToString() => JsonSerializer.Serialize<Product>(this);
+        public override string ToString() => JsonSerializer.Serialize<Location>(this);
     }
 }
