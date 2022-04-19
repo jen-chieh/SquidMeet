@@ -1,4 +1,5 @@
 ﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,22 +8,21 @@ using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 namespace ContosoCrafts.WebSite.Services
 {
-    public class JsonFileLocationService
+    public class JsonFileLocationTypeService
     {
-        public JsonFileLocationService(IWebHostEnvironment webHostEnvironment)
+        public JsonFileLocationTypeService()
         {
-            WebHostEnvironment = webHostEnvironment;
         }
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         // Get json path 
-        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location.json");
+        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_type.json");
 
-        public IEnumerable<Location> GetLocations()
+        public IEnumerable<LocationType> GetLocationTypes()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<Location[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<LocationType[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
