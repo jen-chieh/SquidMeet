@@ -9,13 +9,16 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class LocationHoursController : ControllerBase
     {
+        // Initialize controller
         public LocationHoursController(JsonFileLocationHoursService locationHoursService) => 
             LocationHoursService = locationHoursService;
 
+        // Data middle tier
         public JsonFileLocationHoursService LocationHoursService { get; }
 
+        // Get location hours from model
         [HttpGet]
-        public IEnumerable<LocationHours> Get() => LocationHoursService.GetLocationHours();
+        public IEnumerable<LocationHoursModel> Get() => LocationHoursService.GetLocationHours();
 
     }
 }

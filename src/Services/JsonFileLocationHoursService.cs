@@ -7,23 +7,29 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
+    /// <summary>
+    /// Create class from location_hours.json file and retrieve all data from file.
+    /// </summary>
     public class JsonFileLocationHoursService
     {
+        // Initialize class
         public JsonFileLocationHoursService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
 
+        // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
-        // Get json path 
+        // Get json file path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_hours.json");
 
-        public IEnumerable<LocationHours> GetLocationHours()
+        // Read .json file and return all data fields through the model
+        public IEnumerable<LocationHoursModel> GetLocationHours()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<LocationHours[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<LocationHoursModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
