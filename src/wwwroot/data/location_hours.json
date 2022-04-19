@@ -1,0 +1,222 @@
+﻿[
+  {
+    "location_hours_id": "625f0c324d9512f2595d6222",
+    "index": 0,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32d3d90e7838f3fa1c",
+    "index": 1,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c323a3ad34a363ca662",
+    "index": 2,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32ac140dd47089cf3b",
+    "index": 3,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c3214b9518e0b9fcc0d",
+    "index": 4,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c3205bbf3e2ab71ec82",
+    "index": 5,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c327974ad1682b33091",
+    "index": 6,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32819dc8fb15a014bc",
+    "index": 7,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c324b518ff82d3daad0",
+    "index": 8,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32fe0b751a8aaadb9a",
+    "index": 9,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c324b32db4b574c52b6",
+    "index": 10,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c324c8ac0e0923abe22",
+    "index": 11,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32aafa777e677235f2",
+    "index": 12,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32d2e0df1866e5aca2",
+    "index": 13,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c323fcbd298d0bda308",
+    "index": 14,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32c45f9ac8373ded1d",
+    "index": 15,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c3201eeaa0c803ee9e1",
+    "index": 16,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32df5a1371b474765d",
+    "index": 17,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32062145d0c9180c17",
+    "index": 18,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  },
+  {
+    "location_hours_id": "625f0c32195c2784fb17c6e7",
+    "index": 19,
+    "location_mon_hours": "(06:30-19:30)",
+    "location_tues_hours": "(04:30-19:30)",
+    "location_wed_hours": "(04:30-19:30)",
+    "location_thurs_hours": "(06:30-19:30)",
+    "location_fri_hours": "(04:30-10:30)",
+    "location_sat_hours": "(09:30-19:30)",
+    "location_sun_hours": "(04:30-19:30)"
+  }
+]
