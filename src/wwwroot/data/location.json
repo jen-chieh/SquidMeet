@@ -1,0 +1,168 @@
+[
+  {
+    "location_id": "1",
+    "name": "Renton Highlands Library",
+    "type_id": 2,
+    "address": "2801 NE 10th St, Renton, WA 98056 ",
+    "img": "https://kcls.bibliocommons.com/events/uploads/images/full/cd0182c6e1d07271f3486ecd3fd94350/09_21-Libraries-1200_640_0012_Renton-Highlands.png ",
+    "rating": null
+  },
+  {
+    "location_id": "2",
+    "name": " Newcastle Library",
+    "type_id": 1,
+    "address": "12901 Newcastle Way, Newcastle, WA 98056",
+    "img": "https://kcls.bibliocommons.com/events/uploads/images/full/cd0182c6e1d07271f3486ecd3fd94350/09_21-Libraries-1200_640_0012_Renton-Highlands.png ",
+    "rating": null
+  },
+  {
+    "location_id": "3",
+    "name": "Coalfield Park",
+    "type_id": 2,
+    "address": "12067-, 12127 164th Ave SE, Renton, WA 98059 ",
+    "img": "https://lh3.googleusercontent.com/p/AF1QipMexYIoQpWlfXVlk7KQPM2DYe6PgGEdsTb0qdEc=s1600-w400",
+    "rating": null
+  },
+  {
+    "location_id": "4",
+    "name": " Jay Berry's Cafe ",
+    "type_id": 0,
+    "address": "16341 SE, Renton Issaquah Rd SE, Renton, WA 98059 ",
+    "img": "https://media-cdn.tripadvisor.com/media/photo-s/19/a7/7b/d8/jay-berry-s-cafe.jpg ",
+    "rating": null
+  },
+  {
+    "location_id": "5",
+    "name": "Mr. West Cafe Bar - Downtown",
+    "type_id": 0,
+    "address": "720 Olive Way, Seattle, WA 98101",
+    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg ",
+    "rating": null
+  },
+  {
+    "location_id": "6",
+    "name": "Lemieux Library and McGoldrick Learning Commons",
+    "type_id": 2,
+    "address": "Lemieux Library and McGoldrick Learning Commons ",
+    "img": "Lemieux Library and McGoldrick Learning Commons ",
+    "rating": null
+  },
+
+  {
+    "location_id": "7",
+    "name": "Douglass-Truth Branch - The Seattle Public Library ",
+    "type_id": 2,
+    "address": "300 E Yesler Way, Seattle, WA 98122 ",
+    "img": "https://www.spl.org/Seattle-Public-Library/images/locations/dth/BranchHero_505x287_dth.jpg",
+    "rating": null
+  },
+
+  {
+    "location_id": "8",
+    "name": "Mr. West Cafe Bar - Downtown",
+    "type_id": 0,
+    "address": "720 Olive Way, Seattle, WA 98101",
+    "img": "http://www.seattle.gov/images//images/Departments/ParksAndRecreation/Parks/ABC/12AveSquare.jpg ",
+    "rating": null
+  },
+
+  {
+    "location_id": "9",
+    "name": "564 12th Ave, Seattle, WA 98122 ",
+    "type_id": 1,
+    "address": "564 12th Ave, Seattle, WA 98122",
+    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg ",
+    "rating": null
+  },
+
+  {
+    "location_id": "10",
+    "name": "Capital One Café",
+    "type_id": 0,
+    "address": " 333 Westlake Ave N, Seattle, WA 98109 ",
+    "img": "https://ecm.capitalone.com/WCM/bank/local/cafes/hero-banners/eastontowncenter/king-of-prussia-d/rtablet.jpg",
+    "rating": null
+  },
+
+  {
+    "location_id": "11",
+    "name": "Gas Work Park ",
+    "type_id": 1,
+    "address": "2101 N Northlake Way, Seattle, WA 98103 ",
+    "img": "https://www.tclf.org/sites/default/files/thumbnails/image/8202179321_fb19b2e433_o.jpg",
+    "rating": null
+  },
+  {
+    "location_id": "12",
+    "name": "Caffeinated Coffee",
+    "type_id": 0,
+    "address": "2101 N Northlake Way, Seattle, WA 98103 ",
+    "img": "https://www.google.com/maps/uv?pb=!1s0x549015b83ce301e1%3A0x43c5e5840a2c7bbd!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOTFcjuOA8mXrHmPxmc1HrSSL6l6mEEI_lfJH8s%3Dw568-h320-k-no!5scaffeinated%20coffee%20-%20Google%20%E6%90%9C%E5%B0%8B!15sCgIgAQ&imagekey=!1e10!2sAF1QipOFtwZNi6sFVwvIVq4Mkr8cnW4woudz04T8n7zW&hl=zh-TW&sa=X&ved=2ahUKEwii47WIvJ73AhUnDkQIHWdAAzgQoip6BAhuEAM ",
+    "rating": null
+  },
+  {
+    "location_id": "13",
+    "name": "Harry’s Bar ",
+    "type_id": 0,
+    "address": "514 15th Ave E, Seattle, WA 98112 ",
+    "img": "https://www.google.com/maps/uv?pb=!1s0x5490152bbbc2a085%3A0x832e03fa9c129ff7!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPjRwTz-1ZVgB1WjAEpipvma8s3ArgLkviA11dP%3Dw520-h350-n-k-no!5zYmFyIC0gR29vZ2xlIOaQnOWwiw!15sCgIgAQ&imagekey=!1e10!2sAF1QipPWdNkwdZnF8gnRe28tfxx0s12UXbbyFui6ccmm&h#",
+    "rating": null
+  },
+  {
+    "location_id": "14",
+    "name": "Washington Talking Book & Braille Library ",
+    "type_id": 2,
+    "address": "2021 9th Ave, Seattle, WA 98121 ",
+    "img": "https://www.google.com/maps/uv?pb=!1s0x5490154a6dfaa83f%3A0x339e449e007ed427!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPXjN5d6DjYhV0IyRvPC3sIL2Iz9_xB0zlvjgem%3Dw260-h174-n-k-no!5zbGlicmFyeSAtIEdvb2dsZSDmkJzlsIs!15sCgIgAQ&imagekey=!1e10!2sAF1QipPXjN5d6DjYhV0IyRvPC3sIL2Iz9_xB0zlvjgem&hl ",
+    "rating": null
+  },
+  {
+    "location_id": "15",
+    "name": "Washington Park Arboretum ",
+    "type_id": 1,
+    "address": "2300 Arboretum Dr E, Seattle, WA 98112",
+    "img": "https://botanicgardens.uw.edu/wp-content/uploads/sites/7/2021/04/azalea-way_NDunne-2020.jpg ",
+    "rating": null
+  },
+  {
+    "location_id": "16",
+    "name": "The Union Green, Seattle University",
+    "type_id": 2,
+    "address": "901 12th Ave, Seattle, WA 98122",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418205403.png",
+    "rating": null
+  },
+
+  {
+    "location_id": "17",
+    "name": "LeetCode with me",
+    "type_id": 2,
+    "address": "zoom https://seattleu.zoom.us/j/96313926979",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212755.png",
+    "rating": null
+  },
+  {
+    "location_id": "18",
+    "name": "SEA League of Legends",
+    "type_id": 2,
+    "address": "Zoom https://seattleu.zoom.us/j/96313926678",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231002.png",
+    "rating": null
+  },
+  {
+    "location_id": "19",
+    "name": "Hike To A Summit",
+    "type_id": 1,
+    "address": "Seattle WA",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231759.png",
+    "rating": null
+  },
+  {
+    "location_id": "20",
+    "name": "Greenlake Small Craft Center",
+    "type_id": 2,
+    "address": "5900 west greenlake way · Seattle, WA",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212051.png",
+    "rating": null
+  }
+]
