@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
-    public class User
+    public class UserModel
     {
         public string? user_id { get; set; }
         public string? username { get; set; }
@@ -13,6 +13,6 @@ namespace ContosoCrafts.WebSite.Models
         public string? gender { get; set; }
         public string? bio { get; set; }
 
-        public override string ToString() => JsonSerializer.Serialize<User>(this);
+        public override string ToString() => JsonSerializer.Serialize<UserModel>(this);
     }
 }

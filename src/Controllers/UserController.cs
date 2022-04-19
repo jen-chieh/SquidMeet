@@ -15,7 +15,7 @@ namespace ContosoCrafts.WebSite.Controllers
         public JsonFileUserService UserService { get; }
 
         [HttpGet]
-        public IEnumerable<User> Get() => UserService.GetUsers();
+        public IEnumerable<UserModel> Get() => UserService.GetUsers();
 
     }
 }

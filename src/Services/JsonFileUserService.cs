@@ -19,11 +19,11 @@ namespace ContosoCrafts.WebSite.Services
         // Get json path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "users.json");
 
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<UserModel> GetUsers()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<User[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<UserModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
