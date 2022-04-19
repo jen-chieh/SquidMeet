@@ -19,11 +19,11 @@ namespace ContosoCrafts.WebSite.Services
         // Get json path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_hours.json");
 
-        public IEnumerable<LocationHours> GetLocationHours()
+        public IEnumerable<LocationHoursModel> GetLocationHours()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<LocationHours[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<LocationHoursModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true

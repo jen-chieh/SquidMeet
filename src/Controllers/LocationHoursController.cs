@@ -15,7 +15,7 @@ namespace ContosoCrafts.WebSite.Controllers
         public JsonFileLocationHoursService LocationHoursService { get; }
 
         [HttpGet]
-        public IEnumerable<LocationHours> Get() => LocationHoursService.GetLocationHours();
+        public IEnumerable<LocationHoursModel> Get() => LocationHoursService.GetLocationHours();
 
     }
 }

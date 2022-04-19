@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
-    public class LocationHours
+    public class LocationHoursModel
     {
         public string? location_hours_id { get; set; }
         public string? location_mon_hours { get; set; }
@@ -14,6 +14,6 @@ namespace ContosoCrafts.WebSite.Models
         public string? location_sat_hours { get; set; }
         public string? location_sun_hours { get; set; }
 
-        public override string ToString() => JsonSerializer.Serialize<LocationHours>(this);
+        public override string ToString() => JsonSerializer.Serialize<LocationHoursModel>(this);
     }
 }
