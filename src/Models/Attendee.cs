@@ -9,5 +9,7 @@ namespace src.Models
         public Meetup Meetup { get; set; }
 
         public bool IsHost { get; set; }
+        
+        public override string ToString() => JsonSerializer.Serialize<Attendee>(this);
     }
 }
