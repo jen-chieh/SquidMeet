@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 namespace ContosoCrafts.WebSite.Services
 {
+    /// <summary>
+    /// Create class from meetup.json file and retrieve all data from file.
+    /// </summary>
     public class JsonFileMeetupService
     {
         public JsonFileMeetupService(IWebHostEnvironment webHostEnvironment)

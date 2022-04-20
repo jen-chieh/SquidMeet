@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
+    /// <summary>
+    /// Create class from attendee.json file and retrieve all data from file.
+    /// </summary>
     public class JsonFileAttendeeService
     {
         public JsonFileAttendeeService(IWebHostEnvironment webHostEnvironment)
