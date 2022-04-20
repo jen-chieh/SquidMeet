@@ -3,6 +3,10 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
+    /// <summary>
+    /// Model for the attendees.json file. The model assigns each Attendee an unique user ID
+    /// event ID with 
+    /// </summary>
     public class Attendee: UserModel
     {
         public string? UserId { get; set; }
