@@ -11,9 +11,6 @@ namespace Attendee_Tests
         {
             // Arrange
             var attendee = new Attendee();
-
-            // Act
-            
             
             // Assert
             Assert.NotNull(attendee);
