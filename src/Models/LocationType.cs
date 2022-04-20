@@ -4,6 +4,10 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
+    /// <summary>
+    /// Model for location_type.json file. This defines different types of locations like
+    /// bars/cafe/conference_rooms/park for meet ups
+    /// </summary>
     public class LocationType
     {
         
