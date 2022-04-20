@@ -9,11 +9,14 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class Meetup
     {
+        // Unique id for each meetup
         public string? meetup_id { get; set; }
+        // location_id mapped to location model
         public string? location_id { get; set; }
         public int? index { get; set; }
         public string? Title { get; set; }
-        public string? Date { get; set; }    
+        public string? Date { get; set; }
+        // collection of attendee attending the event
         public Attendee? Attendees { get; set; }
         public string? Description { get; set; }
 

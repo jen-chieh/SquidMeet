@@ -9,13 +9,18 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class Location
     {
+        // Unique location id for meetups
         public string? location_id { get; set; }
+        // location name
         public string? name { get; set; }
+        // location type maps to the type in LocationTypes
         public int type_id { get; set; }
+        // location address
         public string? address { get; set; }
+        // location image url
         [JsonPropertyName("img")]
         public string? Image { get; set; }
-      
+        // location ratings
         public int[]? rating { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<Location>(this);

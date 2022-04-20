@@ -10,10 +10,13 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class Attendee: UserModel
     {
+        // user id of the attendee
         public string? UserId { get; set; }
         public UserModel? User { get; set; }
+        // event id for the attendee
         public string? EventId { get; set; }
         public Meetup? Event { get; set; }
+        // boolean value to check if user is the host of event
         public bool? IsHost { get; set; }
     
         public override string ToString() => JsonSerializer.Serialize<Attendee>(this);

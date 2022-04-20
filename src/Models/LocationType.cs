@@ -10,9 +10,10 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class LocationType
     {
-        
+        // unique location type id
         public string? type_id { get; set; }
         public int? index { get; set; }
+        // location type names like bars / cafes / park / conference room
         public string? typeName { get; set; }
         public override string ToString() => JsonSerializer.Serialize<LocationType>(this);
     }
