@@ -16,6 +16,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetupTest", "MeetupTest\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocationTests", "LocationTests\LocationTests.csproj", "{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{B13C0D4D-4781-4C7D-A36E-B40AB9A96F3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13C0D4D-4781-4C7D-A36E-B40AB9A96F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13C0D4D-4781-4C7D-A36E-B40AB9A96F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13C0D4D-4781-4C7D-A36E-B40AB9A96F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13C0D4D-4781-4C7D-A36E-B40AB9A96F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
