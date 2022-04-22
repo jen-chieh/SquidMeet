@@ -10,11 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attendee Tests", "Attendee Tests\Attendee Tests.csproj", "{6F93F241-F1B9-43B0-BA23-AC7AD8438C7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attendee Tests", "Attendee Tests\Attendee Tests.csproj", "{6F93F241-F1B9-43B0-BA23-AC7AD8438C7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupTest", "MeetupTest\MeetupTest.csproj", "{56BEE4E2-D758-498B-B618-222408AECD7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetupTest", "MeetupTest\MeetupTest.csproj", "{56BEE4E2-D758-498B-B618-222408AECD7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationTests", "LocationTests\LocationTests.csproj", "{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocationTests", "LocationTests\LocationTests.csproj", "{ACC68C3C-86CC-4702-8234-ACC754DC9DBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
