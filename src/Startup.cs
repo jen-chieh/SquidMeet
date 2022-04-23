@@ -24,6 +24,12 @@ namespace ContosoCrafts.WebSite
             services.AddHttpClient();
             services.AddControllers();
             services.AddTransient<JsonFileProductService>();
+            services.AddTransient<JsonFileLocationService>();
+            services.AddTransient<JsonFileLocationHoursService>();
+            services.AddTransient<JsonFileLocationTypeService>();
+            services.AddTransient<JsonFileMeetupService>();
+            services.AddTransient<JsonFileUserService>();
+            services.AddTransient<JsonFileAttendeeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
