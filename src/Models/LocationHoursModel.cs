@@ -12,7 +12,7 @@ namespace ContosoCrafts.WebSite.Models
     public class LocationHoursModel
     {
         // Unique ID that maps to a location
-        public string? location_hours_id { get; set; }
+        public int? location_hours_id { get; set; }
         // Hours that the location is open on monday
         public string? location_mon_hours { get; set; }
         // Hours that the location is open on tuesday
