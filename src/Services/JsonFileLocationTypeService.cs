@@ -10,8 +10,9 @@ namespace ContosoCrafts.WebSite.Services
 {
     public class JsonFileLocationTypeService
     {
-        public JsonFileLocationTypeService()
+        public JsonFileLocationTypeService(IWebHostEnvironment webHostEnvironment)
         {
+            WebHostEnvironment = webHostEnvironment;
         }
         public IWebHostEnvironment WebHostEnvironment { get; }
 
