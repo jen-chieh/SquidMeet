@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 namespace ContosoCrafts.WebSite.Services
 {
+    /// <summary>
+    /// Service for location.json file to fetch data from database
+    /// </summary>
     public class JsonFileLocationService
     {
         public JsonFileLocationService(IWebHostEnvironment webHostEnvironment)
@@ -31,6 +34,7 @@ namespace ContosoCrafts.WebSite.Services
 
         }
 
+        // Method to add a user rating to location
         public void AddRating(string locationId, int rating)
         {
             var locations = GetLocations();
@@ -106,6 +110,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Create a new location using default values
         /// After create the user can update to set values
+        /// Type_id set to 1
         /// </summary>
         /// <returns></returns>
         public LocationModel CreateData()
@@ -119,7 +124,7 @@ namespace ContosoCrafts.WebSite.Services
                 Image = "",
             };
 
-            // Get the current set, and append the new record to it
+            // Get the current set, and append the new record to it because IEnumerable does not have Add function
             var dataSet = GetLocations();
             dataSet = dataSet.Append(data);
 
