@@ -20,10 +20,10 @@ namespace ContosoCrafts.WebSite.Object
         //getting json path
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "Location.json");
 
-        public IEnumerable<Location> GetAllLocations()
+        public IEnumerable<LocationModel> GetAllLocations()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
-            IEnumerable<Location> LocationList = JsonSerializer.Deserialize<Location[]>(jsonFileReader.ReadToEnd(),
+            IEnumerable<LocationModel> LocationList = JsonSerializer.Deserialize<LocationModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
@@ -33,7 +33,7 @@ namespace ContosoCrafts.WebSite.Object
                                select new {s.location_id,s.name,s.type_id,s.address,s.Image,s.rating};
 
             //return objectList
-            return (IEnumerable<Location>)selectResult;
+            return (IEnumerable<LocationModel>)selectResult;
         }
 
     }
