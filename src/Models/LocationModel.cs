@@ -11,9 +11,11 @@ namespace ContosoCrafts.WebSite.Models
         public string? address { get; set; }
         [JsonPropertyName("img")]
         public string? Image { get; set; }
-      
+
         public int[]? rating { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<LocationModel>(this);
+
+ 
     }
 }
