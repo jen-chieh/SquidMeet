@@ -20,6 +20,6 @@ namespace ContosoCrafts.WebSite.Controllers
         public JsonFileLocationService LocationService { get; }
 
         [HttpGet]
-        public IEnumerable<Location> Get() => LocationService.GetLocations();
+        public IEnumerable<LocationModel> Get() => LocationService.GetLocations();
     }
 }
