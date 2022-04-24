@@ -12,7 +12,7 @@
     "name": " Newcastle Library",
     "type_id": 1,
     "address": "12901 Newcastle Way, Newcastle, WA 98056",
-    "img": "https://kcls.bibliocommons.com/events/uploads/images/full/cd0182c6e1d07271f3486ecd3fd94350/09_21-Libraries-1200_640_0012_Renton-Highlands.png ",
+    "img": "https://mithun.com/wp-content/uploads/2022/04/0633500_N6-1.jpg",
     "rating": null
   },
   {
@@ -44,7 +44,7 @@
     "name": "Lemieux Library and McGoldrick Learning Commons",
     "type_id": 2,
     "address": "Lemieux Library and McGoldrick Learning Commons ",
-    "img": "Lemieux Library and McGoldrick Learning Commons ",
+    "img": "http://architypereview.com/wp-content/themes/architype-review/includes/image.php?w=1000&h=644&m=1&i=%2Fwp-content%2Fuploads%2F2011%2F10%2F95-1000x644.jpg",
     "rating": null
   },
 
@@ -71,13 +71,13 @@
     "name": "564 12th Ave, Seattle, WA 98122 ",
     "type_id": 1,
     "address": "564 12th Ave, Seattle, WA 98122",
-    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg ",
+    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
     "rating": null
   },
 
   {
     "location_id": "10",
-    "name": "Capital One Café",
+    "name": "Capital One Cafe",
     "type_id": 0,
     "address": " 333 Westlake Ave N, Seattle, WA 98109 ",
     "img": "https://ecm.capitalone.com/WCM/bank/local/cafes/hero-banners/eastontowncenter/king-of-prussia-d/rtablet.jpg",
@@ -97,28 +97,28 @@
     "name": "Caffeinated Coffee",
     "type_id": 0,
     "address": "2101 N Northlake Way, Seattle, WA 98103 ",
-    "img": "https://www.google.com/maps/uv?pb=!1s0x549015b83ce301e1%3A0x43c5e5840a2c7bbd!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOTFcjuOA8mXrHmPxmc1HrSSL6l6mEEI_lfJH8s%3Dw568-h320-k-no!5scaffeinated%20coffee%20-%20Google%20%E6%90%9C%E5%B0%8B!15sCgIgAQ&imagekey=!1e10!2sAF1QipOFtwZNi6sFVwvIVq4Mkr8cnW4woudz04T8n7zW&hl=zh-TW&sa=X&ved=2ahUKEwii47WIvJ73AhUnDkQIHWdAAzgQoip6BAhuEAM ",
+    "img": "https://s3-media0.fl.yelpcdn.com/bphoto/GReY_14eFTRpWW5tdUeNQw/348s.jpg",
     "rating": null
   },
   {
     "location_id": "13",
-    "name": "Harry’s Bar ",
+    "name": "Harry's Bar",
     "type_id": 0,
     "address": "514 15th Ave E, Seattle, WA 98112 ",
-    "img": "https://www.google.com/maps/uv?pb=!1s0x5490152bbbc2a085%3A0x832e03fa9c129ff7!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPjRwTz-1ZVgB1WjAEpipvma8s3ArgLkviA11dP%3Dw520-h350-n-k-no!5zYmFyIC0gR29vZ2xlIOaQnOWwiw!15sCgIgAQ&imagekey=!1e10!2sAF1QipPWdNkwdZnF8gnRe28tfxx0s12UXbbyFui6ccmm&h#",
+    "img": "http://prod-upp-image-read.ft.com/4d5b4fb4-0e7d-11e9-a3aa-118c761d2745",
     "rating": null
   },
   {
     "location_id": "14",
-    "name": "Washington Talking Book & Braille Library ",
+    "name": "Washington Talking Book & Braille Library",
     "type_id": 2,
     "address": "2021 9th Ave, Seattle, WA 98121 ",
-    "img": "https://www.google.com/maps/uv?pb=!1s0x5490154a6dfaa83f%3A0x339e449e007ed427!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPXjN5d6DjYhV0IyRvPC3sIL2Iz9_xB0zlvjgem%3Dw260-h174-n-k-no!5zbGlicmFyeSAtIEdvb2dsZSDmkJzlsIs!15sCgIgAQ&imagekey=!1e10!2sAF1QipPXjN5d6DjYhV0IyRvPC3sIL2Iz9_xB0zlvjgem&hl ",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Washington_Talking_Book_and_Braille_Library_01.jpg",
     "rating": null
   },
   {
     "location_id": "15",
-    "name": "Washington Park Arboretum ",
+    "name": "Washington Park Arboretum",
     "type_id": 1,
     "address": "2300 Arboretum Dr E, Seattle, WA 98112",
     "img": "https://botanicgardens.uw.edu/wp-content/uploads/sites/7/2021/04/azalea-way_NDunne-2020.jpg ",
@@ -137,7 +137,7 @@
     "location_id": "17",
     "name": "LeetCode with me",
     "type_id": 2,
-    "address": "zoom https://seattleu.zoom.us/j/96313926979",
+    "address": "https://seattleu.zoom.us/j/96313926979",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212755.png",
     "rating": null
   },
@@ -145,7 +145,7 @@
     "location_id": "18",
     "name": "SEA League of Legends",
     "type_id": 2,
-    "address": "Zoom https://seattleu.zoom.us/j/96313926678",
+    "address": "https://seattleu.zoom.us/j/96313926678",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231002.png",
     "rating": null
   },
@@ -161,7 +161,7 @@
     "location_id": "20",
     "name": "Greenlake Small Craft Center",
     "type_id": 2,
-    "address": "5900 west greenlake way · Seattle, WA",
+    "address": "5900 west greenlake way � Seattle, WA",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212051.png",
     "rating": null
   }
