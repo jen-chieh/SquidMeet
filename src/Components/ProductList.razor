@@ -1,7 +1,7 @@
 @using ContosoCrafts.WebSite.Models
 @using ContosoCrafts.WebSite.Services
 @using Microsoft.AspNetCore.Components.Web
-@inject JsonFileProductService ProductService
+@inject JsonFileLocationService ProductService
 
 <div class="card-columns">
 @foreach (var product in ProductService.GetAllData())
@@ -10,10 +10,10 @@
         <div class="card-img" style="background-image: url('@product.Image');">
         </div>
         <div class="card-body">
-            <h5 class="card-title">@product.Title</h5>
+            <h5 class="card-title">@product.name</h5>
         </div>
         <div class="card-footer">
-            <small class="text-muted"><button @onclick="(e => SelectProduct(product.Id))" 
+            <small class="text-muted"><button @onclick="(e => SelectProduct(product.location_id))" 
               data-toggle="modal" data-target="#productModal" class="btn btn-primary">More Info</button>
             </small>
         </div>
@@ -27,7 +27,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="productTitle">@selectedProduct.Title</h5>
+          <h5 class="modal-title" id="productTitle">@selectedProduct.name</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -37,7 +37,7 @@
             <div class="card-img" style="background-image: url('@selectedProduct.Image');">
             </div>
             <div class="card-body">
-                <p class="card-text">@selectedProduct.Description</p>
+                <p class="card-text">@selectedProduct.address</p>
             </div>
           </div>
         </div>
@@ -72,13 +72,13 @@
 
 @code 
 {
-    ProductModel selectedProduct;
+    LocationModel selectedProduct;
     string selectedProductId;
 
     void SelectProduct(string productId)
     {
         selectedProductId = productId;
-        selectedProduct = ProductService.GetAllData().First(x => x.Id == productId);
+        selectedProduct = ProductService.GetAllData().First(x => x.location_id == productId);
         GetCurrentRating();
     }
 
@@ -88,24 +88,24 @@
 
     void GetCurrentRating()
     {
-        if(selectedProduct.Ratings == null)
+        if(selectedProduct.rating == null)
         {
             currentRating = 0;
             voteCount = 0;
         }
         else
         {
-            voteCount = selectedProduct.Ratings.Count();
+            voteCount = selectedProduct.rating.Count();
             voteLabel = voteCount > 1 ? "Votes" : "Vote";
-            currentRating = selectedProduct.Ratings.Sum() / voteCount;
+            currentRating = selectedProduct.rating.Sum() / voteCount;
         }
 
-        System.Console.WriteLine($"Current rating for {selectedProduct.Id}: {currentRating}");
+        System.Console.WriteLine($"Current rating for {selectedProduct.location_id}: {currentRating}");
     }
 
     void SubmitRating(int rating)
     {
-        System.Console.WriteLine($"Rating received for {selectedProduct.Id}: {rating}");
+        System.Console.WriteLine($"Rating received for {selectedProduct.location_id}: {rating}");
         ProductService.AddRating(selectedProductId, rating);
         SelectProduct(selectedProductId);
     }
