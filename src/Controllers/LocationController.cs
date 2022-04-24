@@ -1,46 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
+
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ContosoCrafts.WebSite.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    /// <summary>
-    /// Controller class for location.json file object with support for adding ratings
-    /// </summary>
-    public class LocationController : Controller
+    public class LocationController : ControllerBase
     {
-        // Initialize controller
-        public LocationController(JsonFileLocationService locationService) =>
-            LocationService = locationService;
+        public LocationController(JsonFileLocationService productService)
+        {
+            ProductService = productService;
+        }
 
-        // Get location service
-        public JsonFileLocationService LocationService { get; }
+        public JsonFileLocationService ProductService { get; }
 
-        // Get information from location.json file
         [HttpGet]
-        public IEnumerable<LocationModel> Get() => LocationService.GetLocations();
+        public IEnumerable<LocationModel> Get()
+        {
+            return ProductService.GetAllData();
+        }
 
-        // Response to rating request
         [HttpPatch]
         public ActionResult Patch([FromBody] RatingRequest request)
         {
-            LocationService.AddRating(request.location_id, request.Rating);
-
+            ProductService.AddRating(request.ProductId, request.Rating);
+            
             return Ok();
         }
 
-        // New rating to be added for a specific location_id
         public class RatingRequest
         {
-            public string location_id { get; set; }
+            public string ProductId { get; set; }
             public int Rating { get; set; }
         }
     }
