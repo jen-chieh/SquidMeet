@@ -1,6 +1,6 @@
 ﻿[
   {
-    "location_hours_id": 0,
+    "location_hours_id": "0",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -10,7 +10,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 1,
+    "location_hours_id": "1",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -20,7 +20,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 2,
+    "location_hours_id": "2",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -30,7 +30,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 3,
+    "location_hours_id": "3",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -40,7 +40,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 4,
+    "location_hours_id": "4",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -50,7 +50,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 5,
+    "location_hours_id": "5",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -60,7 +60,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 6,
+    "location_hours_id": "6",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -70,7 +70,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 7,
+    "location_hours_id": "7",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -80,7 +80,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 8,
+    "location_hours_id": "8",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -90,7 +90,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 9,
+    "location_hours_id": "9",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -100,7 +100,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 10,
+    "location_hours_id": "10",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -110,7 +110,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 11,
+    "location_hours_id": "11",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -120,7 +120,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 12,
+    "location_hours_id": "12",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -130,7 +130,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 13,
+    "location_hours_id": "13",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -140,7 +140,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 14,
+    "location_hours_id": "14",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -150,7 +150,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 15,
+    "location_hours_id": "15",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -160,7 +160,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 16,
+    "location_hours_id": "16",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -170,7 +170,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 17,
+    "location_hours_id": "17",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -180,7 +180,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 18,
+    "location_hours_id": "18",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
@@ -190,7 +190,7 @@
     "location_sun_hours": "(04:30-19:30)"
   },
   {
-    "location_hours_id": 19,
+    "location_hours_id": "19",
     "location_mon_hours": "(06:30-19:30)",
     "location_tues_hours": "(04:30-19:30)",
     "location_wed_hours": "(04:30-19:30)",
