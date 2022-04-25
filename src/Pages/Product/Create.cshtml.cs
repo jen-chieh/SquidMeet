@@ -1,4 +1,4 @@
-
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -10,20 +10,20 @@ namespace ContosoCrafts.WebSite.Pages.Product
     public class CreateModel : PageModel
     {
         // Data middle tier
-        public JsonFileProductService ProductService { get; }
+        public JsonFileLocationService ProductService { get; }
 
         /// <summary>
         /// Defualt Construtor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
-        public CreateModel(JsonFileProductService productService)
+        public CreateModel(JsonFileLocationService productService)
         {
             ProductService = productService;
         }
 
         // The data to show
-        public ProductModel Product;
+        public LocationModel Product;
 
         /// <summary>
         /// REST Get request
@@ -33,7 +33,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Product  = ProductService.CreateData();
 
-            return RedirectToPage("./Update", new { Id = Product.Id });
+            return RedirectToPage("./Update", new { Id = Product.location_id });
         }
     }
 }
