@@ -2,6 +2,8 @@
 @using ContosoCrafts.WebSite.Services
 @using Microsoft.AspNetCore.Components.Web
 @inject JsonFileLocationService ProductService
+@inject JsonFileLocationHoursService LocationHoursService
+@inject JsonFileLocationTypeService LocationTypeService
 
 <div class="card-columns">
 @foreach (var product in ProductService.GetAllData())
@@ -37,7 +39,18 @@
             <div class="card-img" style="background-image: url('@selectedProduct.Image');">
             </div>
             <div class="card-body">
-                <p class="card-text">@selectedProduct.address</p>
+                <p class="card-text"> Address: @selectedProduct.address</p>
+				<p class="card-text"> Location Type: @selectedProductType.type_name</p>					
+				<p class="card-text"> Location Hours:</p>
+				<p class="card-text"> Monday: @selectedProductHours.location_mon_hours</p>
+				<p class="card-text"> Tuesday: @selectedProductHours.location_tues_hours</p>
+				<p class="card-text"> Wednesday: @selectedProductHours.location_wed_hours</p>
+				<p class="card-text"> Thursday: @selectedProductHours.location_thurs_hours</p>
+				<p class="card-text"> Friday: @selectedProductHours.location_fri_hours</p>
+				<p class="card-text"> Saturday: @selectedProductHours.location_sat_hours</p>
+				<p class="card-text"> Sunday: @selectedProductHours.location_sun_hours</p>
+
+
             </div>
           </div>
         </div>
@@ -72,14 +85,20 @@
 
 @code 
 {
-    LocationModel selectedProduct;
-    string selectedProductId;
+	LocationModel selectedProduct;
+	string selectedProductId;
+	string selectedProductTypeId;
+	LocationHoursModel selectedProductHours;
+	LocationTypeModel selectedProductType;
 
-    void SelectProduct(string productId)
-    {
-        selectedProductId = productId;
-        selectedProduct = ProductService.GetAllData().First(x => x.location_id == productId);
-        GetCurrentRating();
+	void SelectProduct(string productId)
+	{
+		selectedProductId = productId;
+		selectedProduct = ProductService.GetAllData().First(x => x.location_id == productId);
+		GetCurrentRating();
+		selectedProductTypeId = selectedProduct.type_id;
+		selectedProductHours = LocationHoursService.GetLocationHours().First(x => x.location_hours_id == productId);
+		selectedProductType = LocationTypeService.GetLocationTypes().First(x => x.type_id == selectedProductTypeId);
     }
 
     int currentRating = 0;
