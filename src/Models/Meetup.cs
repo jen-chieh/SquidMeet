@@ -9,12 +9,19 @@ namespace ContosoCrafts.WebSite.Models
     /// </summary>
     public class Meetup
     {
+        //Unique Id assigned to meetup
         public string? meetup_id { get; set; }
+        //Refer to location id
         public string? location_id { get; set; }
+        //An index so that we can do sort and arrange
         public int? index { get; set; }
+        //Tittle of Meetup
         public string? Title { get; set; }
-        public string? Date { get; set; }    
+        //Start data and end Date of Meetup
+        public string? Date { get; set; }
+        //Attendees in the meetup
         public Attendee? Attendees { get; set; }
+        //To descript what meetup is 
         public string? Description { get; set; }
 
         public override string ToString() => JsonSerializer.Serialize<Meetup>(this);
