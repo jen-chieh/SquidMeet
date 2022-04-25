@@ -119,7 +119,7 @@ namespace ContosoCrafts.WebSite.Services
                 location_id = System.Guid.NewGuid().ToString(),
                 name = "Enter Name",
                 address = "Enter Address",
-                type_id = 1,
+                type_id = "Enter Type ID",
                 Image = "",
             };
 
