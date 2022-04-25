@@ -1,4 +1,4 @@
-
+﻿
 using Microsoft.AspNetCore.Mvc;
 
 using NUnit.Framework;
@@ -34,7 +34,7 @@ namespace UnitTests.Pages.Product.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.Title);
+            Assert.AreEqual("Floppy Crop", pageModel.Product.name);
         }
         #endregion OnGet
 
@@ -43,12 +43,12 @@ namespace UnitTests.Pages.Product.Update
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
-            pageModel.Product = new ProductModel
+            pageModel.Product = new LocationModel
             {
-                Id = "selinazawacki-moon",
-                Title = "title",
-                Description = "description",
-                Url = "url",
+                location_id = "selinazawacki-moon",
+                name = "title",
+                address = "description",
+                type_id = 1,
                 Image = "image"
             };
 
@@ -64,13 +64,13 @@ namespace UnitTests.Pages.Product.Update
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
-            pageModel.Product = new ProductModel
+            pageModel.Product = new LocationModel
             {
-                Id = "bogus",
-                Title = "bogus",
-                Description = "bogus",
-                Url = "bogus",
-                Image = "bougs"
+                location_id = "bogus",
+                name = "bogus",
+                address = "bogus",
+                type_id = 1,
+                Image = "bougus"
             };
 
             // Force an invalid error state
