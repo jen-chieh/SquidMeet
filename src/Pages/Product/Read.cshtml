@@ -1,6 +1,8 @@
 ﻿@page "{id}"
 @using ContosoCrafts.WebSite.Services
 @inject JsonFileLocationService ProductService
+@inject JsonFileLocationHoursService LocationHoursService
+
 @model ContosoCrafts.WebSite.Pages.Product.ReadModel
 
 @{
@@ -14,7 +16,8 @@
 
     <img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.name'>
 
-    <p class="card-text">@Model.Product.address</p>
+    <p class="card-text"> Address: @Model.Product.address</p>
+
 
 </div>
 
