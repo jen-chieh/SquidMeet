@@ -7,7 +7,7 @@ namespace ContosoCrafts.WebSite.Models
     {
         public string? location_id { get; set; }
         public string? name { get; set; }
-        public int type_id { get; set; }
+        public string type_id { get; set; }
         public string? address { get; set; }
         [JsonPropertyName("img")]
         public string? Image { get; set; }
