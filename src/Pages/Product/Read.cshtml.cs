@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -10,20 +10,20 @@ namespace ContosoCrafts.WebSite.Pages.Product
     public class ReadModel : PageModel
     {
         // Data middletier
-        public JsonFileProductService ProductService { get; }
+        public JsonFileLocationService ProductService { get; }
 
         /// <summary>
         /// Defualt Construtor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
-        public ReadModel(JsonFileProductService productService)
+        public ReadModel(JsonFileLocationService productService)
         {
             ProductService = productService;
         }
 
         // The data to show
-        public ProductModel Product;
+        public LocationModel Product;
 
         /// <summary>
         /// REST Get request
@@ -31,7 +31,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            Product  = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
+            Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
         }
     }
 }
