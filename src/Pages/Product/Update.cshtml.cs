@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
@@ -14,21 +14,21 @@ namespace ContosoCrafts.WebSite.Pages.Product
     public class UpdateModel : PageModel
     {
         // Data middletier
-        public JsonFileProductService ProductService { get; }
+        public JsonFileLocationService ProductService { get; }
 
         /// <summary>
         /// Defualt Construtor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
-        public UpdateModel(JsonFileProductService productService)
+        public UpdateModel(JsonFileLocationService productService)
         {
             ProductService = productService;
         }
 
         // The data to show, bind to it for the post
         [BindProperty]
-        public ProductModel Product { get; set; }
+        public LocationModel Product { get; set; }
 
         /// <summary>
         /// REST Get request
@@ -37,7 +37,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            Product  = ProductService.GetAllData().FirstOrDefault(m => m.Id.Equals(id));
+            Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
         }
 
         /// <summary>
