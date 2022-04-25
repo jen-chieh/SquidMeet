@@ -19,11 +19,11 @@ namespace ContosoCrafts.WebSite.Services
         // Get json path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_type.json");
 
-        public IEnumerable<LocationType> GetLocationTypes()
+        public IEnumerable<LocationTypeModel> GetLocationTypes()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<LocationType[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<LocationTypeModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
