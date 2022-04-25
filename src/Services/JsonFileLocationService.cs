@@ -148,6 +148,30 @@ namespace ContosoCrafts.WebSite.Services
 
             return data;
         }
-        
+        public IEnumerable<LocationModel> sortByRate()
+        {
+            // Get the current set, and append the new record to it
+            var dataSet = GetAllData();
+            // var data = dataSet.OrderBy(m => m.rating.Sum() / m.rating.Count());
+
+            var data = (from t in dataSet
+                        where t.rating != null
+                        select t);
+
+            var sortingData = data.OrderBy(d => d.rating.Sum() / d.rating.Count());
+            return sortingData;
+        }
+        public IEnumerable<LocationModel> sortByLocation()
+        {
+            // Get the current set, and append the new record to it
+            var dataSet = GetAllData();
+            // var data = dataSet.OrderBy(m => m.rating.Sum() / m.rating.Count());
+
+
+            var sortingData = dataSet.OrderByDescending(d => d.type_id);
+            return sortingData;
+        }
+
+
     }
 }
