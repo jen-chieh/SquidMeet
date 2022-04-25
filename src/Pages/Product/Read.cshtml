@@ -1,6 +1,6 @@
 ﻿@page "{id}"
 @using ContosoCrafts.WebSite.Services
-@inject JsonFileProductService ProductService
+@inject JsonFileLocationService ProductService
 @model ContosoCrafts.WebSite.Pages.Product.ReadModel
 
 @{
@@ -10,11 +10,11 @@
 <h1>Read</h1>
 
 <div class="content">
-    <h5 class="title" id="productTitle">@Model.Product.Title</h5>
+    <h5 class="title" id="productTitle">@Model.Product.name</h5>
 
-    <img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.Title'>
+    <img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.name'>
 
-    <p class="card-text">@Model.Product.Description</p>
+    <p class="card-text">@Model.Product.address</p>
 
 </div>
 
@@ -22,6 +22,6 @@
 <br />
 
 <div class="row">
-    <a asp-page="Update" asp-route-id="@Model.Product.Id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
-    <a asp-page="Delete" asp-route-id="@Model.Product.Id" class="btn btn-danger">Delete</a>
+    <a asp-page="Update" asp-route-id="@Model.Product.location_id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
+    <a asp-page="Delete" asp-route-id="@Model.Product.location_id" class="btn btn-danger">Delete</a>
 </div>
