@@ -48,7 +48,7 @@ namespace UnitTests.Pages.Product.Update
                 location_id = "selinazawacki-moon",
                 name = "title",
                 address = "description",
-                type_id = 1,
+                type_id = "1",
                 Image = "image"
             };
 
@@ -69,7 +69,7 @@ namespace UnitTests.Pages.Product.Update
                 location_id = "bogus",
                 name = "bogus",
                 address = "bogus",
-                type_id = 1,
+                type_id = "bogus",
                 Image = "bougus"
             };
 
