@@ -9,7 +9,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 {
     public class ReadModel : PageModel
     {
-        // Data middletier
+        // Data middle tier
         public JsonFileLocationService ProductService { get; }
 
         /// <summary>
@@ -33,5 +33,31 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
         }
+
+        /*
+        // Data middle tier for location hours
+        public JsonFileLocationHoursService LocationHoursService { get; }
+
+        /// <summary>
+        /// Defualt Construtor for location hours as parameter
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="locationHoursService"></param>
+        public ReadModel(JsonFileLocationHoursService locationHoursService)
+        {
+            LocationHoursService = locationHoursService;
+        }
+
+        // The data to show for location hours
+        public LocationHoursModel LocationHours;
+
+        /// <summary>
+        /// REST Get request for location hours
+        /// </summary>
+        /// <param name="id"></param>
+        public void OnGetLocationHours(string id)
+        {
+            LocationHours = LocationHoursService.GetLocationHours().FirstOrDefault(m => m.location_hours_id.Equals(id));
+        }*/
     }
 }
