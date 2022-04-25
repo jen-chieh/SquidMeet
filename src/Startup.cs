@@ -1,4 +1,4 @@
-using ContosoCrafts.WebSite.Services;
+﻿using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +23,6 @@ namespace ContosoCrafts.WebSite
             services.AddServerSideBlazor();
             services.AddHttpClient();
             services.AddControllers();
-            services.AddTransient<JsonFileProductService>();
             services.AddTransient<JsonFileLocationService>();
             services.AddTransient<JsonFileLocationHoursService>();
             services.AddTransient<JsonFileLocationTypeService>();
