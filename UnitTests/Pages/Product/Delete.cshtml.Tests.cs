@@ -70,7 +70,7 @@ namespace UnitTests.Pages.Product.Delete
                 location_id = "bogus",
                 name = "bogus",
                 address = "bogus",
-                type_id = 1,
+                type_id = "bogus",
                 Image = "bougs"
             };
 
