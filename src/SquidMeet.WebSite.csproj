@@ -4,7 +4,6 @@
     <TargetFramework>net5.0</TargetFramework>
     <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
     <Nullable>enable</Nullable>
-    <StartupObject>ContosoCrafts.WebSite.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'ContosoCrafts.WebSite' " />
