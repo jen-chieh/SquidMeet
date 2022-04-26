@@ -30,11 +30,11 @@ namespace UnitTests.Pages.Product.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("selinazawacki-shirt");
+            pageModel.OnGet("0");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.name);
+            Assert.AreEqual("Renton Highlands Library", pageModel.Product.name);
         }
         #endregion OnGet
 
@@ -45,11 +45,11 @@ namespace UnitTests.Pages.Product.Update
             // Arrange
             pageModel.Product = new LocationModel
             {
-                location_id = "selinazawacki-moon",
+                location_id = "20",
                 name = "title",
                 address = "description",
                 type_id = "1",
-                Image = "image"
+                img = "image"
             };
 
             // Act
@@ -70,7 +70,7 @@ namespace UnitTests.Pages.Product.Update
                 name = "bogus",
                 address = "bogus",
                 type_id = "bogus",
-                Image = "bougus"
+                img = "bougus"
             };
 
             // Force an invalid error state

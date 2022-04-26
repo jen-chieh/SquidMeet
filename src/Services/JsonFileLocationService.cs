@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-
+using System.Text.Json.Serialization;
 using ContosoCrafts.WebSite.Models;
 
 using Microsoft.AspNetCore.Hosting;
@@ -29,13 +29,18 @@ namespace ContosoCrafts.WebSite.Services
         // Read .json file and return all data fields through the model
         public IEnumerable<LocationModel> GetAllData()
         {
-            using(var jsonFileReader = File.OpenText(JsonFileName))
+
+            using (var jsonFileReader = File.OpenText(JsonFileName))
             {
                 return JsonSerializer.Deserialize<LocationModel[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
-                        PropertyNameCaseInsensitive = true
-                    });
+                        PropertyNameCaseInsensitive = true,
+                        AllowTrailingCommas = true,
+
+                        NumberHandling = JsonNumberHandling.AllowReadingFromString
+
+            });;
             }
         }
 
@@ -85,7 +90,7 @@ namespace ContosoCrafts.WebSite.Services
             productData.name = data.name;
             productData.type_id = data.type_id;
             productData.address = data.address;
-            productData.Image = data.Image;
+            productData.img = data.img;
 
             SaveData(products);
 
@@ -124,7 +129,7 @@ namespace ContosoCrafts.WebSite.Services
                 name = "Enter Name",
                 address = "Enter Address",
                 type_id = "Enter Type ID",
-                Image = "",
+                img = "",
             };
 
             // Get the current set, and append the new record to it
