@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+
 using ContosoCrafts.WebSite.Models;
 
 using Microsoft.AspNetCore.Hosting;
@@ -29,18 +29,13 @@ namespace ContosoCrafts.WebSite.Services
         // Read .json file and return all data fields through the model
         public IEnumerable<LocationModel> GetAllData()
         {
-
-            using (var jsonFileReader = File.OpenText(JsonFileName))
+            using(var jsonFileReader = File.OpenText(JsonFileName))
             {
                 return JsonSerializer.Deserialize<LocationModel[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
-                        PropertyNameCaseInsensitive = true,
-                        AllowTrailingCommas = true,
-
-                        NumberHandling = JsonNumberHandling.AllowReadingFromString
-
-            });;
+                        PropertyNameCaseInsensitive = true
+                    });
             }
         }
 
