@@ -6,7 +6,7 @@ namespace ContosoCrafts.WebSite.Models
     /// <summary>
     /// Model for the attendees.json file. The model inherits from the UserModel class. 
     /// It assigns each attendee an unique user ID with event ID, event object and a boolean 
-    /// variable to tell if the attendee is the host of the event.
+    /// variable to tell if the attendee is host of the event.
     /// </summary>
     public class Attendee: UserModel
     {
