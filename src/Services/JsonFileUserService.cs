@@ -24,7 +24,7 @@ namespace ContosoCrafts.WebSite.Services
         // Get json file path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "users.json");
 
-        // Read .json file and return all data fields through the model
+        // Read .json file and return data fields through the model
         public IEnumerable<UserModel> GetUsers()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);

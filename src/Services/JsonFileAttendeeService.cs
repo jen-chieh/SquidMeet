@@ -12,14 +12,18 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileAttendeeService
     {
+        // Initialize class
         public JsonFileAttendeeService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
+        // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        // Get json file path 
         private string JsonFileAttendeeName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "attendees.json");
 
+        // Read .json file and return all data fields through the model
         public IEnumerable<Attendee> GetAttendees()
         {
             using var jsonFileReader = File.OpenText(JsonFileAttendeeName);

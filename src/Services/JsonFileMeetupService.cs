@@ -12,14 +12,19 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileMeetupService
     {
+        // Initialize class
         public JsonFileMeetupService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
-
+        // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        // Get json file path
+
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "meetup.json");
+
+        // Read .json file and return all data fields through the model
         public IEnumerable<Meetup> GetMeetups()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);

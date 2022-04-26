@@ -24,7 +24,7 @@ namespace ContosoCrafts.WebSite.Services
         // Get json file path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_hours.json");
 
-        // Read .json file and return all data fields through the model
+        // Read .json file and return all data fields 
         public IEnumerable<LocationHoursModel> GetLocationHours()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);

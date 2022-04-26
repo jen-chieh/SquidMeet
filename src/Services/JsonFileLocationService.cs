@@ -9,20 +9,24 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-   public class JsonFileLocationService
+    /// <summary>
+    /// Create class from Location.json file and retrieve all data from file.
+    /// </summary>
+    public class JsonFileLocationService
     {
+        // Initialize class
         public JsonFileLocationService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
-
+        // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
-
+        // Get json file path 
         private string JsonFileName
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "location.json"); }
         }
-
+        // Read .json file and return all data fields through the model
         public IEnumerable<LocationModel> GetAllData()
         {
             using(var jsonFileReader = File.OpenText(JsonFileName))
