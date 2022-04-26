@@ -20,7 +20,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? address { get; set; }
         [JsonPropertyName("img")]
         //Image of location 
-        public string? Image { get; set; }
+        public string? img { get; set; }
         // rating for Location for sorting and filtering.
         public int[]? rating { get; set; }
 
