@@ -20,7 +20,7 @@
            foreach (var product in dataset)
            {
             <div class="card">
-                <div class="card-img" style="background-image: url('@product.Image');">
+                <div class="card-img" style="background-image: url('@product.img');">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">@product.name</h5>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="card">
-                        <div class="card-img" style="background-image: url('@selectedProduct.Image');">
+                        <div class="card-img" style="background-image: url('@selectedProduct.img');">
                         </div>
                         <div class="card-body">
                             <p class="card-text"> Address: @selectedProduct.address</p>
