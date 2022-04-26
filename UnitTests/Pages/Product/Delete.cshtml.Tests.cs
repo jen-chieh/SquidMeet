@@ -31,11 +31,11 @@ namespace UnitTests.Pages.Product.Delete
             // Arrange
 
             // Act
-            pageModel.OnGet("0");
+            pageModel.OnGet("selinazawacki-shirt");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Renton Highlands Library", pageModel.Product.name);
+            Assert.AreEqual("Floppy Crop", pageModel.Product.name);
         }
         #endregion OnGet
 
