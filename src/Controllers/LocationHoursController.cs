@@ -9,7 +9,7 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class LocationHoursController : ControllerBase
     {
-        // Initialize controller
+         // Initialize user controller
         public LocationHoursController(JsonFileLocationHoursService locationHoursService) => 
             LocationHoursService = locationHoursService;
 

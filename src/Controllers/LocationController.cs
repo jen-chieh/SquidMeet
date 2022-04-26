@@ -15,9 +15,9 @@ namespace ContosoCrafts.WebSite.Controllers
         {
             ProductService = productService;
         }
-
+        // Data middle tier
         public JsonFileLocationService ProductService { get; }
-
+        // Get user information from model
         [HttpGet]
         public IEnumerable<LocationModel> Get()
         {

@@ -16,7 +16,7 @@ namespace ContosoCrafts.WebSite.Controllers
         // Data middle tier
         public JsonFileUserService UserService { get; }
 
-        // Get user information from model
+         // Get user information from model
         [HttpGet]
         public IEnumerable<UserModel> Get() => UserService.GetUsers();
 

@@ -15,11 +15,12 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class LocationTypeController : Controller
     {
+        // Initialize user controller
         public LocationTypeController(JsonFileLocationTypeService locationTypeService) =>
            LocationTypenService = locationTypeService;
-
+        // Data middle tier
         public JsonFileLocationTypeService LocationTypenService { get; }
-
+        // Get user information from model
         [HttpGet]
         public IEnumerable<LocationTypeModel> Get() => LocationTypenService.GetLocationTypes();
     }
