@@ -3,9 +3,11 @@
     "location_id": "0",
     "name": "Renton Highlands Library",
     "type_id": "2",
-    "address": "2801 NE 10th St, Renton, WA 98056",
+    "address": "2801 NE 10th St, Renton, WA 98056 ",
     "img": "https://kcls.bibliocommons.com/events/uploads/images/full/cd0182c6e1d07271f3486ecd3fd94350/09_21-Libraries-1200_640_0012_Renton-Highlands.png ",
-    "rating": null
+    "rating": [
+      3
+    ]
   },
   {
     "location_id": "1",
@@ -44,7 +46,7 @@
     "name": "Lemieux Library and McGoldrick Learning Commons",
     "type_id": "2",
     "address": "Lemieux Library and McGoldrick Learning Commons ",
-    "img": "http://architypereview.com/wp-content/themes/architype-review/includes/image.php?w=1000&h=644&m=1&i=%2Fwp-content%2Fuploads%2F2011%2F10%2F95-1000x644.jpg",
+    "img": "http://architypereview.com/wp-content/themes/architype-review/includes/image.php?w=1000\u0026h=644\u0026m=1\u0026i=%2Fwp-content%2Fuploads%2F2011%2F10%2F95-1000x644.jpg",
     "rating": null
   },
   {
@@ -68,7 +70,7 @@
     "name": "564 12th Ave, Seattle, WA 98122 ",
     "type_id": "1",
     "address": "564 12th Ave, Seattle, WA 98122",
-    "img": "https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
+    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
     "rating": null
   },
   {
@@ -157,6 +159,8 @@
     "type_id": "2",
     "address": "5900 west greenlake way \uFFFD Seattle, WA",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212051.png",
-    "rating": null
+    "rating": [
+      4
+    ]
   }
 ]
