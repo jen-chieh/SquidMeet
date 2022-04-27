@@ -25,11 +25,11 @@ namespace ContosoCrafts.WebSite.Services
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "meetup.json");
 
         // Read .json file and return all data fields through the model
-        public IEnumerable<Meetup> GetMeetups()
+        public IEnumerable<MeetupModel> GetMeetups()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
 
-            return JsonSerializer.Deserialize<Meetup[]>(jsonFileReader.ReadToEnd(),
+            return JsonSerializer.Deserialize<MeetupModel[]>(jsonFileReader.ReadToEnd(),
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
