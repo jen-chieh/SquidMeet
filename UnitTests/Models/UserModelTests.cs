@@ -16,5 +16,18 @@ namespace UnitTests.Models
         {
             _user = new UserModel();
         }
+
+        [Test]
+        public void GetUserId_Valid_Test_Reading_Should_Return_ExpectedValue()
+        {
+            // Arrange
+
+            // Act
+            var expectedValue = 3;
+
+            // Assert
+            _user.user_id = expectedValue;
+            Assert.AreEqual(expectedValue, _user.user_id);
+        }
     }
 }
