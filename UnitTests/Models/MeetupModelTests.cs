@@ -7,14 +7,14 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Models
 {   
     [TestFixture]
-    internal class MeetupTests
+    internal class MeetupModelTests
     {
-        private Meetup _meetup;
+        private MeetupModel _meetup;
 
         [SetUp]
         public void SetUp()
         {
-            _meetup = new Meetup();
+            _meetup = new MeetupModel();
         }
 
         [Test]
