@@ -20,6 +20,6 @@ namespace ContosoCrafts.WebSite.Controllers
         public JsonFileAttendeeService AttendeeService { get; }
         // Get user information from model
         [HttpGet]
-        public IEnumerable<Attendee> Get() => AttendeeService.GetAttendees();
+        public IEnumerable<AttendeeModel> Get() => AttendeeService.GetAttendees();
     }
 }
