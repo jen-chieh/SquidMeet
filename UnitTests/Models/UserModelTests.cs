@@ -14,7 +14,7 @@ namespace UnitTests.Models
         [SetUp]
         public void SetUp()
         {
-            _user = new Attendee();
+            _user = new UserModel();
         }
     }
 }
