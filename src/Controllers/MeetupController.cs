@@ -9,11 +9,13 @@ namespace ContosoCrafts.WebSite.Controllers
     [Route("[controller]")]
     public class MeetupController : Controller
     {
+        // Initialize user controller
         public MeetupController(JsonFileMeetupService meetupService) =>
             MeetupService = meetupService;
+        // Data middle tier
         public JsonFileMeetupService MeetupService { get; }
-
+        // Get user information from model
         [HttpGet]
-        public IEnumerable<Meetup> Get() => MeetupService.GetMeetups();
+        public IEnumerable<MeetupModel> Get() => MeetupService.GetMeetups();
     }
 }

@@ -1,0 +1,30 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileLocationService ProductService
+@inject JsonFileLocationHoursService LocationHoursService
+
+@model ContosoCrafts.WebSite.Pages.Product.ReadModel
+
+@{
+    ViewData["Title"] = "Read page";
+}
+
+<h1>Read</h1>
+
+<div class="content">
+    <h5 class="title" id="productTitle">@Model.Product.name</h5>
+
+    <img class="card-img" src='@Model.Product.img' alt='Image for @Model.Product.name'>
+
+    <p class="card-text"> Address: @Model.Product.address</p>
+
+
+</div>
+
+<br />
+<br />
+
+<div class="row">
+    <a asp-page="Update" asp-route-id="@Model.Product.location_id" class="btn btn-primary">Update</a> &nbsp; &nbsp;
+    <a asp-page="Delete" asp-route-id="@Model.Product.location_id" class="btn btn-danger">Delete</a>
+</div>

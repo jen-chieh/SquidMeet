@@ -1,25 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
+
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ContosoCrafts.WebSite.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class LocationController : Controller
+    public class LocationController : ControllerBase
     {
-        public LocationController(JsonFileLocationService locationService) =>
-            LocationService = locationService;
-
-        public JsonFileLocationService LocationService { get; }
-
+        public LocationController(JsonFileLocationService productService)
+        {
+            ProductService = productService;
+        }
+        // Data middle tier
+        public JsonFileLocationService ProductService { get; }
+        // Get user information from model
         [HttpGet]
-        public IEnumerable<Location> Get() => LocationService.GetLocations();
+        public IEnumerable<LocationModel> Get()
+        {
+            return ProductService.GetAllData();
+        }
+
+        [HttpPatch]
+        public ActionResult Patch([FromBody] RatingRequest request)
+        {
+            ProductService.AddRating(request.ProductId, request.Rating);
+            
+            return Ok();
+        }
+
+        public class RatingRequest
+        {
+            public string ProductId { get; set; }
+            public int Rating { get; set; }
+        }
     }
 }

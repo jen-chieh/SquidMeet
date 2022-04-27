@@ -9,19 +9,26 @@ namespace ContosoCrafts.WebSite
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration) =>
+        public Startup(IConfiguration configuration)
+        {
             Configuration = configuration;
+        }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddServerSideBlazor();
             services.AddHttpClient();
             services.AddControllers();
-            services.AddTransient<JsonFileProductService>();
+            services.AddTransient<JsonFileLocationService>();
+            services.AddTransient<JsonFileLocationHoursService>();
+            services.AddTransient<JsonFileLocationTypeService>();
+            services.AddTransient<JsonFileMeetupService>();
+            services.AddTransient<JsonFileUserService>();
+            services.AddTransient<JsonFileAttendeeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

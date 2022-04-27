@@ -6,7 +6,7 @@ namespace ContosoCrafts.WebSite.Models
 
     /// <summary>
     /// Model for location_hours.json file. The model has a unique ID mapping back to a
-    /// location in location.json, and displays all hours in military time in the following
+    /// location in location.json, and displays all hours in military time in the below
     /// format: "(12:00-23:59)".
     /// </summary>
     public class LocationHoursModel

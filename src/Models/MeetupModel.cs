@@ -7,19 +7,23 @@ namespace ContosoCrafts.WebSite.Models
     /// Model for the meetup.json file. The model assigns each meetup an unique meetup ID
     /// location ID with a index, title, date, description and a list of attendees.
     /// </summary>
-    public class Meetup
+    public class MeetupModel
     {
-        // Unique id for each meetup
+        //Unique Id assigned to meetup
         public string? meetup_id { get; set; }
-        // location_id mapped to location model
+        //Refer to location id
         public string? location_id { get; set; }
+        //An index so that we can do sort and arrange
         public int? index { get; set; }
+        //Tittle of Meetup
         public string? Title { get; set; }
+        //Start data and end Date of Meetup
         public string? Date { get; set; }
-        // collection of attendee attending the event
-        public Attendee? Attendees { get; set; }
+        //Attendees in the meetup
+        public AttendeeModel? Attendees { get; set; }
+        //To descript what meetup is 
         public string? Description { get; set; }
 
-        public override string ToString() => JsonSerializer.Serialize<Meetup>(this);
+        public override string ToString() => JsonSerializer.Serialize<MeetupModel>(this);
     }
 }
