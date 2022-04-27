@@ -7,7 +7,7 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Models
 {   
     [TestFixture]
-    internal class LocationTypeTest
+    internal class LocationTypeModelTests
     {
         private LocationTypeModel _locationType;
 
