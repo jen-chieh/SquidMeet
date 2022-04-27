@@ -7,14 +7,14 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Models
 {   
     [TestFixture]
-    internal class AttendeeTests
+    internal class AttendeeModelTests
     {
-        private Attendee _attendee;
+        private AttendeeModel _attendee;
 
         [SetUp]
         public void SetUp()
         {
-            _attendee = new Attendee();
+            _attendee = new AttendeeModel();
         }
 
         [Test]
