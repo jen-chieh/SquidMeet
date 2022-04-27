@@ -8,7 +8,7 @@ namespace ContosoCrafts.WebSite.Models
     /// It assigns each attendee an unique user ID with event ID, event object and a boolean 
     /// variable to tell if the attendee is host of the event.
     /// </summary>
-    public class Attendee: UserModel
+    public class AttendeeModel: UserModel
     {
         // Unique Id of User
         public string? UserId { get; set; }
@@ -17,10 +17,10 @@ namespace ContosoCrafts.WebSite.Models
         // Id of Event that Attendee participate
         public string? EventId { get; set; }
         // Information of Event that Attendee participate
-        public Meetup? Event { get; set; }
+        public MeetupModel? Event { get; set; }
         // To check if the Event host or cancel
         public bool? IsHost { get; set; }
     
-        public override string ToString() => JsonSerializer.Serialize<Attendee>(this);
+        public override string ToString() => JsonSerializer.Serialize<AttendeeModel>(this);
     }
 }
