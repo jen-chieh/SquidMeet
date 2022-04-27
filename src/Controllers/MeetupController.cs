@@ -16,6 +16,6 @@ namespace ContosoCrafts.WebSite.Controllers
         public JsonFileMeetupService MeetupService { get; }
         // Get user information from model
         [HttpGet]
-        public IEnumerable<Meetup> Get() => MeetupService.GetMeetups();
+        public IEnumerable<MeetupModel> Get() => MeetupService.GetMeetups();
     }
 }
