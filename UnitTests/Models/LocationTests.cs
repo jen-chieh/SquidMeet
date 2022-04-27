@@ -16,5 +16,18 @@ namespace UnitTests.Models
         {
             _locationModel = new LocationModel();
         }
+
+        [Test]
+        public void GetLocationId_Valid_Test_Reading_Should_Return_ExpectedValue()
+        {
+            // Arrange
+
+            // Act
+            var expectedValue = "0";
+
+            // Assert
+            _locationModel.location_id = expectedValue;
+            Assert.AreEqual(expectedValue, _locationModel.location_id);
+        }
     }
 }
