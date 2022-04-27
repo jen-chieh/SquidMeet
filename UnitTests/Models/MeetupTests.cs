@@ -7,7 +7,7 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Models
 {   
     [TestFixture]
-    internal class MeetupTest
+    internal class MeetupTests
     {
         private Meetup _meetup;
 
