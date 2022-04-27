@@ -9,12 +9,25 @@ namespace UnitTests.Models
     [TestFixture]
     internal class LocationTypeTest
     {
-        private LocationModel _locationModel;
+        private LocationTypeModel _locationType;
 
         [SetUp]
         public void SetUp()
         {
-            _locationModel = new LocationModel();
+            _locationType = new LocationTypeModel();
+        }
+
+        [Test]
+        public void GetLocationTypeId_Valid_Test_Reading_Should_Return_ExpectedValue()
+        {
+            // Arrange
+
+            // Act
+            var expectedValue = "2";
+
+            // Assert
+            _locationType.type_id = expectedValue;
+            Assert.AreEqual(expectedValue, _locationType.type_id);
         }
     }
 }
