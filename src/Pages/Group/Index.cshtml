@@ -37,6 +37,13 @@
         </div>
 
         <br />
+        <div class="form-group">
+            <label asp-for="newMeetup.Host" class="control-label">Tell us the Host name of this group</label>
+            <input asp-for="newMeetup.Host" class="form-control" />
+            <span asp-validation-for="newMeetup.Host" class="text-danger"></span>
+        </div>
+
+        <br />
 
         <div class="form-group">
             <label asp-for="newMeetup.Img" class="control-label">Now choose a picture for you group</label>
@@ -50,7 +57,6 @@
             <input type="submit" value="Ok" class="btn btn-primary" />
         </div>
     </form>
-
 </div>
 
 
