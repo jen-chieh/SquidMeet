@@ -64,14 +64,14 @@ namespace UnitTests.Pages.Product.Delete
         [Test]
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
-            // Arrange
+            // Arrange (invalid values)
             pageModel.Product = new LocationModel
             {
                 location_id = "bogus",
                 name = "bogus",
                 address = "bogus",
                 type_id = "bogus",
-                img = "bougs"
+                img = "bougus"
             };
 
             // Force an invalid error state
