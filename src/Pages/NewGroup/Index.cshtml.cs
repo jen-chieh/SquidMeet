@@ -25,12 +25,16 @@ namespace SquidMeet.WebSite.Pages.NewGroup
 
         // Data model
         [BindProperty]
-        public LocationModel selectedLocation { get; set; }
+        public LocationModel location { get; set; }
+
+        [BindProperty]
+        public MeetupModel newMeetup { get; set; }
 
         // On get
-        public void OnGet(string Id)
+        public void OnGet(string locationId)
         {
-            selectedLocation = LocationService.GetAllData().FirstOrDefault(x => x.location_id == Id);
+            location = LocationService.GetAllData().FirstOrDefault(x => x.location_id == locationId);
+
         }
 
         // On post
@@ -41,7 +45,9 @@ namespace SquidMeet.WebSite.Pages.NewGroup
                 return Page();
             }
 
-            LocationService.UpdateData(selectedLocation);
+            LocationService.UpdateData(location);
+            MeetupService.Create(newMeetup);
+
 
             return RedirectToPage("../Index");
         }
