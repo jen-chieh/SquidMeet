@@ -7,7 +7,7 @@
 @inject NavigationManager NavigationManager
 
 
-<h3>MyGroup</h3>
+<h3>My Group</h3>
 
 <a href="Update">Update &nbsp;</a>
 <a href="ReadAllGroups">View all groups</a>
@@ -81,7 +81,4 @@
         selectedMeetupId = meetupId;
         selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
     }
-
-
-
 }
