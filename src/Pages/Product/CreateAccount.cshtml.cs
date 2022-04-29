@@ -37,7 +37,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
+            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location.Equals(id));
             Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
 
 
