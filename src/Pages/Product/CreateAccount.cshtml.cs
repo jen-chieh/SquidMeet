@@ -27,34 +27,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
         }
 
         // The data to show, bind to it for the post
-        [BindProperty]
-        public UserModel Product { get; set; }
+        //[BindProperty]
+        public UserModel Product;
 
-        /// <summary>
-        /// REST Get request
-        /// Loads the Data
-        /// </summary>
-        /// <param name="id"></param>
-        public void OnGet(string id)
-        {
-            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
-            Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
-
-
-            /// <summary>
-            /// Post the model back to the page
-            /// The model is in the class variable Product
-            /// Call the data layer to Update that data
-            /// Then return to the index page
-            /// </summary>
-            /// <returns></returns>
-        }
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
 
             ProductService.CreateUser();
 
