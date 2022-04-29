@@ -24,6 +24,7 @@ namespace UnitTests.Pages.Product.Update
         #endregion TestSetup
 
         #region OnGet
+        // Test to verify OnGet returns correct data with a given id and model state is valid
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -39,6 +40,7 @@ namespace UnitTests.Pages.Product.Update
         #endregion OnGet
 
         #region OnPostAsync
+        // Test to verify OnPost adding new location with valid values keeps valid model state
         [Test]
         public void OnPostAsync_Valid_Should_Return_Products()
         {
@@ -61,6 +63,7 @@ namespace UnitTests.Pages.Product.Update
         }
 
         [Test]
+        // Test to verify OnPost adding new location with invalid values results in invalid model state
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
