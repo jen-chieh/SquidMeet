@@ -162,5 +162,13 @@
     "rating": [
       4
     ]
+  },
+  {
+    "location_id": "2ea23105-36b5-4972-a04c-9b7f152feeba",
+    "name": "Enter Name",
+    "type_id": "Enter Type ID",
+    "address": "Enter Address",
+    "img": "",
+    "rating": null
   }
 ]
