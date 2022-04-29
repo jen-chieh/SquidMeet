@@ -8,6 +8,7 @@ namespace UnitTests.Pages.Product.Read
     public class ReadTests
     {
         #region TestSetup
+        // Initialize ReadModel
         public static ReadModel pageModel;
 
         [SetUp]
@@ -21,6 +22,7 @@ namespace UnitTests.Pages.Product.Read
         #endregion TestSetup
 
         #region OnGet
+        // Test to verify model state is valid and provides the correct data for a given id
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
