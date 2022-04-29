@@ -55,7 +55,8 @@ namespace ContosoCrafts.WebSite.Services
             var meetup = new MeetupModel()
             {
                 meetup_id = System.Guid.NewGuid().ToString(),
-                location_id = newMeetup.location_id,
+                location = newMeetup.location,
+                LocationType = newMeetup.LocationType,
                 Title = newMeetup.Title,
                 Date = newMeetup.Date,
                 Description = newMeetup.Description,
