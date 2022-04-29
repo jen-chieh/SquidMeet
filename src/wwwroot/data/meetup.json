@@ -4,7 +4,7 @@
     "location": "test",
     "LocationType": "Indoor",
     "Title": "test",
-    "Date": null,
+    "Date": "01/06/2022",
     "Attendees": null,
     "Host": null,
     "Description": "test",
@@ -15,7 +15,7 @@
     "location": "test",
     "LocationType": "Indoor",
     "Title": "test",
-    "Date": null,
+    "Date": "11/05/2022",
     "Attendees": null,
     "Host": "YJ",
     "Description": "test",
@@ -26,7 +26,7 @@
     "location": "test",
     "LocationType": "Outdoor",
     "Title": "test",
-    "Date": null,
+    "Date": "15/05/2022",
     "Attendees": [
       "Mike",
       "Jane",
@@ -36,5 +36,16 @@
     "Host": "YJ",
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429063109.jpg"
+  },
+  {
+    "meetup_id": "6f23643f-1254-4524-9f4d-439a3d626427",
+    "location": "test",
+    "LocationType": "Outdoor",
+    "Title": "test",
+    "Date": "22/12/2022",
+    "Attendees": null,
+    "Host": "YJ",
+    "Description": "test",
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429081049.png"
   }
 ]
