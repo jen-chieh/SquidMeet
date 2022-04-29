@@ -1,8 +1,8 @@
 [
   {
-    "meetup_id": "20306cec-1ed8-4fdb-bc32-866cc2e5593f",
+    "meetup_id": "ebf80f1c-3802-4df9-bbda-fd274810a44c",
     "location": "test",
-    "LocationType": "Outdoor",
+    "LocationType": "Indoor",
     "Title": "test",
     "Date": null,
     "Attendees": null,
@@ -11,14 +11,25 @@
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/okdownload.png"
   },
   {
-    "meetup_id": "fd5af24c-9e38-47de-bd83-ca750487e2a4",
+    "meetup_id": "59170836-95ac-42a5-833f-9f026c8dc152",
+    "location": "test",
+    "LocationType": "Indoor",
+    "Title": "test",
+    "Date": null,
+    "Attendees": null,
+    "Host": "YJ",
+    "Description": "test",
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429051245.png"
+  },
+  {
+    "meetup_id": "71498a24-daa6-48c9-86e8-e4b7fc65e61d",
     "location": "test",
     "LocationType": "Outdoor",
     "Title": "test",
     "Date": null,
     "Attendees": null,
-    "Host": null,
+    "Host": "YJ",
     "Description": "test",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429041813.jpg"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429063109.jpg"
   }
 ]
