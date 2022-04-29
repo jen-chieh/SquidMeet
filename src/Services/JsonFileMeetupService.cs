@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -34,6 +33,41 @@ namespace ContosoCrafts.WebSite.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
+        }
+
+        private void Add(IEnumerable<MeetupModel> meetups)
+        {
+            using (var outputStream = File.Create(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<MeetupModel>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    meetups
+                );
+            }
+        }
+
+        public MeetupModel Create(MeetupModel newMeetup)
+        {
+            var meetup = new MeetupModel()
+            {
+                meetup_id = System.Guid.NewGuid().ToString(),
+                location_id = newMeetup.location_id,
+                Title = newMeetup.Title,
+                Date = newMeetup.Date,
+                Description = newMeetup.Description,
+            };
+
+            var meetups = GetMeetups();
+            meetups = meetups.Append(meetup);
+
+            Add(meetups);
+
+            return meetup;
+
         }
     }
 }
