@@ -27,7 +27,12 @@
     "LocationType": "Outdoor",
     "Title": "test",
     "Date": null,
-    "Attendees": null,
+    "Attendees": [
+      "Mike",
+      "Jane",
+      "John",
+      "Mary"
+    ],
     "Host": "YJ",
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429063109.jpg"
