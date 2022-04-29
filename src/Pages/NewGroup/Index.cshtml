@@ -8,21 +8,15 @@
         @Html.HiddenFor(x => x.location.location_id)
 
         <div class="form-group">
-            <label asp-for="location.name" class="control-label">What will your group’s name be?</label>
-            <input asp-for="location.name" class="form-control" />
-            <span asp-validation-for="location.name" class="text-danger"></span>
+            <label asp-for="newMeetup.Title" class="control-label">What will your group’s name be?</label>
+            <input asp-for="newMeetup.Title" class="form-control" />
+            <span asp-validation-for="newMeetup.Title" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="location.address" class="control-label">Set your group's location.</label>
-            <input asp-for="location.address" class="form-control" />
-            <span asp-validation-for="location.address" class="text-danger"></span>
-        </div>
-
-        <div class="form-group">
-            <label asp-for="location.img" class="control-label">Now choose a picture for you group</label>
-            <input asp-for="location.img" class="form-control" />
-            <span asp-validation-for="location.img" class="text-danger"></span>
+            <label asp-for="newMeetup.location" class="control-label">Set your group's location.</label>
+            <input asp-for="newMeetup.location" class="form-control" />
+            <span asp-validation-for="newMeetup.location" class="text-danger"></span>
         </div>
 
         <div class="form-group">
@@ -31,13 +25,39 @@
             <span asp-validation-for="newMeetup.Description" class="text-danger"></span>
         </div>
 
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+                <label asp-for="newMeetup.LocationType" class="mr-sm-2" for="inlineFormCustomSelect">Your location type</label>
+                <select asp-for="newMeetup.LocationType" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Choose...</option>
+                    <option value="Indoor">Indoor</option>
+                    <option value="Outdoor">Outdoor</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+        </div>
 
+        <br />
+
+        <div class="form-group">
+            <label asp-for="newMeetup.Img" class="control-label">Now choose a picture for you group</label>
+            <input asp-for="newMeetup.Img" type="file" class="form-control-file" />
+            <span asp-validation-for="newMeetup.Img" class="form-control-file"></span>
+        </div>
+
+
+
+        <br />
+        <br />
         <div class="form-group">
             <input type="submit" value="Ok" class="btn btn-primary" />
         </div>
+
+
     </form>
 
 </div>
+
 
 @section Scripts {
     @{
