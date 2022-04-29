@@ -60,6 +60,7 @@ namespace ContosoCrafts.WebSite.Services
                 Title = newMeetup.Title,
                 Date = newMeetup.Date,
                 Description = newMeetup.Description,
+                Host = newMeetup.Host,
                 Img = newMeetup.Img,
             };
 
