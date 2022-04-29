@@ -1,0 +1,29 @@
+﻿@using ContosoCrafts.WebSite.Models
+@using ContosoCrafts.WebSite.Services
+@using Microsoft.AspNetCore.Components.Web
+@inject JsonFileMeetupService MeetupService
+
+
+<h3>MyGroup</h3>
+<div class="card-columns">
+    @{
+        var dataset = MeetupService.GetMeetups();
+
+        foreach (var meetup in dataset)
+        {
+            <div class="card">
+                <div class="card-img" style="background-image: url('@meetup.Img');">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">@meetup.Title</h5>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+
+}
