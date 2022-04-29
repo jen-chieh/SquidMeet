@@ -11,17 +11,45 @@
     @{
         var dataset = MeetupService.GetMeetups().Where(m => m.Host == "YJ");
 
+
         //List<MeetupModel> meetups = new List<MeetupModel>();
         //meetups.Add(meetup);
 
         foreach (var meetup in dataset)
         {
+            var attendees = meetup.Attendees;
+            int count;
+            @if (attendees != null)
+            {
+                count = attendees.Count();
+            }
+            else
+            {
+                count = 0;
+            }
+
             <div class="card">
                 <div class="card-img" style="background-image: url('@meetup.Img');">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Title: @meetup.Title</h5>
-                    <p class="card-text">Host: @meetup.Host</p>
+                    <a class="card-text">Host: &nbsp;@meetup.Host</a>
+                    @{
+                        if (attendees != null)
+                        {
+                            <br />
+                            <a>Attentee: </a>
+                            foreach (var attendee in attendees)
+                            {
+                                <a class="card-text">&nbsp; @attendee</a>
+                            }
+                        }
+                        else
+                        {
+                            <br />
+                            <a class="card-text"> 0 Attendee</a>
+                        }
+                    }
 
                 </div>
 
@@ -59,8 +87,8 @@
     {
         selectedMeetupId = meetupId;
         selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
-
-
     }
+
+
 
 }
