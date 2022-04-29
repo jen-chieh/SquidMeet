@@ -1,0 +1,26 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileUserService ProductService
+
+
+@model ContosoCrafts.WebSite.Pages.Product.ProfileModel
+
+@{
+    ViewData["Title"] = "Profile page";
+}
+
+<h1>Prfile</h1>
+
+<div class="content">
+    <h5 class="title" id="Username">Username: @Model.Product.username</h5>
+    <h5 class="title" id="name">Name:@Model.Product.name.</h5>
+
+</div>
+
+<br />
+<br />
+
+<div class="row">
+    <a asp-page="Update" asp-route-id="@Model.Product.username" class="btn btn-primary">Update</a>
+
+</div>
