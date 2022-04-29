@@ -1,13 +1,18 @@
 ﻿@using ContosoCrafts.WebSite.Models
 @using ContosoCrafts.WebSite.Services
 @using Microsoft.AspNetCore.Components.Web
+@using ContosoCrafts.WebSite.Pages
 @inject JsonFileMeetupService MeetupService
+@inject NavigationManager NavigationManager
 
 
 <h3>MyGroup</h3>
 <div class="card-columns">
     @{
-        var dataset = MeetupService.GetMeetups();
+        var dataset = MeetupService.GetMeetups().Where(m => m.Host == "YJ");
+
+        //List<MeetupModel> meetups = new List<MeetupModel>();
+        //meetups.Add(meetup);
 
         foreach (var meetup in dataset)
         {
@@ -15,15 +20,47 @@
                 <div class="card-img" style="background-image: url('@meetup.Img');">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">@meetup.Title</h5>
+                    <h5 class="card-title">Title: @meetup.Title</h5>
+                    <p class="card-text">Host: @meetup.Host</p>
+
                 </div>
+
                 <div class="card-footer">
-                </div>
+                    <small class="text-muted">
+                        <button asp-page="/Components/UpdateMyGroup" @onclick="(e => selectMeetup(meetup.meetup_id))"
+                        class="btn btn-primary">
+                            Update
+                        </button>
+
+                        <button class="btn btn-primary" @onclick="NavigateToUpdate">Update</button>
+                        @code
+                        {
+                        private void NavigateToUpdate()
+                        {
+                            NavigationManager.NavigateTo("Update");
+                        }
+                    }
+
+                </small>
             </div>
+        </div>
+
         }
+
     }
 </div>
 
+
 @code {
+    MeetupModel selectedMeetup;
+    string selectedMeetupId;
+
+    void selectMeetup(string meetupId)
+    {
+        selectedMeetupId = meetupId;
+        selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
+
+
+    }
 
 }
