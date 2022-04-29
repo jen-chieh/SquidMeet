@@ -55,23 +55,10 @@
 
                 <div class="card-footer">
                     <small class="text-muted">
-                        <button asp-page="/Components/UpdateMyGroup" @onclick="(e => selectMeetup(meetup.meetup_id))"
-                        class="btn btn-primary">
-                            Update
-                        </button>
-
-                        <button class="btn btn-primary" @onclick="NavigateToUpdate">Update</button>
-                        @code
-                        {
-                        private void NavigateToUpdate()
-                        {
-                            NavigationManager.NavigateTo("Update");
-                        }
-                    }
-
-                </small>
+                        Date: @meetup.Date
+                    </small>
+                </div>
             </div>
-        </div>
 
         }
 
