@@ -11,6 +11,7 @@ namespace UnitTests.Pages.Product.Index
     public class IndexTests
     {
         #region TestSetup
+        // Initialize IndexModel and PageContext
         public static PageContext pageContext;
 
         public static IndexModel pageModel;
@@ -26,6 +27,7 @@ namespace UnitTests.Pages.Product.Index
         #endregion TestSetup
 
         #region OnGet
+        // Test to verify the model state is valid with products
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
