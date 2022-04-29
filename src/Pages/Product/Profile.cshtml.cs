@@ -29,9 +29,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// REST Get request
         /// </summary>
         /// <param name="id"></param>
-        public void OnGet(string id)
+        public void OnGet(string username)
         {
-            Product = ProductService.GetUsers().FirstOrDefault(m => m.username.Equals(id));
+            Product = ProductService.GetUsers().FirstOrDefault(m => m.username.Equals(username));
 
         }
 
