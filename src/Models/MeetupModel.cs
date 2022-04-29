@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
@@ -20,7 +19,7 @@ namespace ContosoCrafts.WebSite.Models
         //Start data and end Date of Meetup
         public string? Date { get; set; }
         //Attendees in the meetup
-        public AttendeeModel? Attendees { get; set; }
+        public string[]? Attendees { get; set; }
         //To descript what meetup is 
         public string? Description { get; set; }
 
