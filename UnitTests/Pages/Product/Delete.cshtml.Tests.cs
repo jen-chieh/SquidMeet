@@ -12,6 +12,7 @@ namespace UnitTests.Pages.Product.Delete
     public class DeleteTests
     {
         #region TestSetup
+        // Initialize DeleteModel
         public static DeleteModel pageModel;
 
         [SetUp]
@@ -25,6 +26,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion TestSetup
 
         #region OnGet
+        // Test to verify OnGet returns the correct values for a given location id
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -40,6 +42,7 @@ namespace UnitTests.Pages.Product.Delete
         #endregion OnGet
 
         #region OnPostAsync
+        // Test to verify OnPostAsync deletes the correct data
         [Test]
         public void OnPostAsync_Valid_Should_Return_Products()
         {
@@ -62,6 +65,7 @@ namespace UnitTests.Pages.Product.Delete
         }
 
         [Test]
+        // Test to verify OnPostAsync has an invalid model with invalid location values on creation.
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange (invalid values)
