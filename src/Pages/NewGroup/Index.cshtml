@@ -2,3 +2,38 @@
 @model SquidMeet.WebSite.Pages.NewGroup.CreateNewGroupModel
 @{
 }
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.selectedLocation.location_id)
+
+        <div class="form-group">
+            <label asp-for="selectedLocation.name" class="control-label">What will your group’s name be?</label>
+            <input asp-for="selectedLocation.name" class="form-control" />
+            <span asp-validation-for="selectedLocation.name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="selectedLocation.address" class="control-label">Set your group's location.</label>
+            <input asp-for="selectedLocation.address" class="form-control" />
+            <span asp-validation-for="selectedLocation.address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="selectedLocation.img" class="control-label">Now choose a picture for you group</label>
+            <input asp-for="selectedLocation.img" class="form-control" />
+            <span asp-validation-for="selectedLocation.img" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Ok" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
