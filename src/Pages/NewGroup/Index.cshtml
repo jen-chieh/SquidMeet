@@ -5,25 +5,32 @@
 <div class="container">
     <form method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @Html.HiddenFor(x => x.selectedLocation.location_id)
+        @Html.HiddenFor(x => x.location.location_id)
 
         <div class="form-group">
-            <label asp-for="selectedLocation.name" class="control-label">What will your group’s name be?</label>
-            <input asp-for="selectedLocation.name" class="form-control" />
-            <span asp-validation-for="selectedLocation.name" class="text-danger"></span>
+            <label asp-for="location.name" class="control-label">What will your group’s name be?</label>
+            <input asp-for="location.name" class="form-control" />
+            <span asp-validation-for="location.name" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="selectedLocation.address" class="control-label">Set your group's location.</label>
-            <input asp-for="selectedLocation.address" class="form-control" />
-            <span asp-validation-for="selectedLocation.address" class="text-danger"></span>
+            <label asp-for="location.address" class="control-label">Set your group's location.</label>
+            <input asp-for="location.address" class="form-control" />
+            <span asp-validation-for="location.address" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="selectedLocation.img" class="control-label">Now choose a picture for you group</label>
-            <input asp-for="selectedLocation.img" class="form-control" />
-            <span asp-validation-for="selectedLocation.img" class="text-danger"></span>
+            <label asp-for="location.img" class="control-label">Now choose a picture for you group</label>
+            <input asp-for="location.img" class="form-control" />
+            <span asp-validation-for="location.img" class="text-danger"></span>
         </div>
+
+        <div class="form-group">
+            <label asp-for="newMeetup.Description" class="control-label">Describe what your group will be about</label>
+            <input asp-for="newMeetup.Description" class="form-control" />
+            <span asp-validation-for="newMeetup.Description" class="text-danger"></span>
+        </div>
+
 
         <div class="form-group">
             <input type="submit" value="Ok" class="btn btn-primary" />
