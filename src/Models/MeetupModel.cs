@@ -20,6 +20,8 @@ namespace ContosoCrafts.WebSite.Models
         public string? Date { get; set; }
         //Attendees in the meetup
         public string[]? Attendees { get; set; }
+        // To identify the host
+        public string? Host { get; set; }
         //To descript what meetup is 
         public string? Description { get; set; }
 
