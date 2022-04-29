@@ -2,11 +2,17 @@
 @using ContosoCrafts.WebSite.Services
 @using Microsoft.AspNetCore.Components.Web
 @using ContosoCrafts.WebSite.Pages
+@using SquidMeet.WebSite.Components
 @inject JsonFileMeetupService MeetupService
 @inject NavigationManager NavigationManager
 
 
 <h3>MyGroup</h3>
+
+<a href="Update">Update &nbsp;</a>
+<a href="ReadAllGroups">View all groups</a>
+<br />
+<br />
 <div class="card-columns">
     @{
         var dataset = MeetupService.GetMeetups().Where(m => m.Host == "YJ");
