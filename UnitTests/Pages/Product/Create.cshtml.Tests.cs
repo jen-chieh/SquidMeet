@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 using NUnit.Framework;
 
@@ -12,6 +12,7 @@ namespace UnitTests.Pages.Product.Create
         #region TestSetup
         public static CreateModel pageModel;
 
+        // Initialize CreateModel using TestHelper
         [SetUp]
         public void TestInitialize()
         {
@@ -23,6 +24,7 @@ namespace UnitTests.Pages.Product.Create
         #endregion TestSetup
 
         #region OnGet
+        // Create a new location object and verify that the location was successfully added
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
