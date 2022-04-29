@@ -1,0 +1,8 @@
+﻿@page
+@model SquidMeet.WebSite.Pages.Group.UpdateGroupModel
+@using SquidMeet.WebSite.Components
+@{
+}
+@(await Html.RenderComponentAsync<MyGroup>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
