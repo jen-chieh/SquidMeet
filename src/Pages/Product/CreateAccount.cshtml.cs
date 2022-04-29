@@ -9,7 +9,7 @@ using ContosoCrafts.WebSite.Services;
 namespace ContosoCrafts.WebSite.Pages.Product
 {
     /// <summary>
-    /// Manage the Update of the data for a single record
+    /// Manage the Update of the user data for a single record
     /// </summary>
     public class CreateUserModelModel : PageModel
     {
@@ -26,10 +26,12 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
-        // The data to show, bind to it for the post
-        //[BindProperty]
+        // The data to show
         public UserModel Product;
 
+        /// <summary>
+        /// REST Post request
+        /// </summary>
         public IActionResult OnPost()
         {
 
