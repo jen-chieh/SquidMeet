@@ -170,5 +170,21 @@
     "address": "Enter Address",
     "img": "",
     "rating": null
+  },
+  {
+    "location_id": "93e181f0-415c-4010-b864-ec38048a4b7e",
+    "name": "Enter Name",
+    "type_id": "Enter Type ID",
+    "address": "Enter Address",
+    "img": "",
+    "rating": null
+  },
+  {
+    "location_id": "78392c67-ca88-4c38-88b5-76ec8c5a753c",
+    "name": "Enter Name",
+    "type_id": "Enter Type ID",
+    "address": "Enter Address",
+    "img": "",
+    "rating": null
   }
 ]
