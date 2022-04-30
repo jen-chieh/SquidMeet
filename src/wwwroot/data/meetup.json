@@ -5,7 +5,11 @@
     "LocationType": "Indoor",
     "Title": "Meditate with a Monk",
     "Date": "01/06/2022",
-    "Attendees": null,
+    "Attendees": [
+      "Jack",
+      "Levi",
+      "James"
+    ],
     "Host": null,
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg"
@@ -16,7 +20,11 @@
     "LocationType": "Indoor",
     "Title": "Overcooked2 with me!",
     "Date": "11/05/2022",
-    "Attendees": null,
+    "Attendees": [
+      "William",
+      "Owen",
+      "Noah"
+    ],
     "Host": "YJ",
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429084505.png"
@@ -28,10 +36,10 @@
     "Title": "Cafe Matic",
     "Date": "15/05/2022",
     "Attendees": [
-      "Mike",
-      "Jane",
-      "John",
-      "Mary"
+      "Oliver",
+      "Liam",
+      "Theodore",
+      "Henry"
     ],
     "Host": "YJ",
     "Description": "test",
@@ -43,7 +51,10 @@
     "LocationType": "Outdoor",
     "Title": "K&M 's wedding ceremony",
     "Date": "22/12/2022",
-    "Attendees": null,
+    "Attendees": [
+      "Charlotte",
+      "Olivia"
+    ],
     "Host": "YJ",
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083902.png"
@@ -54,8 +65,12 @@
     "LocationType": "Outdoor",
     "Title": "Party with Border Collies",
     "Date": "22/12/2022",
-    "Attendees": null,
-    "Host": "TT",
+    "Attendees": [
+      "Evelyn",
+      "Amelia",
+      "Emma"
+    ],
+    "Host": "Harper",
     "Description": "test",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg"
   }
