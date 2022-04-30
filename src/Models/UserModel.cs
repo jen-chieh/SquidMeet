@@ -11,7 +11,7 @@ namespace ContosoCrafts.WebSite.Models
     public class UserModel
     {
         // Unique ID assigned to a user
-        public int? user_id { get; set; }
+        public string? user_id { get; set; }
         // Unique username that the user chooses
         public string? username { get; set; }
         // Password that the user chooses
