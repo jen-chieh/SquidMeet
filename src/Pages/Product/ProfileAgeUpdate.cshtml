@@ -1,0 +1,33 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileUserService UserService
+@model SquidMeet.WebSite.Pages.Product.ProfileAgeUpdateModel
+@{
+    ViewData["Title"] = "Update profile age";
+}
+<h1>Update</h1>
+
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.UserProfile.user_id)
+        
+
+        <div class="form-group">
+            <label asp-for="UserProfile.age" class="control-label">Change your age</label>
+            <input asp-for="UserProfile.age" class="form-control"/>
+            <span asp-validation-for="UserProfile.age" class="text-danger"></span>
+        </div>
+        
+        
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
