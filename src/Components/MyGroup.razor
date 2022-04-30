@@ -11,6 +11,7 @@
 
 <a href="Update">Update &nbsp;</a>
 <a href="ReadAllGroups">View all groups</a>
+
 <br />
 <br />
 <div class="card-columns">
@@ -56,13 +57,26 @@
                             <a class="card-text"> 0 Attendee</a>
                         }
                     }
-
+                    
                 </div>
 
                 <div class="card-footer">
                     <small class="text-muted">
                         Date: @meetup.Date
                     </small>
+                    
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Update
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" type="button" href="Update/UpdateDate" onclick="">Date</a>
+                        <a class="dropdown-item" href="#">Time</a>
+                        <a class="dropdown-item" href="#">Location</a>
+                        <a class="dropdown-item" href="#">Title</a>
+                      </div>
+                    </div>
+                    
                 </div>
             </div>
 
