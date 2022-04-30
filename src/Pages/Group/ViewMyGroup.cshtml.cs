@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SquidMeet.WebSite.Pages.Group
 {
+    /// <summary>
+    /// This is the  model for the update group page.
+    /// </summary>
     public class UpdateGroupModel : PageModel
     {
         public JsonFileMeetupService MeetupService { get; }
