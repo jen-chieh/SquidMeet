@@ -9,7 +9,6 @@
     ViewData["Title"] = "Profile page";
 }
 
-<h1>Profile</h1>
 
 <div class="content">
     <h5 class="title" id="Username">Username: @Model.Product.username</h5>
@@ -25,5 +24,5 @@
 
 	<a asp-page="Update Bio" asp-route-id="@Model.Product.username" class="btn btn-primary">Update Bio</a>
 	<a asp-page="Update Gender" asp-route-id="@Model.Product.username" class="btn btn-primary">Update Gender</a>
-    
+
 </div>

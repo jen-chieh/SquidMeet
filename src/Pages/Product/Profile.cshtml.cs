@@ -32,7 +32,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet(string id)
         {
             Product = ProductService.GetUsers().FirstOrDefault(m => m.username.Equals(id));
-        
+
         }
 
         /*

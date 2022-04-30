@@ -13,30 +13,47 @@
 </button>
 
 <div class="card-columns">
-       @{var dataset = ProductService.GetAllData();
-           if (locationsorting == true) { dataset = ProductService.sortByLocation(); }
-           if (ratesorting == true) { dataset = ProductService.sortByRate(); }
-
-           foreach (var product in dataset)
-           {
-            <div class="card">
-                <div class="card-img" style="background-image: url('@product.img');">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">@product.name</h5>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">
-                        <button @onclick="(e => SelectProduct(product.location_id))"
-                                data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                            More Info
-                        </button>
-                    </small>
-                </div>
+    @{var dataset = ProductService.GetAllData();
+        if (locationsorting == true) { dataset = ProductService.sortByLocation(); }
+        if (ratesorting == true) { dataset = ProductService.sortByRate(); }
+        LocationHoursModel ProductHours;
+        LocationTypeModel ProductType;
+        foreach (var product in dataset)
+        {
+            ProductHours = LocationHoursService.GetLocationHours().First(x => x.location_hours_id == product.location_id);
+            ProductType = LocationTypeService.GetLocationTypes().First(x => x.type_id == product.type_id);
+        <div class="card">
+            <div class="myDIV"><img src="https://github.com/jen-chieh/jen-chieh.github.io/blob/master/photo/detail_1.png?raw=true" alt="detail" style="width:30px;height:28px;"></div>
+            <div class="hide">
+                <p class="card-text"> Address: @product.address</p>
+                <p class="card-text"> Location Type: @ProductType.type_name</p>
+                <p class="card-text"> Location Hours:</p>
+                <p class="card-text"> Monday: @ProductHours.location_mon_hours</p>
+                <p class="card-text"> Tuesday: @ProductHours.location_tues_hours</p>
+                <p class="card-text"> Wednesday: @ProductHours.location_wed_hours</p>
+                <p class="card-text"> Thursday: @ProductHours.location_thurs_hours</p>
+                <p class="card-text"> Friday: @ProductHours.location_fri_hours</p>
+                <p class="card-text"> Saturday: @ProductHours.location_sat_hours</p>
+                <p class="card-text"> Sunday: @ProductHours.location_sun_hours</p>
             </div>
-               }
-           }
-    </div>
+            <div class="card-img" style="background-image: url('@product.img');">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@product.name</h5>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+                    <button @onclick="(e => SelectProduct(product.location_id))"
+                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                        More Info
+                    </button>
+                </small>
+            </div>
+
+        </div>
+        }
+      }
+</div>
 
 @if (selectedProduct != null)
 {
@@ -97,6 +114,7 @@
 }
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 @code
 {
