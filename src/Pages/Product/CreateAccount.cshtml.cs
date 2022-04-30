@@ -24,6 +24,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public CreateUserModelModel(JsonFileUserService productService)
         {
             ProductService = productService;
+            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location.Equals(id));
+            // Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
+
+
+            /// <summary>
+            /// Post the model back to the page
+            /// The model is in the class variable Product
+            /// Call the data layer to Update that data
+            /// Then return to the index page
+            /// </summary>
+            /// <returns></returns>
         }
 
         // The data to show
