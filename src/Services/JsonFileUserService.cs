@@ -33,7 +33,7 @@ namespace ContosoCrafts.WebSite.Services
                 new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
-                });        
+                });
         }
         /// <summary>
         /// Save All products data to storage
@@ -63,8 +63,8 @@ namespace ContosoCrafts.WebSite.Services
                 password = "Enter password",
                 name = "Enter Name",
                 age = 0,
-                gender= "Enter Gender",
-                bio="Enter Bio"
+                gender = "Enter Gender",
+                bio = "Enter Bio"
 
             };
 
@@ -75,6 +75,25 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
 
             return data;
+        }
+
+        public UserModel UpdateUser(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+            data.username = user.username;
+            data.password = user.password;
+            data.name = user.name;
+            data.age = user.age;
+            data.gender = user.gender;
+            data.bio = user.bio;
+
+            SaveData(dataSet);
+            return user;
         }
     }
 }
