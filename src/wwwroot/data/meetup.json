@@ -3,12 +3,12 @@
     "meetup_id": "ebf80f1c-3802-4df9-bbda-fd274810a44c",
     "location": "test",
     "LocationType": "Indoor",
-    "Title": "test",
+    "Title": "Meditate with a Monk",
     "Date": "01/06/2022",
     "Attendees": null,
     "Host": null,
     "Description": "test",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/okdownload.png"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg"
   },
   {
     "meetup_id": "59170836-95ac-42a5-833f-9f026c8dc152",
@@ -52,11 +52,11 @@
     "meetup_id": "6e1ea3b8-c00d-4018-8986-d95c6a7173c1",
     "location": "test",
     "LocationType": "Outdoor",
-    "Title": "test",
+    "Title": "Party with Border Collies",
     "Date": "22/12/2022",
     "Attendees": null,
     "Host": "TT",
     "Description": "test",
-    "Img": null
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg"
   }
 ]
