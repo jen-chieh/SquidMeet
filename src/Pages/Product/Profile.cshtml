@@ -1,0 +1,38 @@
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileUserService ProductService
+
+
+@model ContosoCrafts.WebSite.Pages.Product.ProfileModel
+
+@{
+    ViewData["Title"] = "Profile page";
+}
+
+
+<div class="content">
+    <h5 class="title" id="username">Username: @Model.Product.username</h5>
+    <h5 class="title" id="name">Name:@Model.Product.name</h5>
+	<h5 class="title" id="age">Age:@Model.Product.age</h5>
+	<h5 class="title" id="gender">Age:@Model.Product.gender</h5>
+	<h5 class="title" id="bio">Bio:@Model.Product.bio</h5>
+
+</div>
+
+<br />
+<br />
+
+<div class="row">
+    <a asp-page="ProfileUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update</a>
+    &nbsp;
+	<a asp-page="ProfileBioUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Bio</a>
+    &nbsp;
+	<a asp-page="ProfileGenderUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Gender</a>
+     &nbsp;
+    <a asp-page="ProfileNameUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Name</a>
+     &nbsp;
+    <a asp-page="ProfileAgeUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Age</a>
+     &nbsp;
+    <a asp-page="ProfilePasswordUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Password</a>
+
+</div>

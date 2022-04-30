@@ -23,7 +23,7 @@ namespace UnitTests.Models
             // Arrange
 
             // Act
-            var expectedValue = 3;
+            var expectedValue = "3";
 
             // Assert
             _user.user_id = expectedValue;

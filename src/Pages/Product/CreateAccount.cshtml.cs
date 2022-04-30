@@ -9,7 +9,7 @@ using ContosoCrafts.WebSite.Services;
 namespace ContosoCrafts.WebSite.Pages.Product
 {
     /// <summary>
-    /// Manage the Update of the data for a single record
+    /// Manage the Update of the user data for a single record
     /// </summary>
     public class CreateUserModelModel : PageModel
     {
@@ -24,21 +24,8 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public CreateUserModelModel(JsonFileUserService productService)
         {
             ProductService = productService;
-        }
-
-        // The data to show, bind to it for the post
-        [BindProperty]
-        public UserModel Product { get; set; }
-
-        /// <summary>
-        /// REST Get request
-        /// Loads the Data
-        /// </summary>
-        /// <param name="id"></param>
-        public void OnGet(string id)
-        {
-            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
-            Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
+            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location.Equals(id));
+            // Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
 
 
             /// <summary>
@@ -49,12 +36,15 @@ namespace ContosoCrafts.WebSite.Pages.Product
             /// </summary>
             /// <returns></returns>
         }
+
+        // The data to show
+        public UserModel Product;
+
+        /// <summary>
+        /// REST Post request
+        /// </summary>
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
 
             ProductService.CreateUser();
 

@@ -1,4 +1,4 @@
-
+﻿
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -38,6 +38,7 @@ namespace UnitTests
         public static TempDataDictionary TempData;
         public static PageContext PageContext;
         public static JsonFileLocationService ProductService;
+        public static JsonFileUserService UserService;
 
         /// <summary>
         /// Default Constructor
@@ -74,6 +75,12 @@ namespace UnitTests
             JsonFileLocationService productService;
 
             productService = new JsonFileLocationService(TestHelper.MockWebHostEnvironment.Object);
+
+            UserService = new JsonFileUserService(MockWebHostEnvironment.Object);
+
+            JsonFileUserService userService;
+
+            userService = new JsonFileUserService(TestHelper.MockWebHostEnvironment.Object);
         }
     }
 }

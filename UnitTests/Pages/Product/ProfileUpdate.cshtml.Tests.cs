@@ -1,35 +1,37 @@
 ﻿using System.Linq;
 
-using Microsoft.AspNetCore.Mvc;
-
 using NUnit.Framework;
 
 using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
+using SquidMeet.WebSite.Pages.Product;
+using Microsoft.AspNetCore.Mvc;
 
-namespace UnitTests.Pages.Product.Delete
+namespace UnitTests.Pages.Product.Create
 {
-    public class DeleteTests
+    public class ProfileUpdateTests
     {
         #region TestSetup
-        // Initialize DeleteModel
-        public static DeleteModel pageModel;
+        public static ProfileUpdateModel pageModel;
 
+
+        // Create new ProfileModel
         [SetUp]
         public void TestInitialize()
         {
-            pageModel = new DeleteModel(TestHelper.ProductService)
+            pageModel = new ProfileUpdateModel(TestHelper.UserService)
             {
             };
         }
 
         #endregion TestSetup
 
+        // Verify that the user's name matches to the information from OnGet with a matching user_id
         #region OnGet
-        // Test to verify OnGet returns the correct values for a given location id
         [Test]
-        public void OnGet_Valid_Should_Return_Products()
+        public void OnGet_Valid_Should_Return_Users()
         {
+
             // Arrange
 
             // Act
@@ -37,21 +39,27 @@ namespace UnitTests.Pages.Product.Delete
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Renton Highlands Library", pageModel.Product.name);
+            Assert.AreEqual("Blanchard Whitehead", pageModel.UserProfile.name);
+
         }
         #endregion OnGet
 
         #region OnPostAsync
-        // Test to verify OnPostAsync deletes the correct data
+        // Test to verify OnPost adding new user profile with valid values keeps valid model state
         [Test]
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
-
-            // First Create the product to delete
-            pageModel.Product = TestHelper.ProductService.CreateData();
-            pageModel.Product.name = "Example to Delete";
-            TestHelper.ProductService.UpdateData(pageModel.Product);
+            pageModel.UserProfile = new UserModel
+            {
+                user_id = "22",
+                username = "username",
+                password = "password",
+                name = "test name",
+                age = 30,
+                gender = "female",
+                bio = "hello"
+            };
 
             // Act
             var result = pageModel.OnPost() as RedirectToPageResult;
@@ -59,23 +67,22 @@ namespace UnitTests.Pages.Product.Delete
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, result.PageName.Contains("Index"));
-
-            // Confirm the item is deleted
-            Assert.AreEqual(null, TestHelper.ProductService.GetAllData().FirstOrDefault(m=>m.location_id.Equals(pageModel.Product.location_id)));
         }
 
         [Test]
-        // Test to verify OnPostAsync has an invalid model with invalid location values on creation.
+        // Test to verify OnPost adding new location with invalid values results in invalid model state
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
-            // Arrange (invalid values)
-            pageModel.Product = new LocationModel
+            // Arrange
+            pageModel.UserProfile = new UserModel
             {
-                location_id = "bogus",
+                user_id = "bogus",
+                username = "bogus",
+                password = "bogus",
                 name = "bogus",
-                address = "bogus",
-                type_id = "bogus",
-                img = "bougus"
+                age = 30,
+                gender = "bogus",
+                bio = "bogus"
             };
 
             // Force an invalid error state

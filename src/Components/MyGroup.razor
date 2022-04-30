@@ -1,0 +1,98 @@
+﻿@using ContosoCrafts.WebSite.Models
+@using ContosoCrafts.WebSite.Services
+@using Microsoft.AspNetCore.Components.Web
+@using ContosoCrafts.WebSite.Pages
+@using SquidMeet.WebSite.Components
+@inject JsonFileMeetupService MeetupService
+@inject NavigationManager NavigationManager
+
+
+<h3>My Group</h3>
+
+@*<a href="Update">Update &nbsp;</a>*@
+<a href="ReadAllGroups">View all groups</a>
+
+<br />
+<br />
+<div class="card-columns">
+    @{
+        var dataset = MeetupService.GetMeetups().Where(m => m.Host == "YJ");
+
+
+        //List<MeetupModel> meetups = new List<MeetupModel>();
+        //meetups.Add(meetup);
+
+        foreach (var meetup in dataset)
+        {
+            var attendees = meetup.Attendees;
+            int count;
+            @if (attendees != null)
+            {
+                count = attendees.Count();
+            }
+            else
+            {
+                count = 0;
+            }
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('@meetup.Img');">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Title: @meetup.Title</h5>
+                    <a class="card-text">Host: &nbsp;@meetup.Host</a>
+                    @{
+                        if (attendees != null)
+                        {
+                            <br />
+                            <a>Attentee: </a>
+                            foreach (var attendee in attendees)
+                            {
+                                <a class="card-text">&nbsp; @attendee</a>
+                            }
+                        }
+                        else
+                        {
+                            <br />
+                            <a class="card-text"> 0 Attendee</a>
+                        }
+                    }
+                    
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Date: @meetup.Date
+                    </small>
+                    
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Update
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" type="button" href="Update/UpdateDate" onclick="">Date</a>
+                        <a class="dropdown-item" href="#">Time</a>
+                        <a class="dropdown-item" href="#">Location</a>
+                        <a class="dropdown-item" href="#">Title</a>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        }
+
+    }
+</div>
+
+
+@code {
+    MeetupModel selectedMeetup;
+    string selectedMeetupId;
+
+    void selectMeetup(string meetupId)
+    {
+        selectedMeetupId = meetupId;
+        selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
+    }
+}
