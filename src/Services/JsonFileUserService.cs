@@ -108,5 +108,71 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+        public UserModel UpdateUserBio(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+
+            data.bio = user.bio;
+            SaveData(dataSet);
+            return user;
+        }
+        public UserModel UpdateUserName(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+
+            data.name = user.name;
+            SaveData(dataSet);
+            return user;
+        }
+        public UserModel UpdateUserGender(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+
+            data.gender = user.gender;
+            SaveData(dataSet);
+            return user;
+        }
+
+        public UserModel UpdateUserAge(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+
+            data.age = user.age;
+            SaveData(dataSet);
+            return user;
+        }
+        public UserModel UpdateUserPassword(UserModel user)
+        {
+            var dataSet = GetUsers();
+            var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
+            if (data == null)
+            {
+                return null;
+            }
+
+            data.password = user.password;
+            SaveData(dataSet);
+            return user;
+        }
     }
 }
