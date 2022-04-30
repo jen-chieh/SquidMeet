@@ -1,6 +1,6 @@
 [
   {
-    "user_id": 0,
+    "user_id": "0",
     "username": "ut10",
     "password": "eiusmod71",
     "name": "Blanchard Whitehead",
@@ -9,7 +9,7 @@
     "bio": "Pariatur esse ullamco est sit fugiat mollit excepteur ex sunt."
   },
   {
-    "user_id": 1,
+    "user_id": "1",
     "username": "nisi28",
     "password": "id23",
     "name": "Daniel Kerr",
@@ -18,7 +18,7 @@
     "bio": "Occaecat reprehenderit do veniam sint id magna est aliquip laborum sit officia dolore."
   },
   {
-    "user_id": 2,
+    "user_id": "2",
     "username": "velit45",
     "password": "voluptate42",
     "name": "Kelly Allison",
@@ -27,7 +27,7 @@
     "bio": "Proident consectetur veniam qui sit anim."
   },
   {
-    "user_id": 3,
+    "user_id": "3",
     "username": "mollit67",
     "password": "proident63",
     "name": "Patterson Key",
@@ -36,7 +36,7 @@
     "bio": "Ea ad exercitation ullamco proident enim in ut."
   },
   {
-    "user_id": 4,
+    "user_id": "4",
     "username": "laborum65",
     "password": "est54",
     "name": "Blanca Beach",
@@ -45,7 +45,7 @@
     "bio": "Id minim exercitation aute officia magna velit."
   },
   {
-    "user_id": 5,
+    "user_id": "5",
     "username": "aliquip41",
     "password": "laborum82",
     "name": "Estes Harvey",
@@ -54,7 +54,7 @@
     "bio": "Sint labore sint ullamco magna occaecat eu."
   },
   {
-    "user_id": 6,
+    "user_id": "6",
     "username": "adipisicing0",
     "password": "do22",
     "name": "Tamera Farley",
@@ -63,7 +63,7 @@
     "bio": "Officia laborum labore ipsum ad ea."
   },
   {
-    "user_id": 7,
+    "user_id": "7",
     "username": "culpa18",
     "password": "amet90",
     "name": "Rosanna Jarvis",
@@ -72,7 +72,7 @@
     "bio": "Consequat consequat veniam nisi velit proident esse aliquip qui id."
   },
   {
-    "user_id": 8,
+    "user_id": "8",
     "username": "dolor44",
     "password": "aliquip76",
     "name": "Victoria Chandler",
@@ -81,7 +81,7 @@
     "bio": "In ad tempor et ea et nulla."
   },
   {
-    "user_id": 9,
+    "user_id": "9",
     "username": "id85",
     "password": "laborum7",
     "name": "Kramer Baird",
@@ -90,7 +90,7 @@
     "bio": "Veniam id voluptate tempor duis esse sunt veniam anim tempor sit anim amet."
   },
   {
-    "user_id": 10,
+    "user_id": "10",
     "username": "nisi29",
     "password": "esse43",
     "name": "Juanita Walton",
@@ -99,7 +99,7 @@
     "bio": "Adipisicing aliqua labore nisi Lorem."
   },
   {
-    "user_id": 11,
+    "user_id": "11",
     "username": "ut85",
     "password": "dolor87",
     "name": "Alyce Nguyen",
@@ -108,7 +108,7 @@
     "bio": "Excepteur cupidatat mollit ea fugiat consequat."
   },
   {
-    "user_id": 12,
+    "user_id": "12",
     "username": "irure0",
     "password": "sint40",
     "name": "Foreman Bray",
@@ -117,7 +117,7 @@
     "bio": "Esse Lorem anim officia cillum tempor aliquip consectetur ad."
   },
   {
-    "user_id": 13,
+    "user_id": "13",
     "username": "elit84",
     "password": "ea64",
     "name": "Stafford Barry",
@@ -126,7 +126,7 @@
     "bio": "Id enim ipsum voluptate voluptate voluptate voluptate laboris id duis consectetur amet nostrud."
   },
   {
-    "user_id": 14,
+    "user_id": "14",
     "username": "mollit98",
     "password": "culpa31",
     "name": "Salas Richmond",
@@ -135,7 +135,7 @@
     "bio": "Deserunt sit proident nisi exercitation aliquip qui ea velit consequat consectetur magna ipsum Lorem dolore."
   },
   {
-    "user_id": 15,
+    "user_id": "15",
     "username": "laborum2",
     "password": "do89",
     "name": "Jessica Malone",
@@ -144,7 +144,7 @@
     "bio": "Sunt culpa deserunt ea tempor enim aute aute incididunt occaecat dolor do magna."
   },
   {
-    "user_id": 16,
+    "user_id": "16",
     "username": "non22",
     "password": "irure60",
     "name": "Holt Goodwin",
@@ -153,7 +153,7 @@
     "bio": "Labore veniam ut tempor laboris excepteur."
   },
   {
-    "user_id": 17,
+    "user_id": "17",
     "username": "aliquip71",
     "password": "pariatur51",
     "name": "Jamie Moran",
@@ -162,7 +162,7 @@
     "bio": "Lorem non veniam ullamco eiusmod."
   },
   {
-    "user_id": 18,
+    "user_id": "18",
     "username": "ut7",
     "password": "adipisicing34",
     "name": "Harper Hewitt",
@@ -171,7 +171,7 @@
     "bio": "Labore dolor amet Lorem fugiat."
   },
   {
-    "user_id": 19,
+    "user_id": "19",
     "username": "velit94",
     "password": "dolore48",
     "name": "Valenzuela Lowery",
@@ -180,7 +180,7 @@
     "bio": "Ipsum elit laborum id commodo anim commodo laborum sint incididunt et laborum et id cillum."
   },
   {
-    "user_id": 17771551,
+    "user_id": "20",
     "username": "Enter User Name",
     "password": "Enter password",
     "name": "Enter Name",
