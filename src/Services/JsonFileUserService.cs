@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -23,6 +24,18 @@ namespace ContosoCrafts.WebSite.Services
 
         // Get json file path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "users.json");
+
+        // Random number generator for new user ids
+        private static Random random = new Random();
+
+        // Generate and return a random string representation of numbers
+        public static string RandomString(int length)
+        {
+            const string chars = "0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
 
         // Read .json file and return data fields through the model
         public IEnumerable<UserModel> GetUsers()
@@ -58,7 +71,7 @@ namespace ContosoCrafts.WebSite.Services
         {
             var data = new UserModel()
             {
-                user_id = GetHashCode(),
+                user_id = RandomString(2),
                 username = "Enter User Name",
                 password = "Enter password",
                 name = "Enter Name",
