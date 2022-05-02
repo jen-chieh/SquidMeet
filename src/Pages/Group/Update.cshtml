@@ -1,4 +1,44 @@
-﻿@page
-@model SquidMeet.WebSite.Pages.Group.UpdateModel
+﻿@page "{id}"
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileLocationService ProductService
+@model SquidMeet.WebSite.Pages.Group.MeetupUpdateModel
+
 @{
+    ViewData["Title"] = "Update page";
+}
+
+<h1>Update</h1>
+
+<div class="container">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Product.meetup_id)
+
+        <div class="form-group">
+            <label asp-for="Product.Title" class="control-label"></label>
+            <input asp-for="Product.Title" class="form-control" />
+            <span asp-validation-for="Product.Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Date" class="control-label"></label>
+            <input asp-for="Product.Date" class="form-control" />
+            <span asp-validation-for="Product.Date" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.location" class="control-label"></label>
+            <input asp-for="Product.location" class="form-control" />
+            <span asp-validation-for="Product.location" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
