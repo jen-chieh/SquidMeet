@@ -72,5 +72,37 @@ namespace ContosoCrafts.WebSite.Services
             return meetup;
 
         }
+        public MeetupModel UpdateMeetup(MeetupModel meetup)
+        {
+            var dataSet = GetMeetups();
+            var data = dataSet.FirstOrDefault(p => p.meetup_id == meetup.meetup_id);
+            if (data == null)
+            {
+                return null;
+            }
+            data.Date = meetup.Date;
+            data.Title = meetup.Title;
+            data.location = meetup.location;
+            SaveData(dataSet);
+            return meetup;
+        }
+        /// <summary>
+        /// Save All Meetup data to storage
+        /// </summary>
+        private void SaveData(IEnumerable<MeetupModel> meetups)
+        {
+
+            using (var outputStream = File.Create(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<MeetupModel>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    meetups
+                );
+            }
+        }
     }
 }
