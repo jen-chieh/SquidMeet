@@ -6,17 +6,11 @@
 @inject JsonFileMeetupService MeetupService
 @inject NavigationManager NavigationManager
 
-
 <h3>All Groups</h3>
 
 <div class="card-columns">
     @{
         var dataset = MeetupService.GetMeetups();
-
-
-        //List<MeetupModel> meetups = new List<MeetupModel>();
-        //meetups.Add(meetup);
-
         foreach (var meetup in dataset)
         {
             var attendees = meetup.Attendees;
