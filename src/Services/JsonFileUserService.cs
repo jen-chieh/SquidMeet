@@ -67,6 +67,10 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+        /// <summary>
+        /// Add new user to .json file
+        /// </summary>
+        /// <returns></returns>
         public UserModel CreateUser()
         {
             var data = new UserModel()
@@ -90,6 +94,11 @@ namespace ContosoCrafts.WebSite.Services
             return data;
         }
 
+        /// <summary>
+        /// Update user data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUser(UserModel user)
         {
             var dataSet = GetUsers();
@@ -108,6 +117,12 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+
+        /// <summary>
+        /// Update user bio data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUserBio(UserModel user)
         {
             var dataSet = GetUsers();
@@ -121,6 +136,12 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+
+        /// <summary>
+        /// Update user name data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUserName(UserModel user)
         {
             var dataSet = GetUsers();
@@ -134,6 +155,12 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+
+        /// <summary>
+        /// Update user password data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUserGender(UserModel user)
         {
             var dataSet = GetUsers();
@@ -148,6 +175,11 @@ namespace ContosoCrafts.WebSite.Services
             return user;
         }
 
+        /// <summary>
+        /// Update user age data
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUserAge(UserModel user)
         {
             var dataSet = GetUsers();
@@ -161,6 +193,12 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+
+        /// <summary>
+        /// Update user password data 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserModel UpdateUserPassword(UserModel user)
         {
             var dataSet = GetUsers();
