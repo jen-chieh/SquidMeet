@@ -35,6 +35,10 @@ namespace ContosoCrafts.WebSite.Services
                 });
         }
 
+        /// <summary>
+        /// Add new meetup to json file
+        /// </summary>
+        /// <param name="meetups"></param>
         private void Add(IEnumerable<MeetupModel> meetups)
         {
             using (var outputStream = File.Create(JsonFileName))
@@ -50,6 +54,11 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+        /// <summary>
+        /// Create new meetup to json file
+        /// </summary>
+        /// <param name="newMeetup"></param>
+        /// <returns></returns>
         public MeetupModel Create(MeetupModel newMeetup)
         {
             var meetup = new MeetupModel()
@@ -72,6 +81,12 @@ namespace ContosoCrafts.WebSite.Services
             return meetup;
 
         }
+
+        /// <summary>
+        /// Update meetup to json file
+        /// </summary>
+        /// <param name="meetup"></param>
+        /// <returns></returns>
         public MeetupModel UpdateMeetup(MeetupModel meetup)
         {
             var dataSet = GetMeetups();
