@@ -18,7 +18,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse  ">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
@@ -26,9 +26,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Product/Index">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/CreateAccount">Create Account</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Group/Index">New Group</a>
                         </li>
@@ -36,18 +34,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Group/ViewMyGroup" asp-route-id="0">My Groups</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Group/ReadAllGroups">All Groups</a>
                         </li>
 
-
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Product/Profile" asp-route-id="0">Profile</a>
+
                         </li>
-
-
+                       
                     </ul>
+                </div>
+                <div class="my-2 my-lg-0">            
+                        <a class="btn btn-primary" asp-area="" asp-page="/Product/Login">Login</a>        
+                        <a class="btn btn-primary" asp-area="" asp-page="/Product/CreateAccount">Create Account</a>    
                 </div>
             </div>
         </nav>
