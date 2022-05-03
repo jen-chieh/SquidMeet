@@ -29,6 +29,7 @@ namespace ContosoCrafts.WebSite
             services.AddTransient<JsonFileMeetupService>();
             services.AddTransient<JsonFileUserService>();
             services.AddTransient<JsonFileAttendeeService>();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +52,7 @@ namespace ContosoCrafts.WebSite
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
