@@ -52,8 +52,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 return Page();
             }
-            HttpContext.Session.SetString("Username", User.username);
-            return RedirectToPage("../Index");
+          
+            User = ProductService.GetUsers().FirstOrDefault(m => m.username.Equals(User.username));
+            HttpContext.Session.SetString("Userid", User.user_id); 
+            return RedirectToPage("Profile", new { id = User.user_id });
 
         }
 
