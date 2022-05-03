@@ -11,13 +11,20 @@ namespace SquidMeet.WebSite.Pages.Group
     /// </summary>
     public class UpdateGroupModel : PageModel
     {
+        // 
         public JsonFileMeetupService MeetupService { get; }
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        /// <param name="meetupService"></param>
         public UpdateGroupModel(JsonFileMeetupService meetupService)
         {
             MeetupService = meetupService;
         }
 
+
+        /// The data to show, bind to it for the post
         [BindProperty]
         public MeetupModel Group { get; set; }
 
@@ -26,17 +33,19 @@ namespace SquidMeet.WebSite.Pages.Group
             Group = MeetupService.GetMeetups().First(g => g.Host == HostId);
         }
 
+        /// <summary>
+        /// REST Get request
+        /// Loads the Data
+        /// </summary>
+        /// <param name="HostId"></param>
+        /// s>
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-
             return RedirectToPage("../Index");
-
         }
-
-
     }
 }
