@@ -36,7 +36,8 @@ namespace ContosoCrafts.WebSite.Pages.Product
         }
 
         // The data to show
-        public UserModel User;
+        [BindProperty]
+        public UserModel User { get; set; }
 
         /// <summary>
         /// REST Post request
