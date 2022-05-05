@@ -76,9 +76,9 @@ namespace ContosoCrafts.WebSite.Services
             var data = new UserModel()
             {
                 user_id = RandomString(2),
-                username = user.username,
+                email = user.email,
                 password = user.password,
-                name = user.username,
+                name = user.email,
                 age = user.age,
                 gender = user.gender,
                 bio = user.gender
@@ -107,7 +107,7 @@ namespace ContosoCrafts.WebSite.Services
             {
                 return null;
             }
-            data.username = user.username;
+            data.email = user.email;
             data.password = user.password;
             data.name = user.name;
             data.age = user.age;
