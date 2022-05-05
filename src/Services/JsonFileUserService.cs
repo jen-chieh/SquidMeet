@@ -71,17 +71,17 @@ namespace ContosoCrafts.WebSite.Services
         /// Add new user to .json file
         /// </summary>
         /// <returns></returns>
-        public UserModel CreateUser()
+        public UserModel CreateUser(UserModel user)
         {
             var data = new UserModel()
             {
                 user_id = RandomString(2),
-                username = "Enter User Name",
-                password = "Enter password",
-                name = "Enter Name",
-                age = 0,
-                gender = "Enter Gender",
-                bio = "Enter Bio"
+                username = user.username,
+                password = user.password,
+                name = user.username,
+                age = user.age,
+                gender = user.gender,
+                bio = user.gender
 
             };
 
