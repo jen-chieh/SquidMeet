@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 
 namespace ContosoCrafts.WebSite.Models
 {
@@ -12,16 +12,23 @@ namespace ContosoCrafts.WebSite.Models
     {
         // Unique ID assigned to a user
         public string? user_id { get; set; }
+
         // Unique username that the user chooses
-        public string? username { get; set; }
+        [Required, EmailAddress]
+        public string? email { get; set; }
+
         // Password that the user chooses
         public string? password { get; set; }
+
         // First name and last name separated by a space
         public string? name { get; set; }
+
         // Age that the user supplies
         public int age { get; set; }
+
         // Gender that the user supplies as a string
         public string? gender { get; set; }
+
         // String biography that the user supplies
         public string? bio { get; set; }
 
