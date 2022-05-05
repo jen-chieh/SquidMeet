@@ -1,11 +1,9 @@
 ﻿using System.Linq;
-
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
@@ -25,10 +23,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         }
         [BindProperty]
         public bool checkAccount { get; set; }
-        
+
         [BindProperty]
         public UserModel User { get; set; }
-         
+
         // The data to show
         /// <summary>
         /// REST Get request
@@ -45,17 +43,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
             {
                 return Page();
             };
-             // checked if account exist or not.
-             checkAccount = ProductService.GetUsers().Any(m => m.username.Equals(User.username) && m.password.Equals(User.password));
+            // checked if account exist or not.
+            checkAccount = ProductService.GetUsers().Any(m => m.email.Equals(User.email) && m.password.Equals(User.password));
             if (checkAccount == false)
             {
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 return Page();
             }
-          
-            User = ProductService.GetUsers().FirstOrDefault(m => m.username.Equals(User.username));
-            HttpContext.Session.SetString("Userid", User.user_id); 
-            return RedirectToPage("Profile", new { id = User.user_id });
+
+            User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(User.email));
+            HttpContext.Session.SetString("Userid", User.user_id);
+            return RedirectToPage("../Profile/Profile", new { id = User.user_id });
 
         }
 
