@@ -1,7 +1,7 @@
 [
   {
     "user_id": "0",
-    "username": "ut10",
+    "email": "ut10",
     "password": "eiusmod71",
     "name": "Blanchard Whitehead",
     "age": 4,
@@ -10,7 +10,7 @@
   },
   {
     "user_id": "1",
-    "username": "nisi28",
+    "email": "nisi28",
     "password": "id23",
     "name": "Daniel Kerr",
     "age": 31,
@@ -19,7 +19,7 @@
   },
   {
     "user_id": "2",
-    "username": "velit45",
+    "email": "velit45",
     "password": "voluptate42",
     "name": "Kelly Allison",
     "age": 32,
@@ -28,7 +28,7 @@
   },
   {
     "user_id": "3",
-    "username": "mollit67",
+    "email": "mollit67",
     "password": "proident63",
     "name": "Patterson Key",
     "age": 23,
@@ -37,7 +37,7 @@
   },
   {
     "user_id": "4",
-    "username": "laborum65",
+    "email": "laborum65",
     "password": "est54",
     "name": "Blanca Beach",
     "age": 21,
@@ -46,7 +46,7 @@
   },
   {
     "user_id": "5",
-    "username": "aliquip41",
+    "email": "aliquip41",
     "password": "laborum82",
     "name": "Estes Harvey",
     "age": 33,
@@ -55,7 +55,7 @@
   },
   {
     "user_id": "6",
-    "username": "adipisicing0",
+    "email": "adipisicing0",
     "password": "do22",
     "name": "Tamera Farley",
     "age": 39,
@@ -64,7 +64,7 @@
   },
   {
     "user_id": "7",
-    "username": "culpa18",
+    "email": "culpa18",
     "password": "amet90",
     "name": "Rosanna Jarvis",
     "age": 23,
@@ -73,7 +73,7 @@
   },
   {
     "user_id": "8",
-    "username": "dolor44",
+    "email": "dolor44",
     "password": "aliquip76",
     "name": "Victoria Chandler",
     "age": 34,
@@ -82,7 +82,7 @@
   },
   {
     "user_id": "9",
-    "username": "id85",
+    "email": "id85",
     "password": "laborum7",
     "name": "Kramer Baird",
     "age": 27,
@@ -91,7 +91,7 @@
   },
   {
     "user_id": "10",
-    "username": "nisi29",
+    "email": "nisi29",
     "password": "esse43",
     "name": "Juanita Walton",
     "age": 40,
@@ -100,7 +100,7 @@
   },
   {
     "user_id": "11",
-    "username": "ut85",
+    "email": "ut85",
     "password": "dolor87",
     "name": "Alyce Nguyen",
     "age": 28,
@@ -109,7 +109,7 @@
   },
   {
     "user_id": "12",
-    "username": "irure0",
+    "email": "irure0",
     "password": "sint40",
     "name": "Foreman Bray",
     "age": 21,
@@ -118,7 +118,7 @@
   },
   {
     "user_id": "13",
-    "username": "elit84",
+    "email": "elit84",
     "password": "ea64",
     "name": "Stafford Barry",
     "age": 33,
@@ -127,7 +127,7 @@
   },
   {
     "user_id": "14",
-    "username": "mollit98",
+    "email": "mollit98",
     "password": "culpa31",
     "name": "Salas Richmond",
     "age": 39,
@@ -136,7 +136,7 @@
   },
   {
     "user_id": "15",
-    "username": "laborum2",
+    "email": "laborum2",
     "password": "do89",
     "name": "Jessica Malone",
     "age": 27,
@@ -145,7 +145,7 @@
   },
   {
     "user_id": "16",
-    "username": "non22",
+    "email": "non22",
     "password": "irure60",
     "name": "Holt Goodwin",
     "age": 28,
@@ -154,7 +154,7 @@
   },
   {
     "user_id": "17",
-    "username": "aliquip71",
+    "email": "aliquip71",
     "password": "pariatur51",
     "name": "Jamie Moran",
     "age": 29,
@@ -163,7 +163,7 @@
   },
   {
     "user_id": "18",
-    "username": "ut7",
+    "email": "ut7",
     "password": "adipisicing34",
     "name": "Harper Hewitt",
     "age": 33,
@@ -172,7 +172,7 @@
   },
   {
     "user_id": "19",
-    "username": "velit94",
+    "email": "velit94",
     "password": "dolore48",
     "name": "Valenzuela Lowery",
     "age": 37,
@@ -180,17 +180,8 @@
     "bio": "Ipsum elit laborum id commodo anim commodo laborum sint incididunt et laborum et id cillum."
   },
   {
-    "user_id": "20",
-    "username": "Enter User Name",
-    "password": "Enter password",
-    "name": "Enter Name",
-    "age": 0,
-    "gender": "Enter Gender",
-    "bio": "Enter Bio"
-  },
-  {
     "user_id": "76",
-    "username": "test",
+    "email": "test@squid.com",
     "password": "123",
     "name": "test",
     "age": 12,
