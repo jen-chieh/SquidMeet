@@ -3,198 +3,120 @@
     "user_id": "0",
     "email": "ut10@squid.com",
     "password": "eiusmod71",
+    "confirmPassword": "eiusmod71",
     "name": "Blanchard Whitehead",
     "age": 4,
     "gender": "male",
-    "bio": "Pariatur esse ullamco est sit fugiat mollit excepteur ex sunt."
-  },
-  {
-    "user_id": "1",
-    "email": "nisi28@squid.com",
-    "password": "id2322",
-    "name": "Daniel Kerr",
-    "age": 31,
-    "gender": "male",
-    "bio": "Occaecat reprehenderit do veniam sint id magna est aliquip laborum sit officia dolore."
-  },
-  {
-    "user_id": "2",
-    "email": "velit45@squid.com",
-    "password": "voluptate42",
-    "name": "Kelly Allison",
-    "age": 32,
-    "gender": "female",
-    "bio": "Proident consectetur veniam qui sit anim."
-  },
-  {
-    "user_id": "3",
-    "email": "mollit67@squid.com",
-    "password": "proident63",
-    "name": "Patterson Key",
-    "age": 23,
-    "gender": "male",
-    "bio": "Ea ad exercitation ullamco proident enim in ut."
-  },
-  {
-    "user_id": "4",
-    "email": "laborum65@squid.com",
-    "password": "est542",
-    "name": "Blanca Beach",
-    "age": 21,
-    "gender": "female",
-    "bio": "Id minim exercitation aute officia magna velit."
-  },
-  {
-    "user_id": "5",
-    "email": "aliquip41@squid.com",
-    "password": "laborum82",
-    "name": "Estes Harvey",
-    "age": 33,
-    "gender": "male",
-    "bio": "Sint labore sint ullamco magna occaecat eu."
-  },
-  {
-    "user_id": "6",
-    "email": "adipisicing0@squid.com",
-    "password": "do2222",
-    "name": "Tamera Farley",
-    "age": 39,
-    "gender": "female",
-    "bio": "Officia laborum labore ipsum ad ea."
-  },
-  {
-    "user_id": "7",
-    "email": "culpa18@squid.com",
-    "password": "amet90",
-    "name": "Rosanna Jarvis",
-    "age": 23,
-    "gender": "female",
-    "bio": "Consequat consequat veniam nisi velit proident esse aliquip qui id."
-  },
-  {
-    "user_id": "8",
-    "email": "dolor44@squid.com",
-    "password": "aliquip76",
-    "name": "Victoria Chandler",
-    "age": 34,
-    "gender": "female",
-    "bio": "In ad tempor et ea et nulla."
-  },
-  {
-    "user_id": "9",
-    "email": "id85@squid.com",
-    "password": "laborum7",
-    "name": "Kramer Baird",
-    "age": 27,
-    "gender": "male",
-    "bio": "Veniam id voluptate tempor duis esse sunt veniam anim tempor sit anim amet."
-  },
-  {
-    "user_id": "10",
-    "email": "nisi29@squid.com",
-    "password": "esse43",
-    "name": "Juanita Walton",
-    "age": 40,
-    "gender": "female",
-    "bio": "Adipisicing aliqua labore nisi Lorem."
-  },
-  {
-    "user_id": "11",
-    "email": "ut85@squid.com",
-    "password": "dolor87",
-    "name": "Alyce Nguyen",
-    "age": 28,
-    "gender": "female",
-    "bio": "Excepteur cupidatat mollit ea fugiat consequat."
-  },
-  {
-    "user_id": "12",
-    "email": "irure0@squid.com",
-    "password": "sint40",
-    "name": "Foreman Bray",
-    "age": 21,
-    "gender": "male",
-    "bio": "Esse Lorem anim officia cillum tempor aliquip consectetur ad."
-  },
-  {
-    "user_id": "13",
-    "email": "elit84@squid.com",
-    "password": "ea6422",
-    "name": "Stafford Barry",
-    "age": 33,
-    "gender": "male",
-    "bio": "Id enim ipsum voluptate voluptate voluptate voluptate laboris id duis consectetur amet nostrud."
-  },
-  {
-    "user_id": "14",
-    "email": "mollit98@squid.com",
-    "password": "culpa31",
-    "name": "Salas Richmond",
-    "age": 39,
-    "gender": "male",
-    "bio": "Deserunt sit proident nisi exercitation aliquip qui ea velit consequat consectetur magna ipsum Lorem dolore."
-  },
-  {
-    "user_id": "15",
-    "email": "laborum2@squid.com",
-    "password": "do8922",
-    "name": "Jessica Malone",
-    "age": 27,
-    "gender": "female",
-    "bio": "Sunt culpa deserunt ea tempor enim aute aute incididunt occaecat dolor do magna."
-  },
-  {
-    "user_id": "16",
-    "email": "non22@squid.com",
-    "password": "irure60",
-    "name": "Holt Goodwin",
-    "age": 28,
-    "gender": "male",
-    "bio": "Labore veniam ut tempor laboris excepteur."
-  },
-  {
-    "user_id": "17",
-    "email": "aliquip71@squid.com",
-    "password": "pariatur51",
-    "name": "Jamie Moran",
-    "age": 29,
-    "gender": "female",
-    "bio": "Lorem non veniam ullamco eiusmod."
-  },
-  {
-    "user_id": "18",
-    "email": "ut7@squid.com",
-    "password": "adipisicing34",
-    "name": "Harper Hewitt",
-    "age": 33,
-    "gender": "male",
-    "bio": "Labore dolor amet Lorem fugiat."
-  },
-  {
-    "user_id": "19",
-    "email": "velit94@squid.com",
-    "password": "dolore48",
-    "name": "Valenzuela Lowery",
-    "age": 37,
-    "gender": "male",
-    "bio": "Ipsum elit laborum id commodo anim commodo laborum sint incididunt et laborum et id cillum."
-  },
-  {
-    "user_id": "76",
-    "email": "test@squid.com",
-    "password": "123123",
-    "name": "test",
-    "age": 12,
-    "gender": "female",
-    "bio": "female"
+    "bio": "Pariatur esse ullamco est sit fugiat mollit excepteur ex sunt. vv"
   },
   {
     "user_id": "04",
     "email": "abc@gmail.com",
     "password": "123123",
+    "confirmPassword": "123123",
     "name": "abc@gmail.com",
     "age": 12,
     "gender": "male",
-    "bio": "HI"
+    "bio": "HIii"
+  },
+  {
+    "user_id": "36",
+    "email": "test@squid.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": "test@squid.com",
+    "age": 12,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "34",
+    "email": "test1@squid.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": "test1@squid.com",
+    "age": 12,
+    "gender": "male",
+    "bio": "male"
+  },
+  {
+    "user_id": "37",
+    "email": "test1@squid.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": "test1@squid.com",
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "37",
+    "email": "abc@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "73",
+    "email": "222@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "90",
+    "email": "222@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "41",
+    "email": "abc@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "24",
+    "email": "222@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "16",
+    "email": "222@gmail.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
+  },
+  {
+    "user_id": "89",
+    "email": "333@squid.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
   }
 ]
