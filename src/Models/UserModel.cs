@@ -14,11 +14,11 @@ namespace ContosoCrafts.WebSite.Models
         public string? user_id { get; set; }
 
         // Unique username that the user chooses
-        [Required, EmailAddress]
+        [EmailAddress]
         public string? email { get; set; }
 
         // Password that the user chooses
-        [Required, DataType(DataType.Password), StringLength(20, MinimumLength = 6)]
+        [DataType(DataType.Password), StringLength(20, MinimumLength = 6)]
         public string? password { get; set; }
 
         // First name and last name separated by a space
