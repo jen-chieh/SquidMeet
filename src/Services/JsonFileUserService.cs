@@ -78,10 +78,11 @@ namespace ContosoCrafts.WebSite.Services
                 user_id = RandomString(2),
                 email = user.email,
                 password = user.password,
-                name = user.email,
-                age = user.age,
-                gender = user.gender,
-                bio = user.gender
+                confirmPassword = user.confirmPassword
+                //name = user.email,
+                //age = user.age,
+                //gender = user.gender,
+                //bio = user.gender
 
             };
 
