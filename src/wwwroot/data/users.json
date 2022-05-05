@@ -187,5 +187,14 @@
     "age": 12,
     "gender": "female",
     "bio": "female"
+  },
+  {
+    "user_id": "04",
+    "email": "abc@gmail.com",
+    "password": "123123",
+    "name": "abc@gmail.com",
+    "age": 12,
+    "gender": "male",
+    "bio": "male"
   }
 ]
