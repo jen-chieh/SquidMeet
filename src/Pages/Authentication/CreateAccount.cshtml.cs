@@ -36,18 +36,18 @@ namespace ContosoCrafts.WebSite.Pages.Product
         }
 
         // The data to show
-        public UserModel Product;
+        public UserModel User;
 
         /// <summary>
         /// REST Post request
         /// </summary>
-        public IActionResult OnPost(UserModel Product)
+        public IActionResult OnPost(UserModel User)
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-            ProductService.CreateUser(Product);
+            ProductService.CreateUser(User);
 
             return RedirectToPage("../Index");
         }
