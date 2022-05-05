@@ -21,11 +21,15 @@ namespace ContosoCrafts.WebSite.Models
         [DataType(DataType.Password), StringLength(20, MinimumLength = 6)]
         public string? password { get; set; }
 
+        // Confirm password that the user chooses
+        [Compare("password", ErrorMessage = "Passwords do not match.")]
+        public string? confirmPassword { get; set; }
+
         // First name and last name separated by a space
         public string? name { get; set; }
 
         // Age that the user supplies
-        public int age { get; set; }
+        public int? age { get; set; }
 
         // Gender that the user supplies as a string
         public string? gender { get; set; }
