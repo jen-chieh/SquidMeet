@@ -12,40 +12,40 @@
 <div class="container">
     <form method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @Html.HiddenFor(x => x.Product.user_id)
+        @Html.HiddenFor(x => x.User.user_id)
 
 
         <div class="form-group">
-            <label asp-for="Product.email" class="control-label"></label>
-            <input asp-for="Product.email" class="form-control" />
-            <span asp-validation-for="Product.email" class="text-danger"></span>
+            <label asp-for="User.email" class="control-label"></label>
+            <input asp-for="User.email" class="form-control" />
+            <span asp-validation-for="User.email" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="Product.password" class="control-label"></label>
-            <input type="password" asp-for="Product.password" class="form-control" />
-            <span asp-validation-for="Product.password" class="text-danger"></span>
+            <label asp-for="User.password" class="control-label"></label>
+            <input type="password" asp-for="User.password" class="form-control" />
+            <span asp-validation-for="User.password" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="Product.name" class="control-label"></label>
-            <input asp-for="Product.name" class="form-control" />
-            <span asp-validation-for="Product.name" class="text-danger"></span>
+            <label asp-for="User.name" class="control-label"></label>
+            <input asp-for="User.name" class="form-control" />
+            <span asp-validation-for="User.name" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Product.age" class="control-label"></label>
-            <input asp-for="Product.age" class="form-control" />
-            <span asp-validation-for="Product.age" class="text-danger"></span>
+            <label asp-for="User.age" class="control-label"></label>
+            <input asp-for="User.age" class="form-control" />
+            <span asp-validation-for="User.age" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Product.gender" class="control-label"></label>
-            <input asp-for="Product.gender" class="form-control" />
-            <span asp-validation-for="Product.gender" class="text-danger"></span>
+            <label asp-for="User.gender" class="control-label"></label>
+            <input asp-for="User.gender" class="form-control" />
+            <span asp-validation-for="User.gender" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Product.bio" class="control-label"></label>
-            <input asp-for="Product.bio" class="form-control" />
-            <span asp-validation-for="Product.bio" class="text-danger"></span>
+            <label asp-for="User.bio" class="control-label"></label>
+            <input asp-for="User.bio" class="form-control" />
+            <span asp-validation-for="User.bio" class="text-danger"></span>
         </div>
 
         <div class="form-group">
