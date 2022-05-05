@@ -1,7 +1,7 @@
 [
   {
     "user_id": "0",
-    "email": "ut10",
+    "email": "ut10@squid.com",
     "password": "eiusmod71",
     "name": "Blanchard Whitehead",
     "age": 4,
@@ -10,8 +10,8 @@
   },
   {
     "user_id": "1",
-    "email": "nisi28",
-    "password": "id23",
+    "email": "nisi28@squid.com",
+    "password": "id2322",
     "name": "Daniel Kerr",
     "age": 31,
     "gender": "male",
@@ -19,7 +19,7 @@
   },
   {
     "user_id": "2",
-    "email": "velit45",
+    "email": "velit45@squid.com",
     "password": "voluptate42",
     "name": "Kelly Allison",
     "age": 32,
@@ -28,7 +28,7 @@
   },
   {
     "user_id": "3",
-    "email": "mollit67",
+    "email": "mollit67@squid.com",
     "password": "proident63",
     "name": "Patterson Key",
     "age": 23,
@@ -37,8 +37,8 @@
   },
   {
     "user_id": "4",
-    "email": "laborum65",
-    "password": "est54",
+    "email": "laborum65@squid.com",
+    "password": "est542",
     "name": "Blanca Beach",
     "age": 21,
     "gender": "female",
@@ -46,7 +46,7 @@
   },
   {
     "user_id": "5",
-    "email": "aliquip41",
+    "email": "aliquip41@squid.com",
     "password": "laborum82",
     "name": "Estes Harvey",
     "age": 33,
@@ -55,8 +55,8 @@
   },
   {
     "user_id": "6",
-    "email": "adipisicing0",
-    "password": "do22",
+    "email": "adipisicing0@squid.com",
+    "password": "do2222",
     "name": "Tamera Farley",
     "age": 39,
     "gender": "female",
@@ -64,7 +64,7 @@
   },
   {
     "user_id": "7",
-    "email": "culpa18",
+    "email": "culpa18@squid.com",
     "password": "amet90",
     "name": "Rosanna Jarvis",
     "age": 23,
@@ -73,7 +73,7 @@
   },
   {
     "user_id": "8",
-    "email": "dolor44",
+    "email": "dolor44@squid.com",
     "password": "aliquip76",
     "name": "Victoria Chandler",
     "age": 34,
@@ -82,7 +82,7 @@
   },
   {
     "user_id": "9",
-    "email": "id85",
+    "email": "id85@squid.com",
     "password": "laborum7",
     "name": "Kramer Baird",
     "age": 27,
@@ -91,7 +91,7 @@
   },
   {
     "user_id": "10",
-    "email": "nisi29",
+    "email": "nisi29@squid.com",
     "password": "esse43",
     "name": "Juanita Walton",
     "age": 40,
@@ -100,7 +100,7 @@
   },
   {
     "user_id": "11",
-    "email": "ut85",
+    "email": "ut85@squid.com",
     "password": "dolor87",
     "name": "Alyce Nguyen",
     "age": 28,
@@ -109,7 +109,7 @@
   },
   {
     "user_id": "12",
-    "email": "irure0",
+    "email": "irure0@squid.com",
     "password": "sint40",
     "name": "Foreman Bray",
     "age": 21,
@@ -118,8 +118,8 @@
   },
   {
     "user_id": "13",
-    "email": "elit84",
-    "password": "ea64",
+    "email": "elit84@squid.com",
+    "password": "ea6422",
     "name": "Stafford Barry",
     "age": 33,
     "gender": "male",
@@ -127,7 +127,7 @@
   },
   {
     "user_id": "14",
-    "email": "mollit98",
+    "email": "mollit98@squid.com",
     "password": "culpa31",
     "name": "Salas Richmond",
     "age": 39,
@@ -136,8 +136,8 @@
   },
   {
     "user_id": "15",
-    "email": "laborum2",
-    "password": "do89",
+    "email": "laborum2@squid.com",
+    "password": "do8922",
     "name": "Jessica Malone",
     "age": 27,
     "gender": "female",
@@ -145,7 +145,7 @@
   },
   {
     "user_id": "16",
-    "email": "non22",
+    "email": "non22@squid.com",
     "password": "irure60",
     "name": "Holt Goodwin",
     "age": 28,
@@ -154,7 +154,7 @@
   },
   {
     "user_id": "17",
-    "email": "aliquip71",
+    "email": "aliquip71@squid.com",
     "password": "pariatur51",
     "name": "Jamie Moran",
     "age": 29,
@@ -163,7 +163,7 @@
   },
   {
     "user_id": "18",
-    "email": "ut7",
+    "email": "ut7@squid.com",
     "password": "adipisicing34",
     "name": "Harper Hewitt",
     "age": 33,
@@ -172,7 +172,7 @@
   },
   {
     "user_id": "19",
-    "email": "velit94",
+    "email": "velit94@squid.com",
     "password": "dolore48",
     "name": "Valenzuela Lowery",
     "age": 37,
@@ -182,7 +182,7 @@
   {
     "user_id": "76",
     "email": "test@squid.com",
-    "password": "123",
+    "password": "123123",
     "name": "test",
     "age": 12,
     "gender": "female",
