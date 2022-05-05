@@ -39,10 +39,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // On post
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            };
+            //if (!ModelState.IsValid)
+            //{
+            //    return Page();
+            //};
             // checked if account exist or not.
             checkAccount = ProductService.GetUsers().Any(m => m.email.Equals(User.email) && m.password.Equals(User.password));
             if (checkAccount == false)
