@@ -25,6 +25,9 @@ namespace ContosoCrafts.WebSite.Models
         //To descript what meetup is 
         public string? Description { get; set; }
 
+        // To store Invite code
+        public string? InviteCode { get; set; }
+
         public string? Img { get; set; }
         public override string ToString() => JsonSerializer.Serialize<MeetupModel>(this);
     }
