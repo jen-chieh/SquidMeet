@@ -71,6 +71,7 @@ namespace ContosoCrafts.WebSite.Services
                 Description = newMeetup.Description,
                 Host = newMeetup.Host,
                 Img = newMeetup.Img,
+                InviteCode = System.Guid.NewGuid().ToString(),
             };
 
             var meetups = GetMeetups();
