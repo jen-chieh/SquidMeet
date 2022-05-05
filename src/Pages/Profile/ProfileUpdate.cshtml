@@ -15,9 +15,9 @@
         @Html.HiddenFor(x => x.UserProfile.user_id)
 
         <div class="form-group">
-            <label asp-for="UserProfile.name" class="control-label">Change your username.</label>
+            <label asp-for="UserProfile.name" class="control-label">Change your Email.</label>
             <input asp-for="UserProfile.name" class="form-control" />
-            <span asp-validation-for="UserProfile.username" class="text-danger"></span>
+            <span asp-validation-for="UserProfile.email" class="text-danger"></span>
         </div>
 
         <div class="form-group">
