@@ -6,36 +6,73 @@
 @model ContosoCrafts.WebSite.Pages.Product.ProfileModel
 
 <h3>Profile</h3>
+<section class="section">
+  <div class="container" style="margin-bottom:300px">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Profile</h2>
+      </div>
+@*      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157" style="background-color: rgb(253, 177, 87);">
+            <div class="wave" data-progress="90%" style="bottom: 90%;"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title" style="line-height:50px">Username: @Model.Product.email</h4>
+          </div>
+        </div>
+      </div>*@
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6" style="background-color: rgb(148, 115, 230);">
+            <div class="wave" data-progress="60%" style="bottom: 60%;"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title"  style="line-height:50px " id="name">Name: @Model.Product.name</h4>
+            <a asp-page="ProfileNameUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Name</a>
+          </div>
+        </div>
+      </div>
+    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#55b155" style="background-color: rgb(255, 188, 170);">
+            <div class="wave" data-progress="70%" style="bottom: 70%;"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Bio:@Model.Product.bio</h4>
+            <a asp-page="ProfileBioUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Bio</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6" style="background-color: rgb(189, 236, 246);">
+            <div class="wave" data-progress="80%" style="bottom: 80%;"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Age is: @Model.Product.age </h4>
+            <a asp-page="ProfileAgeUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Age</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa" style="background-color: rgb(255, 188, 170);">
+            <div class="wave" data-progress="70%" style="bottom: 70%;"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title" id="gender">Gender: @Model.Product.gender</h4>
+            <a asp-page="ProfileGenderUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Gender</a>
+          </div>
+        </div>
+      </div>
 
-    
-
-    
-    <div class="container" style="margin-top: 100px; margin-bottom: 600px">
-        <h5 class="title" id="username">Username: @Model.Product.email</h5>
-        <h5 class="title" id="name">Name:@Model.Product.name</h5>
-	    <h5 class="title" id="age">Age:@Model.Product.age</h5>
-	    <h5 class="title" id="gender">Age:@Model.Product.gender</h5>
-	    <h5 class="title" id="bio">Bio:@Model.Product.bio</h5>
-
-        <br />
-<br />
-
-<div class="row">
-    <a asp-page="ProfileUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update</a>
-    &nbsp;
-	<a asp-page="ProfileBioUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Bio</a>
-    &nbsp;
-	<a asp-page="ProfileGenderUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Gender</a>
-     &nbsp;
-    <a asp-page="ProfileNameUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Name</a>
-     &nbsp;
-    <a asp-page="ProfileAgeUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Age </a>
-     &nbsp;
-    <a asp-page="ProfilePasswordUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Password</a>
-
-</div>
     </div>
-    
+  </div>
+</section>
+
+@*<a asp-page="ProfileUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update</a>*@
+
 
 
 
