@@ -5,7 +5,55 @@
     ViewData["Title"] = "Home page";
 }
 <!--<a href="/">This page will show as welcome page </a> -->
-<h1>Squid Meet</h1>
+ 
+<div class="container1">
+    <section class="hero-area bg-primary" id="parallax">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-11 mx-auto">
+            <h1 class="text-white font-tertiary">Hi! <br> Squid meet!</h1>
+            </div>
+        </div>
+        </div>
+        <div class="layer-bg w-100">
+        <img class="bg-shape-1 w-100" src="images/illustrations/leaf-bg.png" alt="illustrations"">
+        </div>
+        <div class="layer" id="l2" style="left: -280.71px; top: 179.951px;">
+        <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l3" style="left: 626.244px; top: 193.125px;">
+        <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l4" style="left: 821.273px; top: 186.36px;">
+        <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l5" style="left: 1400.58px; top: 89.5404px;">
+        <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l6" style="left: 126.969px; top: 914.239px;">
+        <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l7" style="left: 298.486px; top: 826.625px;">
+        <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l8" style="left: 780.749px; top: 748.587px;">
+        <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l9" style="left: 1456.91px; top: 760.931px;">
+        <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+        </div>
+        <!-- social icon -->
+        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+        <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
+        <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
+        <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
+        <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
+        </ul>
+        <!-- /social icon -->
+    </section>
+</div>    
+
+
 
 @(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
 
