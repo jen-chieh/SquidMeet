@@ -422,6 +422,7 @@ select {
 }
 
 .bg-primary {
+    margin: -94px -650px;
     background: #41228e !important;
 }
 
@@ -592,7 +593,8 @@ textarea.form-control {
 
 /* /card */
 .navigation {
-    padding: 40px 130px;
+    background-color: #41228e;
+    padding: 15px 130px;
     transition: 0.3s ease;
 }
 
@@ -629,7 +631,7 @@ textarea.form-control {
 }
 
 .hero-area {
-    padding: 300px 0 200px;
+    padding: 272px 0 343px;
     position: relative;
 }
 
@@ -1077,4 +1079,9 @@ blockquote {
     .filter-controls li.active {
         font-weight: bold;
     }
+
+
+.page-title1 {
+    margin-top:-100px;
+}
 /*# sourceMappingURL=style.css.map */
