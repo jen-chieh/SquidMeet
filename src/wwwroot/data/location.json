@@ -79,7 +79,21 @@
     "type_id": "0",
     "address": " 333 Westlake Ave N, Seattle, WA 98109 ",
     "img": "https://ecm.capitalone.com/WCM/bank/local/cafes/hero-banners/eastontowncenter/king-of-prussia-d/rtablet.jpg",
-    "rating": null
+    "rating": [
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
   },
   {
     "location_id": "10",
@@ -103,7 +117,20 @@
     "type_id": "0",
     "address": "514 15th Ave E, Seattle, WA 98112 ",
     "img": "http://prod-upp-image-read.ft.com/4d5b4fb4-0e7d-11e9-a3aa-118c761d2745",
-    "rating": null
+    "rating": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
   },
   {
     "location_id": "13",
@@ -143,7 +170,18 @@
     "type_id": "2",
     "address": "https://seattleu.zoom.us/j/96313926678",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231002.png",
-    "rating": null
+    "rating": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
   },
   {
     "location_id": "18",
@@ -151,7 +189,28 @@
     "type_id": "1",
     "address": "Seattle WA",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231759.png",
-    "rating": null
+    "rating": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
   },
   {
     "location_id": "19",
