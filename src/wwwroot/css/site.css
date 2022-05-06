@@ -894,6 +894,7 @@ textarea.form-control {
 /* footer */
 .footer-section {
     padding-top: 200px;
+    margin-bottom: -100px;
 }
 
 .section-on-footer {
@@ -1084,4 +1085,8 @@ blockquote {
 .page-title1 {
     margin-top:-100px;
 }
+
+
+
+
 /*# sourceMappingURL=style.css.map */
