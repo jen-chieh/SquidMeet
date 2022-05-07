@@ -53,7 +53,7 @@ namespace UnitTests.Pages.Product.Create
             pageModel.UserProfile = new UserModel
             {
                 user_id = "22",
-                username = "username",
+                email = "username@squid.com",
                 password = "password",
                 name = "test name",
                 age = 30,
@@ -77,7 +77,7 @@ namespace UnitTests.Pages.Product.Create
             pageModel.UserProfile = new UserModel
             {
                 user_id = "bogus",
-                username = "bogus",
+                email = "bogus",
                 password = "bogus",
                 name = "bogus",
                 age = 30,
