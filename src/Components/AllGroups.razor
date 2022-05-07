@@ -3,6 +3,7 @@
 @using Microsoft.AspNetCore.Components.Web
 @using ContosoCrafts.WebSite.Pages
 @using SquidMeet.WebSite.Components
+@using Microsoft.AspNetCore.Mvc.RazorPages;
 @inject JsonFileMeetupService MeetupService
 @inject NavigationManager NavigationManager
 
@@ -23,10 +24,11 @@
             {
                 count = 0;
             }
-
             <div class="card">
-                <div class="card-img" style="background-image: url('@meetup.Img');">
-                </div>
+                <a href="/Group/Detail/@meetup.meetup_id" onclick="">
+                    <div class="card-img" style="background-image: url('@meetup.Img');">
+                    </div>
+                </a>
                 <div class="card-body">
                     <h4 class="card-title text-dark">@meetup.Title</h4>
                     <a class="card-text">Host: &nbsp;@meetup.Host</a>
@@ -46,9 +48,7 @@
                             <a class="card-text"> 0 Attendee</a>
                         }
                     }
-
                 </div>
-
                 <div class="card-footer">
                     <small class="text-muted">
                         Date: @meetup.Date
