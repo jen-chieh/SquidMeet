@@ -11,7 +11,7 @@
 
 <h3>My Groups</h3>
 
-<div class="card-columns" style="margin-top: 100px" >
+<div class="card-columns" style="margin-top: 100px">
     @{
         var dataset = MeetupService.GetMeetups().Where(m => m.Host == "YJ");
 
@@ -31,7 +31,7 @@
             {
                 count = 0;
             }
-            
+
             <div class="card">
                 <div class="card-img" style="background-image: url('@meetup.Img');">
                 </div>
@@ -61,7 +61,7 @@
                     <small class="text-muted">
                         Date: @meetup.Date
                     </small>
-                    <a  href="/Group/Update/@meetup.meetup_id" onclick="">Update</a>
+                    <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a>
                 </div>
             </div>
 
@@ -69,6 +69,7 @@
 
     }
 </div>
+
 
 
 @code {
