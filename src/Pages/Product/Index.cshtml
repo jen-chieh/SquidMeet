@@ -20,7 +20,9 @@
             {
                 <tr>
                     <td>@product.name</td>
-                    <td><a asp-page="Read" asp-route-id="@product.location_id">Read</a></td>
+                    <td><a asp-page="Read" asp-route-id="@product.location_id" style="color:#41228e">Read</a></td>
+                    <td><a asp-page="Update" asp-route-id="@product.location_id" style="color:black">Update</a></td>
+                    <td><a asp-page="Delete" asp-route-id="@product.location_id" style="color: #0082cf">Delete</a></td>
                 </tr>
             }
         </tbody>
