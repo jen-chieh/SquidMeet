@@ -7,16 +7,17 @@
 
 <div style="margin-top: 100px">
     <button @onclick="(e => sortingbyLocation())">
-    <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;"> Location Sorting 
+        <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;"> Location Sorting
     </button>
     <button @onclick="(e => sortingbyRate())">
-       <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;"> Rate Sorting
+        <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;"> Rate Sorting
     </button>
 </div>
 
 
 <div class="card-columns" style="margin-top: 30px">
-    @{var dataset = ProductService.GetAllData();
+    @{
+        var dataset = ProductService.GetAllData();
         if (locationsorting == true) { dataset = ProductService.sortByLocation(); }
         if (ratesorting == true) { dataset = ProductService.sortByRate(); }
         LocationHoursModel ProductHours;
@@ -25,44 +26,45 @@
         {
             ProductHours = LocationHoursService.GetLocationHours().First(x => x.location_hours_id == product.location_id);
             ProductType = LocationTypeService.GetLocationTypes().First(x => x.type_id == product.type_id);
-        <div class="card">
-            
-            <div class="card-img" style="background-image: url('@product.img');">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">@product.name</h5>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">
-                <div class="container">
-                     <button style="margin-left:150px" @onclick="(e => SelectProduct(product.location_id))"
-                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
-                        More Info
-                    </button>
-                    <div class="myDIV" style="margin-top:-30px; margin-left:100px"><img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506044220.png" alt="detail" style="width:30px;height:28px;"></div>
-                    <div class="hide">
-                        <p class="card-text"> Address: @product.address</p>
-                        <p class="card-text"> Location Type: @ProductType.type_name</p>
-                        <p class="card-text"> Location Hours:</p>
-                        <p class="card-text"> Monday: @ProductHours.location_mon_hours</p>
-                        <p class="card-text"> Tuesday: @ProductHours.location_tues_hours</p>
-                        <p class="card-text"> Wednesday: @ProductHours.location_wed_hours</p>
-                        <p class="card-text"> Thursday: @ProductHours.location_thurs_hours</p>
-                        <p class="card-text"> Friday: @ProductHours.location_fri_hours</p>
-                        <p class="card-text"> Saturday: @ProductHours.location_sat_hours</p>
-                        <p class="card-text"> Sunday: @ProductHours.location_sun_hours</p>
+            <div class="card">
+                <a href="/Product/Read/@product.location_id">
+                    <div class="card-img" style="background-image: url('@product.img');">
                     </div>
-                
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">@product.name</h5>
                 </div>
-                    
-                    
+                <div class="card-footer">
+                    <small class="text-muted">
+                        <div class="container">
+                            <button style="margin-left:150px" @onclick="(e => SelectProduct(product.location_id))"
+                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                More Info
+                            </button>
+                            <div class="myDIV" style="margin-top:-30px; margin-left:100px"><img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506044220.png" alt="detail" style="width:30px;height:28px;"></div>
+                            <div class="hide">
+                                <p class="card-text"> Address: @product.address</p>
+                                <p class="card-text"> Location Type: @ProductType.type_name</p>
+                                <p class="card-text"> Location Hours:</p>
+                                <p class="card-text"> Monday: @ProductHours.location_mon_hours</p>
+                                <p class="card-text"> Tuesday: @ProductHours.location_tues_hours</p>
+                                <p class="card-text"> Wednesday: @ProductHours.location_wed_hours</p>
+                                <p class="card-text"> Thursday: @ProductHours.location_thurs_hours</p>
+                                <p class="card-text"> Friday: @ProductHours.location_fri_hours</p>
+                                <p class="card-text"> Saturday: @ProductHours.location_sat_hours</p>
+                                <p class="card-text"> Sunday: @ProductHours.location_sun_hours</p>
+                            </div>
 
-                </small>
+                        </div>
+
+
+
+                    </small>
+                </div>
+
             </div>
-
-        </div>
         }
-      }
+    }
 </div>
 
 @if (selectedProduct != null)
