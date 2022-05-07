@@ -51,7 +51,7 @@ namespace SquidMeet.WebSite.Pages.Product
 
             UserService.UpdateUserAge(UserProfile);
 
-            return RedirectToPage("../Index");
+            return RedirectToPage("/Profile");
         }
     }
 }
