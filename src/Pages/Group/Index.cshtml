@@ -5,59 +5,59 @@
 <h3>New Group</h3>
 
 <section class="section section-on-footer" data-background="../wwwroot/images/backgrounds/bg-dots.png" style="background-image: url(&quot;images/backgrounds/bg-dots.png&quot;);">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="section-title">Create Your Group</h3>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down" style="margin-top: -50px">
-          <form method="post" class="row">
-              <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                @Html.HiddenFor(x => x.location.location_id)
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="section-title">Create Your Group</h3>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <div class="bg-white rounded text-center p-5 shadow-down" style="margin-top: -50px">
+                    <form method="post" class="row">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        @Html.HiddenFor(x => x.location.location_id)
 
-            <div class="col-md-12">
-                <input placeholder="What will your group’s name be?" asp-for="newMeetup.Title" class="form-control px-0 mb-4" />
-                <span asp-validation-for="newMeetup.Title" class="text-danger"></span>
-            </div>
-            <div class="col-12">
-                 <input asp-for="newMeetup.Host" placeholder="Tell us the Host name of this group" class="form-control px-0 mb-4" />
-                 <span asp-validation-for="newMeetup.Host" class="text-danger"></span>
-            </div>
-            <div class="col-md-12">
-                <input placeholder="Set your group's location." asp-for="newMeetup.location" class="form-control px-0 mb-4" />
-                 <span asp-validation-for="newMeetup.location" class="text-danger"></span>
-            </div>
-            <div class="col-md-12">
-                <input placeholder="Set your group's meeting date." asp-for="newMeetup.Date" class="form-control px-0 mb-4" />
-                <span asp-validation-for="newMeetup.Date" class="text-danger"></span>
-            </div>
-            
-            <div class="col-12">
-                 <input asp-for="newMeetup.Description" placeholder="Describe what your group will be about" class="form-control px-0 mb-4" />
-                 <span asp-validation-for="newMeetup.Description" class="text-danger"></span>
-            </div>
-            <div class="col-4 form-row align-items-center" style="margin-top:20px">
-                 <select asp-for="newMeetup.LocationType" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option value="Indoor">Indoor</option>
-                    <option value="Outdoor">Outdoor</option>
-                    <option value="Online">Online</option>
-                </select>
-            </div>
-                 
-            <div class="col-6" style="margin-top:45px">
-                 <input asp-for="newMeetup.Img" type="file" class="form-control-file px-0 mb-4" />
-                <span asp-validation-for="newMeetup.Img" class="form-control-file"></span>
-            </div>
+                        <div class="col-md-12">
+                            <input placeholder="What will your group’s name be?" asp-for="newMeetup.Title" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.Title" class="text-danger"></span>
+                        </div>
+                        <div class="col-12">
+                            <input asp-for="newMeetup.Host" placeholder="Tell us the Host name of this group" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.Host" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <input placeholder="Set your group's location." asp-for="newMeetup.location" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.location" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-12">
+                            <input placeholder="Set your group's meeting date." asp-for="newMeetup.Date" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.Date" class="text-danger"></span>
+                        </div>
 
-            <div class="col-lg-6 col-10 mx-auto" style="margin-top:50px">
-                <input type="submit" value="Ok" class="btn btn-primary w-100" />
+                        <div class="col-12">
+                            <input asp-for="newMeetup.Description" placeholder="Describe what your group will be about" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.Description" class="text-danger"></span>
+                        </div>
+                        <div class="col-4 form-row align-items-center" style="margin-top:20px">
+                            <select asp-for="newMeetup.LocationType" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="Indoor">Indoor</option>
+                                <option value="Outdoor">Outdoor</option>
+                                <option value="Online">Online</option>
+                            </select>
+                        </div>
+
+                        <div class="col-6" style="margin-top:45px">
+                            <input asp-for="newMeetup.Img" type="file" class="form-control-file px-0 mb-4" />
+                            <span asp-validation-for="newMeetup.Img" class="form-control-file"></span>
+                        </div>
+
+                        <div class="col-lg-6 col-10 mx-auto" style="margin-top:50px">
+                            <input type="submit" value="Ok" class="btn btn-primary w-100" />
+                        </div>
+                    </form>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 @section Scripts {
