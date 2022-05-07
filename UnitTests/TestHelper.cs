@@ -39,6 +39,8 @@ namespace UnitTests
         public static PageContext PageContext;
         public static JsonFileLocationService ProductService;
         public static JsonFileUserService UserService;
+        public static JsonFileMeetupService MeetupService;
+
 
         /// <summary>
         /// Default Constructor
@@ -81,6 +83,12 @@ namespace UnitTests
             JsonFileUserService userService;
 
             userService = new JsonFileUserService(TestHelper.MockWebHostEnvironment.Object);
+
+            MeetupService = new JsonFileMeetupService(MockWebHostEnvironment.Object);
+
+            JsonFileMeetupService meetupService;
+
+            meetupService = new JsonFileMeetupService(TestHelper.MockWebHostEnvironment.Object);
         }
     }
 }
