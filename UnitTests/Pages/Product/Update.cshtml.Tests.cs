@@ -35,7 +35,7 @@ namespace UnitTests.Pages.Product.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Renton Highlands Library", pageModel.Product.name);
+            Assert.AreEqual("Mr. West Cafe Bar - Downtown", pageModel.Product.name);
         }
         #endregion OnGet
 
