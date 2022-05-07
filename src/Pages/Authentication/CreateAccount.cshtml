@@ -1,4 +1,4 @@
-﻿@page 
+﻿@page
 @using ContosoCrafts.WebSite.Services
 @inject JsonFileUserService ProductService
 @model ContosoCrafts.WebSite.Pages.Product.CreateUserModelModel
@@ -11,44 +11,44 @@
 
 
 <section class="section section-on-footer" data-background="../wwwroot/images/backgrounds/bg-dots.png" style="background-image: url(&quot;images/backgrounds/bg-dots.png&quot;);">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Create an account</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Please enter your</h4>
-          <form method="post" class="row">
-              <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-              @Html.HiddenFor(x => x.User.user_id)
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Create an account</h2>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <div class="bg-white rounded text-center p-5 shadow-down">
+                    <h4 class="mb-80">Please enter your</h4>
+                    <form method="post" class="row">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        @Html.HiddenFor(x => x.User.user_id)
 
-            <div class="col-md-6">
-                <input placeholder="Your Email" asp-for="User.email" class="form-control px-0 mb-4" />
-                <span asp-validation-for="User.email" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <input type="password" placeholder="Your Password" asp-for="User.password" class="form-control px-0 mb-4" />
-                 <span asp-validation-for="User.password" class="text-danger"></span>
-            </div>
-            <div class="col-md-6">
-                <input type="password" placeholder="Confirm Your Password" asp-for="User.confirmPassword" class="form-control px-0 mb-4" />
-                <span asp-validation-for="User.confirmPassword" class="text-danger"></span>
-            </div>
-            
-            <div class="col-12">
-                 <input asp-for="User.bio" placeholder="Type Your Bio Here (Optional)" class="form-control px-0 mb-4" />
-                 <span asp-validation-for="User.bio" class="text-danger"></span>
-            </div>
+                        <div class="col-md-6">
+                            <input placeholder="Your Email" asp-for="User.email" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="User.email" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" placeholder="Your Password" asp-for="User.password" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="User.password" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" placeholder="Confirm Your Password" asp-for="User.confirmPassword" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="User.confirmPassword" class="text-danger"></span>
+                        </div>
 
-            <div class="col-lg-6 col-10 mx-auto">
-                <input type="submit" value="Save" class="btn btn-primary w-100" />
+                        <div class="col-12">
+                            <input asp-for="User.bio" placeholder="Type Your Bio Here (Optional)" class="form-control px-0 mb-4" />
+                            <span asp-validation-for="User.bio" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-lg-6 col-10 mx-auto">
+                            <input type="submit" value="Save" class="btn btn-primary w-100" />
+                        </div>
+                    </form>
+                </div>
             </div>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
@@ -56,22 +56,24 @@
     <label asp-for="User.name" class="control-label"></label>
     <input asp-for="User.name" class="form-control" />
     <span asp-validation-for="User.name" class="text-danger"></span>
-</div>
-<div class="form-group">
+    </div>
+    <div class="form-group">
     <label asp-for="User.age" class="control-label"></label>
     <input asp-for="User.age" class="form-control" />
     <span asp-validation-for="User.age" class="text-danger"></span>
-</div>
-<div class="form-group">
+    </div>
+    <div class="form-group">
     <label asp-for="User.gender" class="control-label"></label>
     <input asp-for="User.gender" class="form-control" />
     <span asp-validation-for="User.gender" class="text-danger"></span>
-</div>
-<div class="form-group">
+    </div>
+    <div class="form-group">
     <label asp-for="User.bio" class="control-label"></label>
     <input asp-for="User.bio" class="form-control" />
     <span asp-validation-for="User.bio" class="text-danger"></span>
-</div>*@
+    </div>*@
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
