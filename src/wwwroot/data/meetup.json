@@ -11,7 +11,7 @@
       "James"
     ],
     "Host": null,
-    "Description": "test",
+    "Description": "No meditation experience is needed to join our group. The group is for both beginners and experienced meditators alike. Our group is lead by female Buddhist Monks in the Theravada Tradition.The purpose of the meet up is share time together in meditation and in exploring the teachings of the Buddha. All are welcome to join us in meditation and discussion of the Buddha's teaching. A variety of Buddhist meditation is taught and practiced including mindfulness, loving kindness and insight meditation. These practices bring joy and wellbeing to our lives, improve our relationship with others and foster spiritual awakening.",
     "InviteCode": "e0e940ed-5487-46f9-b0f0-99d64853e2c4",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg"
   },
@@ -27,7 +27,7 @@
       "Noah"
     ],
     "Host": "YJ",
-    "Description": "test",
+    "Description": "First Overcooked event of the new year Come cook up a storm with other self-proclaimed chefsOvercooked 2 is a co-op game of four chefs in a kitchen, all trying to coordinate to get as many orders in correctly before the time's up. Expect plenty of chaos and kitchen fires. There's also a 2v2 mode¨C which team has the speediest reflexes and best communication under pressureAll skill levels welcomed.",
     "InviteCode": "a845bf09-73da-4ac3-bc7b-26e5cf515fb7",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429084505.png"
   },
@@ -44,7 +44,7 @@
       "Henry"
     ],
     "Host": "YJ",
-    "Description": "test",
+    "Description": "Every Sunday at 11:30 am CST, Italian speakers meet via Zoom and practice our skills by conversing with one another. Open to all levels of language facility. Sponsored by the Italian American Heritage Society of Chicago.",
     "InviteCode": "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083445.jpeg"
   },
@@ -75,8 +75,20 @@
       "Emma"
     ],
     "Host": "Harper",
-    "Description": "test",
+    "Description": "Meet other Border Collies, Aussies and their mixes. Talk to other BC and Aussie owners at our many play dates, training activities, walks and moreWe love all dogs, but at this time this meetup is just for Border Collies, Australian Shepherds, and recognizable mixes of either of these breeds.",
     "InviteCode": "7ade2133-d224-417b-9e05-9cc7001275b4",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg"
+  },
+  {
+    "meetup_id": "ab012001-2db8-4270-8fcb-c2f870dae5f1",
+    "location": "Seattle",
+    "LocationType": "Indoor",
+    "Title": "Intro to Javascript",
+    "Date": "11/22/12",
+    "Attendees": null,
+    "Host": "YJ",
+    "Description": "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
+    "InviteCode": "52553b96-7519-4988-aa0e-999afb46f44c",
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg"
   }
 ]
