@@ -37,7 +37,7 @@ namespace UnitTests.Pages.Product.Delete
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Renton Highlands Library", pageModel.Product.name);
+            Assert.AreEqual("Mr. West Cafe Bar - Downtown", pageModel.Product.name);
         }
         #endregion OnGet
 
