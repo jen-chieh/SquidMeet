@@ -36,7 +36,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
 
             // Assert
             Assert.AreEqual(data, TestHelper.ProductService.GetAllData().Count());
-           
+
         }
         #endregion OnGet
         #region OnGet
@@ -70,6 +70,32 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
 
         }
         #endregion OnGet
+        #region AddRating
+        [Test]
+        public void AddRating_location_is_null_rating()
+        {
+            // Arrange
 
+            // Act
+            TestHelper.ProductService.AddRating("0", 1);
+
+            // Assert
+            Assert.IsNotNull(TestHelper.ProductService.GetAllData().First(x => x.location_id.Equals("0")));
+        }
+
+        [Test]
+        public void AddRating_location_is_rated()
+        {
+            // Arrange
+
+            // Act
+            TestHelper.ProductService.AddRating("18", 1);
+
+            // Assert
+            Assert.IsNotNull(TestHelper.ProductService.GetAllData().First(x => x.location_id.Equals("18")));
+        }
+        #endregion OnGet
     }
+
+
 }
