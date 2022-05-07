@@ -44,7 +44,7 @@ namespace SquidMeet.WebSite.Pages.Product
                 return Page();
             }
             UserService.UpdateUserBio(UserProfile);
-            return RedirectToPage("../Index");
+            return RedirectToPage("/Profile");
         }
     }
 }
