@@ -29,7 +29,7 @@ namespace ContosoCrafts.WebSite.Services
         // Read .json file and return all data fields through the model
         public IEnumerable<LocationModel> GetAllData()
         {
-            using(var jsonFileReader = File.OpenText(JsonFileName))
+            using (var jsonFileReader = File.OpenText(JsonFileName))
             {
                 return JsonSerializer.Deserialize<LocationModel[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
@@ -43,7 +43,7 @@ namespace ContosoCrafts.WebSite.Services
         {
             var products = GetAllData();
 
-            if(products.First(x => x.location_id == productId).rating == null)
+            if (products.First(x => x.location_id == productId).rating == null)
             {
                 products.First(x => x.location_id == productId).rating = new int[] { rating };
             }
@@ -54,14 +54,14 @@ namespace ContosoCrafts.WebSite.Services
                 products.First(x => x.location_id == productId).rating = ratings.ToArray();
             }
 
-            using(var outputStream = File.OpenWrite(JsonFileName))
+            using (var outputStream = File.OpenWrite(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<LocationModel>>(
                     new Utf8JsonWriter(outputStream, new JsonWriterOptions
                     {
                         SkipValidation = true,
                         Indented = true
-                    }), 
+                    }),
                     products
                 );
             }
@@ -147,7 +147,7 @@ namespace ContosoCrafts.WebSite.Services
             var data = dataSet.FirstOrDefault(m => m.location_id.Equals(id));
 
             var newDataSet = GetAllData().Where(m => m.location_id.Equals(id) == false);
-            
+
             SaveData(newDataSet);
 
             return data;
