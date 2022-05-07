@@ -32,10 +32,12 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// REST Get request
         /// </summary>
         /// <param name="id"></param>
+        /*
         public void OnGet(string id)
         {
             User = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
         }
+        */
         // On post
         public IActionResult OnPost(UserModel user)
         {
