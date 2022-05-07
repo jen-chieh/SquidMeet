@@ -46,7 +46,7 @@ namespace SquidMeet.WebSite.Pages.Product
 
             UserService.UpdateUserName(UserProfile);
 
-            return RedirectToPage("../Index");
+            return RedirectToPage("/Profile");
         }
     }
 }
