@@ -24,8 +24,8 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
 
         #endregion TestSetup
 
-        #region OnGet
-        // Test to verify OnGet returns correct data with a given id and model state is valid
+        #region GetLocatoins
+        // Test to verify OnGet returns correct Locationdata with  is valid
         [Test]
         public void OnGet_Valid_Should_Return_Location()
         {
@@ -38,11 +38,11 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             Assert.AreEqual(data, TestHelper.ProductService.GetAllData().Count());
 
         }
-        #endregion OnGet
-        #region OnGet
+        #endregion GetLocations
+        #region GetSortByLocationTypes
         // Test to verify OnGet returns correct data with a given id and model state is valid
         [Test]
-        public void OnGet_Valid_Should_Return_Sort_by_Location()
+        public void OnGet_Valid_Should_Return_Sort_by_Location_Types()
         {
             // Arrange
             var data = TestHelper.ProductService.sortByLocation().Count();
@@ -53,10 +53,10 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             Assert.AreEqual(data, TestHelper.ProductService.sortByLocation().Count());
 
         }
-        #endregion OnGet
+        #endregion GetSortByLocationTypes
 
-        #region OnGet
-        // Test to verify OnGet returns correct data with a given id and model state is valid
+        #region GetSortByRatingLocations
+        // Test to verify OnGet returns correct sorting data by rating is valid
         [Test]
         public void OnGet_Valid_Should_Return_Sort_by_Rating()
         {
@@ -69,8 +69,9 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             Assert.AreEqual(data, TestHelper.ProductService.sortByRate().Count());
 
         }
-        #endregion OnGet
-        #region AddRating
+        #endregion GetSortByRatingLocations
+        // Test to verify location addrating is the first time to rate
+        #region AddFirstRating
         [Test]
         public void AddRating_location_is_null_rating()
         {
@@ -82,7 +83,9 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             // Assert
             Assert.IsNotNull(TestHelper.ProductService.GetAllData().First(x => x.location_id.Equals("0")));
         }
-
+        #endregion  AddFirstRating
+        #region AddRating
+        // Test to verify location has been rated and added new rating.
         [Test]
         public void AddRating_location_is_rated()
         {
@@ -94,7 +97,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             // Assert
             Assert.IsNotNull(TestHelper.ProductService.GetAllData().First(x => x.location_id.Equals("18")));
         }
-        #endregion OnGet
+        #endregion AddRating
     }
 
 
