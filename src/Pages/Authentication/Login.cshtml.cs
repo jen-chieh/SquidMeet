@@ -37,21 +37,21 @@ namespace ContosoCrafts.WebSite.Pages.Product
             User = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
         }
         // On post
-        public IActionResult OnPost()
+        public IActionResult OnPost(UserModel user)
         {
             //if (!ModelState.IsValid)
             //{
             //    return Page();
             //};
             // checked if account exist or not.
-            checkAccount = ProductService.GetUsers().Any(m => m.email.Equals(User.email) && m.password.Equals(User.password));
+            checkAccount = ProductService.GetUsers().Any(m => m.email.Equals(user.email) && m.password.Equals(user.password));
             if (checkAccount == false)
             {
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 return Page();
             }
 
-            User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(User.email));
+            User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(user.email));
             HttpContext.Session.SetString("Userid", User.user_id);
             return RedirectToPage("../Profile/Profile", new { id = User.user_id });
 
