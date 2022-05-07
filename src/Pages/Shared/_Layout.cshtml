@@ -15,23 +15,23 @@
             <nav>
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506044451.png" alt="detail" style="width:50px;height:50px;">  Squid Meet</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <div class="navbar-collapse collapse d-sm-inline-flex">         
+                    <div class="navbar-collapse collapse d-sm-inline-flex">
                         <a class="btn btn-primary" asp-area="" asp-page="/Group/ReadAllGroups">All Groups</a>
                         <a class="btn btn-primary" asp-area="" asp-page="/Group/ViewMyGroup" asp-route-id="0">My Groups</a>
                         <a class="btn btn-primary" asp-area="" asp-page="/Group/Index">New Group</a>
                         <a class="btn btn-primary" asp-area="" asp-page="/Product/Index">Products</a>
                         <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Profile/Profile" asp-route-id="0">Profile</a>
                         <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Authentication/CreateAccount">Create Account</a>
-                        <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Authentication/Login">Login</a>                        
+                        <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Authentication/Login">Login</a>
                         <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Authentication/Logout">Logout</a>
                         <a class="btn btn-primary" style="color:#edd49c" asp-area="" asp-page="/Privacy">Privacy</a>
-                        
-                                                
+
+
                     </div>
                 </div>
             </nav>
@@ -44,40 +44,42 @@
         </main>
     </div>
 
-   @* <footer class="border-top footer text-muted bg-footer">
+    @* <footer class="border-top footer text-muted bg-footer">
         <div class="container">
-            &copy; 2022 - SquidMeet - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        &copy; 2022 - SquidMeet - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
-    </footer>*@
-    
+        </footer>*@
+
     <footer class="bg-dark footer-section">
-      <div class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5 class="text-light">Email</h5>
-              <p class="text-white paragraph-lg font-secondary">teamSquid.squid.com</p>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="text-light">Email</h5>
+                        <p class="text-white paragraph-lg font-secondary">teamSquid.squid.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Phone</h5>
+                        <p class="text-white paragraph-lg font-secondary">+206 375 8746</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Address</h5>
+                        <p class="text-white paragraph-lg font-secondary">Seattle, USA</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <h5 class="text-light">Phone</h5>
-              <p class="text-white paragraph-lg font-secondary">+206 375 8746</p>
-            </div>
-            <div class="col-md-4">
-              <h5 class="text-light">Address</h5>
-              <p class="text-white paragraph-lg font-secondary">Seattle, USA</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="border-top text-center border-dark py-5">
-        <p class="mb-0 text-light">Copyright ©<script>
-            var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)
-          </script>  Developed by Team Squid<a class="text-white-50" href="Themefisher"></a></p>
-      </div>
+        <div class="border-top text-center border-dark py-5">
+            <p class="mb-0 text-light">
+                Copyright ©<script>
+                               var CurrentYear = new Date().getFullYear()
+                               document.write(CurrentYear)
+                </script>  Developed by Team Squid<a class="text-white-50" href="Themefisher"></a>
+            </p>
+        </div>
     </footer>
 
-    
+
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
