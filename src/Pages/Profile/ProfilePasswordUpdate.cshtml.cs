@@ -46,7 +46,7 @@ namespace SquidMeet.WebSite.Pages.Product
 
             UserService.UpdateUserPassword(UserProfile);
 
-            return RedirectToPage("../Index");
+            return RedirectToPage("/Profile");
         }
 
     }
