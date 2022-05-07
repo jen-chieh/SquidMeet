@@ -11,7 +11,7 @@ namespace UnitTests.Pages.Product.Login
     /// <summary>
     /// Test for CreateAccount.cshtml and CreateUserModelModel with valid and invalid onPost calls
     /// </summary>
-    public class CreateAccountTests
+    public class LoginTests
     {
         #region TestSetup
         public static LoginModel pageModel;
