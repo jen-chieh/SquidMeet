@@ -42,7 +42,7 @@ namespace SquidMeet.WebSite.Pages.Product
         /// REST Post request
         /// </summary>
         /// <returns></returns>
-        public IActionResult OnPost()
+        public IActionResult OnPost(UserModel UserProfile)
         {
             if (!ModelState.IsValid)
             {
@@ -51,7 +51,7 @@ namespace SquidMeet.WebSite.Pages.Product
 
             UserService.UpdateUserAge(UserProfile);
 
-            return RedirectToPage("/Profile");
+            return RedirectToPage("Profile", new { id = UserProfile.user_id });
         }
     }
 }
