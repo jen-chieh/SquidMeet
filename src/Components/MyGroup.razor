@@ -33,8 +33,7 @@
             }
 
             <div class="card">
-                <div class="card-img" style="background-image: url('@meetup.Img');">
-                </div>
+                <div class="card-img" style="background-image: url('@meetup.Img');"></div>
                 <div class="card-body">
                     <h5 class="card-title">Title: @meetup.Title</h5>
                     <a class="card-text">Host: &nbsp;@meetup.Host</a>
@@ -60,25 +59,19 @@
                 <div class="card-footer">
                     <small class="text-muted">
                         Date: @meetup.Date
+                        <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a><br />
+                        <a class="badge badge-pill badge-warning" style="color: black"> Invite Code</a>
+                        <a class="badge badge-light" style="font-size: 11px"> @meetup.InviteCode</a>
                     </small>
-                    <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a>
+
+
                 </div>
             </div>
-
         }
-
     }
 </div>
 
 
-
-@code {
-    MeetupModel selectedMeetup;
-    string selectedMeetupId;
-
-    void selectMeetup(string meetupId)
-    {
-        selectedMeetupId = meetupId;
-        selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
-    }
+@code
+{
 }
