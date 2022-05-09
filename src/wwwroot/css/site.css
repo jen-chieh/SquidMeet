@@ -1096,7 +1096,7 @@ blockquote {
 
     .contact .info i {
         font-size: 20px;
-        color: #16df7e;
+        color: #41228e;
         float: left;
         width: 44px;
         height: 44px;
@@ -1143,12 +1143,12 @@ blockquote {
         }
 
             .contact .info .social-links a:hover {
-                background: #16df7e;
+                background: #41228e;
                 color: #fff;
             }
 
     .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-        background: #16df7e;
+        background: #41228e;
         color: #fff;
     }
 
@@ -1214,7 +1214,7 @@ blockquote {
     }
 
         .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-            border-color: #16df7e;
+            border-color: #41228e;
         }
 
     .contact .php-email-form input {
