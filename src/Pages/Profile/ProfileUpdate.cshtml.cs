@@ -36,7 +36,7 @@ namespace SquidMeet.WebSite.Pages.Product
         /// REST Post request
         /// </summary>
         /// <returns></returns>
-        public IActionResult OnPost()
+        public IActionResult OnPost(UserModel UserProfile)
         {
             if (!ModelState.IsValid)
             {
