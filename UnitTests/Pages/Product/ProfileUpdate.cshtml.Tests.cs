@@ -1,11 +1,8 @@
-﻿using System.Linq;
-
-using NUnit.Framework;
-
-using ContosoCrafts.WebSite.Pages.Product;
+﻿
 using ContosoCrafts.WebSite.Models;
-using SquidMeet.WebSite.Pages.Product;
 using Microsoft.AspNetCore.Mvc;
+using NUnit.Framework;
+using SquidMeet.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Create
 {
@@ -62,11 +59,11 @@ namespace UnitTests.Pages.Product.Create
             };
 
             // Act
-            var result = pageModel.OnPost() as RedirectToPageResult;
+            var result = pageModel.OnPost(pageModel.UserProfile) as RedirectToPageResult;
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(true, result.PageName.Contains("Index"));
+            Assert.AreEqual(true, result.PageName.Contains("Profile"));
         }
 
         [Test]
@@ -89,7 +86,7 @@ namespace UnitTests.Pages.Product.Create
             pageModel.ModelState.AddModelError("bogus", "bogus error");
 
             // Act
-            var result = pageModel.OnPost() as ActionResult;
+            var result = pageModel.OnPost(pageModel.UserProfile) as ActionResult;
 
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
