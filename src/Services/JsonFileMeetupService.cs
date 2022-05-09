@@ -120,5 +120,27 @@ namespace ContosoCrafts.WebSite.Services
                 );
             }
         }
+
+        public void AddAttendee(MeetupModel meetup, string attendeeName)
+        {
+            var meetups = GetMeetups();
+            var attendees = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees.ToList();
+            attendees.Add(attendeeName);
+            meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees = attendees.ToArray();
+
+            using (var outputStream = File.OpenWrite(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<MeetupModel>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    meetups
+                );
+            }
+
+        }
+
     }
 }
