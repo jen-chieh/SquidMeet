@@ -38,11 +38,11 @@ namespace UnitTests.Pages.Services.JsonFileLocationHoursService
 
             // Assert
 
-            Assert.AreEqual(3, data.Count());
+            Assert.AreEqual(20, data.Count());
             Assert.AreEqual("0", data[0].location_hours_id);
-            Assert.AreEqual("10AM-5PM", Encoding.UTF8.GetString(Encoding.Default.GetBytes(data[0].location_mon_hours)));
-            Assert.AreEqual("2", data[2].location_hours_id);
-            Assert.AreEqual("06:30-8:30", Encoding.UTF8.GetString(Encoding.Default.GetBytes(data[2].location_mon_hours)));
+           
+            Assert.AreEqual("1", data[1].location_hours_id);
+            Assert.AreEqual("closed", data[1].location_sun_hours);
 
         }
         #endregion GetLocationHours
