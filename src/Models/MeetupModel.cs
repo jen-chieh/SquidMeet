@@ -29,6 +29,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? InviteCode { get; set; }
 
         public string? Img { get; set; }
+        public string? Video { get; set; }
         public override string ToString() => JsonSerializer.Serialize<MeetupModel>(this);
     }
 }
