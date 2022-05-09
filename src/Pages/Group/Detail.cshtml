@@ -20,18 +20,77 @@
 
             <div class="row" style="border-radius: 10px;">
 
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                <div class="col-lg-8 pt-4 pt-lg-0 content">
                     <h3>@Model.Meetup.Title</h3>
                     <p class="fst-italic">
                         @Model.Meetup.Description
                     </p>
                 </div>
-                <div class="col-lg-6" style="border-radius: 10px;">
-                    <img src="@Model.Meetup.Img" class="img-fluid" style="width:625px; height:390px;object-fit:cover">
-                </div>
-            </div>
 
-        </div>
+                <section id="contact" class="contact" style="background-color: #f6f7f8">
+                    <div class="container">
+
+                        <div class="section-title">
+                            <h3 style="display:inline-block; margin-top:0px; margin-left:120px; margin-top:10px">Info</h3>
+                        </div>
+                        <div style="margin-top:-40px">
+
+                            <div class="col-lg-12" style="width:340px">
+                                <div class="info" style="padding:10px">
+                                    <div class="address">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <h4>Location:</h4>
+                                        <p>@Model.Meetup.location</p>
+                                    </div>
+
+                                    <div class="email">
+                                        <i class="bi bi-envelope"></i>
+                                        <h4>Email:</h4>
+                                        <p>squid@squid.com</p>
+                                    </div>
+
+                                    <div class="phone">
+                                        <i class="bi bi-phone"></i>
+                                        <h4>Call:</h4>
+                                        <p>+1 5589 55488 55s</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section><!-- End Contact Section -->
+                @*
+                    <div class="col-lg-4 pt-4 pt-lg-0 content">
+                    <h5>Host: @Model.Meetup.Host</h5>
+                    <h5 class="fst-italic">
+                    Attendee:
+                    @{
+                    foreach (var attendee in Model.Meetup.Attendees)
+                    {
+                    @attendee
+                    <a>&emsp;</a>
+                    }
+                    }
+                    </h5>
+                    </div>
+
+                    </div>*@
+                <div class="col-lg-6" style="border-radius: 10px; margin-left:-20px; margin-top:50px">
+
+                    <iframe width="1120"
+                            height="590"
+                            autoplay="true"
+                            src="@Model.Meetup.Video"
+                            frameborder="0"
+                            allow='autoplay'
+                            loop="true"
+                            allowfullscreen></iframe>
+                    @*<img src="@Model.Meetup.Img" class="img-fluid" style="width:625px; height:390px;object-fit:cover">*@
+                </div>
+
+            </div>
     </section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact" style="background-color: #f6f7f8">
@@ -43,31 +102,14 @@
             </div>
             <div class="row" style="margin-top:-20px">
 
-                <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
-                            <p>@Model.Meetup.location</p>
-                        </div>
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>squid@squid.com</p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>+1 5589 55488 55s</p>
-                        </div>
 
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
                     </div>
                 </div>
 
-                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="form-group col-md-12">
@@ -97,3 +139,4 @@
         </div>
     </section><!-- End Contact Section -->
 </main>
+
