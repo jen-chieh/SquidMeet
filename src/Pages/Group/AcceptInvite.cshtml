@@ -1,0 +1,22 @@
+﻿@page
+@model SquidMeet.WebSite.Pages.Group.AcceptInviteModel
+@{
+}
+<div class="container" style="margin-top: 100px">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Meetup.meetup_id)
+
+        <div class="form-group">
+            <label asp-for="Meetup.InviteCode" class="control-label"></label>
+            <input asp-for="Meetup.InviteCode" class="form-control" />
+            <span asp-validation-for="Meetup.InviteCode" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
