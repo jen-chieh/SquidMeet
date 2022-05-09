@@ -99,6 +99,7 @@ namespace ContosoCrafts.WebSite.Services
             data.Date = meetup.Date;
             data.Title = meetup.Title;
             data.location = meetup.location;
+            data.Video = meetup.Video;
             SaveData(dataSet);
             return meetup;
         }
