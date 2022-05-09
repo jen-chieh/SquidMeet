@@ -41,6 +41,7 @@ namespace UnitTests
         public static JsonFileUserService UserService;
         public static JsonFileMeetupService MeetupService;
         public static JsonFileLocationTypeService LocationTypeService;
+        public static JsonFileLocationHoursService LocationHoursService;
 
 
 
@@ -92,6 +93,7 @@ namespace UnitTests
 
             meetupService = new JsonFileMeetupService(TestHelper.MockWebHostEnvironment.Object);
             LocationTypeService = new JsonFileLocationTypeService(TestHelper.MockWebHostEnvironment.Object);
+            LocationHoursService = new JsonFileLocationHoursService(TestHelper.MockWebHostEnvironment.Object);
         }
     }
 }
