@@ -1,10 +1,10 @@
 ﻿
 .checked {
-  color: orange;
+    color: orange;
 }
 
 .fa-star {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
@@ -21,26 +21,27 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .card-columns .card-img {
-  height: 250px;
-  vertical-align: bottom;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  opacity: .8;
+    height: 250px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    opacity: .8;
 }
 
 .modal .card-img {
-  height: 500px;
-  vertical-align: bottom;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    height: 500px;
+    vertical-align: bottom;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.card-columns .card:hover  {
-    transform: scale(1); 
+.card-columns .card:hover {
+    transform: scale(1);
     box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
 }
+
 .card-footer {
     background: #fbfafd;
 }
@@ -69,65 +70,71 @@ a {
     border-color: #252152;
 }
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: #e9a8a6;
-    border-color: #e9a8a6;
-}
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #e9a8a6;
+        border-color: #e9a8a6;
+    }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
     border-top: 1px solid #e9a8a6;
 }
+
 .border-bottom {
     border-bottom: 1px solid #e9a8a6;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
 p {
     font-family: 'Nunito', sans-serif;
 }
+
 h1 {
     font-family: 'Nunito', sans-serif;
 }
+
 ul {
     font-family: 'Nunito', sans-serif;
 }
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -143,20 +150,20 @@ ul {
     background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
 }
+
 .bg-footer {
     background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-
 }
+
 .hide {
     display: none;
 }
 
 .myDIV:hover + .hide {
     display: block;
-    
     transition: 1s;
 }
 
@@ -600,12 +607,12 @@ textarea.form-control {
 
     .navigation.nav-bg {
         background-color: #41228e;
-        padding: 15px 100px;
+        padding: 22px 100px;
     }
 
 @media (max-width: 991px) {
     .navigation.nav-bg {
-        padding: 15px 20px;
+        padding: -2px 20px;
     }
 }
 
@@ -927,6 +934,7 @@ textarea.form-control {
         flex-direction: column;
     }
 }
+
 .container1 {
     margin: 0;
     padding: 0px;
@@ -960,7 +968,7 @@ blockquote {
 }
 
 .page-title-alt {
-    padding: 350px 0 70px;
+    padding: 225px 0 70px;
 }
 
 .border-thick {
@@ -1021,7 +1029,7 @@ blockquote {
 }
 
 .page-title {
-    padding: 250px 0 1px;
+    padding: 225px 0 1px;
 }
 
     .page-title .container {
@@ -1083,7 +1091,7 @@ blockquote {
 
 
 .page-title1 {
-    margin-top:-100px;
+    margin-top: -100px;
 }
 
 .contact .info {
