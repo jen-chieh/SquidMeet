@@ -40,6 +40,8 @@ namespace UnitTests
         public static JsonFileLocationService ProductService;
         public static JsonFileUserService UserService;
         public static JsonFileMeetupService MeetupService;
+        public static JsonFileLocationTypeService LocationTypeService;
+
 
 
         /// <summary>
@@ -89,6 +91,7 @@ namespace UnitTests
             JsonFileMeetupService meetupService;
 
             meetupService = new JsonFileMeetupService(TestHelper.MockWebHostEnvironment.Object);
+            LocationTypeService = new JsonFileLocationTypeService(TestHelper.MockWebHostEnvironment.Object);
         }
     }
 }
