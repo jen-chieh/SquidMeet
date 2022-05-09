@@ -38,7 +38,7 @@ namespace SquidMeet.WebSite.Pages.Group
             }
 
 
-            MeetupService.AddAttendee(Meetup, "Test_Azkaban");
+            MeetupService.AddAttendee(Meetup, "Azkaban");
 
 
             return RedirectToPage("ViewMyGroup");
