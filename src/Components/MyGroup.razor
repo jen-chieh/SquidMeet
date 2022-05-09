@@ -36,15 +36,16 @@
                 <div class="card-img" style="background-image: url('@meetup.Img');"></div>
                 <div class="card-body">
                     <h5 class="card-title">Title: @meetup.Title</h5>
-                    <a class="card-text">Host: &nbsp;@meetup.Host</a>
+                    <a style="font-size:12px; margin-right: 10px">Host</a>
+                    <a style="font-size:12px; margin-right: 10px">@meetup.Host</a>
                     @{
                         if (attendees != null)
                         {
                             <br />
-                            <a>Attentee: </a>
+                            <a style="font-size:12px; margin-right: 10px">Attentee: </a>
                             foreach (var attendee in attendees)
                             {
-                                <a class="card-text">&nbsp; @attendee</a>
+                                <a style="font-size:12px; margin-right: 10px">@attendee</a>
                             }
                         }
                         else
@@ -60,7 +61,7 @@
                     <small class="text-muted">
                         Date: @meetup.Date
                         <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a><br />
-                        <a class="badge badge-pill badge-warning" style="color: black"> Invite Code</a>
+                        <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> Invite Code</a>
                         <a class="badge badge-light" style="font-size: 11px"> @meetup.InviteCode</a>
                     </small>
 
