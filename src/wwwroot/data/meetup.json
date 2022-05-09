@@ -13,13 +13,14 @@
     "Host": null,
     "Description": "No meditation experience is needed to join our group. The group is for both beginners and experienced meditators alike. Our group is lead by female Buddhist Monks in the Theravada Tradition.The purpose of the meet up is share time together in meditation and in exploring the teachings of the Buddha. All are welcome to join us in meditation and discussion of the Buddha\u0027s teaching. A variety of Buddhist meditation is taught and practiced including mindfulness, loving kindness and insight meditation. These practices bring joy and wellbeing to our lives, improve our relationship with others and foster spiritual awakening.",
     "InviteCode": "e0e940ed-5487-46f9-b0f0-99d64853e2c4",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/28c60187-b9c1-4128-bfec-96e4c38600c2/pexels-cottonbro-5415986.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T121143Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=5fc6d3f4bfa1f4c169156c1250d558838527cc8d767337c5fc414f576f6e4a28\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22pexels-cottonbro-5415986.mp4%22\u0026x-id=GetObject"
   },
   {
     "meetup_id": "59170836-95ac-42a5-833f-9f026c8dc152",
     "location": "Online",
     "LocationType": "Indoor",
-    "Title": "Overcooked2 with me!",
+    "Title": "Feet First Walks",
     "Date": "11/05/2022",
     "Attendees": [
       "William",
@@ -27,9 +28,10 @@
       "Noah"
     ],
     "Host": "YJ",
-    "Description": "First Overcooked event of the new year Come cook up a storm with other self-proclaimed chefsOvercooked 2 is a co-op game of four chefs in a kitchen, all trying to coordinate to get as many orders in correctly before the time\u0027s up. Expect plenty of chaos and kitchen fires. There\u0027s also a 2v2 mode\uFFFDC which team has the speediest reflexes and best communication under pressureAll skill levels welcomed.",
-    "InviteCode": "a845bf09-73da-4ac3-bc7b-26e5cf515fb7",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429084505.png"
+    "Description": "Feet First is a local nonprofit working to ensure all communities in Washington are walkable. We organize many fun walking events throughout the year---come walk with us! Most of the walks are led by trained Feet First\u0027s Neighborhood Walking Ambassadors. Our Feet First Walks are for everyone who wants to discover new walking paths, experience other places on foot, and meet friends. Walking together is a healthy, sustainable, and fun form of transportation providing a better understanding of our surroundings and how to improve them and the opportunity to share knowledge. You\u0027ll see a whole lot more at 3mph compared to 30mphTo learn more about the work we do, take a look at: www.feetfirst.org Whether you walk your child to school, walk to the senior center, or walk to your bus, or just enjoy walking in your neighborhood, we work to ensure everyone has a safe way to go by foot.With your support, Feet First is working hard to make that happen.Your tax-deductible donation strengthens our voice for safe, easy, and inviting places for people to walk.",
+    "InviteCode": null,
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/okimage-20220509052221826.png",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bac0cc96-7799-4ff4-8200-169acc585cd8/streetwalk.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T115720Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=19af1d75968ffd534a6f20f2f77ea607c5acf8c39d8c1c8685345abf4dc718f3\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22streetwalk.mp4%22\u0026x-id=GetObject"
   },
   {
     "meetup_id": "71498a24-daa6-48c9-86e8-e4b7fc65e61d",
@@ -46,7 +48,8 @@
     "Host": "YJ",
     "Description": "Every Sunday at 11:30 am CST, Italian speakers meet via Zoom and practice our skills by conversing with one another. Open to all levels of language facility. Sponsored by the Italian American Heritage Society of Chicago.",
     "InviteCode": "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083445.jpeg"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083445.jpeg",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3fda1a5-67e2-46ac-be19-16bef167b5ac/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T120522Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=23c53380158a2f1084c9fa1fa43c84f69dc3804e252e33fc3beff8d20e8a5bec\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22video.mp4%22\u0026x-id=GetObject"
   },
   {
     "meetup_id": "6f23643f-1254-4524-9f4d-439a3d626427",
@@ -61,7 +64,8 @@
     "Host": "YJ",
     "Description": "test",
     "InviteCode": "0252dcc7-5564-4901-956c-c11a720331eb",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083902.png"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083902.png",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/61a4e80b-fd9f-4b8e-b9d0-5b7637574f6f/production_ID_3959611.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T120316Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=45c9e89bfa4d1e50ea4adf32eb57b366a7a579a2c093491065a0ad2380a9abab\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22production%2520ID_3959611.mp4%22\u0026x-id=GetObject"
   },
   {
     "meetup_id": "6e1ea3b8-c00d-4018-8986-d95c6a7173c1",
@@ -74,10 +78,11 @@
       "Amelia",
       "Emma"
     ],
-    "Host": "Harper",
+    "Host": "YJ",
     "Description": "Meet other Border Collies, Aussies and their mixes. Talk to other BC and Aussie owners at our many play dates, training activities, walks and moreWe love all dogs, but at this time this meetup is just for Border Collies, Australian Shepherds, and recognizable mixes of either of these breeds.",
     "InviteCode": "7ade2133-d224-417b-9e05-9cc7001275b4",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b128bde4-2733-4734-9326-34132a89bcee/pexels-koolshooters-7678724.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T121032Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=ac39e49bafe6b5a51ed1495da3a169898876513bca0108a721c1dc56ba59271a\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22pexels-koolshooters-7678724.mp4%22\u0026x-id=GetObject"
   },
   {
     "meetup_id": "ab012001-2db8-4270-8fcb-c2f870dae5f1",
@@ -89,6 +94,7 @@
     "Host": "YJ",
     "Description": "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
     "InviteCode": "52553b96-7519-4988-aa0e-999afb46f44c",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg"
+    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg",
+    "Video": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/33372b34-4d33-404b-a296-59691e1af211/pexels-mikhail-nilov-6962343.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\u0026X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220509%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20220509T120750Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=ee7e6459062152ce64d97e04e27e31c70a9a961b418c169a41c64b8e07723302\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22pexels-mikhail-nilov-6962343.mp4%22\u0026x-id=GetObject"
   }
 ]
