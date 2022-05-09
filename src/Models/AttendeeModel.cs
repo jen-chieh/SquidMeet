@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 {
@@ -8,19 +7,19 @@ namespace ContosoCrafts.WebSite.Models
     /// It assigns each attendee an unique user ID with event ID, event object and a boolean 
     /// variable to tell if the attendee is host of the event.
     /// </summary>
-    public class AttendeeModel: UserModel
+    public class AttendeeModel : UserModel
     {
         // Unique Id of User
         public string? UserId { get; set; }
         // Information of User Account
-        public UserModel? User { get; set; }
+        public int? User { get; set; }
         // Id of Event that Attendee participate
         public string? EventId { get; set; }
         // Information of Event that Attendee participate
-        public MeetupModel? Event { get; set; }
+        public string? Event { get; set; }
         // To check if the Event host or cancel
-        public bool? IsHost { get; set; }
-    
+        public string? IsHost { get; set; }
+
         public override string ToString() => JsonSerializer.Serialize<AttendeeModel>(this);
     }
 }
