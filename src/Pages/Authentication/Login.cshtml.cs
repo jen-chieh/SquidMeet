@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Model to manage user authentication and handle invalid login attempts
+    /// </summary>
     public class LoginModel : PageModel
     {
         // Data middle tier
