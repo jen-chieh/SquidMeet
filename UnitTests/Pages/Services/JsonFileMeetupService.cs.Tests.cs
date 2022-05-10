@@ -117,5 +117,35 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
 
         }
         #endregion UpdateNullMeetup
+        #region AddAttendee
+        // Test to verify AddAttendee returns correct data is valid
+        [Test]
+        public void Valid_AddAttendee()
+        {
+            // Arrang
+            var data = new MeetupModel()
+            {
+                meetup_id = "59170836-95ac-42a5-833f-9f026c8dc152",
+                location = "redmond",
+                LocationType = "bar",
+                Title = "barbar",
+                Date = "2022/5/3",
+                Description = "welcom",
+                Host = "JACK",
+                Img = "",
+                InviteCode = "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
+
+            };
+            // var oldnumber = TestHelper.MeetupService.g
+            // Act
+
+            TestHelper.MeetupService.AddAttendee(data, "test");
+
+            // Assert
+            Assert.NotNull(data);
+
+        }
+
+        #endregion AddAttendee 
     }
 }
