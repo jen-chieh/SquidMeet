@@ -7,6 +7,9 @@ using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Model to add a new location to the database
+    /// </summary>
     public class CreateModel : PageModel
     {
         // Data middle tier
