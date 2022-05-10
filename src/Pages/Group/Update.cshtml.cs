@@ -9,11 +9,11 @@ using ContosoCrafts.WebSite.Services;
 namespace SquidMeet.WebSite.Pages.Group
 {
     /// <summary>
-    /// Update my group
+    /// Model to update group information
     /// </summary>
     public class MeetupUpdateModel : PageModel
     {
-        // Data middletier
+        // Data middle tier
         public JsonFileMeetupService ProductService { get; }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace SquidMeet.WebSite.Pages.Group
         /// Post the model back to the page
         /// The model is in the class variable Product
         /// Call the data layer to Update that data
-        /// Then return to the index page
+        /// Then return to the ViewMyGroup page
         /// </summary>
         /// <returns></returns>
         public IActionResult OnPost()
