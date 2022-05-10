@@ -16,7 +16,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public JsonFileUserService ProductService { get; }
 
         /// <summary>
-        /// Defualt Construtor
+        /// Default Construtor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
@@ -24,13 +24,15 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             ProductService = productService;
         }
+
+        // The data to show
         [BindProperty]
         public bool checkAccount { get; set; }
 
         [BindProperty]
         public UserModel User { get; set; }
 
-        // The data to show
+
         /// <summary>
         /// REST Get request
         /// </summary>
@@ -41,7 +43,13 @@ namespace ContosoCrafts.WebSite.Pages.Product
             User = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
         }
         */
-        // On post
+        /// <summary>
+        /// Post the model back to the page
+        /// The model is in the class variable user
+        /// Call the data layer to Update that data
+        /// Then return to the profile page
+        /// </summary>
+        /// <returns></returns>
         public IActionResult OnPost(UserModel user)
         {
             //if (!ModelState.IsValid)
