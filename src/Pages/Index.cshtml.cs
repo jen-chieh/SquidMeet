@@ -16,8 +16,18 @@ namespace ContosoCrafts.WebSite.Pages
 
     public class IndexModel : PageModel
     {
+        /// <summary>
+        /// Model for the index page displaying all locations
+        /// </summary>
+        
+        // Data middle tier
         private readonly ILogger<IndexModel> _logger;
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="productService"></param>
         public IndexModel(ILogger<IndexModel> logger,
             JsonFileLocationService productService)
         {
@@ -25,9 +35,13 @@ namespace ContosoCrafts.WebSite.Pages
             ProductService = productService;
         }
 
+        // The data to show
         public JsonFileLocationService ProductService { get; }
         public IEnumerable<LocationModel> Products { get; private set; }
 
+        /// <summary>
+        /// REST Get request
+        /// </summary>
         public void OnGet()
         {
             Products = ProductService.GetAllData();
