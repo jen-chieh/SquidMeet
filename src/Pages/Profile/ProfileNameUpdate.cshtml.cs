@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SquidMeet.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Model to manage updating profile name information
+    /// </summary>
     public class ProfileNameUpdateModel : PageModel
     {
         // Data middle tier 
@@ -34,7 +37,10 @@ namespace SquidMeet.WebSite.Pages.Product
         }
 
         /// <summary>
-        /// REST Post request
+        /// Post the model back to the page
+        /// The model is in the class variable UserProfile
+        /// Call the data layer to Update that data
+        /// Then return to the Profile page
         /// </summary>
         /// <returns></returns>
         public IActionResult OnPost(UserModel UserProfile)
