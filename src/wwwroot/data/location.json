@@ -8,7 +8,7 @@
     "rating": null
   },
   {
-    "location_id": "1",
+    "location_id": "2",
     "name": "Newcastle Library",
     "type_id": "2",
     "address": "12901 Newcastle Way, Newcastle, WA 98056",
@@ -16,7 +16,7 @@
     "rating": null
   },
   {
-    "location_id": "2",
+    "location_id": "1",
     "name": "Coalfield Park",
     "type_id": "1",
     "address": "12067-, 12127 164th Ave SE, Renton, WA 98059 ",
@@ -199,7 +199,7 @@
   {
     "location_id": "19",
     "name": "Greenlake Path",
-    "type_id": "2",
+    "type_id": "1",
     "address": "5900 west greenlake way \uFFFD Seattle, WA",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212051.png",
     "rating": [
