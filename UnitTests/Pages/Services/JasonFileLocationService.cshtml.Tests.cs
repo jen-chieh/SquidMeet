@@ -45,12 +45,12 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
         public void OnGet_Valid_Should_Return_Sort_by_Location_Types()
         {
             // Arrange
-            var data = TestHelper.ProductService.sortByLocation().Count();
+            var data = TestHelper.ProductService.sortByLocation().ToList();
             // Act
             //  pageModel.OnGet("0");
 
             // Assert
-            Assert.AreEqual(data, TestHelper.ProductService.sortByLocation().Count());
+            Assert.IsNotNull(data);
 
         }
         #endregion GetSortByLocationTypes
@@ -61,12 +61,12 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
         public void OnGet_Valid_Should_Return_Sort_by_Rating()
         {
             // Arrange
-            var data = TestHelper.ProductService.sortByRate().Count();
+            var data = TestHelper.ProductService.sortByRate().ToList();
             // Act
             //  pageModel.OnGet("0");
 
             // Assert
-            Assert.AreEqual(data, TestHelper.ProductService.sortByRate().Count());
+            Assert.IsNotNull(data);
 
         }
         #endregion GetSortByRatingLocations
