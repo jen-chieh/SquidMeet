@@ -7,13 +7,16 @@ using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
+    /// <summary>
+    /// Model to manage profile information
+    /// </summary>
     public class ProfileModel : PageModel
     {
         // Data middle tier
         public JsonFileUserService ProductService { get; }
 
         /// <summary>
-        /// Defualt Construtor
+        /// Default Construtor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
