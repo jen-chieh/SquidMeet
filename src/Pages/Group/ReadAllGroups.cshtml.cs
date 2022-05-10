@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace SquidMeet.WebSite.Pages.Group
 {
     /// <summary>
-    /// Read all groups
+    /// Model to read information from all groups
     /// </summary>
     public class ReadAllGroupModel : PageModel
     {
-        // Data middletier
+        // Data middle tier
         public JsonFileMeetupService ProductService { get; }
 
         /// <summary>
@@ -23,9 +23,11 @@ namespace SquidMeet.WebSite.Pages.Group
             ProductService = productService;
         }
 
-      
-      
-        // On get
+
+        /// <summary>
+        /// REST Get request
+        /// </summary>
+
         public void OnGet()
         {
         }
