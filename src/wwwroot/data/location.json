@@ -4,7 +4,7 @@
     "name": "Mr. West Cafe Bar - Downtown",
     "type_id": "0",
     "address": "720 Olive Way, Seattle, WA 98101",
-    "img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506053210.jpg",
+    "img": "https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
     "rating": null
   },
   {
@@ -60,7 +60,7 @@
     "name": "12th Ave Square Park",
     "type_id": "1",
     "address": "564 12th Ave, Seattle, WA 98122",
-    "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
+    "img": "http://www.seattle.gov/images//images/Departments/ParksAndRecreation/Parks/ABC/12AveSquare.jpg",
     "rating": null
   },
   {
@@ -198,7 +198,7 @@
   },
   {
     "location_id": "19",
-    "name": "Greenlake",
+    "name": "Greenlake Path",
     "type_id": "2",
     "address": "5900 west greenlake way \uFFFD Seattle, WA",
     "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418212051.png",
