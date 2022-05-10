@@ -60,8 +60,30 @@ namespace UnitTests.Pages.Group.Index
 
             var meetupResult = pageModel.MeetupService.GetMeetups();
             // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("../Index", result.PageName);
         }
         #endregion OnGet
+        #region OnPostAsync
+        [Test]
+        // Test to verify OnPost adding new location with invalid values results in invalid model state
+        public void OnPostAsync_InValid_Model_NotValid_Return_Page()
+        {
+            // Arrange
+            pageModel.newMeetup = new MeetupModel
+            {
+                Title = "error"
+            };
+
+            // Force an invalid error state
+            pageModel.ModelState.AddModelError("bogus", "bogus error");
+
+            // Act
+            var result = pageModel.OnPost() as ActionResult;
+
+            // Assert
+            Assert.AreEqual(false, pageModel.ModelState.IsValid);
+        }
+#endregion OnPostAsync
     }
 }
