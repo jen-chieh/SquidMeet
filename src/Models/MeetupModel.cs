@@ -12,23 +12,24 @@ namespace ContosoCrafts.WebSite.Models
         public string? meetup_id { get; set; }
         //Refer to location id
         public string? location { get; set; }
-        //An index so that we can do sort and arrange
+        //An index so that we can do sort and arrange by location type
         public string? LocationType { get; set; }
-        //Tittle of Meetup
+        //Title of Meetup
         public string? Title { get; set; }
-        //Start data and end Date of Meetup
+        //Start date and end Date of Meetup
         public string? Date { get; set; }
         //Attendees in the meetup
         public string[]? Attendees { get; set; }
-        // To identify the host
+        // To identify the host of the meetup
         public string? Host { get; set; }
-        //To descript what meetup is 
+        //To describe what meetup is 
         public string? Description { get; set; }
 
         // To store Invite code
         public string? InviteCode { get; set; }
-
+        // Image to describe the meetup
         public string? Img { get; set; }
+        // Video to describe the meetup
         public string? Video { get; set; }
         public override string ToString() => JsonSerializer.Serialize<MeetupModel>(this);
     }
