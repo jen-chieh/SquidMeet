@@ -20,8 +20,8 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <summary>
         /// Defualt Construtor
         /// </summary>
-        /// <param name="logger"></param>
-        /// <param name="meetupService, userService"></param>
+        /// <param name="meetupService"></param>
+        /// /// <param name="userService"></param>
         public AcceptInviteModel(JsonFileMeetupService meetupService, JsonFileUserService userService)
         {
             UserService = userService;
@@ -60,10 +60,7 @@ namespace SquidMeet.WebSite.Pages.Group
                 return Page();
             }
 
-
             MeetupService.AddAttendee(Meetup, "Azkaban");
-
-
             return RedirectToPage("ViewMyGroup");
         }
     }
