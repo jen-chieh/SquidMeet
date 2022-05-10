@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SquidMeet.WebSite.Pages.NewGroup
 {
+    /// <summary>
+    /// Model for creating a new group and linking it to a location in the database
+    /// </summary>
     public class CreateNewGroupModel : PageModel
     {
         // Data middle tier  
@@ -23,21 +26,30 @@ namespace SquidMeet.WebSite.Pages.NewGroup
             this.LocationService = locationService;
         }
 
-        // Data model
+        // The data to show
         [BindProperty]
         public LocationModel location { get; set; }
 
         [BindProperty]
         public MeetupModel newMeetup { get; set; }
 
-        // On get
+        /// <summary>
+        /// REST Get request
+        /// </summary>
+        /// <param name="locationid"></param>
         public void OnGet(string locationId)
         {
             location = LocationService.GetAllData().FirstOrDefault(x => x.location_id == locationId);
 
         }
 
-        // On post
+        /// <summary>
+        /// Post the model back to the page
+        /// The model is in the class variable newMeetup
+        /// Call the data layer to Update that data
+        /// Then return to the Index page
+        /// </summary>
+        /// <returns></returns>
         public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
