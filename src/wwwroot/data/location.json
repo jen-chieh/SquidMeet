@@ -8,31 +8,8 @@
     "rating": null
   },
   {
-    "location_id": "18",
-    "name": "Hike To A Summit",
-    "type_id": "1",
-    "address": "Seattle WA",
-    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231759.png",
-    "rating": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ]
-  },
-  {
-    "location_id": "4",
-    "name": "Renton Highlands Library",
-    "type_id": "2",
-    "address": "2801 NE 10th St, Renton, WA 98056 ",
-    "img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135544.jpeg",
-    "rating": null
-  },
-  {
     "location_id": "1",
-    "name": " Newcastle Library",
+    "name": "Newcastle Library",
     "type_id": "2",
     "address": "12901 Newcastle Way, Newcastle, WA 98056",
     "img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135716.png",
@@ -55,6 +32,14 @@
     "rating": null
   },
   {
+    "location_id": "4",
+    "name": "Renton Highlands Library",
+    "type_id": "2",
+    "address": "2801 NE 10th St, Renton, WA 98056 ",
+    "img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135544.jpeg",
+    "rating": null
+  },
+  {
     "location_id": "5",
     "name": "Lemieux Library and McGoldrick Learning Commons",
     "type_id": "2",
@@ -64,18 +49,26 @@
   },
   {
     "location_id": "6",
-    "name": "Douglass-Truth Branch - The Seattle Public Library ",
+    "name": "Douglass-Truth Branch - The Seattle Public Library",
     "type_id": "2",
     "address": "300 E Yesler Way, Seattle, WA 98122 ",
     "img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506054357.jpeg",
     "rating": null
   },
   {
-    "location_id": "8",
-    "name": "564 12th Ave, Seattle, WA 98122 ",
+    "location_id": "7",
+    "name": "12th Ave Square Park",
     "type_id": "1",
     "address": "564 12th Ave, Seattle, WA 98122",
     "img": " https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Mr-West-03.jpg",
+    "rating": null
+  },
+  {
+    "location_id": "8",
+    "name": "Vinaccio Coffee",
+    "type_id": "0",
+    "address": "14751 N Kelsey St Unit 101, Monroe, WA 98272",
+    "img": "https://images.squarespace-cdn.com/content/v1/5a02367d90badef9b746e222/1629040804303-G8WPY8913BLA9RRKHQE8/unsplash-image-Jmc0PORTQ-A.jpg?format=2500w ",
     "rating": null
   },
   {
@@ -188,7 +181,21 @@
       5
     ]
   },
-
+  {
+    "location_id": "18",
+    "name": "Hike To A Summit",
+    "type_id": "1",
+    "address": "Seattle WA",
+    "img": "https://raw.githubusercontent.com/Youjin6/pic/master/img/20220418231759.png",
+    "rating": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
   {
     "location_id": "19",
     "name": "Greenlake",
