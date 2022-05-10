@@ -1,208 +1,203 @@
 ﻿[
   {
     "location_hours_id": "0",
-    "location_mon_hours": "10AM–5PM",
-    "location_tues_hours": "1–8PM",
-    "location_wed_hours": "1–8PM",
-    "location_thurs_hours": "10AM–5PM",
-    "location_fri_hours": "10AM–5PM",
-    "location_sat_hours": "closed",
-    "location_sun_hours": "11AM–6PM"
+    "location_mon_hours": "10:00 AM – 5:00 PM",
+    "location_tues_hours": "1:00 PM – 8:00 PM",
+    "location_wed_hours": "1:00 PM – 8:00 PM",
+    "location_thurs_hours": "10:00 AM – 5:00 PM",
+    "location_fri_hours": "10:00 AM – 5:00 PM",
+    "location_sat_hours": "Closed",
+    "location_sun_hours": "11:00 AM – 6:00 PM"
 
   },
   {
     "location_hours_id": "1",
-    "location_mon_hours": "10AM–5PM",
-    "location_tues_hours": "1–8PM",
-    "location_wed_hours": "1–8PM",
-    "location_thurs_hours": "10AM–5PM",
-    "location_fri_hours": "10AM–5PM",
-    "location_sat_hours": "10AM–5PM ",
-    "location_sun_hours": "closed"
+    "location_mon_hours": "10:00 AM – 5:00 PM",
+    "location_tues_hours": "1:00 PM – 8:00 PM",
+    "location_wed_hours": "1:00 PM – 8:00 PM",
+    "location_thurs_hours": "10:00 AM – 5:00 PM",
+    "location_fri_hours": "10:00 AM – 5:00 PM",
+    "location_sat_hours": "10:00 AM – 5:00 PM",
+    "location_sun_hours": "Closed"
   },
   {
     "location_hours_id": "2",
-    "location_mon_hours": "06:30-08:30",
-    "location_tues_hours": "06:30-08:30",
-    "location_wed_hours": "06:30-08:30",
-    "location_thurs_hours": "06:30-08:30",
-    "location_fri_hours": "06:30-08:30",
-    "location_sat_hours": "06:30-08:30",
-    "location_sun_hours": "06:30-08:30"
-
-
-
+    "location_mon_hours": "06:30 AM - 08:30 PM",
+    "location_tues_hours": "06:30 AM - 08:30 PM",
+    "location_wed_hours": "06:30 AM - 08:30 PM",
+    "location_thurs_hours": "06:30 AM - 08:30 PM",
+    "location_fri_hours": "06:30 AM - 08:30 PM",
+    "location_sat_hours": "06:30 AM - 08:30 PM",
+    "location_sun_hours": "06:30 AM - 08:30 PM"
   },
   {
     "location_hours_id": "3",
-    "location_mon_hours": "closed",
-    "location_tues_hours": "closed",
-    "location_wed_hours": "7AM–9PM ",
-    "location_thurs_hours": "7AM–9PM ",
-    "location_fri_hours": "7AM–9PM ",
-    "location_sat_hours": "7AM–9PM ",
-    "location_sun_hours": "7AM–9PM "
+    "location_mon_hours": "Closed",
+    "location_tues_hours": "Closed",
+    "location_wed_hours": "7:00 AM – 9:00 PM",
+    "location_thurs_hours": "7:00 AM – 9:00 PM",
+    "location_fri_hours": "7:00 AM – 9:00 PM",
+    "location_sat_hours": "7:00 AM – 9:00 PM",
+    "location_sun_hours": "7:00 AM – 9:00 PM"
   },
   {
     "location_hours_id": "4",
-    "location_mon_hours": "7AM–6PM ",
-    "location_tues_hours": "7AM–6PM ",
-    "location_wed_hours": "7AM–6PM ",
-    "location_thurs_hours": "7AM–6PM ",
-    "location_fri_hours": "7AM–6PM ",
-    "location_sat_hours": "8AM–3PM",
-    "location_sun_hours": "8AM–3PM"
+    "location_mon_hours": "7:00 AM – 6:00 PM",
+    "location_tues_hours": "7:00 AM – 6:00 PM",
+    "location_wed_hours": "7:00 AM – 6:00 PM",
+    "location_thurs_hours": "7:00 AM – 6:00 PM",
+    "location_fri_hours": "7:00 AM – 6:00 PM",
+    "location_sat_hours": "8:00 AM – 3:00 PM",
+    "location_sun_hours": "8:00 AM – 3:00 PM"
   },
   {
     "location_hours_id": "5",
-    "location_mon_hours": "10AM–6PM ",
-    "location_tues_hours": "10AM–6PM ",
-    "location_wed_hours": "10AM–6PM ",
-    "location_thurs_hours": "10AM–6PM ",
-    "location_fri_hours": "10AM–6PM ",
-    "location_sat_hours": "closed",
-    "location_sun_hours": "10AM–6PM "
+    "location_mon_hours": "10:00 AM – 6:00 PM",
+    "location_tues_hours": "10:00 AM – 6:00 PM",
+    "location_wed_hours": "10:00 AM – 6:00 PM",
+    "location_thurs_hours": "10:00 AM – 6:00 PM",
+    "location_fri_hours": "10:00 AM – 6:00 PM",
+    "location_sat_hours": "Closed",
+    "location_sun_hours": "10:00 AM – 6:00 PM"
   },
   {
     "location_hours_id": "6",
-    "location_mon_hours": "10AM–6PM ",
-    "location_tues_hours": "10AM–6PM ",
-    "location_wed_hours": "12–8PM ",
-    "location_thurs_hours": "12–8PM",
-    "location_fri_hours": "10AM–6PM ",
-    "location_sat_hours": "10AM–6PM ",
-    "location_sun_hours": "12–5PM "
-
-
+    "location_mon_hours": "10:00 AM – 6:00 PM",
+    "location_tues_hours": "10:00 AM – 6:00 PM",
+    "location_wed_hours": "12:00 PM – 8:00 PM",
+    "location_thurs_hours": "12:00 PM – 8:00 PM",
+    "location_fri_hours": "10:00 AM – 6:00 PM",
+    "location_sat_hours": "10:00 AM – 6:00 PM",
+    "location_sun_hours": "12:00 PM – 5:00 PM"
   },
   {
     "location_hours_id": "7",
-    "location_mon_hours": "7AM–6PM ",
-    "location_tues_hours": "7AM–6PM ",
-    "location_wed_hours": "7AM–6PM ",
-    "location_thurs_hours": "7AM–6PM ",
-    "location_fri_hours": "7AM–6PM ",
-    "location_sat_hours": "8AM–3PM",
-    "location_sun_hours": "8AM–3PM "
+    "location_mon_hours": "7:00 AM – 6:00 PM",
+    "location_tues_hours": "7:00 AM – 6:00 PM",
+    "location_wed_hours": "7:00 AM – 6:00 PM",
+    "location_thurs_hours": "7:00 AM – 6:00 PM",
+    "location_fri_hours": "7:00 AM – 6:00 PM",
+    "location_sat_hours": "8:00 AM – 3:00 PM",
+    "location_sun_hours": "8:00 AM – 3:00 PM"
   },
   {
     "location_hours_id": "8",
-    "location_mon_hours": "4:30AM–9:30PM ",
-    "location_tues_hours": "4:30AM–9:30PM ",
-    "location_wed_hours": "4:30AM–9:30PM ",
-    "location_thurs_hours": "4:30AM–9:30PM ",
-    "location_fri_hours": "4:30AM–9:30PM ",
-    "location_sat_hours": "4:30AM–9:30PM ",
-    "location_sun_hours": "4:30AM–9:30PM "
+    "location_mon_hours": "4:30 AM – 9:30 PM",
+    "location_tues_hours": "4:30 AM – 9:30 PM",
+    "location_wed_hours": "4:30 AM – 9:30 PM",
+    "location_thurs_hours": "4:30 AM – 9:30 PM",
+    "location_fri_hours": "4:30 AM – 9:30 PM",
+    "location_sat_hours": "4:30 AM – 9:30 PM",
+    "location_sun_hours": "4:30 AM – 9:30 PM"
   },
   {
     "location_hours_id": "9",
-    "location_mon_hours": "8AM–5PM ",
-    "location_tues_hours": "8AM–5PM ",
-    "location_wed_hours": "8AM–5PM ",
-    "location_thurs_hours": "8AM–5PM ",
-    "location_fri_hours": "8AM–5PM ",
-    "location_sat_hours": "closed",
-    "location_sun_hours": "8AM–5PM "
+    "location_mon_hours": "8:00 AM – 5:00 PM",
+    "location_tues_hours": "8:00 AM – 5:00 PM",
+    "location_wed_hours": "8:00 AM – 5:00 PM",
+    "location_thurs_hours": "8:00 AM – 5:00 PM",
+    "location_fri_hours": "8:00 AM – 5:00 PM",
+    "location_sat_hours": "Closed",
+    "location_sun_hours": "8:00 AM – 5:00 PM"
   },
   {
     "location_hours_id": "10",
-    "location_mon_hours": "6:30AM–22:00PM  ",
-    "location_tues_hours": "6:30AM–22:00PM  ",
-    "location_wed_hours": "6:30AM–22:00PM  ",
-    "location_thurs_hours": "6:30AM–22:00PM  ",
-    "location_fri_hours": "6:30AM–22:00PM  ",
-    "location_sat_hours": "6:30AM–22:00PM  ",
-    "location_sun_hours": "6:30AM–22:00PM  "
+    "location_mon_hours": "6:30 AM – 10:00 PM",
+    "location_tues_hours": "6:30 AM – 10:00 PM",
+    "location_wed_hours": "6:30 AM – 10:00 PM",
+    "location_thurs_hours": "6:30 AM – 10:00 PM",
+    "location_fri_hours": "6:30 AM – 10:00 PM",
+    "location_sat_hours": "6:30 AM – 10:00 PM",
+    "location_sun_hours": "6:30 AM – 10:00 PM"
   },
   {
     "location_hours_id": "11",
-    "location_mon_hours": "9:30AM–16:30PM ",
-    "location_tues_hours": "9:30AM–16:30PM ",
-    "location_wed_hours": "9:30AM–16:30PM ",
-    "location_thurs_hours": "9:30AM–16:30PM ",
-    "location_fri_hours": "9:30AM–16:30PM ",
-    "location_sat_hours": "10:00AM–17:00PM   ",
-    "location_sun_hours": "10:00AM–17:00PM   "
+    "location_mon_hours": "9:30 AM – 4:30 PM",
+    "location_tues_hours": "9:30 AM – 4:30 PM",
+    "location_wed_hours": "9:30 AM – 4:30 PM",
+    "location_thurs_hours": "9:30 AM – 4:30 PM",
+    "location_fri_hours": "9:30 AM – 4:30 PM",
+    "location_sat_hours": "10:00 AM – 5:00 PM",
+    "location_sun_hours": "10:00 AM – 5:00 PM"
   },
   {
     "location_hours_id": "12",
-    "location_mon_hours": "11:00AM–2:00AM  ",
-    "location_tues_hours": "11:00AM–2:00AM  ",
-    "location_wed_hours": "11:00AM–2:00AM  ",
-    "location_thurs_hours": "11:00AM–2:00AM  ",
-    "location_fri_hours": "11:00AM–2:00AM  ",
-    "location_sat_hours": "11:00AM–2:00AM  ",
-    "location_sun_hours": "11:00AM–2:00AM  "
+    "location_mon_hours": "11:00 AM – 2:00 AM",
+    "location_tues_hours": "11:00 AM – 2:00 AM",
+    "location_wed_hours": "11:00 AM – 2:00 AM",
+    "location_thurs_hours": "11:00 AM – 2:00 AM",
+    "location_fri_hours": "11:00 AM – 2:00 AM",
+    "location_sat_hours": "11:00 AM – 2:00 AM",
+    "location_sun_hours": "11:00 AM – 2:00 AM"
   },
   {
     "location_hours_id": "13",
-    "location_mon_hours": "8:30AM–17:00PM ",
-    "location_tues_hours": "8:30AM–17:00PM ",
-    "location_wed_hours": "8:30AM–17:00PM ",
-    "location_thurs_hours": "8:30AM–17:00PM ",
-    "location_fri_hours": "8:30AM–17:00PM ",
-    "location_sat_hours": "close",
-    "location_sun_hours": "close"
+    "location_mon_hours": "8:30 AM – 5:00 PM",
+    "location_tues_hours": "8:30 AM – 5:00 PM",
+    "location_wed_hours": "8:30 AM – 5:00 PM",
+    "location_thurs_hours": "8:30 AM – 5:00 PM",
+    "location_fri_hours": "8:30 AM – 5:00 PM",
+    "location_sat_hours": "Closed",
+    "location_sun_hours": "Closed"
   },
   {
     "location_hours_id": "14",
-    "location_mon_hours": "8:AM–8:00PM ",
-    "location_tues_hours": "8:AM–8:00PM ",
-    "location_wed_hours": "8:AM–8:00PM ",
-    "location_thurs_hours": "8:AM–8:00PM ",
-    "location_fri_hours": "8:AM–8:00PM ",
-    "location_sat_hours": "8:AM–8:00PM ",
-    "location_sun_hours": "8:AM–8:00PM "
+    "location_mon_hours": "8:00 AM – 8:00 PM",
+    "location_tues_hours": "8:00 AM – 8:00 PM",
+    "location_wed_hours": "8:00 AM – 8:00 PM",
+    "location_thurs_hours": "8:00 AM – 8:00 PM",
+    "location_fri_hours": "8:00 AM – 8:00 PM",
+    "location_sat_hours": "8:00 AM – 8:00 PM",
+    "location_sun_hours": "8:00 AM – 8:00 PM"
   },
   {
     "location_hours_id": "15",
-    "location_mon_hours": "9:00 AM to 11:00 PM ",
-    "location_tues_hours": "9:00 AM to 11:00 PM ",
-    "location_wed_hours": "9:00 AM to 11:00 PM ",
-    "location_thurs_hours": "9:00 AM to 11:00 PM ",
-    "location_fri_hours": "9:00 AM to 11:00 PM ",
-    "location_sat_hours": "9:00 AM to 11:00 PM ",
-    "location_sun_hours": "9:00 AM to 11:00 PM "
+    "location_mon_hours": "9:00 AM - 11:00 PM",
+    "location_tues_hours": "9:00 AM - 11:00 PM",
+    "location_wed_hours": "9:00 AM - 11:00 PM",
+    "location_thurs_hours": "9:00 AM - 11:00 PM",
+    "location_fri_hours": "9:00 AM - 11:00 PM",
+    "location_sat_hours": "9:00 AM - 11:00 PM",
+    "location_sun_hours": "9:00 AM - 11:00 PM"
   },
   {
     "location_hours_id": "16",
-    "location_mon_hours": "8:00 PM to 10:00 PM ",
-    "location_tues_hours": "8:00 PM to 10:00 PM ",
-    "location_wed_hours": "8:00 PM to 10:00 PM ",
-    "location_thurs_hours": "8:00 PM to 10:00 PM ",
-    "location_fri_hours": "8:00 PM to 10:00 PM ",
-    "location_sat_hours": "8:00 PM to 10:00 PM ",
-    "location_sun_hours": "8:00 PM to 10:00 PM "
+    "location_mon_hours": "8:00 PM - 10:00 PM",
+    "location_tues_hours": "8:00 PM - 10:00 PM",
+    "location_wed_hours": "8:00 PM - 10:00 PM",
+    "location_thurs_hours": "8:00 PM - 10:00 PM",
+    "location_fri_hours": "8:00 PM - 10:00 PM",
+    "location_sat_hours": "8:00 PM - 10:00 PM",
+    "location_sun_hours": "8:00 PM - 10:00 PM"
   },
   {
     "location_hours_id": "17",
-    "location_mon_hours": "8:00 PM to 10:00 PM",
-    "location_tues_hours": "8:00 PM to 10:00 PM",
-    "location_wed_hours": "8:00 PM to 10:00 PM",
-    "location_thurs_hours": "8:00 PM to 10:00 PM",
-    "location_fri_hours": "8:00 PM to 10:00 PM",
-    "location_sat_hours": "8:00 PM to 10:00 PM",
-    "location_sun_hours": "8:00 PM to 10:00 PM"
+    "location_mon_hours": "8:00 PM - 10:00 PM",
+    "location_tues_hours": "8:00 PM - 10:00 PM",
+    "location_wed_hours": "8:00 PM - 10:00 PM",
+    "location_thurs_hours": "8:00 PM - 10:00 PM",
+    "location_fri_hours": "8:00 PM - 10:00 PM",
+    "location_sat_hours": "8:00 PM - 10:00 PM",
+    "location_sun_hours": "8:00 PM - 10:00 PM"
   },
   {
     "location_hours_id": "18",
-    "location_mon_hours": "7:45 AM to 2:15 PM",
-    "location_tues_hours": "7:45 AM to 2:15 PM",
-    "location_wed_hours": "7:45 AM to 2:15 PM",
-    "location_thurs_hours": "7:45 AM to 2:15 PM",
-    "location_fri_hours": "7:45 AM to 2:15 PM",
-    "location_sat_hours": "7:45 AM to 2:15 PM",
-    "location_sun_hours": "7:45 AM to 2:15 PM"
+    "location_mon_hours": "7:45 AM - 2:15 PM",
+    "location_tues_hours": "7:45 AM - 2:15 PM",
+    "location_wed_hours": "7:45 AM - 2:15 PM",
+    "location_thurs_hours": "7:45 - to 2:15 PM",
+    "location_fri_hours": "7:45 AM - 2:15 PM",
+    "location_sat_hours": "7:45 AM - 2:15 PM",
+    "location_sun_hours": "7:45 AM - 2:15 PM"
   },
   {
     "location_hours_id": "19",
-    "location_mon_hours": "8:00 AM to 9:00 PM",
-    "location_tues_hours": "8:00 AM to 9:00 PM",
-    "location_wed_hours": "8:00 AM to 9:00 PM",
-    "location_thurs_hours": "8:00 AM to 9:00 PM",
-    "location_fri_hours": "8:00 AM to 9:00 PM",
-    "location_sat_hours": "8:00 AM to 9:00 PM",
-    "location_sun_hours": "8:00 AM to 9:00 PM"
+    "location_mon_hours": "8:00 AM - 9:00 PM",
+    "location_tues_hours": "8:00 AM - 9:00 PM",
+    "location_wed_hours": "8:00 AM - 9:00 PM",
+    "location_thurs_hours": "8:00 AM - 9:00 PM",
+    "location_fri_hours": "8:00 AM - 9:00 PM",
+    "location_sat_hours": "8:00 AM - 9:00 PM",
+    "location_sun_hours": "8:00 AM - 9:00 PM"
   }
 ]
