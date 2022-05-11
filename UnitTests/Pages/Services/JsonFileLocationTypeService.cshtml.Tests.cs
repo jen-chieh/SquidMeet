@@ -8,11 +8,19 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Services.JsonFileLocationTypeService
 {
+    /// <summary>
+    /// Unit Tests for getlocationtype method for locationtype model
+    /// </summary>
     class LocationTypeTests
     {
         #region TestSetup
+        // Data middle tier
+
         public static LocationTypeModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
