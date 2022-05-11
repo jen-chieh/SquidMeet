@@ -8,6 +8,9 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Index
 {
+    /// <summary>
+    /// Unit Tests for onget method for index model
+    /// </summary>
     public class IndexTests
     {
         #region TestSetup
@@ -16,6 +19,9 @@ namespace UnitTests.Pages.Product.Index
 
         public static IndexModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
