@@ -10,11 +10,19 @@ using System.Text;
 
 namespace UnitTests.Pages.Services.JsonFileLocationHoursService
 {
+    /// <summary>
+    /// Unit Tests for onget method for location hours model
+    /// </summary>
     public class LocationHoursTests
     {
         #region TestSetup
+        // Data middle tier
+
         public static LocationHoursModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
