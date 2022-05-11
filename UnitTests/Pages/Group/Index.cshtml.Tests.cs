@@ -11,11 +11,19 @@ using System;
 
 namespace UnitTests.Pages.Group.Index
 {
+    /// <summary>
+    /// Unit Tests for onget method for CreateNewGroup model and onpost method for
+    /// valid and invalid calls
+    /// </summary>
     public class IndexGroupTest
     {
+        // Data middle tier
         #region TestSetup
         public static CreateNewGroupModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -44,7 +52,7 @@ namespace UnitTests.Pages.Group.Index
         }
         #endregion OnGet
         #region OnPost
-        // Test to verify the model state is valid with products
+        // Test to verify the model state is valid with locations
         [Test]
         public void OnPost_Valid_Should_Return_Location()
         {
@@ -66,7 +74,7 @@ namespace UnitTests.Pages.Group.Index
         #endregion OnGet
         #region OnPostAsync
         [Test]
-        // Test to verify OnPost adding new location with invalid values results in invalid model state
+        // Test to verify OnPost adding new meetup with invalid values results in invalid model state
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
