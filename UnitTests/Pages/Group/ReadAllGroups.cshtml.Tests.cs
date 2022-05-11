@@ -9,11 +9,18 @@ using SquidMeet.WebSite.Pages.Group;
 
 namespace UnitTests.Pages.Group.Update
 {
+    /// <summary>
+    /// Unit Tests for onget method for ReadAllGroup model
+    /// </summary>
     public class ReadAllGroupsTests
     {
+        // Data middle tier
         #region TestSetup
         public static ReadAllGroupModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
