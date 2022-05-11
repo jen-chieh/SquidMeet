@@ -6,6 +6,10 @@ using SquidMeet.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Create
 {
+    /// <summary>
+    /// Unit tests for profile update Model with valid and invalid onPost calls and
+    /// the onget method
+    /// </summary>
     public class ProfileUpdateTests
     {
         #region TestSetup
