@@ -9,11 +9,19 @@ using SquidMeet.WebSite.Pages.Group;
 
 namespace UnitTests.Pages.Group.Update
 {
+    /// <summary>
+    /// Unit Tests for onget method for MeetupUpdate model and onpost method
+    /// with valid and invalid calls
+    /// </summary>
     public class MeetUpdateTests
     {
+        // Data middle tier
         #region TestSetup
         public static MeetupUpdateModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
