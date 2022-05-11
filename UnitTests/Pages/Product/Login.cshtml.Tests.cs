@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace UnitTests.Pages.Product.Login
 {
     /// <summary>
-    /// Test for CreateAccount.cshtml and CreateUserModelModel with valid and invalid onPost calls
+    /// Test for login model with valid and invalid onPost calls
     /// </summary>
     public class LoginTests
     {
@@ -17,6 +17,9 @@ namespace UnitTests.Pages.Product.Login
         public static LoginModel pageModel;
 
         // Create new CreateUserModel
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -28,9 +31,32 @@ namespace UnitTests.Pages.Product.Login
 
         #endregion TestSetup
 
-        // Create new user and update user count
+        // Test to verify OnPost adding new account with valid values results in valid model state
         #region OnPost
-      
+        [Test]
+        public void OnPost_Valid_Should_Return_Users()
+        {
+
+            // Arrange
+            pageModel.User = new UserModel
+            {
+                user_id = "22",
+                email = "username@squid.com",
+                password = "password",
+                name = "test name",
+                age = 30,
+                gender = "female",
+                bio = "hello"
+            };
+
+            // Act
+            var result = pageModel.OnPost(pageModel.User) as RedirectToPageResult;
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(true, result.PageName.Contains("Profile"));
+        }
+
         [Test]
         // Test to verify OnPost adding new account with invalid values results in invalid model state
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
