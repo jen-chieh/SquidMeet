@@ -65,7 +65,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
             }
 
             User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(user.email));
-            HttpContext.Session.SetString("Userid", User.email);
+            //HttpContext.Session.SetString("Userid", User.email);
             return RedirectToPage("../Profile/Profile", new { id = User.user_id });
 
         }
