@@ -5,6 +5,9 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Read
 {
+    /// <summary>
+    /// Unit tests for onget method for read Model
+    /// </summary>
     public class ReadTests
     {
         #region TestSetup
