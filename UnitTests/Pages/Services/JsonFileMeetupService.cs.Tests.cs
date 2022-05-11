@@ -9,11 +9,20 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Services.JsonFileMeetupService
 {
+    /// <summary>
+    /// Unit Tests for onget, getmeetups, createmeetup, updatemeetup,
+    /// updatenullmeetup, and addattendee methods for meetup model
+    /// </summary>
     public class MeetupTests
     {
         #region TestSetup
+        // Data middle tier
+
         public static MeetupModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
