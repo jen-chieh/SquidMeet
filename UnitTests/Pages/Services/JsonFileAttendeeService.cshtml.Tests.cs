@@ -10,11 +10,18 @@ using System.Text;
 
 namespace UnitTests.Pages.Services.JsonFileAttendeeService
 {
+    /// <summary>
+    /// Unit Tests for onget method for attendee model
+    /// </summary>
     public class AttendeeTests
     {
         #region TestSetup
+        // Data middle tier
         public static AttendeeModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
