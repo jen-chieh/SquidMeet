@@ -9,11 +9,19 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Services.JsonFileUserService
 {
+    /// <summary>
+    /// Unit Tests for various onget method calls for user model
+    /// </summary>
     public class UserTests
     {
         #region TestSetup
+        // Data middle tier
+
         public static UserModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
