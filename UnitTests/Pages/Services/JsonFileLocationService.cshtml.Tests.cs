@@ -9,11 +9,20 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Services.JsonFileLocationService
 {
+    /// <summary>
+    /// Unit Tests for onget, getlocations, getsortbylocationtypes,
+    /// getsortbyratinglocations, addfirstrating, and addrating methods for location model
+    /// </summary>
     public class LocationTests
     {
         #region TestSetup
+        // Data middle tier
+
         public static LocationModel pageModel;
 
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
