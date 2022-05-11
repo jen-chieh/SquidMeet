@@ -5,18 +5,26 @@ using Moq;
 using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Models
-{   
+{
+    /// <summary>
+    /// Unit Test to check for expected values in AttendeeModel
+    /// </summary>
     [TestFixture]
     internal class AttendeeModelTests
     {
+        // Data middle tier
         private AttendeeModel _attendee;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void SetUp()
         {
             _attendee = new AttendeeModel();
         }
 
+        // Test to verify model information is accurate
         [Test]
         public void GetUserId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
