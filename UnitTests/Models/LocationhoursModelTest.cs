@@ -8,7 +8,7 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Models
 {
     /// <summary>
-    /// Unit Test to check for expected values in AttendeeModel
+    /// Unit Test to check for expected values in LocationHoursModel
     /// </summary>
     [TestFixture]
     internal class LocationhoursModelTests
