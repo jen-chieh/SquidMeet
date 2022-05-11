@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
 using NUnit.Framework;
 
@@ -8,11 +8,18 @@ using ContosoCrafts.WebSite.Pages;
 
 namespace UnitTests.Pages.Privacy
 {
+    /// <summary>
+    /// Unit Tests for onget method for privacy model
+    /// </summary>
     public class PrivacyTests
     {
         #region TestSetup
+        // Data middle tier
         public static PrivacyModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -28,6 +35,7 @@ namespace UnitTests.Pages.Privacy
         #endregion TestSetup
 
         #region OnGet
+        // Test to ensure valid onget call returns valid model state
         [Test]
         public void OnGet_Valid_Activity_Set_Should_Return_RequestId()
         {
