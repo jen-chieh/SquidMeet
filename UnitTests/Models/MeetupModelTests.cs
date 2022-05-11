@@ -5,18 +5,26 @@ using Moq;
 using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Models
-{   
+{       
+        /// <summary>
+        /// Unit Test to check for expected values in MeetupModel
+        /// </summary>
     [TestFixture]
     internal class MeetupModelTests
     {
+        // Data middle tier
         private MeetupModel _meetup;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void SetUp()
         {
             _meetup = new MeetupModel();
         }
 
+        // Test to verify model information is accurate
         [Test]
         public void GetMeetupId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
