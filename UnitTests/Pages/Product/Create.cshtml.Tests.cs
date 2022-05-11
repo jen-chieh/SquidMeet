@@ -7,8 +7,12 @@ using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Create
 {
+    /// <summary>
+    /// Unit Tests for onget method for create model
+    /// </summary>
     public class CreateTests
     {
+        // Data middle tier
         #region TestSetup
         public static CreateModel pageModel;
 
