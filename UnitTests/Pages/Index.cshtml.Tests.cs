@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 using Microsoft.Extensions.Logging;
 
@@ -10,12 +10,19 @@ using ContosoCrafts.WebSite.Pages;
 
 namespace UnitTests.Pages.Index
 {
+    /// <summary>
+    /// Unit Tests for onget method for index model
+    /// </summary>
     public class IndexTests
     {
         #region TestSetup
 
+        // Data middle tier
         public static IndexModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -29,6 +36,7 @@ namespace UnitTests.Pages.Index
         #endregion TestSetup
 
         #region OnGet
+        // Test to ensure valid onget call returns valid model state
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
