@@ -9,12 +9,19 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Delete
 {
+    /// <summary>
+    /// Unit tests for delete lModel with valid and invalid onPost calls and
+    /// the onget method
+    /// </summary>
     public class DeleteTests
     {
         #region TestSetup
         // Initialize DeleteModel
         public static DeleteModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
