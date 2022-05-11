@@ -8,11 +8,19 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Update
 {
+    /// <summary>
+    /// Unit tests for update Model with valid and invalid onPost calls and
+    /// the onget method
+    /// </summary>
     public class UpdateTests
     {
         #region TestSetup
+        // Data middle tier
         public static UpdateModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
