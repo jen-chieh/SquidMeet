@@ -8,6 +8,9 @@ using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Create
 {
+    /// <summary>
+    /// Unit Tests for valid onpost method for profile model
+    /// </summary>
     public class ProfileTests
     {
         #region TestSetup
@@ -15,6 +18,9 @@ namespace UnitTests.Pages.Product.Create
 
 
         // Create new ProfileModel
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -30,7 +36,6 @@ namespace UnitTests.Pages.Product.Create
         [Test]
         public void OnPost_Valid_Should_Return_Users()
         {
-
             // Arrange
 
             // Act
