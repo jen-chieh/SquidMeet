@@ -11,16 +11,27 @@ using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Controllers
 {
+    /// <summary>
+    /// Create class from locationtype.json file and retrieve all data from file.
+    /// </summary>
+
     [ApiController]
     [Route("[controller]")]
     public class LocationTypeController : Controller
     {
-        // Initialize user controller
+        /// <summary>
+        /// Default Construtor
+        /// </summary>
+        /// <param name="locationTypeService"></param>
         public LocationTypeController(JsonFileLocationTypeService locationTypeService) =>
            LocationTypenService = locationTypeService;
+
         // Data middle tier
         public JsonFileLocationTypeService LocationTypenService { get; }
-        // Get user information from model
+
+        /// <summary>
+        /// Get database information from model
+        /// </summary>
         [HttpGet]
         public IEnumerable<LocationTypeModel> Get() => LocationTypenService.GetLocationTypes();
     }
