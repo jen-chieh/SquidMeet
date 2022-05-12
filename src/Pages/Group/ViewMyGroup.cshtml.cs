@@ -23,7 +23,6 @@ namespace SquidMeet.WebSite.Pages.Group
             MeetupService = meetupService;
         }
 
-
         /// The data to show, bind to it for the post
         [BindProperty]
         public MeetupModel Group { get; set; }
@@ -53,5 +52,6 @@ namespace SquidMeet.WebSite.Pages.Group
             }
             return RedirectToPage("../Index");
         }
+
     }
 }
