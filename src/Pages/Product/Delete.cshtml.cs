@@ -13,7 +13,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
     /// </summary>
     public class DeleteModel : PageModel
     {
-        // Data middletier
+        // Data middle tier
         public JsonFileLocationService ProductService { get; }
 
         /// <summary>
@@ -58,5 +58,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             return RedirectToPage("./Index");
         }
+
     }
 }
