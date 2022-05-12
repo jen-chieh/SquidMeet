@@ -58,5 +58,6 @@ namespace SquidMeet.WebSite.Pages.Group
 
             return RedirectToPage("./ViewMyGroup");
         }
+
     }
 }
