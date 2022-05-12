@@ -11,28 +11,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
     /// </summary>
     public class CreateUserModelModel : PageModel
     {
-        // Data middletier
+        // Data middle tier
         public JsonFileUserService ProductService { get; }
 
         /// <summary>
-        /// Defualt Construtor
+        /// Default Constructor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
         public CreateUserModelModel(JsonFileUserService productService)
         {
             ProductService = productService;
-            //  Product  = ProductService.GetAllData().FirstOrDefault(m => m.location.Equals(id));
-            // Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
-
-
-            /// <summary>
-            /// Post the model back to the page
-            /// The model is in the class variable Product
-            /// Call the data layer to Update that data
-            /// Then return to the index page
-            /// </summary>
-            /// <returns></returns>
         }
 
         // The data to show
@@ -40,8 +29,12 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public UserModel User { get; set; }
 
         /// <summary>
-        /// REST Post request
+        /// Post the model back to the page
+        /// The model is in the class variable Product
+        /// Call the data layer to Update that data
+        /// Then return to the index page
         /// </summary>
+        /// <returns></returns>
         public IActionResult OnPost(UserModel User)
         {
             if (!ModelState.IsValid)
@@ -52,5 +45,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             return RedirectToPage("../Index");
         }
+
     }
 }
