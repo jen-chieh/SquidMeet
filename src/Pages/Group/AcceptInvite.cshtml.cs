@@ -14,6 +14,7 @@ namespace SquidMeet.WebSite.Pages.Group
     {
         // Data middle tier
         public JsonFileMeetupService MeetupService { get; }
+
         // Data middle tier
         public JsonFileUserService UserService { get; }
 
@@ -21,7 +22,7 @@ namespace SquidMeet.WebSite.Pages.Group
         /// Defualt Construtor
         /// </summary>
         /// <param name="meetupService"></param>
-        /// /// <param name="userService"></param>
+        /// <param name="userService"></param>
         public AcceptInviteModel(JsonFileMeetupService meetupService, JsonFileUserService userService)
         {
             UserService = userService;
@@ -52,6 +53,7 @@ namespace SquidMeet.WebSite.Pages.Group
         /// Call the data layer to Update that data
         /// Then return to the ViewMyGroup page
         /// </summary>
+        /// <param name="Meetup"></param>
         /// <returns></returns>
         public IActionResult OnPost(MeetupModel Meetup)
         {
@@ -63,5 +65,6 @@ namespace SquidMeet.WebSite.Pages.Group
             MeetupService.AddAttendee(Meetup, "Azkaban");
             return RedirectToPage("ViewMyGroup");
         }
+
     }
 }
