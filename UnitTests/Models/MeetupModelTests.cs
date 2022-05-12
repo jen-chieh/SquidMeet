@@ -29,6 +29,15 @@ namespace UnitTests.Models
         public void GetMeetupId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
             // Arrange
+            var data = new MeetupModel()
+            {
+                meetup_id = "ab012001-2db8-4270-8fcb-c2f870dae5f1",
+                location = "Seattle",
+                LocationType = "Indoor",
+                Title = "Intro to Javascript",
+                Date = "11/22/12",
+                Attendees = null,
+            };
 
             // Act
             var expectedValue = "625f11684b4cc8608a5ad58e";
@@ -36,6 +45,7 @@ namespace UnitTests.Models
             // Assert
             _meetup.meetup_id = expectedValue;
             Assert.AreEqual(expectedValue, _meetup.meetup_id);
+            Assert.IsNotNull(data.ToString());
         }
     }
 }
