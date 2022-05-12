@@ -11,19 +11,24 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileMeetupService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileMeetupService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
+
         // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         // Get json file path
-
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "meetup.json");
 
-        // Read .json file and return all data fields through the model
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<MeetupModel> GetMeetups()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
@@ -103,12 +108,13 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return meetup;
         }
+
         /// <summary>
         /// Save All Meetup data to storage
+        /// <param name="meetups"></param>
         /// </summary>
         private void SaveData(IEnumerable<MeetupModel> meetups)
         {
-
             using (var outputStream = File.Create(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<MeetupModel>>(
@@ -122,6 +128,11 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+        /// <summary>
+        /// Add attendee names to the meetup
+        /// </summary>
+        /// <param name="meetup"></param>
+        /// <param name="attendeeName"></param>
         public void AddAttendee(MeetupModel meetup, string attendeeName)
         {
             var meetups = GetMeetups();
