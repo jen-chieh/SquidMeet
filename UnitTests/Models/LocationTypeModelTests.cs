@@ -29,6 +29,12 @@ namespace UnitTests.Models
         public void GetLocationTypeId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
             // Arrange
+            var data = new LocationTypeModel()
+            {
+              
+                type_id = "1",
+                type_name= "Parks"
+            };
 
             // Act
             var expectedValue = "2";
@@ -36,6 +42,7 @@ namespace UnitTests.Models
             // Assert
             _locationType.type_id = expectedValue;
             Assert.AreEqual(expectedValue, _locationType.type_id);
+            Assert.IsNotNull(data.ToString());
         }
     }
 }
