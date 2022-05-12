@@ -10,18 +10,24 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileLocationTypeService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileLocationTypeService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
+
         // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         // Get json path 
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_type.json");
 
-        // Read .json file and return all data fields through the model
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<LocationTypeModel> GetLocationTypes()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
@@ -31,8 +37,7 @@ namespace ContosoCrafts.WebSite.Services
                 {
                     PropertyNameCaseInsensitive = true
                 });
-
-
         }
+
     }
 }
