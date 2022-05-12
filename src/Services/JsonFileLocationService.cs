@@ -14,19 +14,27 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileLocationService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileLocationService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
+
         // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
+
         // Get json file path 
         private string JsonFileName
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "location.json"); }
         }
-        // Read .json file and return all data fields through the model
+
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<LocationModel> GetAllData()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
@@ -39,6 +47,11 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
+        /// <summary>
+        /// Find matching productId and update rating of product to include new rating
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="rating"></param>
         public void AddRating(string productId, int rating)
         {
             var products = GetAllData();
@@ -54,6 +67,7 @@ namespace ContosoCrafts.WebSite.Services
                 products.First(x => x.location_id == productId).rating = ratings.ToArray();
             }
 
+            // Update database information to include rating
             using (var outputStream = File.OpenWrite(JsonFileName))
             {
                 JsonSerializer.Serialize<IEnumerable<LocationModel>>(
@@ -95,6 +109,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Save All products data to storage
         /// </summary>
+        /// <param name="products"></param>
         private void SaveData(IEnumerable<LocationModel> products)
         {
 
@@ -139,6 +154,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Remove the item from the system
         /// </summary>
+        /// <param name="id"></param>
         /// <returns></returns>
         public LocationModel DeleteData(string id)
         {
@@ -152,11 +168,16 @@ namespace ContosoCrafts.WebSite.Services
 
             return data;
         }
+
+        /// <summary>
+        /// Sort locations by rating in descending order
+        /// </summary>
+        /// <param name="rating"></param>
+        /// <returns></returns>
         public IEnumerable<LocationModel> sortByRate(int rating)
         {
             // Get the current set, and append the new record to it
             var dataSet = GetAllData();
-            // var data = dataSet.OrderBy(m => m.rating.Sum() / m.rating.Count());
 
             if (rating == 0)
                 return dataSet;
@@ -169,17 +190,19 @@ namespace ContosoCrafts.WebSite.Services
             var sortingData = data.Where(d => ((int)(d.rating.Sum()/d.rating.Count())).Equals(rating));
             return sortingData;
         }
+
+        /// <summary>
+        /// Sort locations by location type
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<LocationModel> sortByLocation()
         {
             // Get the current set, and append the new record to it
             var dataSet = GetAllData();
-            // var data = dataSet.OrderBy(m => m.rating.Sum() / m.rating.Count());
-
 
             var sortingData = dataSet.OrderByDescending(d => d.type_id);
             return sortingData;
         }
-
 
     }
 }
