@@ -28,7 +28,17 @@ namespace UnitTests.Models
         [Test]
         public void GetLocationId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
+            //
             // Arrange
+            var data = new LocationModel()
+            {
+                location_id = System.Guid.NewGuid().ToString(),
+                name = "Enter Name",
+                address = "Enter Address",
+                type_id = "Enter Type ID",
+                img = "",
+            };
+
 
             // Act
             var expectedValue = "0";
@@ -36,6 +46,7 @@ namespace UnitTests.Models
             // Assert
             _locationModel.location_id = expectedValue;
             Assert.AreEqual(expectedValue, _locationModel.location_id);
+            Assert.IsNotNull(data.ToString());
         }
     }
 }
