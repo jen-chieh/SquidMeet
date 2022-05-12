@@ -36,6 +36,7 @@ namespace UnitTests.Models
             // Assert
             _user.user_id = expectedValue;
             Assert.AreEqual(expectedValue, _user.user_id);
+            Assert.IsNotNull(_user.ToString());
         }
     }
 }
