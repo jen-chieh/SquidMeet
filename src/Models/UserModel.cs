@@ -3,6 +3,7 @@ using System.Text.Json;
 
 namespace ContosoCrafts.WebSite.Models
 {
+
     /// <summary>
     /// Model for the users.json file. The model assigns each user a unique ID with a
     /// username, password, name (first and last name separated by a space), age, gender
@@ -17,7 +18,7 @@ namespace ContosoCrafts.WebSite.Models
         [EmailAddress]
         public string? email { get; set; }
 
-        // Password that the user chooses
+        // Password that the user chooses with a length of 6 to 20 characters
         [DataType(DataType.Password), StringLength(20, MinimumLength = 6)]
         public string? password { get; set; }
 
@@ -37,6 +38,10 @@ namespace ContosoCrafts.WebSite.Models
         // String biography that the user supplies
         public string? bio { get; set; }
 
+        /// <summary>
+        /// Method to pass database information as a string
+        /// </summary>
+        /// <returns></returns>
         public override string ToString() => JsonSerializer.Serialize<UserModel>(this);
     }
 }
