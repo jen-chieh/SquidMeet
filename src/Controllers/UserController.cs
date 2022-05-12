@@ -5,20 +5,28 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ContosoCrafts.WebSite.Controllers
 {
+    /// <summary>
+    /// Create class from user.json file and retrieve all data from file.
+    /// </summary>
+
     [ApiController]
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        // Initialize user controller
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="userService"></param>
         public UserController(JsonFileUserService userService) => 
             UserService = userService;
 
         // Data middle tier
         public JsonFileUserService UserService { get; }
 
-         // Get user information from model
+        /// <summary>
+        /// Get database information from model
+        /// </summary>
         [HttpGet]
         public IEnumerable<UserModel> Get() => UserService.GetUsers();
-
     }
 }
