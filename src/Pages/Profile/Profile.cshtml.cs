@@ -27,6 +27,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
         // The data to show
         public UserModel Product;
+
         /// <summary>
         /// REST Get request
         /// </summary>
@@ -34,9 +35,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public void OnGet(string id)
         {
             Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
-
         }
-
         
     }
 }
