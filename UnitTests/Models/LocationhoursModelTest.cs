@@ -37,6 +37,7 @@ namespace UnitTests.Models
             // Assert
             _locationhoursModel.location_hours_id = expectedValue;
             Assert.AreEqual(expectedValue, _locationhoursModel.location_hours_id);
+            Assert.IsNotNull(_locationhoursModel.ToString());
         }
     }
 }
