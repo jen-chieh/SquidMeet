@@ -9,9 +9,21 @@
     <button @onclick="(e => sortingbyLocation())">
         <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;"> Location Sorting
     </button>
-    <button @onclick="(e => sortingbyRate())">
-        <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;"> Rate Sorting
-    </button>
+    <br>
+    <br>
+      <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;"> 
+    <select id="TypeOfUser" name="typeOfUser" class="active text-normal"
+
+            @onchange="(e => sortingbyRate(e))">
+        <option value="0">Rate Sorting</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+
 </div>
 
 
@@ -19,7 +31,7 @@
     @{
         var dataset = ProductService.GetAllData();
         if (locationsorting == true) { dataset = ProductService.sortByLocation(); }
-        if (ratesorting == true) { dataset = ProductService.sortByRate(); }
+        if (ratesorting == true) { dataset = ProductService.sortByRate(rating); }
         LocationHoursModel ProductHours;
         LocationTypeModel ProductType;
         foreach (var product in dataset)
@@ -128,6 +140,7 @@
     LocationModel selectedProduct;
     string selectedProductId;
     string selectedProductTypeId;
+    int rating = 0;
     LocationHoursModel selectedProductHours;
     LocationTypeModel selectedProductType;
     Boolean locationsorting = false;
@@ -182,5 +195,12 @@
         locationsorting = false;
         ratesorting = true;
 
+    }
+    void sortingbyRate(ChangeEventArgs e)
+    {
+        locationsorting = false;
+        ratesorting = true;
+        rating = Convert.ToInt32(e.Value);
+       
     }
 }
