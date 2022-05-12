@@ -9,20 +9,27 @@ namespace ContosoCrafts.WebSite.Services
     /// <summary>
     /// Create class from attendee.json file and retrieve all data from file.
     /// </summary>
+    
     public class JsonFileAttendeeService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileAttendeeService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
+
         // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
         // Get json file path 
         private string JsonFileAttendeeName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "attendees.json");
 
-        // Read .json file and return all data fields through the model
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<AttendeeModel> GetAttendees()
         {
             using var jsonFileReader = File.OpenText(JsonFileAttendeeName);
@@ -33,5 +40,6 @@ namespace ContosoCrafts.WebSite.Services
                     PropertyNameCaseInsensitive = true
                 });
         }
+
     }
 }
