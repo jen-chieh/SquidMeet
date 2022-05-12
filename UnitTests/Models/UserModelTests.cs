@@ -36,6 +36,19 @@ namespace UnitTests.Models
             // Assert
             _user.user_id = expectedValue;
             Assert.AreEqual(expectedValue, _user.user_id);
+          
+        }
+        // Test to verify model information is accurate
+        [Test]
+        public void GetUserToString_Valid_Test_Reading_Should_Return_nonNull()
+        {
+            // Arrange
+
+            // Act
+          
+
+            // Assert
+           
             Assert.IsNotNull(_user.ToString());
         }
     }
