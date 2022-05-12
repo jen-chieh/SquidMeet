@@ -13,7 +13,10 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileUserService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileUserService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
@@ -28,7 +31,11 @@ namespace ContosoCrafts.WebSite.Services
         // Random number generator for new user ids
         private static Random random = new Random();
 
-        // Generate and return a random string representation of numbers
+        /// <summary>
+        /// Generate and return a random string representation of numbers
+        /// </summary>
+        /// <param name="length"></param>
+        /// <returns></returns>
         public static string RandomString(int length)
         {
             const string chars = "0123456789";
@@ -36,8 +43,9 @@ namespace ContosoCrafts.WebSite.Services
                 .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-
-        // Read .json file and return data fields through the model
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<UserModel> GetUsers()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
@@ -48,8 +56,10 @@ namespace ContosoCrafts.WebSite.Services
                     PropertyNameCaseInsensitive = true
                 });
         }
+
         /// <summary>
         /// Save All products data to storage
+        /// <paramref name="products"/>
         /// </summary>
         private void SaveData(IEnumerable<UserModel> products)
         {
@@ -70,6 +80,7 @@ namespace ContosoCrafts.WebSite.Services
         /// <summary>
         /// Add new user to .json file
         /// </summary>
+        /// <param name="user"></param>
         /// <returns></returns>
         public UserModel CreateUser(UserModel user)
         {
@@ -158,7 +169,7 @@ namespace ContosoCrafts.WebSite.Services
         }
 
         /// <summary>
-        /// Update user password data
+        /// Update user gender data
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
@@ -213,5 +224,6 @@ namespace ContosoCrafts.WebSite.Services
             SaveData(dataSet);
             return user;
         }
+
     }
 }
