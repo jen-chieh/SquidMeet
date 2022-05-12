@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging;
 
 namespace ContosoCrafts.WebSite.Pages
 {
-
     /// <summary>
     /// Yucong Li
     /// Selina Hu
@@ -37,6 +36,8 @@ namespace ContosoCrafts.WebSite.Pages
 
         // The data to show
         public JsonFileLocationService ProductService { get; }
+
+        // Collection of the data to show
         public IEnumerable<LocationModel> Products { get; private set; }
 
         /// <summary>
@@ -46,5 +47,6 @@ namespace ContosoCrafts.WebSite.Pages
         {
             Products = ProductService.GetAllData();
         }
+
     }
 }
