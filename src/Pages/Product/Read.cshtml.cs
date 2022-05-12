@@ -36,5 +36,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
         }
+
     }
 }
