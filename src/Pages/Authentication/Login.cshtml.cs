@@ -16,7 +16,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         public JsonFileUserService ProductService { get; }
 
         /// <summary>
-        /// Default Construtor
+        /// Default Constructor
         /// </summary>
         /// <param name="logger"></param>
         /// <param name="productService"></param>
@@ -29,20 +29,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
         [BindProperty]
         public bool checkAccount { get; set; }
 
+        // The data to show
         [BindProperty]
         public UserModel User { get; set; }
 
-
-        /// <summary>
-        /// REST Get request
-        /// </summary>
-        /// <param name="id"></param>
-        /*
-        public void OnGet(string id)
-        {
-            User = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
-        }
-        */
         /// <summary>
         /// Post the model back to the page
         /// The model is in the class variable user
@@ -67,7 +57,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
             User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(user.email));
             //HttpContext.Session.SetString("Userid", User.email);
             return RedirectToPage("../Profile/Profile", new { id = User.user_id });
-
         }
 
     }
