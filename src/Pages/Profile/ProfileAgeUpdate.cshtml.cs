@@ -23,7 +23,6 @@ namespace SquidMeet.WebSite.Pages.Product
         // Data middle tier 
         public JsonFileUserService UserService { get; }
 
-
         // The data to show, bind to it for the post
         [BindProperty]
         public UserModel UserProfile { get; set; }
@@ -36,7 +35,6 @@ namespace SquidMeet.WebSite.Pages.Product
         {
             UserProfile = UserService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
         }
-
 
         /// <summary>
         /// Post the model back to the page
@@ -56,5 +54,6 @@ namespace SquidMeet.WebSite.Pages.Product
 
             return RedirectToPage("Profile", new { id = UserProfile.user_id });
         }
+
     }
 }
