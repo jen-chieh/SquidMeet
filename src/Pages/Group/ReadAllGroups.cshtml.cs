@@ -23,13 +23,12 @@ namespace SquidMeet.WebSite.Pages.Group
             ProductService = productService;
         }
 
-
         /// <summary>
         /// REST Get request
         /// </summary>
-
         public void OnGet()
         {
         }
+
     }
 }
