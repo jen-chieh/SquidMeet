@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -21,7 +21,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
             ProductService = productService;
         }
 
-        // Data Service
+        // Data middle tier
         public JsonFileLocationService ProductService { get; }
         
         // Collection of the Data
@@ -34,5 +34,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         {
             Products = ProductService.GetAllData();
         }
+
     }
 }
