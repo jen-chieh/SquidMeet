@@ -37,5 +37,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
 
             return RedirectToPage("./Update", new { Id = Product.location_id });
         }
+
     }
 }
