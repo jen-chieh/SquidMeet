@@ -11,7 +11,10 @@ namespace ContosoCrafts.WebSite.Services
     /// </summary>
     public class JsonFileLocationHoursService
     {
-        // Initialize class
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileLocationHoursService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
@@ -20,10 +23,12 @@ namespace ContosoCrafts.WebSite.Services
         // Data middle tier
         public IWebHostEnvironment WebHostEnvironment { get; }
 
-        // Get json file path 
+        // Get json file path
         private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "location_hours.json");
 
-        // Read .json file and return all data fields 
+        /// <summary>
+        /// Read .json file and return all data fields through the model
+        /// </summary>
         public IEnumerable<LocationHoursModel> GetLocationHours()
         {
             using var jsonFileReader = File.OpenText(JsonFileName);
