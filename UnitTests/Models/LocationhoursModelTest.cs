@@ -39,5 +39,18 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _locationhoursModel.location_hours_id);
             Assert.IsNotNull(_locationhoursModel.ToString());
         }
+        // Test to verify model information is not null
+        [Test]
+        public void locationhoursModelTostring_Valid_Test_model_Should_Return_Nonnull()
+        {
+            // Arrange
+
+            // Act
+          
+
+            // Assert
+           
+            Assert.IsNotNull(_locationhoursModel.ToString());
+        }
     }
 }
