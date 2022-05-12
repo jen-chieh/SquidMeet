@@ -13,10 +13,12 @@ namespace SquidMeet.WebSite.Pages.NewGroup
     {
         // Data middle tier  
         public JsonFileMeetupService MeetupService { get; }
+
+        // Data middle tier  
         public JsonFileLocationService LocationService { get; }
 
         /// <summary>
-        /// Constructor
+        /// Default Constructor
         /// </summary>
         /// <param name="meetupService"></param>
         /// <param name="locationService"></param>
@@ -26,10 +28,11 @@ namespace SquidMeet.WebSite.Pages.NewGroup
             this.LocationService = locationService;
         }
 
-        // The data to show
+        // The data to show, bind to it for the post
         [BindProperty]
         public LocationModel location { get; set; }
 
+        // The data to show, bind to it for the post
         [BindProperty]
         public MeetupModel newMeetup { get; set; }
 
@@ -57,11 +60,9 @@ namespace SquidMeet.WebSite.Pages.NewGroup
                 return Page();
             }
 
-            //LocationService.UpdateData(location);
             MeetupService.Create(newMeetup);
-
-
             return RedirectToPage("../Index");
         }
+
     }
 }
