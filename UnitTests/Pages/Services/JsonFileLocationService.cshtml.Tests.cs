@@ -70,12 +70,14 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
         public void OnGet_Valid_Should_Return_Sort_by_Rating()
         {
             // Arrange
-            var data = TestHelper.ProductService.sortByRate().ToList();
+            var data = TestHelper.ProductService.sortByRate(5).ToList();
+            var data2 = TestHelper.ProductService.sortByRate(0).ToList();
             // Act
             //  pageModel.OnGet("0");
 
             // Assert
             Assert.IsNotNull(data);
+            Assert.IsNotNull(data2);
 
         }
         #endregion GetSortByRatingLocations
