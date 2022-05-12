@@ -54,5 +54,6 @@ namespace SquidMeet.WebSite.Pages.Product
 
             return RedirectToPage("Profile", new { id = UserProfile.user_id });
         }
+
     }
 }
