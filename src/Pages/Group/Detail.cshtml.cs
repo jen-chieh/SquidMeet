@@ -33,5 +33,6 @@ namespace SquidMeet.WebSite.Pages.Group
         {
             Meetup = MeetupService.GetMeetups().FirstOrDefault(g => g.meetup_id == id);
         }
+
     }
 }
