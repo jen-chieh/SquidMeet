@@ -24,7 +24,9 @@ namespace UnitTests.Models
             _meetup = new MeetupModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetMeetupId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
@@ -39,7 +41,10 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _meetup.meetup_id);
           
         }
-        // Test to verify model information is accurate
+
+        /// <summary>
+        /// Test to verify model information is not null
+        /// </summary>
         [Test]
         public void GetMeetupTostring_Valid_Test_Reading_Should_Return_nonNull()
         {
@@ -54,5 +59,6 @@ namespace UnitTests.Models
             Assert.IsNotNull(_meetup.ToString());
 
         }
+
     }
 }
