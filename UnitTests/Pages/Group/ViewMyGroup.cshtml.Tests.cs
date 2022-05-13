@@ -16,9 +16,10 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
     class ViewMyGroupTests
     {
         #region TestSetup
-        // Initialize UpdateGroupModel (data middle tier)
 
+        // Initialize UpdateGroupModel (data middle tier)
         public static UpdateGroupModel pageModel;
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -33,7 +34,10 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify the model state is valid with products
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Groups()
         {
@@ -50,7 +54,10 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
         #endregion OnGet
 
         #region OnPost
-        // Test to verify the model state is valid with products
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Groups()
         {
@@ -69,9 +76,12 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
         }
         #endregion OnPost
 
-#region OnPostAsync
+        #region OnPostAsync
         [Test]
-        // Test to verify OnPost meetup with invalid values results in invalid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -99,6 +109,7 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
-#endregion OnPostAsync
+        #endregion OnPostAsync
+
     }
 }
