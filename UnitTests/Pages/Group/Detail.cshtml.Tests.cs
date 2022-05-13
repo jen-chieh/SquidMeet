@@ -15,6 +15,7 @@ namespace UnitTests.Pages.Group.Update
     public class DetailModelTests
     {
         #region TestSetup
+
         // Data middle tier
         public static DetailModel pageModel;
 
@@ -33,7 +34,10 @@ namespace UnitTests.Pages.Group.Update
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify OnGet returns correct data with a given id and model state is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
