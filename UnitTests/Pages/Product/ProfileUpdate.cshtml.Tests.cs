@@ -13,10 +13,13 @@ namespace UnitTests.Pages.Product.Create
     public class ProfileUpdateTests
     {
         #region TestSetup
+
+        // Data middle tier
         public static ProfileUpdateModel pageModel;
 
-
-        // Create new ProfileModel
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -27,12 +30,14 @@ namespace UnitTests.Pages.Product.Create
 
         #endregion TestSetup
 
-        // Verify that the user's name matches to the information from OnGet with a matching user_id
         #region OnGet
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Users()
         {
-
             // Arrange
 
             // Act
@@ -46,8 +51,11 @@ namespace UnitTests.Pages.Product.Create
         #endregion OnGet
 
         #region OnPostAsync
-        // Test to verify OnPost adding new user profile with valid values keeps valid model state
+
         [Test]
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
@@ -71,7 +79,9 @@ namespace UnitTests.Pages.Product.Create
         }
 
         [Test]
-        // Test to verify OnPost adding new location with invalid values results in invalid model state
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -95,6 +105,7 @@ namespace UnitTests.Pages.Product.Create
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
+
         #endregion OnPostAsync
     }
 }
