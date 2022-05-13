@@ -12,11 +12,15 @@ namespace UnitTests.Pages.Product.Create
     /// </summary>
     public class CreateTests
     {
-        // Data middle tier
+
         #region TestSetup
+
+        // Data middle tier
         public static CreateModel pageModel;
 
-        // Initialize CreateModel using TestHelper
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -28,7 +32,10 @@ namespace UnitTests.Pages.Product.Create
         #endregion TestSetup
 
         #region OnGet
-        // Create a new location object and verify that the location was successfully added
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -43,5 +50,6 @@ namespace UnitTests.Pages.Product.Create
             Assert.AreEqual(oldCount+1, TestHelper.ProductService.GetAllData().Count());
         }
         #endregion OnGet
+
     }
 }
