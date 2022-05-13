@@ -36,7 +36,10 @@ namespace UnitTests.Pages.Index
         #endregion TestSetup
 
         #region OnGet
-        // Test to ensure valid onget call returns valid model state
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -49,6 +52,7 @@ namespace UnitTests.Pages.Index
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
+
         #endregion OnGet
     }
 }
