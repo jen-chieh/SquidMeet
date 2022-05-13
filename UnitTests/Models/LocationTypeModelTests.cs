@@ -24,13 +24,14 @@ namespace UnitTests.Models
             _locationType = new LocationTypeModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetLocationTypeId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
             // Arrange
            
-
             // Act
             var expectedValue = "2";
 
@@ -39,7 +40,10 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _locationType.type_id);
        
         }
-        // Test to verify model information is accurate
+
+        /// <summary>
+        /// Test to verify model information is not null
+        /// </summary>
         [Test]
         public void GetLocationTypeTostring_Valid_Test_Reading_Should_Return_nonNull()
         {
@@ -54,5 +58,6 @@ namespace UnitTests.Models
             Assert.IsNotNull(_locationType.ToString());
 
         }
+
     }
 }
