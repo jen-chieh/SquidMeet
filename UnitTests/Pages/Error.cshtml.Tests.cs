@@ -16,9 +16,10 @@ namespace UnitTests.Pages.Error
     public class ErrorTests
     {
         #region TestSetup
-        // Data middle tier
 
+        // Data middle tier
         public static ErrorModel pageModel;
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -37,7 +38,10 @@ namespace UnitTests.Pages.Error
         #endregion TestSetup
 
         #region OnGet
-        // Test to ensure valid onget call returns valid model state
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Activity_Set_Should_Return_RequestId()
         {
@@ -56,8 +60,11 @@ namespace UnitTests.Pages.Error
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(activity.Id, pageModel.RequestId);
         }
-        // Test to ensure invalid onget call returns invalid model state
 
+        /// <summary>
+        /// Test to verify OnGet returns trace identifier and request id
+        /// and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_InValid_Activity_Null_Should_Return_TraceIdentifier()
         {
@@ -73,6 +80,7 @@ namespace UnitTests.Pages.Error
             Assert.AreEqual("trace", pageModel.RequestId);
             Assert.AreEqual(true, pageModel.ShowRequestId);
         }
+
         #endregion OnGet
     }
 }
