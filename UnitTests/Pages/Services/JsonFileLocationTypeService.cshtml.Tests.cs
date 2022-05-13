@@ -9,13 +9,13 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Pages.Services.JsonFileLocationTypeService
 {
     /// <summary>
-    /// Unit Tests for getlocationtype method for locationtype model
+    /// Unit Tests for getlocationtype method for locationtype service
     /// </summary>
     class LocationTypeTests
     {
         #region TestSetup
-        // Data middle tier
 
+        // Data middle tier
         public static LocationTypeModel pageModel;
 
         /// <summary>
@@ -33,7 +33,10 @@ namespace UnitTests.Pages.Services.JsonFileLocationTypeService
         #endregion TestSetup
 
         #region GetLocationType
-        // Test to verify OnGet returns correct Locationdata with  is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Location_Type()
         {
@@ -53,6 +56,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationTypeService
             Assert.AreEqual("Conference Rooms", data[2].type_name);
 
         }
+
         #endregion GetLocationTypes
     }
 }
