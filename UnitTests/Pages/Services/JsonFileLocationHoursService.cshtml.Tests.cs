@@ -11,13 +11,13 @@ using System.Text;
 namespace UnitTests.Pages.Services.JsonFileLocationHoursService
 {
     /// <summary>
-    /// Unit Tests for onget method for location hours model
+    /// Unit Tests for onget method for location hours service
     /// </summary>
     public class LocationHoursTests
     {
         #region TestSetup
-        // Data middle tier
 
+        // Data middle tier
         public static LocationHoursModel pageModel;
 
         /// <summary>
@@ -35,7 +35,10 @@ namespace UnitTests.Pages.Services.JsonFileLocationHoursService
         #endregion TestSetup
 
         #region GetLocationHours
-        // Test to verify OnGet returns correct LocationHours data
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Location_Hours()
         {
@@ -53,6 +56,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationHoursService
             Assert.AreEqual("Closed", data[1].location_sun_hours);
 
         }
+
         #endregion GetLocationHours
     }
 }
