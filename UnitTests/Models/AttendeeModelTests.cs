@@ -24,7 +24,9 @@ namespace UnitTests.Models
             _attendee = new AttendeeModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetUserId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
@@ -37,5 +39,6 @@ namespace UnitTests.Models
             _attendee.UserId = expectedValue;
             Assert.AreEqual(expectedValue, _attendee.UserId);
         }
+
     }
 }
