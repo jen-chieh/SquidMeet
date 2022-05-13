@@ -14,10 +14,10 @@ namespace UnitTests.Pages.Product.Create
     public class ProfileTests
     {
         #region TestSetup
+
+        // Data middle tier
         public static ProfileModel pageModel;
 
-
-        // Create new ProfileModel
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -31,8 +31,11 @@ namespace UnitTests.Pages.Product.Create
 
         #endregion TestSetup
 
-        // Verify that the user's name matches to the information from OnGet with a matching user_id
         #region OnPost
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Users()
         {
@@ -46,6 +49,7 @@ namespace UnitTests.Pages.Product.Create
             Assert.AreEqual("Blanchard Whitehead", pageModel.Product.name);
 
         }
+
         #endregion OnPost
     }
 }
