@@ -12,9 +12,13 @@ namespace UnitTests.Pages.Product.Update
     public class ProfileGenderUpdateTests
     {
         #region TestSetup
+
+        // Data middle tier
         public static ProfileGenderUpdateModel pageModel;
 
-        // Initialize ProfileGenderUpdateModel with TestHelper
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -26,7 +30,10 @@ namespace UnitTests.Pages.Product.Update
         #endregion TestSetup
 
         #region OnGet
-        // Verify that the user's name matches to the information from OnGet with a matching user_id
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Username()
         {
@@ -43,7 +50,10 @@ namespace UnitTests.Pages.Product.Update
         #endregion OnGet
 
         #region OnPostAsync
-        // Test to verify OnPost updating profile gender with valid values keeps valid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPostAsync_Valid_Should_Return_Profile()
         {
@@ -69,7 +79,9 @@ namespace UnitTests.Pages.Product.Update
         }
 
         [Test]
-        // Test to verify OnPost updating profile gender with invalid values returns invalid model state
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -93,6 +105,7 @@ namespace UnitTests.Pages.Product.Update
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
+
         #endregion OnPostAsync
     }
 }
