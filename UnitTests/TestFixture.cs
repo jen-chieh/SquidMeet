@@ -3,6 +3,9 @@
 using NUnit.Framework;
 namespace UnitTests
 {
+    /// <summary>
+    /// TestFixture used to setup web root, data folder and directory update
+    /// </summary>
     [SetUpFixture]
     public class TestFixture
     {
@@ -12,6 +15,9 @@ namespace UnitTests
         // Path to the data folder for the content
         public static string DataContentRootPath = "./data/";
 
+        /// <summary>
+        /// Copy all database files to the test folder before running
+        /// </summary>
         [OneTimeSetUp]
         public void RunBeforeAnyTests()
         {
@@ -43,9 +49,13 @@ namespace UnitTests
             }
         }
 
+        /// <summary>
+        /// Setup for scripts to run after unit tests are completed
+        /// </summary>
         [OneTimeTearDown]
         public void RunAfterAnyTests()
         {
         }
+
     }
 }
