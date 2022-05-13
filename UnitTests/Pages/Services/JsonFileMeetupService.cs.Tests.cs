@@ -11,13 +11,13 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
 {
     /// <summary>
     /// Unit Tests for onget, getmeetups, createmeetup, updatemeetup,
-    /// updatenullmeetup, and addattendee methods for meetup model
+    /// updatenullmeetup, and addattendee methods for meetup service
     /// </summary>
     public class MeetupTests
     {
         #region TestSetup
-        // Data middle tier
 
+        // Data middle tier
         public static MeetupModel pageModel;
 
         /// <summary>
@@ -34,7 +34,10 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
         #endregion TestSetup
 
         #region GetMeetups
-        // Test to verify getMeetups returns correct data is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Meetup()
         {
@@ -49,13 +52,15 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
         }
         #endregion GetMeetups
 
-        
         #region CreateMeetup
-        // Test to verify CreateData returns correct data is valid
+
+        /// <summary>
+        /// Test to verify Create creates correct meetup that has a non-null model
+        /// </summary>
         [Test]
         public void Valid_CreateMeetup()
         {
-            // Arrang
+            // Arrange
             var data = new MeetupModel()
             {
                 meetup_id = System.Guid.NewGuid().ToString(),
@@ -72,17 +77,19 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
             var meetup = TestHelper.MeetupService.Create(data);
 
             // Act
-          
-
+    
             // Assert
             Assert.NotNull(data);
-
         }
         
         #endregion CreateMeetup
         
         #region UpdateMeetup
-        // Test to verify updateMeetup returns correct data is valid
+
+        /// <summary>
+        /// Test to verify that updateMeetup updates valid meetup information correctly
+        /// and returns a non-null model
+        /// </summary>
         [Test]
         public void Valid_update()
         {
@@ -98,13 +105,17 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
 
         }
         #endregion UpdateMeetup
-        
+
         #region UpdateNullMeetup
-        // Test to verify updateUser returns correct data is invalid
+
+        /// <summary>
+        /// Test to verify that updateMeetup updates invalid meetup information correctly
+        /// and returns a null model
+        /// </summary>
         [Test]
         public void inValid_Meetupupdate()
         {
-            // Arrang
+            // Arrange
             var data = new MeetupModel()
             {
                 meetup_id = System.Guid.NewGuid().ToString(),
@@ -126,8 +137,13 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
 
         }
         #endregion UpdateNullMeetup
+
         #region AddAttendee
-        // Test to verify AddAttendee returns correct data is valid
+
+        /// <summary>
+        /// Test to verify AddAttendee returns correct data is valid
+        /// and returns a non-null model
+        /// </summary>
         [Test]
         public void Valid_AddAttendee()
         {
@@ -145,14 +161,13 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
                 InviteCode = "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
 
             };
-            // var oldnumber = TestHelper.MeetupService.g
+
             // Act
 
             TestHelper.MeetupService.AddAttendee(data, "test");
 
             // Assert
             Assert.NotNull(data);
-
         }
 
         #endregion AddAttendee 
