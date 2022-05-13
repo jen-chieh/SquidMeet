@@ -11,9 +11,13 @@ namespace UnitTests.Pages.Product.Read
     public class ReadTests
     {
         #region TestSetup
-        // Initialize ReadModel
+
+        // Data middle tier
         public static ReadModel pageModel;
 
+        /// <summary>
+        /// Defualt Construtor
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
@@ -25,7 +29,10 @@ namespace UnitTests.Pages.Product.Read
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify model state is valid and provides the correct data for a given id
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -38,6 +45,7 @@ namespace UnitTests.Pages.Product.Read
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Mr. West Cafe Bar - Downtown", pageModel.Product.name);
         }
+
         #endregion OnGet
     }
 }
