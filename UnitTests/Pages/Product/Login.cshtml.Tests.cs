@@ -14,9 +14,10 @@ namespace UnitTests.Pages.Product.Login
     public class LoginTests
     {
         #region TestSetup
+
+        // Data middle tier
         public static LoginModel pageModel;
 
-        // Create new CreateUserModel
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -31,8 +32,11 @@ namespace UnitTests.Pages.Product.Login
 
         #endregion TestSetup
 
-        // Test to verify OnPost adding new account with valid values results in valid model state
         #region OnPost
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Users()
         {
@@ -58,7 +62,10 @@ namespace UnitTests.Pages.Product.Login
         }
 
         [Test]
-        // Test to verify OnPost adding new account with invalid values results in invalid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -82,6 +89,7 @@ namespace UnitTests.Pages.Product.Login
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
+
         #endregion OnPost
     }
 }
