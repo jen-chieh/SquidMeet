@@ -24,7 +24,9 @@ namespace UnitTests.Models
             _user = new UserModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetUserId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
@@ -38,7 +40,10 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _user.user_id);
           
         }
-        // Test to verify model information is accurate
+
+        /// <summary>
+        /// Test to verify model information is not null
+        /// </summary>
         [Test]
         public void GetUserToString_Valid_Test_Reading_Should_Return_nonNull()
         {
@@ -51,5 +56,6 @@ namespace UnitTests.Models
            
             Assert.IsNotNull(_user.ToString());
         }
+
     }
 }
