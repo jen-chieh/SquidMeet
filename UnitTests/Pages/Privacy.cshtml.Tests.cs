@@ -14,6 +14,7 @@ namespace UnitTests.Pages.Privacy
     public class PrivacyTests
     {
         #region TestSetup
+
         // Data middle tier
         public static PrivacyModel pageModel;
 
@@ -35,7 +36,10 @@ namespace UnitTests.Pages.Privacy
         #endregion TestSetup
 
         #region OnGet
-        // Test to ensure valid onget call returns valid model state
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Activity_Set_Should_Return_RequestId()
         {
