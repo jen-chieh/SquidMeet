@@ -25,7 +25,9 @@ namespace UnitTests.Models
             _locationhoursModel = new LocationHoursModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetLocationId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
@@ -39,7 +41,10 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _locationhoursModel.location_hours_id);
             Assert.IsNotNull(_locationhoursModel.ToString());
         }
-        // Test to verify model information is not null
+
+        /// <summary>
+        /// Test to verify model information is not null
+        /// </summary>
         [Test]
         public void locationhoursModelTostring_Valid_Test_model_Should_Return_Nonnull()
         {
@@ -52,5 +57,6 @@ namespace UnitTests.Models
            
             Assert.IsNotNull(_locationhoursModel.ToString());
         }
+
     }
 }
