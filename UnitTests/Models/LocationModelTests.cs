@@ -24,14 +24,14 @@ namespace UnitTests.Models
             _locationModel = new LocationModel();
         }
 
-        // Test to verify model information is accurate
+        /// <summary>
+        /// Test to verify model information is accurate
+        /// </summary>
         [Test]
         public void GetLocationId_Valid_Test_Reading_Should_Return_ExpectedValue()
         {
-            //
             // Arrange
            
-
             // Act
             var expectedValue = "0";
 
@@ -40,20 +40,21 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _locationModel.location_id);
           
         }
-        // Test to verify model information is accurate
+
+        /// <summary>
+        /// Test to verify model information is not null
+        /// </summary>
         [Test]
         public void GetLocationModelTostring_Valid_Test_Reading_Should_Return_Nonnull()
         {
-            //
             // Arrange
-
 
             // Act
        
-
             // Assert
           
             Assert.IsNotNull(_locationModel.ToString());
         }
+
     }
 }
