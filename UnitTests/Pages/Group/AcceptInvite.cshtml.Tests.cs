@@ -15,6 +15,7 @@ namespace UnitTests.Pages.Group.Update
     public class AcceptInviteTests
     {
         #region TestSetup
+
         // Data middle tier
         public static AcceptInviteModel pageModel;
 
@@ -34,7 +35,10 @@ namespace UnitTests.Pages.Group.Update
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify OnGet returns correct data with a given id and model state is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -50,7 +54,10 @@ namespace UnitTests.Pages.Group.Update
         #endregion OnGet
 
         #region OnPostAsync
-        // Test to verify OnPost update meetup with valid values keeps valid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPostAsync_Valid_Should_Return_Products()
         {
@@ -79,7 +86,10 @@ namespace UnitTests.Pages.Group.Update
         }
 
         [Test]
-        // Test to verify OnPost update meetup with invalid values results in invalid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -108,5 +118,6 @@ namespace UnitTests.Pages.Group.Update
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
         #endregion OnPostAsync
+
     }
 }
