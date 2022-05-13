@@ -10,13 +10,14 @@ using ContosoCrafts.WebSite.Models;
 namespace UnitTests.Pages.Product.Delete
 {
     /// <summary>
-    /// Unit tests for delete lModel with valid and invalid onPost calls and
+    /// Unit tests for delete Model with valid and invalid onPost calls and
     /// the onget method
     /// </summary>
     public class DeleteTests
     {
         #region TestSetup
-        // Initialize DeleteModel
+
+        // Data middle tier
         public static DeleteModel pageModel;
 
         /// <summary>
@@ -33,7 +34,10 @@ namespace UnitTests.Pages.Product.Delete
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify OnGet returns the correct values for a given location id
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -49,7 +53,10 @@ namespace UnitTests.Pages.Product.Delete
         #endregion OnGet
 
         #region OnPostAsync
-        // Test to verify OnPostAsync deletes the correct data
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPostAsync_Valid_Should_Return_Products()
         {
@@ -72,7 +79,10 @@ namespace UnitTests.Pages.Product.Delete
         }
 
         [Test]
-        // Test to verify OnPostAsync has an invalid model with invalid location values on creation.
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange (invalid values)
@@ -94,6 +104,7 @@ namespace UnitTests.Pages.Product.Delete
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
+
         #endregion OnPostAsync
     }
 }
