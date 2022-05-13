@@ -15,8 +15,8 @@ namespace UnitTests.Pages.Services.JsonFileUserService
     public class UserTests
     {
         #region TestSetup
-        // Data middle tier
 
+        // Data middle tier
         public static UserModel pageModel;
 
         /// <summary>
@@ -33,24 +33,31 @@ namespace UnitTests.Pages.Services.JsonFileUserService
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify getAllUsers returns correct data is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_User()
         {
             // Arrange
             var data = TestHelper.UserService.GetUsers().Count();
+
             // Act
         
-
             // Assert
             Assert.AreEqual(data, TestHelper.UserService.GetUsers().Count());
            
         }
+
         #endregion OnGet
 
-
         #region OnGet
-        // Test to verify saveData returns correct data is valid
+
+        /// <summary>
+        /// Test to verify saveData returns correct data is valid
+        /// and the model is not null
+        /// </summary>
         [Test]
         public void Valid_CreateUser()
         {
@@ -76,10 +83,15 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.NotNull(data);
 
         }
+
         #endregion OnGet
 
         #region OnGet
-        // Test to verify updateUser returns correct data is valid
+
+        /// <summary>
+        /// Test to verify updateUser returns correct data is valid
+        /// and the model is not null
+        /// </summary>
         [Test]
         public void Valid_update()
         {
@@ -93,14 +105,19 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.NotNull(updatedUser);
 
         }
+
         #endregion OnGet
 
         #region OnGet
-        // Test to verify updateUser returns correct data is invalid
+
+        /// <summary>
+        /// Test to verify updateUser returns correct data is invalid
+        /// and the model is null
+        /// </summary>
         [Test]
         public void inValid_update()
         {
-            // Arrang
+            // Arrange
             var user = new UserModel()
             {
                 user_id = "test11",
@@ -113,16 +130,22 @@ namespace UnitTests.Pages.Services.JsonFileUserService
 
             };
             var updatedUser = TestHelper.UserService.UpdateUser(user);
+
             // Act    
 
             // Assert
             Assert.IsNull(updatedUser);
 
         }
+
         #endregion OnGet
 
         #region OnGet
-        // Test to verify updateUserage returns correct data is valid
+
+        /// <summary>
+        /// Test to verify updateUserage returns correct data is valid
+        /// and model is not null
+        /// </summary>
         [Test]
         public void Valid_updateAge()
         {
@@ -137,9 +160,15 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.IsNotNull(updatedUser);
 
         }
+
         #endregion OnGet
+
         #region OnGet
-        // Test to verify updateUserGender returns correct data is valid
+
+        /// <summary>
+        /// Test to verify updateUserGender returns correct data is valid
+        /// and model is not null
+        /// </summary>
         [Test]
         public void Valid_updateGender()
         {
@@ -154,9 +183,15 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.IsNotNull(updatedUser);
 
         }
+
         #endregion OnGet
+
         #region OnGet
-        // Test to verify updateUserbio returns correct data is valid
+
+        /// <summary>
+        /// Test to verify updateUserBio returns correct data is valid
+        /// and model is not null
+        /// </summary>
         [Test]
         public void Valid_Bio()
         {
@@ -171,9 +206,15 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.IsNotNull(updatedUser);
 
         }
+
         #endregion OnGet
+
         #region OnGet
-        // Test to verify updatename returns correct data is valid
+
+        /// <summary>
+        /// Test to verify updateUserName returns correct data is valid
+        /// and model is not null
+        /// </summary>
         [Test]
         public void Valid_updatname()
         {
@@ -188,9 +229,15 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.IsNotNull(updatedUser);
 
         }
+
         #endregion OnGet
+
         #region OnGet
-        // Test to verify updatepassword returns correct data is invalid
+
+        /// <summary>
+        /// Test to verify updateUserPassword returns correct data is valid
+        /// and model is not null
+        /// </summary>
         [Test]
         public void Valid_updatepassword()
         {
@@ -205,8 +252,8 @@ namespace UnitTests.Pages.Services.JsonFileUserService
             Assert.IsNotNull(updatedUser);
 
         }
-        #endregion OnGet
 
+        #endregion OnGet
 
     }
 }
