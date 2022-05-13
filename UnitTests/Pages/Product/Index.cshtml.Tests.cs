@@ -14,9 +14,10 @@ namespace UnitTests.Pages.Product.Index
     public class IndexTests
     {
         #region TestSetup
-        // Initialize IndexModel and PageContext
+        // Data middle tier
         public static PageContext pageContext;
 
+        // Data middle tier
         public static IndexModel pageModel;
 
         /// <summary>
@@ -33,7 +34,10 @@ namespace UnitTests.Pages.Product.Index
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify the model state is valid with products
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Products()
         {
@@ -46,6 +50,7 @@ namespace UnitTests.Pages.Product.Index
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, pageModel.Products.ToList().Any());
         }
+
         #endregion OnGet
     }
 }
