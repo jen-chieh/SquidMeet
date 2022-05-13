@@ -11,6 +11,7 @@ using System;
 
 namespace UnitTests.Pages.Group.Index
 {
+
     /// <summary>
     /// Unit Tests for onget method for CreateNewGroup model and onpost method for
     /// valid and invalid calls
@@ -35,7 +36,10 @@ namespace UnitTests.Pages.Group.Index
         #endregion TestSetup
 
         #region OnGet
-        // Test to verify OnGet returns correct data with a given id and model state is valid
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
         [Test]
         public void OnGet_Valid_Should_Return_Location()
         {
@@ -51,8 +55,12 @@ namespace UnitTests.Pages.Group.Index
 
         }
         #endregion OnGet
+
         #region OnPost
-        // Test to verify the model state is valid with locations
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
         [Test]
         public void OnPost_Valid_Should_Return_Location()
         {
@@ -72,9 +80,13 @@ namespace UnitTests.Pages.Group.Index
             Assert.AreEqual("../Index", result.PageName);
         }
         #endregion OnGet
+
         #region OnPostAsync
         [Test]
-        // Test to verify OnPost adding new meetup with invalid values results in invalid model state
+
+        /// <summary>
+        /// Test to verify OnPost update meetup with invalid values keeps invalid model state
+        /// </summary>
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
@@ -92,6 +104,7 @@ namespace UnitTests.Pages.Group.Index
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
-#endregion OnPostAsync
+        #endregion OnPostAsync
+
     }
 }
