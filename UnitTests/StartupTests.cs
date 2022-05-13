@@ -12,10 +12,14 @@ namespace UnitTests.Pages.Startup
     {
         #region TestSetup
 
+        /// <summary>
+        /// Initialize Tests
+        /// </summary>
         [SetUp]
         public void TestInitialize()
         {
         }
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -23,20 +27,28 @@ namespace UnitTests.Pages.Startup
         {
             public Startup(IConfiguration config) : base(config) { }
         }
+
         #endregion TestSetup
 
         #region ConfigureServices
-        // Test for valid call to webhost returns a non null value
+
+        /// <summary>
+        /// Test for valid call to webhost returns a non null value
+        /// </summary>
         [Test]
         public void Startup_ConfigureServices_Valid_Defaut_Should_Pass()
         {
             var webHost = Microsoft.AspNetCore.WebHost.CreateDefaultBuilder().UseStartup<Startup>().Build();
             Assert.IsNotNull(webHost);
         }
+
         #endregion ConfigureServices
 
         #region Configure
-        // Test for valid call to webhost returns a non null value
+
+        /// <summary>
+        /// Test for valid call to webhost returns a non null value
+        /// </summary>
         [Test]
         public void Startup_Configure_Valid_Defaut_Should_Pass()
         {
