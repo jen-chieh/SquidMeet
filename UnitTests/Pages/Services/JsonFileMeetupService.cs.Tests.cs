@@ -165,6 +165,10 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
             Assert.NotNull(data);
         }
 
+        /// <summary>
+        /// Test to verify that AddAttendee updates invalid meetup information correctly
+        /// and returns a null model
+        /// </summary>
         [Test]
         public void invalid_AddAttendee()
         {
