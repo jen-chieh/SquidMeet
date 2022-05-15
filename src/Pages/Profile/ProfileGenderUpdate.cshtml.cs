@@ -51,6 +51,14 @@ namespace SquidMeet.WebSite.Pages.Product
                 return Page();
             }
 
+            if (UserProfile.gender.ToLower() != "female" && UserProfile.gender.ToLower() != "male")
+            {
+                ModelState.AddModelError(string.Empty, "Invalid gender input. Please input 'male' or 'female'");
+                return Page();
+            }
+
+
+
             UserService.UpdateUserGender(UserProfile);
 
             return RedirectToPage("Profile", new { id = UserProfile.user_id });
