@@ -6,16 +6,17 @@
 @inject JsonFileLocationTypeService LocationTypeService
 
 <div style="margin-top: 125px">
-    <button @onclick="(e => sortingbyLocation())">
-        <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;"> Location Sorting
-    </button>
-    <br>
-    <br>
-      <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;"> 
+    <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;">
+    <select id="TypeOfUser" name="typeOfUser" class="active text-normal" @onchange="(e => sortingbyLocation(e))">
+        <option value="">Sort By Location</option>
+        <option value="0">Bars or Cafes</option>
+        <option value="1">Parks</option>
+        <option value="2">Conference Rooms</option>
+    </select>
+    <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045029.png" alt="detail" style="width:30px;height:28px;">
     <select id="TypeOfUser" name="typeOfUser" class="active text-normal"
-
             @onchange="(e => sortingbyRate(e))">
-        <option value="0">Rate Sorting</option>
+        <option value="0">Sort By Rating</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -30,8 +31,9 @@
 <div class="card-columns" style="margin-top: 30px">
     @{
         var dataset = ProductService.GetAllData();
-        if (locationsorting == true) { dataset = ProductService.sortByLocation(); }
+
         if (ratesorting == true) { dataset = ProductService.sortByRate(rating); }
+        if (sorting == true) { dataset = ProductService.sortByLocationAndRating(type, rating); }
         LocationHoursModel ProductHours;
         LocationTypeModel ProductType;
         foreach (var product in dataset)
@@ -50,14 +52,14 @@
                     <small class="text-muted">
                         <div class="container">
                             <button style="margin-left:150px" @onclick="(e => SelectProduct(product.location_id))"
-                            data-toggle="modal" data-target="#productModal" class="btn btn-primary">
+                                    data-toggle="modal" data-target="#productModal" class="btn btn-primary">
                                 More Info
                             </button>
                             <div class="myDIV" style="margin-top:-30px; margin-left:100px"><img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506044220.png" alt="detail" style="width:30px;height:28px;"></div>
                             <div class="hide">
-                                <p class="badge badge-pill badge-warning"> Address: @product.address</p><br/>
-                                 <p class="badge badge-pill badge-info"> Type: @ProductType.type_name</p><br/>
-                                <p class="badge badge-pill badge-success"> Hours:</p><br/>
+                                <p class="badge badge-pill badge-warning"> Address: @product.address</p><br />
+                                <p class="badge badge-pill badge-info"> Type: @ProductType.type_name</p><br />
+                                <p class="badge badge-pill badge-success"> Hours:</p><br />
                                 <p class="badge badge-light"> Monday: @ProductHours.location_mon_hours</p>
                                 <p class="badge badge-light"> Tuesday: @ProductHours.location_tues_hours</p>
                                 <p class="badge badge-light"> Wednesday: @ProductHours.location_wed_hours</p>
@@ -91,9 +93,9 @@
                         <div class="card-img" style="background-image: url('@selectedProduct.img');">
                         </div>
                         <div class="card-body">
-                            <p class="badge badge-pill badge-warning"> Address: @selectedProduct.address</p><br/>
-                            <p class="badge badge-pill badge-info"> Type: @selectedProductType.type_name</p><br/>
-                            <p class="badge badge-pill badge-success"> Hours:</p><br/>
+                            <p class="badge badge-pill badge-warning"> Address: @selectedProduct.address</p><br />
+                            <p class="badge badge-pill badge-info"> Type: @selectedProductType.type_name</p><br />
+                            <p class="badge badge-pill badge-success"> Hours:</p><br />
                             <p class="badge badge-light"> Monday: @selectedProductHours.location_mon_hours</p>
                             <p class="badge badge-light"> Tuesday: @selectedProductHours.location_tues_hours</p>
                             <p class="badge badge-light"> Wednesday: @selectedProductHours.location_wed_hours</p>
@@ -143,8 +145,9 @@
     int rating = 0;
     LocationHoursModel selectedProductHours;
     LocationTypeModel selectedProductType;
-    Boolean locationsorting = false;
     Boolean ratesorting = false;
+    Boolean sorting = false;
+    string type;
     void SelectProduct(string productId)
     {
         selectedProductId = productId;
@@ -183,24 +186,22 @@
         SelectProduct(selectedProductId);
     }
 
-    void sortingbyLocation()
+    void sortingbyLocation(ChangeEventArgs e)
     {
-        locationsorting = true;
-        ratesorting = false;
+        sorting = true;
+        type = e.Value.ToString();
 
     }
 
     void sortingbyRate()
     {
-        locationsorting = false;
         ratesorting = true;
 
     }
     void sortingbyRate(ChangeEventArgs e)
     {
-        locationsorting = false;
         ratesorting = true;
         rating = Convert.ToInt32(e.Value);
-       
+
     }
 }
