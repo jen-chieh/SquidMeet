@@ -1,5 +1,5 @@
-﻿using System.Text.Json;
-
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 namespace ContosoCrafts.WebSite.Models
 {
 
@@ -22,6 +22,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Title { get; set; }
 
         //Start date and end Date of Meetup
+        [DataType(DataType.Date)]
         public string? Date { get; set; }
 
         //Attendees in the meetup
