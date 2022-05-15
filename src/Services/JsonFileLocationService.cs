@@ -184,10 +184,10 @@ namespace ContosoCrafts.WebSite.Services
 
             var data = (from t in dataSet
                         where t.rating != null
-                       
+
                         select t);
 
-            var sortingData = data.Where(d => ((int)(d.rating.Sum()/d.rating.Count())).Equals(rating));
+            var sortingData = data.Where(d => ((int)(d.rating.Sum() / d.rating.Count())).Equals(rating));
             return sortingData;
         }
 
@@ -195,6 +195,7 @@ namespace ContosoCrafts.WebSite.Services
         /// Sort locations by location type
         /// </summary>
         /// <returns></returns>
+        
         public IEnumerable<LocationModel> sortByLocation()
         {
             // Get the current set, and append the new record to it
@@ -202,6 +203,29 @@ namespace ContosoCrafts.WebSite.Services
 
             var sortingData = dataSet.OrderByDescending(d => d.type_id);
             return sortingData;
+        }
+
+        public IEnumerable<LocationModel> sortByLocationAndRating(string type, int rating)
+        {
+            // Get the current set, and append the new record to it
+            var dataSet = GetAllData();
+
+            if (rating != 0)
+            {
+                dataSet = (from t in dataSet
+                           where t.rating != null
+
+                           select t);
+
+                dataSet = dataSet.Where(d => ((int)(d.rating.Sum() / d.rating.Count())).Equals(rating));
+            }
+
+            if (!string.IsNullOrEmpty(type))
+            {
+                dataSet = dataSet.Where(d => d.type_id == type);
+            }
+
+            return dataSet;
         }
 
     }
