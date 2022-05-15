@@ -1,4 +1,5 @@
 ﻿
+using System;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
@@ -46,6 +47,7 @@ namespace UnitTests.Pages.Product.Update
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Blanchard Whitehead", pageModel.UserProfile.name);
+            Assert.AreEqual("male", pageModel.UserProfile.gender);
         }
         #endregion OnGet
 
@@ -77,7 +79,7 @@ namespace UnitTests.Pages.Product.Update
             // Ensure user is redirected to Profile page
             Assert.AreEqual(true, result.PageName.Contains("Profile"));
         }
-
+        
         [Test]
         /// <summary>
         /// Test to verify OnPost update meetup with invalid values keeps invalid model state
@@ -98,12 +100,38 @@ namespace UnitTests.Pages.Product.Update
 
             // Force an invalid error state
             pageModel.ModelState.AddModelError("bogus", "bogus error");
+            // Act
+            var result = pageModel.OnPost(pageModel.UserProfile) as ActionResult;
+            
+            // Assert
+            Assert.AreEqual(false, pageModel.ModelState.IsValid);
+
+        }
+
+        [Test]
+        /// <summary>
+        /// Test to verify OnPost update profile with invalid values keeps invalid model state and error count
+        /// </summary>
+        public void OnPostAsync_Profile_Model_Invalid_gender_input_Valid_Return_Page()
+        {
+            // Arrange
+            pageModel.UserProfile = new UserModel
+            {
+                user_id = "bogus",
+                email = "bogus",
+                password = "bogus",
+                name = "bogus",
+                age = -1,
+                gender = "bogus",
+                bio = "bogus"
+            };
 
             // Act
             var result = pageModel.OnPost(pageModel.UserProfile) as ActionResult;
 
             // Assert
-            Assert.AreEqual(false, pageModel.ModelState.IsValid);
+            Assert.AreEqual(1, pageModel.ModelState.ErrorCount);
+
         }
 
         #endregion OnPostAsync
