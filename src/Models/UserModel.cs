@@ -30,6 +30,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? name { get; set; }
 
         // Age that the user supplies
+        [Range(0, 200)]
         public int? age { get; set; }
 
         // Gender that the user supplies as a string
