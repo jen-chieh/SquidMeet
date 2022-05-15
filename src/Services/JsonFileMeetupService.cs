@@ -136,6 +136,11 @@ namespace ContosoCrafts.WebSite.Services
         public void AddAttendee(MeetupModel meetup, string attendeeName)
         {
             var meetups = GetMeetups();
+            var validMeetup = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode);
+            if (validMeetup == null)
+            {
+                return;
+            }
             var attendees = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees.ToList();
             attendees.Add(attendeeName);
             meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees = attendees.ToArray();
