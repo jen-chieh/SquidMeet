@@ -1,11 +1,6 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-
-using NUnit.Framework;
-
-using ContosoCrafts.WebSite.Pages.Product;
+﻿using System.Linq;
 using ContosoCrafts.WebSite.Models;
+using NUnit.Framework;
 
 namespace UnitTests.Pages.Services.JsonFileMeetupService
 {
@@ -44,11 +39,11 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
             // Arrange
             var data = TestHelper.MeetupService.GetMeetups().Count();
             // Act
-        
+
 
             // Assert
             Assert.AreEqual(data, TestHelper.MeetupService.GetMeetups().Count());
-           
+
         }
         #endregion GetMeetups
 
@@ -77,13 +72,13 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
             var meetup = TestHelper.MeetupService.Create(data);
 
             // Act
-    
+
             // Assert
             Assert.NotNull(data);
         }
-        
+
         #endregion CreateMeetup
-        
+
         #region UpdateMeetup
 
         /// <summary>
@@ -94,10 +89,10 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
         public void Valid_update()
         {
             // Arrang
-          
+
             var meetup = TestHelper.MeetupService.GetMeetups().FirstOrDefault();
             meetup.Host = "test";
-            var updatedmeetup= TestHelper.MeetupService.UpdateMeetup(meetup);
+            var updatedmeetup = TestHelper.MeetupService.UpdateMeetup(meetup);
             // Act    
 
             // Assert
@@ -159,6 +154,32 @@ namespace UnitTests.Pages.Services.JsonFileMeetupService
                 Host = "JACK",
                 Img = "",
                 InviteCode = "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
+
+            };
+
+            // Act
+
+            TestHelper.MeetupService.AddAttendee(data, "test");
+
+            // Assert
+            Assert.NotNull(data);
+        }
+
+        [Test]
+        public void invalid_AddAttendee()
+        {
+            // Arrang
+            var data = new MeetupModel()
+            {
+                meetup_id = "59170836-95ac-42a5-833f-9f026c8dc152",
+                location = "redmond",
+                LocationType = "bar",
+                Title = "barbar",
+                Date = "2022/5/3",
+                Description = "welcom",
+                Host = "JACK",
+                Img = "",
+                InviteCode = "invalid-invitecode",
 
             };
 
