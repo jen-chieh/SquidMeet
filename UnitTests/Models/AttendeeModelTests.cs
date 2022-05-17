@@ -40,5 +40,18 @@ namespace UnitTests.Models
             Assert.AreEqual(expectedValue, _attendee.UserId);
         }
 
+          // Test to verify model is accurate
+        [Test]
+        public void attendeeModelTostring_Valid_Test_model_Should_Return_Nonnull()
+        {
+            // Arrange
+
+            // Act
+          
+
+            // Assert
+           
+          Assert.IsNotNull(_attendee.ToString());
+        }
     }
 }
