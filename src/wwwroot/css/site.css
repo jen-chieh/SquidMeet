@@ -1306,4 +1306,53 @@ v.layer-18 {
     top: 800.931px;
 }
 
+.contact-bg {
+    background-color: #f6f7f8
+}
+
+.detail-titel {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 120px;
+    margin-top: 10px
+}
+
+.detail-box {
+    width: 340px
+}
+
+.detail-info {
+    padding: 10px
+}
+
+.video-frame {
+    border-radius: 10px;
+    margin-left: -20px;
+    margin-top: 50px
+}
+
+.detail-contact-h3 {
+    display: inline-block;
+    margin-top: 30px
+}
+
+.detail-contact-h3-right {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 400px
+}
+
+.detail-contact-row {
+    margin-top: -20px
+}
+
+.about-img {
+    width: 625px;
+    height: 390px;
+    object-fit: cover
+}
+
+.detail-submit {
+    margin-top: 50px
+}
 /*# sourceMappingURL=style.css.map */
