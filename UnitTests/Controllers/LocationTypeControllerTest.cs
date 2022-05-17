@@ -8,6 +8,9 @@ using NUnit.Framework;
 
 namespace UnitTests.Controllers
 {
+    // <summary>
+    /// Unit Test to check for expected values in LocationTypeController
+    /// </summary>
     class LocationTypeControllerTest
     {
         #region TestSetup
