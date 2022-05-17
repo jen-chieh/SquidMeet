@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index page";
 }
 
-<div class="container" style="margin-top: 100px" >
+<div class="container" style="margin-top: 100px">
 
     <a asp-page="Create" class="btn btn-link">+ Create</a>
 
@@ -20,9 +20,9 @@
             {
                 <tr>
                     <td>@product.name</td>
-                    <td><a asp-page="Read" asp-route-id="@product.location_id" style="color:#41228e">Read</a></td>
-                    <td><a asp-page="Update" asp-route-id="@product.location_id" style="color:black">Update</a></td>
-                    <td><a asp-page="Delete" asp-route-id="@product.location_id" style="color: #0082cf">Delete</a></td>
+                    <td><a asp-page="Read" asp-route-id="@product.location_id" class="product-index-read">Read</a></td>
+                    <td><a asp-page="Update" asp-route-id="@product.location_id" class="product-index-update">Update</a></td>
+                    <td><a asp-page="Delete" asp-route-id="@product.location_id" class="product-index-delete">Delete</a></td>
                 </tr>
             }
         </tbody>
