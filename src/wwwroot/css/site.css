@@ -1414,4 +1414,16 @@ v.layer-18 {
 .profile-age {
     background-color: rgb(189, 236, 246);
 }
+
+.profile-data-progress-bottom {
+    bottom: 70%;
+}
+
+.profile-data-progress-bottom-80 {
+    bottom: 80%
+}
+
+.profile-data-progress-bottom-60 {
+    bottom: 60%
+}
 /*# sourceMappingURL=style.css.map */
