@@ -5,6 +5,9 @@ using static ContosoCrafts.WebSite.Controllers.LocationController;
 
 namespace UnitTests.Controllers
 {
+    // <summary>
+    /// Unit Test to check for expected values in LocationController
+    /// </summary>
     class LocationControllerTest
     {
         #region TestSetup
