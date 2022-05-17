@@ -1359,4 +1359,59 @@ v.layer-18 {
 .new-meet-index {
     margin-top: 20px
 }
+
+.product-index-read {
+    color: #41228e
+}
+
+.product-index-update {
+    color: black
+}
+
+.product-index-delete {
+    color: #0082cf
+}
+
+.product-read-row {
+    border-radius: 10px;
+}
+
+.product-read-col {
+    border-radius: 10px;
+}
+
+.product-contact-title {
+    background-color: #f6f7f8
+}
+
+.product-contact-section {
+    margin-top: 100px
+}
+
+.product-contact-h3 {
+    display: inline-block;
+    margin-top: 30px
+}
+
+.product-contact-h3-right {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 400px
+}
+
+.product-contact-row {
+    margin-top: -20px
+}
+
+.profile-name {
+    background-color: rgb(148, 115, 230);
+}
+
+.profile-bio {
+    background-color: rgb(255, 188, 170);
+}
+
+.profile-age {
+    background-color: rgb(189, 236, 246);
+}
 /*# sourceMappingURL=style.css.map */
