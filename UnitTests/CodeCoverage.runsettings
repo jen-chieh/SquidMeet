@@ -36,7 +36,7 @@ Included items must then not match any entries in the exclude list to remain inc
                 <ModulePath>.*CPPUnitTestFramework.*</ModulePath>
                 <ModulePath>.*anglesharpwrappers.*</ModulePath>
                 <ModulePath>.*NUnit.*</ModulePath>
-                <ModulePath>.*bunit.*</ModulePath>
+                <ModulePath>.*Bunit.*</ModulePath>
                 <ModulePath>.*moq.*</ModulePath>
                 <ModulePath>.*biliweb.views.*</ModulePath>
               </Exclude>
@@ -56,6 +56,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <Function>.*\.CreateHostBuilder\(.*</Function>
                 <Function>.*\.Program.*</Function>
                 <Function>.*\.Startup.*</Function>
+                <Function>.*\.Setup.*</Function>
+                <Function>.*\.TearDown.*</Function>
                 <Function>.*\.IdentityHostingStartup.*</Function>
                 <Function>.*\.ConfigurationManager.*</Function>
               </Exclude>
