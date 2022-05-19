@@ -3,7 +3,6 @@ using NUnit.Framework;
 using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
 
-
 namespace UnitTests.Pages.Product.Create
 {
     /// <summary>
