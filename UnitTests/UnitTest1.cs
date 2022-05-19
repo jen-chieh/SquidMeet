@@ -26,7 +26,6 @@ namespace UnitTests
             // Act
 
             // Assert
-            Assert.Pass();
         }
 
     }
