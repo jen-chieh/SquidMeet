@@ -1,4 +1,4 @@
-using Bunit;
+﻿using Bunit;
 using NUnit.Framework;
 
 namespace UnitTests
