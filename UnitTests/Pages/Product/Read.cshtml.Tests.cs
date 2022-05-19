@@ -1,6 +1,4 @@
-﻿
-using NUnit.Framework;
-
+﻿using NUnit.Framework;
 using ContosoCrafts.WebSite.Pages.Product;
 
 namespace UnitTests.Pages.Product.Read
