@@ -55,7 +55,7 @@ namespace UnitTests.Controllers
             RatingRequest ratingRequest = new RatingRequest()
             {
                 ProductId = "0",
-                Rating = 1
+                Rating = 5
             };
             // Act
             var update = controller.Patch(ratingRequest);
@@ -64,7 +64,7 @@ namespace UnitTests.Controllers
 
 
             // Assert
-            Assert.AreEqual(1, final_result[0].rating[0]);
+            Assert.AreEqual(5, final_result[0].rating[0]);
 
         }
         #endregion PatchLocationController
