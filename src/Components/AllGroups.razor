@@ -62,12 +62,4 @@
 </div>
 
 @code {
-    MeetupModel selectedMeetup;
-    string selectedMeetupId;
-
-    void selectMeetup(string meetupId)
-    {
-        selectedMeetupId = meetupId;
-        selectedMeetup = MeetupService.GetMeetups().FirstOrDefault(m => m.meetup_id == meetupId);
-    }
 }
