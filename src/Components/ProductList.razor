@@ -148,6 +148,7 @@
     Boolean ratesorting = false;
     Boolean sorting = false;
     string type;
+
     void SelectProduct(string productId)
     {
         selectedProductId = productId;
@@ -198,10 +199,12 @@
         ratesorting = true;
 
     }
+
     void sortingbyRate(ChangeEventArgs e)
     {
         ratesorting = true;
         rating = Convert.ToInt32(e.Value);
 
     }
+
 }
