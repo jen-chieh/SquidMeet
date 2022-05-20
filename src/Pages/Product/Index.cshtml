@@ -18,12 +18,17 @@
         <tbody>
             @foreach (var product in Model.Products)
             {
-                <tr>
-                    <td>@product.name</td>
-                    <td><a asp-page="Read" asp-route-id="@product.location_id" class="product-index-read">Read</a></td>
-                    <td><a asp-page="Update" asp-route-id="@product.location_id" class="product-index-update">Update</a></td>
-                    <td><a asp-page="Delete" asp-route-id="@product.location_id" class="product-index-delete">Delete</a></td>
-                </tr>
+            <tr>
+                <td>@product.name</td>
+                <td><a asp-page="Read" asp-route-id="@product.location_id" class="product-index-read">Read</a></td>
+                <td><a asp-page="Update" asp-route-id="@product.location_id" class="product-index-update">Update</a></td>
+                <td>
+                    <form method="post">
+                        <input name="Id" type="hidden" value="@product.location_id" />
+                        <input type="submit" value="Delete" class="btn btn-outline-danger" />
+                    </form>
+                </td>
+            </tr>
             }
         </tbody>
     </table>
