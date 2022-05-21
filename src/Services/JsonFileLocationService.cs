@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
+using ContosoCrafts.WebSite.Services;
 
 namespace ContosoCrafts.WebSite.Services
 {
@@ -44,6 +45,8 @@ namespace ContosoCrafts.WebSite.Services
                     });
             }
         }
+
+        public JsonFileLocationHoursService LocationHoursService = new JsonFileLocationHoursService();
 
         /// <summary>
         /// Find matching productId and update rating of product to include new rating
@@ -129,23 +132,21 @@ namespace ContosoCrafts.WebSite.Services
         /// After create the user can update to set values
         /// </summary>
         /// <returns></returns>
-        public LocationModel CreateData()
+        public LocationModel CreateData(LocationModel locationmodel)
         {
             var data = new LocationModel()
             {
                 location_id = System.Guid.NewGuid().ToString(),
-                name = "Enter Name",
-                address = "Enter Address",
-                type_id = "Enter Type ID",
-                img = "",
+                name = locationmodel.name,
+                address = locationmodel.address,
+                type_id = locationmodel.type_id,
+                img = locationmodel.img,
             };
 
             // Get the current set, and append the new record to it
             var dataSet = GetAllData();
             dataSet = dataSet.Append(data);
-
             SaveData(dataSet);
-
             return data;
         }
 
