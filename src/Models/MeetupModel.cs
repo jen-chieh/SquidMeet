@@ -21,6 +21,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? LocationType { get; set; }
 
         //Title of Meetup
+        [Required]
         public string? Title { get; set; }
 
         //Start date and end Date of Meetup
