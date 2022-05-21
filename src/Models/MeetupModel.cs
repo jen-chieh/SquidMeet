@@ -25,7 +25,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Title { get; set; }
 
         //Start date and end Date of Meetup
-        [DataType(DataType.Date)]
+        [DataType(DataType.Date), Required]
         public string? Date { get; set; }
 
         //Attendees in the meetup
