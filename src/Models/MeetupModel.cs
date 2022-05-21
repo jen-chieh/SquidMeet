@@ -36,6 +36,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Host { get; set; }
 
         //To describe what meetup is 
+        [Required]
         public string? Description { get; set; }
 
         // To store Invite code
