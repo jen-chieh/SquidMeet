@@ -7,3 +7,88 @@
 
     ViewData["Title"] = "Create page";
 }
+<div class="container">
+    <div class="col-12 text-center">
+        <h2 class="section-title">Create a location</h2>
+    </div>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        @Html.HiddenFor(x => x.Product.location_id)
+        @Html.HiddenFor(x => x.locationHoursModel.location_hours_id)
+
+        <div class="form-group">
+            <label asp-for="Product.name" class="control-label"></label>
+            <input asp-for="Product.name" class="form-control" required />
+            <span asp-validation-for="Product.name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.address" class="control-label"></label>
+            <input asp-for="Product.address" class="form-control" required />
+            <span asp-validation-for="Product.address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.type_id" class="control-label">Types</label><br>
+            <input type="radio" asp-for="Product.type_id" value="0" checked />
+            <label>Bars or Cafes</label><br>
+            <input type="radio" asp-for="Product.type_id" value="1"  />
+            <label>Parks</label><br>
+            <input type="radio" asp-for="Product.type_id" value="2" />
+            <label> Conference Rooms</label><br>
+
+            <span asp-validation-for="Product.type_id" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.img" class="control-label"></label>
+            <input asp-for="Product.img" class="form-control" required/>
+            <span asp-validation-for="Product.img" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Monday Hours</label>
+            <input asp-for="locationHoursModel.location_mon_hours" class="form-control" required />
+            <span asp-validation-for="locationHoursModel.location_mon_hours" class="text-danger" ></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Tuesday Hours</label>
+            <input asp-for="locationHoursModel.location_tues_hours" class="form-control" />
+            <span asp-validation-for="locationHoursModel.location_tues_hours" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Wednesday Hours</label>
+            <input asp-for="locationHoursModel.location_wed_hours" class="form-control" required/>
+            <span asp-validation-for="locationHoursModel.location_wed_hours" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Thursday Hours</label>
+            <input asp-for="locationHoursModel.location_thurs_hours" class="form-control" required/>
+            <span asp-validation-for="locationHoursModel.location_thurs_hours" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label"> Friday Hours</label>
+            <input asp-for="locationHoursModel.location_fri_hours" class="form-control" required/>
+            <span asp-validation-for="locationHoursModel.location_fri_hours" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Saturday Hours</label>
+            <input asp-for="locationHoursModel.location_sat_hours" class="form-control" required />
+            <span asp-validation-for="locationHoursModel.location_sat_hours" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Sunday Hours</label>
+            <input asp-for="locationHoursModel.location_sun_hours" class="form-control" required/>
+            <span asp-validation-for="locationHoursModel.location_sun_hours" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
