@@ -32,6 +32,7 @@ namespace ContosoCrafts.WebSite.Models
         public string[]? Attendees { get; set; }
 
         // To identify the host of the meetup
+        [Required]
         public string? Host { get; set; }
 
         //To describe what meetup is 
