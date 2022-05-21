@@ -17,6 +17,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? location { get; set; }
 
         //An index so that we can do sort and arrange by location type
+        [Required]
         public string? LocationType { get; set; }
 
         //Title of Meetup
