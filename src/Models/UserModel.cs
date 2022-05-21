@@ -15,11 +15,11 @@ namespace ContosoCrafts.WebSite.Models
         public string? user_id { get; set; }
 
         // Unique username that the user chooses
-        [EmailAddress]
+        [EmailAddress, Required]
         public string? email { get; set; }
 
         // Password that the user chooses with a length of 6 to 20 characters
-        [DataType(DataType.Password), StringLength(20, MinimumLength = 6)]
+        [DataType(DataType.Password), StringLength(20, MinimumLength = 6), Required]
         public string? password { get; set; }
 
         // Confirm password that the user chooses
