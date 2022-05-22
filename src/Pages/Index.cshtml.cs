@@ -18,7 +18,7 @@ namespace ContosoCrafts.WebSite.Pages
         /// <summary>
         /// Model for the index page displaying all locations
         /// </summary>
-        
+
         // Data middle tier
         private readonly ILogger<IndexModel> _logger;
 
