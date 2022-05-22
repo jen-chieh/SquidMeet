@@ -15,7 +15,7 @@
         @Html.HiddenFor(x => x.UserProfile.user_id)
 
         <div class="form-group">
-            <input asp-for="UserProfile.bio" class="form-control"/>
+            <input asp-for="UserProfile.bio" class="form-control" />
             <span asp-validation-for="UserProfile.bio" class="text-danger"></span>
         </div>
         <div class="form-group">
@@ -26,5 +26,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
