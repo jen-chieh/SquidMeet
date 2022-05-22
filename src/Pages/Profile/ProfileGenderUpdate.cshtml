@@ -8,8 +8,8 @@
 <h1> Update Your Gender Identity</h1>
 
 <div class="container">
-    <form method="post" style="margin-top:100px; margin-bottom:340px">
-        <h2 style="margin-bottom:100px">Update Your Gender</h2>
+    <form method="post" class="profile-gender-update-container">
+        <h2 class="profile-gender-update-h2">Update Your Gender</h2>
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         @Html.HiddenFor(x => x.UserProfile.user_id)
 
