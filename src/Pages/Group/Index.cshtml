@@ -4,14 +4,14 @@
 }
 <h3>New Group</h3>
 
-<section class="section section-on-footer" data-background="../wwwroot/images/backgrounds/bg-dots.png" style="background-image: url(&quot;images/backgrounds/bg-dots.png&quot;);">
+<section class="section section-on-footer group-index-section" data-background="../wwwroot/images/backgrounds/bg-dots.png">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <h3 class="section-title">Create Your Group</h3>
             </div>
             <div class="col-lg-8 mx-auto">
-                <div class="bg-white rounded text-center p-5 shadow-down" style="margin-top: -50px">
+                <div class="bg-white rounded text-center p-5 shadow-down group-index-col-lg-8">
                     <form method="post" class="row">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         @Html.HiddenFor(x => x.location.location_id)
@@ -45,7 +45,7 @@
                             </select>
                         </div>
 
-                        <div class="col-6" style="margin-top:45px">
+                        <div class="col-6 group-index-col-6">
                             <input asp-for="newMeetup.Img" type="file" class="form-control-file px-0 mb-4" />
                             <span asp-validation-for="newMeetup.Img" class="form-control-file"></span>
                         </div>
