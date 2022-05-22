@@ -1426,4 +1426,89 @@ v.layer-18 {
 .profile-data-progress-bottom-60 {
     bottom: 60%
 }
-/*# sourceMappingURL=style.css.map */
+
+.profile-container {
+    margin-bottom: 300px
+}
+
+.profile-card-footer {
+    line-height: 50px
+}
+
+.profile-age-update-container {
+    margin-top: 200px;
+    margin-bottom: 340px
+}
+
+.profile-age-updat-h2 {
+    margin-bottom: 100px
+}
+
+.profile-gender-update-container {
+    margin-top: 100px;
+    margin-bottom: 340px
+}
+
+.profile-gender-update-h2 {
+    margin-bottom: 100px
+}
+
+.profuct-index-container {
+    margin-top: 100px
+}
+
+.product-main {
+    margin-top: 200px
+}
+
+.iframe-video {
+    border: 0;
+    width: 100%;
+    height: 290px;
+}
+
+.group-container {
+    margin-top: 200px;
+    margin-bottom: 400px
+}
+
+.group-detail-main {
+    margin-top: 200px
+}
+
+.group-detail-row {
+    border-radius: 10px;
+}
+
+.group-detail-content {
+    margin-top: -40px
+}
+
+.group-detail-contact {
+    background-color: #f6f7f8
+}
+
+.group-detail-contact-title {
+    margin-top: 100px
+}
+
+.group-index-section {
+    background-image: url(&quot;images/backgrounds/bg-dots.png&quot;);
+}
+
+.group-index-col-lg-8 {
+    margin-top: -50px
+}
+
+.group-index-col-6 {
+    margin-top: 45px
+}
+
+.create-accout-main {
+    background-image: url(&quot;images/backgrounds/bg-dots.png&quot;);
+}
+
+.login-main {
+    margin-top: 200px;
+    margin-bottom: 400px
+}
