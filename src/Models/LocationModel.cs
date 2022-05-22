@@ -3,10 +3,10 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
 
-    /// <summary>
-    /// Model for location.json file. The model has a unique ID mapping back to a
-    /// location in location.json
-    /// </summary>
+/// <summary>
+/// Model for location.json file. The model has a unique ID mapping back to a
+/// location in location.json
+/// </summary>
 {
     public class LocationModel
     {
