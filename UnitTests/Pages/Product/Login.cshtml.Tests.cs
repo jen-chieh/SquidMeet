@@ -1,8 +1,10 @@
-﻿using System.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Http;
+using Moq;
 
 namespace UnitTests.Pages.Product.Login
 {
@@ -50,8 +52,11 @@ namespace UnitTests.Pages.Product.Login
                 gender = "female",
                 bio = "hello"
             };
-
             // Act
+            var heetpContext = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(heetpContext,Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
             var result = pageModel.OnPost(pageModel.User) as RedirectToPageResult;
 
             // Assert
