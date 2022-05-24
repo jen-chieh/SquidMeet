@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text.Json;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
-using ContosoCrafts.WebSite.Services;
 using System;
 
 namespace ContosoCrafts.WebSite.Services
