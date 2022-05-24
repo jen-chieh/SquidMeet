@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using NUnit.Framework;
 using ContosoCrafts.WebSite.Pages.Product;
+using ContosoCrafts.WebSite.Models;
 
 namespace UnitTests.Pages.Product.Create
 {
@@ -15,13 +16,20 @@ namespace UnitTests.Pages.Product.Create
         // Data middle tier
         public static CreateModel pageModel;
 
+        // Data middle tier
+        public static LocationModel pageLocationModel;
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
         [SetUp]
         public void TestInitialize()
         {
-            pageModel = new CreateModel(TestHelper.ProductService)
+            pageModel = new CreateModel(TestHelper.ProductService, TestHelper.LocationHoursService)
+            {
+            };
+
+            pageLocationModel = new LocationModel()
             {
             };
         }
@@ -40,7 +48,7 @@ namespace UnitTests.Pages.Product.Create
             var oldCount = TestHelper.ProductService.GetAllData().Count();
 
             // Act
-            pageModel.OnGet();
+            pageModel.OnGet(pageLocationModel);
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
