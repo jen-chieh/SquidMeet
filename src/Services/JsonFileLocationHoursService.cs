@@ -74,7 +74,43 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public LocationHoursModel CreateData( String id,LocationHoursModel locationHours)
         {
-           
+            string tempHours = "Hours not set";
+
+            if (locationHours.location_mon_hours == null)
+            {
+                locationHours.location_mon_hours = tempHours;
+            }
+
+            if (locationHours.location_tues_hours == null)
+            {
+                locationHours.location_tues_hours = tempHours;
+            }
+
+            if (locationHours.location_wed_hours == null)
+            {
+                locationHours.location_wed_hours = tempHours;
+            }
+
+            if (locationHours.location_thurs_hours == null)
+            {
+                locationHours.location_thurs_hours = tempHours;
+            }
+
+            if (locationHours.location_fri_hours == null)
+            {
+                locationHours.location_fri_hours = tempHours;
+            }
+
+            if (locationHours.location_sat_hours == null)
+            {
+                locationHours.location_sat_hours = tempHours;
+            }
+
+            if (locationHours.location_sun_hours == null)
+            {
+                locationHours.location_sun_hours = tempHours;
+            }
+
             var datahours = new LocationHoursModel()
             {
                 location_hours_id = id,
