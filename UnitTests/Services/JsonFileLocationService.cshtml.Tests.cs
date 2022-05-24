@@ -177,7 +177,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationService
             var dataset = TestHelper.ProductService.sortByLocationAndRating(bars_or_cafes_location_type, rating);
             var result = dataset.ToList();
             // Assert
-            Assert.AreEqual(6, result.Count);
+            Assert.AreEqual(7, result.Count);
             Assert.AreEqual("0", result[0].type_id);
             Assert.AreEqual("0", result[5].type_id);
             Assert.AreEqual("Mr. West Cafe Bar - Downtown", result[0].name);
