@@ -12,6 +12,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
     {
         // Data middle tier
         public JsonFileLocationService ProductService { get; }
+        // Data middle tier
         public JsonFileLocationHoursService LocationHoursService { get; }
 
         /// <summary>
@@ -34,8 +35,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <summary>
         /// REST Get request
         /// </summary>
-        ///
-        
         public IActionResult OnGet(LocationModel ProductModel)
         {
            Product = ProductService.CreateData(ProductModel);
@@ -44,8 +43,9 @@ namespace ContosoCrafts.WebSite.Pages.Product
            
         }
 
-        
-
+        /// <summary>
+        /// REST post request
+        /// </summary>
         public IActionResult OnPost(LocationModel Product, LocationHoursModel locationHoursModel)
         {
             if (!ModelState.IsValid)
