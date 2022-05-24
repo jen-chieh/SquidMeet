@@ -28,23 +28,23 @@ namespace ContosoCrafts.WebSite.Pages.Product
         // The data to show
         public LocationModel Product;
 
-
+        // The data to show
         public LocationHoursModel locationHoursModel;
 
         /// <summary>
         /// REST Get request
         /// </summary>
         ///
-        /*
-        public IActionResult OnGet()
+        
+        public IActionResult OnGet(LocationModel ProductModel)
         {
-           // Product  = ProductService.CreateData();
+           Product = ProductService.CreateData(ProductModel);
 
            return RedirectToPage("./Update", new { Id = Product.location_id });
            
         }
 
-        */
+        
 
         public IActionResult OnPost(LocationModel Product, LocationHoursModel locationHoursModel)
         {
