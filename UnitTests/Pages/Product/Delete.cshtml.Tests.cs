@@ -17,6 +17,9 @@ namespace UnitTests.Pages.Product.Delete
         // Data middle tier
         public static DeleteModel pageModel;
 
+        // Data middle tier
+        public static LocationModel pageLocationModel;
+
         /// <summary>
         /// Defualt Construtor
         /// </summary>
@@ -24,6 +27,9 @@ namespace UnitTests.Pages.Product.Delete
         public void TestInitialize()
         {
             pageModel = new DeleteModel(TestHelper.ProductService)
+            {
+            };
+            pageLocationModel = new LocationModel()
             {
             };
         }
@@ -60,7 +66,7 @@ namespace UnitTests.Pages.Product.Delete
             // Arrange
 
             // First Create the product to delete
-            pageModel.Product = TestHelper.ProductService.CreateData();
+            pageModel.Product = TestHelper.ProductService.CreateData(pageLocationModel);
             pageModel.Product.name = "Example to Delete";
             TestHelper.ProductService.UpdateData(pageModel.Product);
 
