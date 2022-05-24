@@ -1,8 +1,5 @@
-﻿using System;
-using System.Linq;
-using ContosoCrafts.WebSite.Models;
+﻿using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Group;
 
