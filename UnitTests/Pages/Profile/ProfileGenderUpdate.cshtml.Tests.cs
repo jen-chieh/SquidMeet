@@ -1,5 +1,4 @@
-﻿using System;
-using ContosoCrafts.WebSite.Models;
+﻿using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Product;
