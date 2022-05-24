@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using NUnit.Framework;
-using ContosoCrafts.WebSite.Pages.Product;
-using ContosoCrafts.WebSite.Models;
+﻿using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Group;
 
 namespace UnitTests.Pages.Group.Update
