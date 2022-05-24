@@ -47,7 +47,7 @@ namespace UnitTests.Pages.Services.JsonFileLocationHoursService
 
             // Assert
 
-            Assert.AreEqual(20, data.Count());
+            Assert.AreEqual(22, data.Count());
             Assert.AreEqual("0", data[0].location_hours_id);
            
             Assert.AreEqual("1", data[1].location_hours_id);
