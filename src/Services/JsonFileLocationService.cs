@@ -5,6 +5,7 @@ using System.Text.Json;
 using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 using ContosoCrafts.WebSite.Services;
+using System;
 
 namespace ContosoCrafts.WebSite.Services
 {
@@ -134,34 +135,12 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public LocationModel CreateData(LocationModel locationmodel)
         {
+            Random rand = new Random();
 
-            string name = "Temporary name";
-            string address = "Temporary address";
-            string type_id = "0";
-            string img = "Temporary image";
-
-            if (locationmodel.name == null) {
-                locationmodel.name = name;
-            }
-
-            if (locationmodel.address == null)
-            {
-                locationmodel.address = address;
-            }
-
-            if (locationmodel.type_id == null)
-            {
-                locationmodel.type_id = type_id;
-            }
-
-            if (locationmodel.img == null)
-            {
-                locationmodel.img = img;
-            }
-
+            String id = rand.Next().ToString();
             var data = new LocationModel()
             {
-                location_id = System.Guid.NewGuid().ToString(),
+                location_id = id,
                 name = locationmodel.name,
                 address = locationmodel.address,
                 type_id = locationmodel.type_id,
