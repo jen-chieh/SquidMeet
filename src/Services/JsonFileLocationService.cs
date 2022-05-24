@@ -134,6 +134,31 @@ namespace ContosoCrafts.WebSite.Services
         /// <returns></returns>
         public LocationModel CreateData(LocationModel locationmodel)
         {
+
+            string name = "Temporary name";
+            string address = "Temporary address";
+            string type_id = "0";
+            string img = "Temporary image";
+
+            if (locationmodel.name == null) {
+                locationmodel.name = name;
+            }
+
+            if (locationmodel.address == null)
+            {
+                locationmodel.address = address;
+            }
+
+            if (locationmodel.type_id == null)
+            {
+                locationmodel.type_id = type_id;
+            }
+
+            if (locationmodel.img == null)
+            {
+                locationmodel.img = img;
+            }
+
             var data = new LocationModel()
             {
                 location_id = System.Guid.NewGuid().ToString(),
