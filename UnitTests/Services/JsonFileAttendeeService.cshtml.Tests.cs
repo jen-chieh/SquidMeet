@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Linq;
+﻿using System.Linq;
 using NUnit.Framework;
-using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
-using System;
-using System.Text;
 
 namespace UnitTests.Pages.Services.JsonFileAttendeeService
 {
