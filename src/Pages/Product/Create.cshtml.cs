@@ -37,10 +37,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// </summary>
         public IActionResult OnGet(LocationModel ProductModel)
         {
-           Product = ProductService.CreateData(ProductModel);
+            // Product = ProductService.CreateData(ProductModel);
 
-           return RedirectToPage("./Update", new { Id = Product.location_id });
-           
+            // return RedirectToPage("./Update", new { Id = Product.location_id });
+            return Page();
+
         }
 
         /// <summary>
