@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
-using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
-using SquidMeet.WebSite.Pages.Group;
 using SquidMeet.WebSite.Pages.NewGroup;
-using System;
 
 namespace UnitTests.Pages.Group.Index
 {
