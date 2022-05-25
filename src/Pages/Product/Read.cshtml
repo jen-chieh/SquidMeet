@@ -18,14 +18,30 @@
             <div class="row product-read-row">
 
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>@Model.Product.name</h3>
+
+					@if (Model.Product == null)
+					{
+					<p class="fst-italic">
+                        Location id not found. Please enter a valid location id.
+                    </p>
+						Model.RedirectToPage("./Index");
+					}
+					else
+					{
+					<h3>@Model.Product.name</h3>
                     <p class="fst-italic">
                         @Model.Product.address
                     </p>
+					}
+
                 </div>
-                <div class="col-lg-6 product-read-col">
+				@if (Model.Product != null)
+				{
+				<div class="col-lg-6 product-read-col">
                     <img src="@Model.Product.img" class="img-fluid about-img">
                 </div>
+				}
+
             </div>
 
         </div>
@@ -95,3 +111,6 @@
     </section><!-- End Contact Section -->
 </main>
 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
