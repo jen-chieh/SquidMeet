@@ -49,5 +49,51 @@ namespace UnitTests.Pages.Product.Index
         }
 
         #endregion OnGet
+
+        #region OnPOST
+
+        /// <summary>
+        /// Test to verify OnPost Deletes the location
+        /// </summary>
+        [Test]
+        public void On_Post_Location_delete()
+        {
+            // Arrange
+            var location_id = "10";
+            pageModel.Id = 2;
+            // Act
+            pageModel.OnGet();
+            var count_before_delete = pageModel.Products.ToList().Count;
+            pageModel.OnPost(location_id);
+            pageModel.OnGet();
+            var count_after_delete = pageModel.Products.ToList().Count;
+
+            // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
+            Assert.AreEqual(2, pageModel.Id);
+            Assert.AreEqual(22, count_before_delete);
+            Assert.AreEqual(21, count_after_delete);
+        }
+
+
+        /// <summary>
+        /// Test to verify OnPost with invalid values keeps invalid model state
+        /// </summary>
+        [Test]
+        public void On_Post_InValid_Model()
+        {
+            // Arrange
+            var location_id = "1000";
+            pageModel.ModelState.AddModelError("error", "error");
+            // Act
+            pageModel.OnPost(location_id);
+
+            // Assert
+            Assert.AreEqual(false, pageModel.ModelState.IsValid);
+        }
+
+        #endregion OnPost
+
+
     }
 }
