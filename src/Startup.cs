@@ -53,7 +53,7 @@ namespace ContosoCrafts.WebSite
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseStatusCodePagesWithRedirects("/");
             }
             else
             {
