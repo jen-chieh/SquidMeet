@@ -18,8 +18,22 @@
                         <div class="wave" data-progress="60%"></div>
                     </div>
                     <div class="card-footer bg-white profile-card-footer">
-                        <h4 class="card-title" id="name">Name: @Model.Product.name</h4>
+                        
+
+					@if (Model.Product == null)
+					{
+					<p class="fst-italic">
+                        Profile name not found. Please enter a valid profile id.
+                    </p>
+						Model.RedirectToPage("./Index");
+					}
+					else
+					{
+					<h4 class="card-title" id="name">
+					Name: @Model.Product.name</h4>
                         <a asp-page="ProfileNameUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Name</a>
+					}
+					
                     </div>
                 </div>
             </div>
@@ -29,8 +43,20 @@
                         <div class="wave" data-progress="70%"></div>
                     </div>
                     <div class="card-footer bg-white">
-                        <h4 class="card-title">Bio:@Model.Product.bio</h4>
+
+					@if (Model.Product == null)
+					{
+						<p class="fst-italic">
+                        Profile bio not found. Please enter a valid profile id.
+						</p>
+						Model.RedirectToPage("./Index");
+					}
+					else
+					{
+					<h4 class="card-title">Bio:@Model.Product.bio</h4>
                         <a asp-page="ProfileBioUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Bio</a>
+					}
+                        
                     </div>
                 </div>
             </div>
@@ -40,8 +66,20 @@
                         <div class="wave" data-progress="80%"></div>
                     </div>
                     <div class="card-footer bg-white">
-                        <h4 class="card-title">Age is: @Model.Product.age </h4>
+
+					@if (Model.Product == null)
+					{
+						<p class="fst-italic">
+                        Profile age not found. Please enter a valid profile id.
+						</p>
+						Model.RedirectToPage("./Index");
+					}
+					else
+					{
+					<h4 class="card-title">Age is: @Model.Product.age </h4>
                         <a asp-page="ProfileAgeUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Age</a>
+					}
+                        
                     </div>
                 </div>
             </div>
@@ -51,8 +89,20 @@
                         <div class="wave" data-progress="70%"></div>
                     </div>
                     <div class="card-footer bg-white">
-                        <h4 class="card-title" id="gender">Gender: @Model.Product.gender</h4>
+
+					@if (Model.Product == null)
+					{
+						<p class="fst-italic">
+                        Profile gender not found. Please enter a valid profile id.
+						</p>
+						Model.RedirectToPage("./Index");
+					}
+					else
+					{
+					<h4 class="card-title" id="gender">Gender: @Model.Product.gender</h4>
                         <a asp-page="ProfileGenderUpdate" asp-route-id="@Model.Product.user_id" class="btn btn-primary">Update Gender</a>
+					}
+                        
                     </div>
                 </div>
             </div>
