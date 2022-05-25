@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using ContosoCrafts.WebSite.Pages.Product;
+using Microsoft.AspNetCore.Mvc;
 
 namespace UnitTests.Pages.Product.Create
 {
@@ -26,13 +27,13 @@ namespace UnitTests.Pages.Product.Create
 
         #endregion TestSetup
 
-        #region OnPost
+        #region OnGet
 
         /// <summary>
         /// Test to verify OnPost update meetup with valid values keeps valid model state
         /// </summary>
         [Test]
-        public void OnPost_Valid_Should_Return_Users()
+        public void OnGet_Valid_Should_Return_Users()
         {
             // Arrange
 
@@ -44,7 +45,23 @@ namespace UnitTests.Pages.Product.Create
             Assert.AreEqual("Blanchard Whitehead", pageModel.Product.name);
 
         }
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
+        [Test]
+        public void OnGet_inValid_Should_Return_Homepage()
+        {
+            // Arrange
 
-        #endregion OnPost
+            // Act
+
+           var result= pageModel.OnGet("1230123") as RedirectToPageResult;
+          
+           // Assert
+           
+            Assert.AreEqual(true, result.PageName.Contains("Index"));
+        }
+
+        #endregion OnGet
     }
 }
