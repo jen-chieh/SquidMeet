@@ -277,6 +277,49 @@ namespace UnitTests.Components
             Assert.AreEqual(false, preVoteCountString.Equals(postVoteCountString));
         }
         #endregion SubmitRating
+        #region SubmitLocation
 
+        /// <summary>
+        /// Test to ensure that Sort by Location type and rating will return correct locations
+        /// The test needs to open the page
+        /// Then select the location Type and rating from the select dropdowns
+        /// Then record the state of the count and star check status
+        /// Then check only location with location type and star rating is returned
+        /// </summary>
+        [Test]
+        public void Sort_By_Location_And_Rating_Returns_Valid_Results()
+        {
+
+            // Arrange
+            Services.AddSingleton(TestHelper.ProductService);
+            Services.AddSingleton(TestHelper.LocationTypeService);
+            Services.AddSingleton(TestHelper.LocationHoursService);
+
+
+            var page = RenderComponent<ProductList>();
+
+            // Find the select dropdown 
+            var selectList = page.FindAll("select");
+            var Location_Type_Selection = selectList.First(m => m.OuterHtml.Contains("TypeOfLocation"));
+            var Rating_Selection = selectList.First(m => m.OuterHtml.Contains("TypeOfUser"));
+
+
+            // Act
+            //Choose selection to location type 1 - Parks and Start rating 5
+            Location_Type_Selection.Change("1");
+            Rating_Selection.Change("5");
+            var pageMarkup = page.Markup;
+
+            // Assert
+            //Assert only park with 5 star rating is displayed on page "Hike To A Summit"
+            Assert.AreEqual(false, pageMarkup.Contains("Gas Work Park"));
+            Assert.AreEqual(true, pageMarkup.Contains("Hike To A Summit"));
+            Assert.AreEqual(false, pageMarkup.Contains("Caffeinated Coffee"));
+            Assert.AreEqual(false, pageMarkup.Contains("Newcastle Library"));
+
+            Location_Type_Selection.Change("");
+            Rating_Selection.Change("0");
+        }
+        #endregion SubmitLocation
     }
 }
