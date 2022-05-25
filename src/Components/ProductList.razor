@@ -7,7 +7,7 @@
 
 <div style="margin-top: 125px">
     <img src="https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506045042.png" alt="detail" style="width:30px;height:28px;">
-    <select id="TypeOfUser" name="typeOfUser" class="active text-normal" @onchange="(e => sortingbyLocation(e))">
+    <select id="TypeOfLocation" name="TypeOfLocation" class="active text-normal" @onchange="(e => sortingbyLocation(e))">
         <option value="">Sort By Location</option>
         <option value="0">Bars or Cafes</option>
         <option value="1">Parks</option>
@@ -194,11 +194,6 @@
 
     }
 
-    void sortingbyRate()
-    {
-        ratesorting = true;
-
-    }
 
     void sortingbyRate(ChangeEventArgs e)
     {
