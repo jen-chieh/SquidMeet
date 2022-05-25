@@ -109,8 +109,6 @@ namespace UnitTests.Components
             
 
             // Act
-            // TODO: does not work
-            //option.Change(id);
 
             // Get the markup to use for the assert
             var pageMarkup = page.Markup;
@@ -277,6 +275,7 @@ namespace UnitTests.Components
             Assert.AreEqual(false, preVoteCountString.Equals(postVoteCountString));
         }
         #endregion SubmitRating
+
         #region SubmitLocation
 
         /// <summary>
@@ -305,13 +304,13 @@ namespace UnitTests.Components
 
 
             // Act
-            //Choose selection to location type 1 - Parks and Start rating 5
+            // Choose selection to location type 1 - Parks and Start rating 5
             Location_Type_Selection.Change("1");
             Rating_Selection.Change("5");
             var pageMarkup = page.Markup;
 
             // Assert
-            //Assert only park with 5 star rating is displayed on page "Hike To A Summit"
+            // Assert only park with 5 star rating is displayed on page "Hike To A Summit"
             Assert.AreEqual(false, pageMarkup.Contains("Gas Work Park"));
             Assert.AreEqual(true, pageMarkup.Contains("Hike To A Summit"));
             Assert.AreEqual(false, pageMarkup.Contains("Caffeinated Coffee"));
@@ -321,5 +320,6 @@ namespace UnitTests.Components
             Rating_Selection.Change("0");
         }
         #endregion SubmitLocation
+
     }
 }
