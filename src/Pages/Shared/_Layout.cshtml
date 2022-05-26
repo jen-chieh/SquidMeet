@@ -1,6 +1,7 @@
 ﻿
 @{
     TempData.Keep("user");
+    TempData.Keep("userId");
             }
 <!DOCTYPE html>
 <html lang="en">
@@ -29,19 +30,25 @@
                             <a class="btn btn-primary" style="padding:0px; margin-right:30px" asp-area="" asp-page="/Group/ViewMyGroup" asp-route-id="0">My Groups</a>
                             <a class="btn btn-primary" style="padding:0px; margin-right:30px" asp-area="" asp-page="/Group/Index">Create Group</a>
                             <a class="btn btn-primary" style="padding:0px; margin-right:30px" asp-area="" asp-page="/Product/Index">Products</a>
-                            <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Profile/Profile" asp-route-id="0">Profile</a>
+                            @if (@TempData["userId"] != null)
+                            {
+                            <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Profile/Profile" asp-route-id="@TempData["userId"]">Profile</a>
+                            }
                             <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Authentication/CreateAccount">Create Account</a>
+                            @if(@TempData["userId"] == null){
                             <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Authentication/Login">Login</a>
-                            <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Authentication/Logout">Logout</a>
+                            }else{
+                            <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" onclick="alert('logout successful !')" asp-area="" asp-page="/Authentication/Logout">Logout</a>
+                            }
                             <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Privacy">Privacy</a>
                             <a class="btn btn-primary" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Group/AcceptInvite">Join Group</a>
                             @if (@TempData["user"] != null)
                             {
-                                <a class="dropbtn" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Profile/Profile"> Welcome, @TempData["user"]</a>
+                            <a class="dropbtn" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Profile/Profile"> Welcome, @TempData["user"]</a>
                             }
                             else
                             {
-                                <a class="dropbtn" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Authentication/Login" >Welcome, Guest User</a>
+                            <a class="dropbtn" style="color:#edd49c; padding:0px; margin-right:30px" asp-area="" asp-page="/Authentication/Login">Welcome, Guest User</a>
 
                             }
                         </div>
