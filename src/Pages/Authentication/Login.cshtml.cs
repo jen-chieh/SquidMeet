@@ -41,10 +41,7 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <returns></returns>
         public IActionResult OnPost(UserModel user)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return Page();
-            //};
+            
             // checked if account exist or not.
             checkAccount = ProductService.GetUsers().Any(m => m.email.Equals(user.email) && m.password.Equals(user.password));
             if (checkAccount == false)
@@ -54,9 +51,17 @@ namespace ContosoCrafts.WebSite.Pages.Product
             }
 
             User = ProductService.GetUsers().FirstOrDefault(m => m.email.Equals(user.email));
+
+            //set email and id to TempData
             TempData["user"] = User.email;
+            TempData["userId"] = User.user_id;
+
+            //keep user and userId to TempData
             TempData.Keep("user");
+            TempData.Keep("userId");
+
             //HttpContext.Session.SetString("Userid", User.email);
+
             return RedirectToPage("../Profile/Profile", new { id = User.user_id });
         }
 
