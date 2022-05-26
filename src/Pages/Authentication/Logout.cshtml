@@ -1,0 +1,15 @@
+﻿@page 
+@using ContosoCrafts.WebSite.Services
+@inject JsonFileUserService ProductService
+
+@model ContosoCrafts.WebSite.Pages.Product.LogoutModel
+
+@{
+    ViewData["Title"] = "Logout page";
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
