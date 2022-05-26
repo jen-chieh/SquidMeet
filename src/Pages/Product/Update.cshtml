@@ -16,25 +16,25 @@
 
         <div class="form-group">
             <label asp-for="Product.name" class="control-label"></label>
-            <input asp-for="Product.name" class="form-control" />
+            <input asp-for="Product.name" class="form-control" required />
             <span asp-validation-for="Product.name" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Product.address" class="control-label"></label>
-            <input asp-for="Product.address" class="form-control" />
+            <input asp-for="Product.address" class="form-control" required />
             <span asp-validation-for="Product.address" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Product.type_id" class="control-label"></label>
-            <input asp-for="Product.type_id" class="form-control" />
-            <span asp-validation-for="Product.type_id" class="text-danger"></span>
+            <input asp-for="Product.type_id" class="form-control" required />
+			<span asp-validation-for="Product.type_id" class="text-danger"></span>       
         </div>
 
         <div class="form-group">
             <label asp-for="Product.img" class="control-label"></label>
-            <input asp-for="Product.img" class="form-control" />
+            <input asp-for="Product.img" class="form-control" required />
             <span asp-validation-for="Product.img" class="text-danger"></span>
         </div>
 
