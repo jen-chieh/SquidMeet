@@ -30,8 +30,6 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// return Login page
         /// </summary>
         /// <returns></returns>
-        ///
-        
         public IActionResult OnGet()
         {
             // Logout and return to Login page
