@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebSite.Models
@@ -16,7 +17,8 @@ namespace ContosoCrafts.WebSite.Models
         // Name of the location
         public string? name { get; set; }
 
-        // the type of location Id to connect locationType.json 
+        [RegularExpression("0|1|2", ErrorMessage = "Location type must be between 0-2.")]
+        // the type of location Id to connect locationType.json, must be between 0-2 
         public string? type_id { get; set; }
 
         // Address of Location 
