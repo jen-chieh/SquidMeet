@@ -45,9 +45,11 @@ namespace SquidMeet.WebSite.Pages.Product
         /// <returns></returns>
         public IActionResult OnPost(UserModel UserProfile)
         {
-            if (!ModelState.IsValid)
+            if (UserProfile.bio == null)
             {
+                ModelState.AddModelError(string.Empty, " Invalid Biography input. Please input Biography");
                 return Page();
+
             }
             UserService.UpdateUserBio(UserProfile);
             return RedirectToPage("Profile", new { id = UserProfile.user_id });
