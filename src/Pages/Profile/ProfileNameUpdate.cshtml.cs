@@ -48,8 +48,7 @@ namespace SquidMeet.WebSite.Pages.Product
         {
             if (UserProfile.name==null)
             {
-
-                ModelState.AddModelError(string.Empty, " input the name");
+                ModelState.AddModelError(string.Empty, " Invalid name input. Please input name");
                 return Page();
              
             }
