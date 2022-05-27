@@ -46,12 +46,9 @@ namespace SquidMeet.WebSite.Pages.Product
         /// <returns></returns>
         public IActionResult OnPost(UserModel UserProfile)
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+            
 
-            if (UserProfile.gender.ToLower() != "female" && UserProfile.gender.ToLower() != "male")
+            if ((UserProfile.gender.ToLower() != "female" && UserProfile.gender.ToLower() != "male")|| UserProfile.gender==null)
             {
                 ModelState.AddModelError(string.Empty, "Invalid gender input. Please input 'male' or 'female'");
                 return Page();
