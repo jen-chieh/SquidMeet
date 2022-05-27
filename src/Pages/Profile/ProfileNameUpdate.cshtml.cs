@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -45,14 +46,17 @@ namespace SquidMeet.WebSite.Pages.Product
         /// <returns></returns>
         public IActionResult OnPost(UserModel UserProfile)
         {
-            if (!ModelState.IsValid)
+            if (UserProfile.name==null)
             {
+
+                ModelState.AddModelError(string.Empty, " input the name");
                 return Page();
+             
             }
 
             UserService.UpdateUserName(UserProfile);
-
-            return RedirectToPage("Profile", new { id = UserProfile.user_id });
+            
+            return RedirectToPage("Profile", new { id = "89" });
         }
 
     }

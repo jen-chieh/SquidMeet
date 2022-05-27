@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
@@ -33,10 +34,11 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// <param name="id"></param>
         public IActionResult OnGet(string id)
         {
+        
             Product = ProductService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
 
-            if (Product == null) {
-                return RedirectToPage("../Index");
+            if (Product == null || id ==null) {
+                return RedirectToPage("../Authentication/Login");
             }
             return Page();
         }
