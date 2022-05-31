@@ -61,7 +61,7 @@ namespace SquidMeet.WebSite.Pages.NewGroup
             }
 
             MeetupService.Create(newMeetup);
-            return RedirectToPage("../Index");
+            return RedirectToPage("ReadAllGroups");
         }
 
     }
