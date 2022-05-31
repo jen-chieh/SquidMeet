@@ -21,7 +21,7 @@
                             <span asp-validation-for="newMeetup.Title" class="text-danger"></span>
                         </div>
                         <div class="col-12">
-                            <input asp-for="newMeetup.Host" placeholder="Tell us the Host name of this group" class="form-control px-0 mb-4" value="@TempData["user"]" disabled/>
+                            <input asp-for="newMeetup.Host" placeholder="Tell us the Host name of this group" class="form-control px-0 mb-4" value="@TempData["user"]" readonly />
                             <span asp-validation-for="newMeetup.Host" class="text-danger"></span>
                         </div>
                         <div class="col-md-12">
