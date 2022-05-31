@@ -104,7 +104,8 @@ namespace ContosoCrafts.WebSite.Services
             }
             data.Date = meetup.Date;
             data.Title = meetup.Title;
-            data.location = meetup.location;
+            data.Description = meetup.Description;
+            data.Img = meetup.Img;
             data.Video = meetup.Video;
             SaveData(dataSet);
             return meetup;
