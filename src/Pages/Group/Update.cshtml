@@ -1,6 +1,6 @@
 ﻿@page "{id}"
 @using ContosoCrafts.WebSite.Services
-@inject JsonFileLocationService ProductService
+@inject JsonFileMeetupService ProductService
 @model SquidMeet.WebSite.Pages.Group.MeetupUpdateModel
 
 @{
@@ -19,25 +19,26 @@
             <input asp-for="Product.Title" class="form-control" />
             <span asp-validation-for="Product.Title" class="text-danger"></span>
         </div>
-
+        <div class="form-group">
+            <label asp-for="Product.Description" class="control-label"></label>
+            <input asp-for="Product.Description" class="form-control" />
+            <span asp-validation-for="Product.Description" class="text-danger"></span>
+        </div>
         <div class="form-group">
             <label asp-for="Product.Date" class="control-label"></label>
             <input asp-for="Product.Date" class="form-control" />
             <span asp-validation-for="Product.Date" class="text-danger"></span>
         </div>
-
         <div class="form-group">
-            <label asp-for="Product.location" class="control-label"></label>
-            <input asp-for="Product.location" class="form-control" />
-            <span asp-validation-for="Product.location" class="text-danger"></span>
+            <label asp-for="Product.Img" class="control-label"></label>
+            <input asp-for="Product.Img" class="form-control" />
+            <span asp-validation-for="Product.Img" class="text-danger"></span>
         </div>
-
         <div class="form-group">
             <label asp-for="Product.Video" class="control-label"></label>
             <input asp-for="Product.Video" class="form-control" />
             <span asp-validation-for="Product.Video" class="text-danger"></span>
         </div>
-
         <div class="form-group">
             <input type="submit" value="Save" class="btn btn-primary" />
         </div>
