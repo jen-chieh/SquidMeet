@@ -44,9 +44,12 @@
                                 <option value="Online">Online</option>
                             </select>
                         </div>
+                        <div class="col-12 group-index-col-6">
+                            <a href="https://www.pexels.com/">Chose your picture by right click 'Copy Image Address.'</a>
+                        </div>
+                        <div class="col-12 group-index-col-6">
+                            <input asp-for="newMeetup.Img" placeholder="Paste you image address here:" class="form-control-file px-0 mb-4" />
 
-                        <div class="col-6 group-index-col-6">
-                            <input asp-for="newMeetup.Img" type="file" class="form-control-file px-0 mb-4" />
                             <span asp-validation-for="newMeetup.Img" class="form-control-file"></span>
                         </div>
 
