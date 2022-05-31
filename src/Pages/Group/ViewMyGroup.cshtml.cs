@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -27,14 +28,17 @@ namespace SquidMeet.WebSite.Pages.Group
         [BindProperty]
         public MeetupModel Group { get; set; }
 
+       
+        public IEnumerable<MeetupModel> Groups
+        { get; private set; }
         /// <summary>
         /// REST Get request
         /// Loads the Data
         /// </summary>
         /// <param name="HostId"></param>
-        public void OnGet(string HostId)
+        public void OnGet(string id)
         {
-            Group = MeetupService.GetMeetups().First(g => g.Host == HostId);
+            Groups = MeetupService.GetMeetups().Where(g => g.Host == id);
         }
 
         /// <summary>
