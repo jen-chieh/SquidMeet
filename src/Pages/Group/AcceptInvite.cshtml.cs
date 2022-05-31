@@ -62,7 +62,7 @@ namespace SquidMeet.WebSite.Pages.Group
                 return Page();
             }
 
-            MeetupService.AddAttendee(Meetup, "Azkaban");
+            MeetupService.AddAttendee(Meetup, (string)TempData["user"]);
             return RedirectToPage("ViewMyGroup");
         }
 
