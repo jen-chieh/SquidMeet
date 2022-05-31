@@ -4,5 +4,70 @@
 @{
     ViewData["Title"] = "ViewMygroup page";
 }
-@(await Html.RenderComponentAsync<MyGroup>(RenderMode.ServerPrerendered))
-<script src="_framework/blazor.server.js"></script>
+
+
+<h3>My Groups</h3>
+
+<div class="card-columns" style="margin-top: 100px">
+    @{
+        var dataset = Model.Groups;
+
+
+        //List<MeetupModel> meetups = new List<MeetupModel>();
+        //meetups.Add(meetup);
+
+        foreach (var meetup in dataset)
+        {
+            var attendees = meetup.Attendees;
+            int count;
+            @if (attendees != null)
+            {
+                count = attendees.Count();
+            }
+            else
+            {
+                count = 0;
+            }
+
+            <div class="card">
+                <a href="/Group/MyGroupDetail/@meetup.meetup_id" onclick="">
+                    <div class="card-img" style="background-image: url('@meetup.Img');"></div>
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Title: @meetup.Title</h5>
+                    <a style="font-size:12px; margin-right: 10px">Host</a>
+                    <a style="font-size:12px; margin-right: 10px">@meetup.Host</a>
+                    @{
+                        if (attendees != null)
+                        {
+                            <br />
+                            <a style="font-size:12px; margin-right: 10px">Attentee: </a>
+                            foreach (var attendee in attendees)
+                            {
+                                <a style="font-size:12px; margin-right: 10px">@attendee</a>
+                            }
+                        }
+                        else
+                        {
+                            <br />
+                            <a class="card-text"> 0 Attendee</a>
+                        }
+                    }
+
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-muted">
+                        Date: @meetup.Date
+                        <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a><br />
+                        <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> Invite Code</a>
+                        <a class="badge badge-light" style="font-size: 11px"> @meetup.InviteCode</a>
+                    </small>
+
+
+                </div>
+            </div>
+        }
+    }
+</div>
+
