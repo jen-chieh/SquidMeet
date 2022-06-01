@@ -57,8 +57,16 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost(MeetupModel Meetup)
         {
-            MeetupService.AddAttendee(Meetup, (string)TempData["user"]);
-            return RedirectToPage("../Index");
+            if (MeetupService.AddAttendee(Meetup, (string)TempData["user"]) == true)
+            {
+                return RedirectToPage("../Index");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
+                return Page();
+            }
+
         }
 
     }
