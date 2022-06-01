@@ -65,7 +65,7 @@ namespace UnitTests.Pages.Product.Update
                 name = "test name",
                 age = 30,
                 gender = "female",
-                bio = "valid bio saying hello"
+                bio = null
             };
 
             // Act
