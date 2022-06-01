@@ -68,12 +68,8 @@ namespace SquidMeet.WebSite.Pages.Group
             {
                 return RedirectToPage("ViewMyGroup");
             }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
-                return Page();
-            }
 
+            return Page();
         }
 
     }
