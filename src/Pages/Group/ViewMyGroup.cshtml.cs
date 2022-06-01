@@ -39,6 +39,7 @@ namespace SquidMeet.WebSite.Pages.Group
         public void OnGet(string id)
         {
             Groups = MeetupService.GetMeetups().Where(g => g.Host == id);
+            Group = MeetupService.GetMeetups().First(g => g.Host == id);
         }
 
         /// <summary>
