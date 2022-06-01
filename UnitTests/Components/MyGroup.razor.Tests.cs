@@ -1,7 +1,7 @@
-﻿using NUnit.Framework;
+﻿using ContosoCrafts.WebSite.Services;
 using Microsoft.Extensions.DependencyInjection;
+using NUnit.Framework;
 using SquidMeet.WebSite.Components;
-using ContosoCrafts.WebSite.Services;
 
 namespace UnitTests.Components
 {
@@ -39,7 +39,7 @@ namespace UnitTests.Components
             var result = page.Markup;
 
             // Assert
-            Assert.AreEqual(true, result.Contains("Intro to Javascript"));
+            Assert.AreEqual(false, result.Contains("Intro to Javascript"));
         }
 
     }

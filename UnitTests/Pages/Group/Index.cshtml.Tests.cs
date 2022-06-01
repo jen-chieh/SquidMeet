@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ContosoCrafts.WebSite.Models;
+using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
-using ContosoCrafts.WebSite.Models;
 using SquidMeet.WebSite.Pages.NewGroup;
 
 namespace UnitTests.Pages.Group.Index
@@ -71,7 +71,7 @@ namespace UnitTests.Pages.Group.Index
             var meetupResult = pageModel.MeetupService.GetMeetups();
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("../Index", result.PageName);
+            Assert.AreEqual("ReadAllGroups", result.PageName);
         }
         #endregion OnGet
 

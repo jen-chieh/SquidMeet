@@ -59,7 +59,7 @@ namespace SquidMeet.WebSite.Pages.Group
         {
             if (MeetupService.AddAttendee(Meetup, (string)TempData["user"]) == true)
             {
-                return RedirectToPage("../Index");
+                return RedirectToPage("ReadAllGroups");
             }
             else
             {
