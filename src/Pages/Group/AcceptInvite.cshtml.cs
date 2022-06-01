@@ -37,7 +37,7 @@ namespace SquidMeet.WebSite.Pages.Group
         // The data to show, bind to it for the post
         [BindProperty]
         public UserModel User { get; set; }
-
+        
         /// <summary>
         /// REST Get request
         /// </summary>
@@ -57,14 +57,21 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost(MeetupModel Meetup)
         {
+             MeetupModel mp = new MeetupModel
+            {
+                Host = "New title"
+            };
+          //  TempData["user"] = mp.Host;
+           // TempData.Keep("user");
+
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
             }
 
-            if (MeetupService.AddAttendee(Meetup, (string)TempData["user"]) == true)
+            if (MeetupService.AddAttendee(mp, (string)TempData["user"]))
             {
-                return RedirectToPage("../Index");
+                return RedirectToPage("ReadAllGroups");
             }
 
             return Page();
