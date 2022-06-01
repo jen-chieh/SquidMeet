@@ -26,11 +26,7 @@
             <span asp-validation-for="Product.address" class="text-danger"></span>
         </div>
 
-        <div class="form-group">
-            <label asp-for="Product.type_id" class="control-label"></label>
-            <input asp-for="Product.type_id" class="form-control" disabled />
-			<span asp-validation-for="Product.type_id" class="text-danger"></span>       
-        </div>
+		@Html.HiddenFor(x => x.Product.type_id)
 
         <div class="form-group">
             <label asp-for="Product.img" class="control-label"></label>
