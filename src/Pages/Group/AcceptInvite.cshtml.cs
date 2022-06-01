@@ -60,10 +60,14 @@ namespace SquidMeet.WebSite.Pages.Group
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
-                return Page();
             }
 
-            return RedirectToPage("ViewMyGroup");
+            if (MeetupService.AddAttendee(Meetup, "user") == true)
+            {
+                return RedirectToPage("ViewMyGroup");
+            }
+
+            return Page();
         }
 
     }
