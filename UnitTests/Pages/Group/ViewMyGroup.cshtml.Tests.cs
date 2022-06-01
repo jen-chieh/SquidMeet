@@ -46,7 +46,7 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.IsTrue(pageModel.Groups.Any(group => group.Host == "YJ"));
+            Assert.IsTrue(pageModel.Groups.Any(group => group.Host.Equals("YJ")));
         }
         #endregion OnGet
 
