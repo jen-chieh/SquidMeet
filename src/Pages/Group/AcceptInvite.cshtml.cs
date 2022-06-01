@@ -57,13 +57,8 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost(MeetupModel Meetup)
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
             MeetupService.AddAttendee(Meetup, (string)TempData["user"]);
-            return RedirectToPage("ViewMyGroup");
+            return RedirectToPage("../Index");
         }
 
     }
