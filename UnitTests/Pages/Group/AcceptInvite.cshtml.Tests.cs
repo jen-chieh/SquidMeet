@@ -3,6 +3,9 @@ using NUnit.Framework;
 using ContosoCrafts.WebSite.Models;
 using SquidMeet.WebSite.Pages.Group;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Moq;
 
 namespace UnitTests.Pages.Group.Update
 {
@@ -76,11 +79,16 @@ namespace UnitTests.Pages.Group.Update
             };
 
             // Act
+         
+            var heetpContext = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(heetpContext, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
             var result = pageModel.OnPost(pageModel.Meetup) as RedirectToPageResult;
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(true, result.PageName.Contains("ViewMyGroup"));
+            Assert.AreEqual(true, result.PageName.Contains("ReadAllGroups"));
         }
 
         [Test]
@@ -110,6 +118,12 @@ namespace UnitTests.Pages.Group.Update
             pageModel.ModelState.AddModelError("bogus", "bogus error");
 
             // Act
+            // Act
+            var heetpContext = new DefaultHttpContext();
+           // var data = pageModel.ProductService.GetUsers();
+            var tempData = new TempDataDictionary(heetpContext, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
             var result = pageModel.OnPost(pageModel.Meetup) as ActionResult;
 
             // Assert
