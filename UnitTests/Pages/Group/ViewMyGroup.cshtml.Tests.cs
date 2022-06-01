@@ -41,9 +41,8 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Act
             pageModel.OnGet("Will");
 
-
-
             // Assert
+            Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Feet First Walks", pageModel.Group.Title);
         }
         #endregion OnGet
