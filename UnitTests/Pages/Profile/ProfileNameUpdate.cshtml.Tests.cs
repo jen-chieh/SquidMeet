@@ -62,7 +62,7 @@ namespace UnitTests.Pages.Product.Update
                 user_id = "22",
                 email = "username@squid.com",
                 password = "validpassword",
-                name = null,
+                name = "username",
                 age = 30,
                 gender = "female",
                 bio = "hello"
