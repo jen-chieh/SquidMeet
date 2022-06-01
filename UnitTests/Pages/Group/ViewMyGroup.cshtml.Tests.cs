@@ -1,4 +1,6 @@
-﻿using ContosoCrafts.WebSite.Models;
+﻿using System;
+using System.Linq;
+using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Group;
@@ -39,11 +41,12 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Arrange
 
             // Act
-            pageModel.OnGet("Will");
+            pageModel.OnGet("YJ");
+            var result = pageModel.Groups;
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Feet First Walks", pageModel.Group.Title);
+            Assert.IsTrue(pageModel.Groups.Any(group => group.Host == "YJ"));
         }
         #endregion OnGet
 
@@ -58,11 +61,6 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Arrange
 
             // Act
-            pageModel.Group = new MeetupModel
-            {
-                Title = "New title"
-            };
-
             var result = pageModel.OnPost() as RedirectToPageResult;
 
             // Assert
@@ -79,20 +77,7 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
         public void OnPostAsync_InValid_Model_NotValid_Return_Page()
         {
             // Arrange
-            pageModel.Group = new MeetupModel
-            {
-                meetup_id = "ab012001-2db8-4270-8fcb-sdf",
-                location = "Seattle",
-                LocationType = "Indoor",
-                Title = "Intro to Java",
-                Date = "11/22/12",
-                Attendees = null,
-                Host = "YJ",
-                Description = "Java is one of the most widely used programming languages.",
-                InviteCode = "52553b96-7519-4988-aa0e-999afb46f4dc",
-                Img = "",
-                Video = ""
-            };
+           
 
             // Force an invalid error state
             pageModel.ModelState.AddModelError("bogus", "bogus error");

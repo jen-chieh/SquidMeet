@@ -25,9 +25,6 @@ namespace SquidMeet.WebSite.Pages.Group
         }
 
         /// The data to show, bind to it for the post
-        [BindProperty]
-        public MeetupModel Group { get; set; }
-
        
         public IEnumerable<MeetupModel> Groups
         { get; private set; }
@@ -39,7 +36,7 @@ namespace SquidMeet.WebSite.Pages.Group
         public void OnGet(string id)
         {
             Groups = MeetupService.GetMeetups().Where(g => g.Host == id);
-            Group = MeetupService.GetMeetups().First(g => g.Host == id);
+        
         }
 
         /// <summary>
