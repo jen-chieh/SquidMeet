@@ -89,7 +89,7 @@ namespace UnitTests.Pages.Product.Update
                 user_id = "bogus",
                 email = "bogus",
                 password = "bogus",
-                name = "bogus",
+                name = null,
                 age = -1,
                 gender = "bogus",
                 bio = "bogus"
