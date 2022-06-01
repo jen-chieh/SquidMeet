@@ -136,13 +136,13 @@ namespace ContosoCrafts.WebSite.Services
         /// </summary>
         /// <param name="meetup"></param>
         /// <param name="attendeeName"></param>
-        public void AddAttendee(MeetupModel meetup, string attendeeName)
+        public bool AddAttendee(MeetupModel meetup, string attendeeName)
         {
             var meetups = GetMeetups();
             var validMeetup = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode);
             if (validMeetup == null)
             {
-                return;
+                return false;
             }
             var attendees = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees.ToList();
             attendees.Add(attendeeName);
@@ -159,6 +159,7 @@ namespace ContosoCrafts.WebSite.Services
                     meetups
                 );
             }
+            return true;
 
         }
 
