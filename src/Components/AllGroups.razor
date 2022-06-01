@@ -39,7 +39,11 @@
                             <a>Attentee: </a>
                             foreach (var attendee in attendees)
                             {
-                                <a class="card-text">&nbsp; @attendee</a>
+                                if (attendee != null)
+                                {
+                                    <a class="card-text">&nbsp;@attendee</a>
+                                }
+
                             }
                         }
                         else
