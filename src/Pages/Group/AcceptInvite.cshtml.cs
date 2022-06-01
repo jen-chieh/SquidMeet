@@ -45,6 +45,7 @@ namespace SquidMeet.WebSite.Pages.Group
         public void OnGet(string id)
         {
             User = UserService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
+            //Meetup = MeetupService.GetMeetups().First(m => m.Host.Equals(User.name));
         }
 
         /// <summary>
@@ -57,9 +58,15 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost(MeetupModel Meetup)
         {
-            if (MeetupService.AddAttendee(Meetup, (string)TempData["user"]) == true)
+            if (!ModelState.IsValid)
             {
-                return RedirectToPage("ReadAllGroups");
+                ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
+                return Page();
+            }
+
+            if (MeetupService.AddAttendee(Meetup, "user") == true)
+            {
+                return RedirectToPage("ViewMyGroup");
             }
             else
             {
