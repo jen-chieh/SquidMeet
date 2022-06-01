@@ -215,14 +215,15 @@ namespace ContosoCrafts.WebSite.Services
         {
             var dataSet = GetUsers();
             var data = dataSet.FirstOrDefault(p => p.user_id == user.user_id);
-            if (data == null)
+            if (data != null)
             {
-                return null;
+                data.password = user.password;
+                SaveData(dataSet);
+                return user;
             }
 
-            data.password = user.password;
-            SaveData(dataSet);
-            return user;
+            return null;
+
         }
 
     }
