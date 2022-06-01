@@ -44,8 +44,8 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            User = UserService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
-            //Meetup = MeetupService.GetMeetups().First(m => m.Host.Equals(User.name));
+            User = UserService.GetUsers().FirstOrDefault(m => m.name.Equals(id));
+            Meetup = MeetupService.GetMeetups().First(g => g.Host == id);
         }
 
         /// <summary>
@@ -64,12 +64,7 @@ namespace SquidMeet.WebSite.Pages.Group
                 return Page();
             }
 
-            if (MeetupService.AddAttendee(Meetup, "user") == true)
-            {
-                return RedirectToPage("ViewMyGroup");
-            }
-
-            return Page();
+            return RedirectToPage("ViewMyGroup");
         }
 
     }
