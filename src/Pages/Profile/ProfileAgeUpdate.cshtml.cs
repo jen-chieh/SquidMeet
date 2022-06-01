@@ -45,9 +45,11 @@ namespace SquidMeet.WebSite.Pages.Product
         /// <returns></returns>
         public IActionResult OnPost(UserModel UserProfile)
         {
-            if (!ModelState.IsValid)
+            if (UserProfile.age == null)
             {
+                ModelState.AddModelError(string.Empty, "Invalid age input. Please input age");
                 return Page();
+
             }
 
             UserService.UpdateUserAge(UserProfile);
