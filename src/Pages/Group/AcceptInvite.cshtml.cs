@@ -61,19 +61,13 @@ namespace SquidMeet.WebSite.Pages.Group
             {
                 Host = "New title"
             };
-          //  TempData["user"] = mp.Host;
-           // TempData.Keep("user");
 
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid && MeetupService.AddAttendee(mp, (string)TempData["user"]))
             {
-                ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
+                return RedirectToPage("ReadAllGroups"); 
             }
 
-            if (MeetupService.AddAttendee(mp, (string)TempData["user"]))
-            {
-                return RedirectToPage("ReadAllGroups");
-            }
-
+            ModelState.AddModelError(string.Empty, "Please enter a valid Invitation Code");
             return Page();
         }
 
