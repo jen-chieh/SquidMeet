@@ -44,8 +44,7 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <param name="id"></param>
         public void OnGet(string id)
         {
-            User = UserService.GetUsers().FirstOrDefault(m => m.name.Equals(id));
-            Meetup = MeetupService.GetMeetups().First(g => g.Host == id);
+            User = UserService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
         }
 
         /// <summary>
