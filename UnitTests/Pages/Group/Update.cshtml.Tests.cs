@@ -76,7 +76,7 @@ namespace UnitTests.Pages.Group.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(true, result.PageName.Contains("ViewMyGroup"));
+            Assert.AreEqual(true, result.PageName.Contains("/Group/ViewMyGroup"));
         }
 
         [Test]
