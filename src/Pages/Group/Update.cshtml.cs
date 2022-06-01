@@ -47,13 +47,9 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
+         
             ProductService.UpdateMeetup(Product);
-            return RedirectToPage("/Group/ViewMyGroup", new { id = "user" });
+            return RedirectToPage("/Group/ViewMyGroup", new { id = TempData["user"] });
 
         }
     }
