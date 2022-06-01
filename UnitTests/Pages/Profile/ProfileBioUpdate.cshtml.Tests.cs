@@ -92,7 +92,7 @@ namespace UnitTests.Pages.Product.Update
                 name = "bogus",
                 age = 30,
                 gender = "bogus",
-                bio = "bogus"
+                bio = null
             };
 
             // Force an invalid error state
