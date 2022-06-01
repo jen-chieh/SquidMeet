@@ -41,11 +41,11 @@ namespace UnitTests.Pages.Group.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("0");
+            pageModel.OnGet("Blanchard Whitehead");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Blanchard Whitehead", pageModel.User.name);
+            Assert.AreEqual("0", pageModel.User.user_id);
         }
         #endregion OnGet
 
