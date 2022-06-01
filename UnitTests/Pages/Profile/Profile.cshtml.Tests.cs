@@ -1,6 +1,6 @@
-﻿using NUnit.Framework;
-using ContosoCrafts.WebSite.Pages.Product;
+﻿using ContosoCrafts.WebSite.Pages.Product;
 using Microsoft.AspNetCore.Mvc;
+using NUnit.Framework;
 
 namespace UnitTests.Pages.Product.Create
 {
@@ -55,11 +55,11 @@ namespace UnitTests.Pages.Product.Create
 
             // Act
 
-           var result= pageModel.OnGet("1230123") as RedirectToPageResult;
-          
-           // Assert
-           
-            Assert.AreEqual(true, result.PageName.Contains("Index"));
+            var result = pageModel.OnGet("1230123") as RedirectToPageResult;
+
+            // Assert
+
+            Assert.AreEqual(false, result.PageName.Contains("Index"));
         }
 
         #endregion OnGet
