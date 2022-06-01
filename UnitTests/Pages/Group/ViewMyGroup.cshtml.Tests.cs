@@ -1,4 +1,6 @@
-﻿using ContosoCrafts.WebSite.Models;
+﻿using System;
+using System.Linq;
+using ContosoCrafts.WebSite.Models;
 using Microsoft.AspNetCore.Mvc;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Group;
@@ -39,11 +41,12 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Arrange
 
             // Act
-            pageModel.OnGet("Will");
+            pageModel.OnGet("YJ");
+            var result = pageModel.Groups;
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Feet First Walks", pageModel.Group.Title);
+            Assert.IsTrue(pageModel.Groups.Any(group => group.Host == "YJ"));
         }
         #endregion OnGet
 
