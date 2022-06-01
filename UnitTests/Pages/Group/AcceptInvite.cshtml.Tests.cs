@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using ContosoCrafts.WebSite.Models;
 using SquidMeet.WebSite.Pages.Group;
+using System.Linq;
 
 namespace UnitTests.Pages.Group.Update
 {
@@ -41,11 +42,12 @@ namespace UnitTests.Pages.Group.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("Blanchard Whitehead");
+            pageModel.OnGet("0");
+            var result = pageModel.MeetupService.GetMeetups().First(g => g.Host == pageModel.User.name);
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("0", pageModel.User.user_id);
+            Assert.AreEqual("Blanchard Whitehead", pageModel.User.name);
         }
         #endregion OnGet
 
