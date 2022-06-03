@@ -36,7 +36,7 @@ namespace UnitTests.Controllers
             var result = controller.Get().ToList();
 
             // Assert
-            Assert.AreEqual(6, result.Count());
+            Assert.AreEqual(8, result.Count());
             Assert.AreEqual("59170836-95ac-42a5-833f-9f026c8dc152", result[1].meetup_id);
 
         }
