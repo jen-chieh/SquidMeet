@@ -71,7 +71,7 @@
                                 <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a>
                             } else if (meetup.Attendees!= null && meetup.Attendees.Where(a => a.user.Contains((string)TempData["user"])).Count() > 0)
                             {
-                    <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> @meetup.Attendees.First(a => a.user == (string)TempData["user"]).status</a> }
+                    <a class="badge badge-pill badge-warning" style="color: black; margin-left: -1px; margin-top: 13px;"> @meetup.Attendees.First(a => a.user == (string)TempData["user"]).status</a> }
                         } 
                         <br />
                         <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> Invite Code</a>
