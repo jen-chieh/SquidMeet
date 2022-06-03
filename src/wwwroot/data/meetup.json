@@ -117,7 +117,6 @@
     "meetup_id": "a335fe3f-48a8-4c88-b5d3-681712a0406a",
     "location": "ut10@squid.com",
     "LocationType": "Indoor",
-<<<<<<< HEAD
     "Title": "ut10@squid.com",
     "Date": "2022-06-02",
     "Attendees": [
@@ -149,7 +148,7 @@
     "Attendees": [
       {
         "user": "ut10@squid.com",
-        "status": "accepted"
+        "status": "pending"
       }
     ],
     "Host": "pvrk1992@gmail.com",
@@ -157,15 +156,5 @@
     "InviteCode": "b87e481c-a8af-40c1-98c0-03f37c9f150e",
     "Img": null,
     "Video": null
-=======
-    "Title": "Intro to Javascript",
-    "Date": "11/22/12",
-    "Attendees": null,
-    "Host": "Blanchard Whitehead",
-    "Description": "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
-    "InviteCode": "52553b96-7519-4988-aa0e-999afb46f44c",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/c317f4714a/?\u0026locale=en\u0026location=trial"
->>>>>>> 1d4cee8f20dde117218f6088d2a8e5a1eb29568f
   }
 ]
