@@ -32,9 +32,15 @@ namespace SquidMeet.WebSite.Pages.Product
         /// REST Get request
         /// </summary>
         /// <param name="id"></param>
-        public void OnGet(string id)
+        public IActionResult OnGet(string id)
         {
             UserProfile = UserService.GetUsers().FirstOrDefault(m => m.user_id.Equals(id));
+
+            if (UserProfile == null)
+            {
+                return RedirectToPage("Profile", new { id = TempData["userId"] });
+            }
+            return Page();
         }
 
         /// <summary>
