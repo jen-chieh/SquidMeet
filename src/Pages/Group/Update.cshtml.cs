@@ -33,9 +33,16 @@ namespace SquidMeet.WebSite.Pages.Group
         /// Loads the Data
         /// </summary>
         /// <param name="id"></param>
-        public void OnGet(string id)
+        public IActionResult OnGet(string id)
         {
             Product = ProductService.GetMeetups().FirstOrDefault(m => m.meetup_id.Equals(id));
+            
+            if (Product == null)
+            {
+                return RedirectToPage("ViewMyGroup", new { id = TempData["user"] });
+            }
+            return Page();
+
         }
 
         /// <summary>
