@@ -6,6 +6,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
+using System.Collections.Generic;
 
 namespace UnitTests.Pages.Group.Update
 {
@@ -63,14 +64,26 @@ namespace UnitTests.Pages.Group.Update
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
+
+            // Initialize new StatusModel
+            StatusModel status = new StatusModel
+            {
+            user ="Jack",
+            status= "pending"
+            };
+
+            // Add status model to list
+            List<StatusModel> statusList = new List<StatusModel>();
+            statusList.Add(status);
+
             pageModel.Meetup = new MeetupModel
             {
-                meetup_id= "ebf80f1c-3802-4df9-bbda-fd274810a44c",
+                meetup_id = "ebf80f1c-3802-4df9-bbda-fd274810a44c",
                 location = "Seattle",
-                LocationType= "Indoor",
+                LocationType = "Indoor",
                 Title = "Intro to Javascript",
                 Date = "11/22/12",
-                Attendees = new [] { "Jessica, Bob" },
+                Attendees = statusList,
                 Host  = "Blanchard Whitehead",
                 Description = "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
                 InviteCode = "e0e940ed-5487-46f9-b0f0-99d64853e2c4",
@@ -88,7 +101,7 @@ namespace UnitTests.Pages.Group.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(true, result.PageName.Contains("ReadAllGroups"));
+            Assert.AreEqual(true, result.PageName.Contains("ViewMygroup"));
         }
 
         [Test]
