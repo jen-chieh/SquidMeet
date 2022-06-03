@@ -76,7 +76,7 @@ namespace ContosoCrafts.WebSite.Services
                 Date = newMeetup.Date,
                 Description = newMeetup.Description,
                 Host = newMeetup.Host,
-                Attendees = new string[100],
+                Attendees = new List<StatusModel>(),
                 Img = newMeetup.Img,
                 InviteCode = System.Guid.NewGuid().ToString(),
             };
@@ -108,6 +108,7 @@ namespace ContosoCrafts.WebSite.Services
             data.Description = meetup.Description;
             data.Img = meetup.Img;
             data.Video = meetup.Video;
+            data.Attendees = meetup.Attendees;
             SaveData(dataSet);
             return meetup;
         }
@@ -145,8 +146,9 @@ namespace ContosoCrafts.WebSite.Services
                 return false;
             }
             var attendees = meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees.ToList();
-            attendees.Add(attendeeName);
-            meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees = attendees.ToArray();
+            var new_attendees = new StatusModel { status = "pending", user = attendeeName };
+            attendees.Add(new_attendees);
+            meetups.FirstOrDefault(p => p.InviteCode == meetup.InviteCode).Attendees = attendees.ToList();
 
             using (var outputStream = File.OpenWrite(JsonFileName))
             {
