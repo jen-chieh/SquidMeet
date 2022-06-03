@@ -29,11 +29,11 @@
     "Date": "11/05/2022",
     "Attendees": [
       {
-        "user": "Amelia",
+        "user": "Olivia",
         "status": "pending"
       },
       {
-        "user": "Emma",
+        "user": "James",
         "status": "pending"
       }
     ],
@@ -51,11 +51,11 @@
     "Date": "15/05/2022",
     "Attendees": [
       {
-        "user": "Amelia",
+        "user": "Jack",
         "status": "pending"
       },
       {
-        "user": "Emma",
+        "user": "Hannah",
         "status": "pending"
       }
     ],
@@ -73,11 +73,15 @@
     "Date": "22/12/2022",
     "Attendees": [
       {
-        "user": "Amelia",
+        "user": "Anna",
         "status": "pending"
       },
       {
-        "user": "Emma",
+        "user": "abc@gmail.com",
+        "status": "declined"
+      },
+      {
+        "user": "Will",
         "status": "pending"
       }
     ],
@@ -99,11 +103,15 @@
         "status": "pending"
       },
       {
-        "user": "Amelia",
+        "user": "Mike",
         "status": "pending"
       },
       {
-        "user": "Emma",
+        "user": "abc@gmail.com",
+        "status": "pending"
+      },
+      {
+        "user": "Henry",
         "status": "pending"
       }
     ],
@@ -121,11 +129,11 @@
     "Date": "2022-06-02",
     "Attendees": [
       {
-        "user": "Amelia",
+        "user": "Sam",
         "status": "accepted"
       },
       {
-        "user": "Emma",
+        "user": "abc@gmail.com",
         "status": "accepted"
       },
       {
