@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
 namespace ContosoCrafts.WebSite.Models
@@ -30,7 +32,7 @@ namespace ContosoCrafts.WebSite.Models
         public string? Date { get; set; }
 
         //Attendees in the meetup
-        public string[]? Attendees { get; set; }
+        public List<StatusModel>? Attendees { get; set; }
 
         // To identify the host of the meetup
         [Required]
@@ -54,5 +56,6 @@ namespace ContosoCrafts.WebSite.Models
         /// </summary>
         /// <returns></returns>
         public override string ToString() => JsonSerializer.Serialize<MeetupModel>(this);
+
     }
 }
