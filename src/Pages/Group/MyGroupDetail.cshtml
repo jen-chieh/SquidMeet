@@ -10,6 +10,9 @@
 @{
     ViewData["Title"] = "MyGroupDetail page";
 }
+@{
+    TempData.Keep("user");
+}
 
 <main id="main" class="group-detail-main">
 
@@ -60,6 +63,19 @@
                                         <p>@Model.Meetup.InviteCode</p>
                                     </div>
 
+									<div class="acceptance status">
+                                        <i class="bi bi-code-square"></i>
+                                        <h4>Acceptance status:</h4>
+										@{if ((string)TempData["user"] == Model.Meetup.Host)
+										{
+											<p>You are the host of the meetup!</p>
+											
+										} else {
+											<p>@Model.Meetup.Attendees.First(a => a.user == (string)TempData["user"]).status</p>
+										}
+                                        }
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -97,9 +113,17 @@
                     </div>
                 </div>
 
+
                 <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
-					<p> You are already registered for this event. To invite other people, send them the invitation link!
-					</p>
+
+				@{if ((string)TempData["user"] == Model.Meetup.Host)
+				{
+				<p>You are the host of the meetup! To invite other people, send them the invitation link!</p>
+											
+				} else {
+					<p> You are already registered for this event. To invite other people, send them the invitation link!</p>
+				}
+                }
 					<b class="badge badge-light" style="font-size: 14px"> @Model.Meetup.InviteCode</b>
                 </div>
 
