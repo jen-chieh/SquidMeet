@@ -4,7 +4,9 @@
 @{
     ViewData["Title"] = "ViewMygroup page";
 }
-
+@{
+    TempData.Keep("user");
+}
 
 <h3>My Groups</h3>
 
@@ -20,6 +22,7 @@
         {
             var attendees = meetup.Attendees;
             int count;
+            var host = (string)TempData["user"] == meetup.Host;
             @if (attendees != null)
             {
                 count = attendees.Count();
@@ -44,7 +47,10 @@
                             <a style="font-size:12px; margin-right: 10px">Attentee: </a>
                             foreach (var attendee in attendees)
                             {
-                                <a style="font-size:12px; margin-right: 10px">@attendee</a>
+                                if (attendee != null)
+                                {
+                                <a style="font-size:12px; margin-right: 10px">@attendee.user</a>
+                                }
                             }
                         }
                         else
@@ -59,7 +65,15 @@
                 <div class="card-footer">
                     <small class="text-muted">
                         Date: @meetup.Date
-                        <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a><br />
+                        @{
+                            if ((string)TempData["user"] == meetup.Host)
+                            {
+                                <a href="/Group/Update/@meetup.meetup_id" onclick="">Update</a>
+                            } else if (meetup.Attendees!= null && meetup.Attendees.Where(a => a.user.Contains((string)TempData["user"])).Count() > 0)
+                            {
+                    <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> @meetup.Attendees.First(a => a.user == (string)TempData["user"]).status</a> }
+                        } 
+                        <br />
                         <a class="badge badge-pill badge-warning" style="color: black; margin-left: -5px; margin-top: 13px;"> Invite Code</a>
                         <a class="badge badge-light" style="font-size: 11px"> @meetup.InviteCode</a>
                     </small>
