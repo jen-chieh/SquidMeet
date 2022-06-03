@@ -6,15 +6,20 @@
     "Title": "Meditate with a Monk",
     "Date": "01/06/2022",
     "Attendees": [
-      "Jack",
-      "Levi",
-      "James"
+      {
+        "user": "Amelia",
+        "status": "pending"
+      },
+      {
+        "user": "Emma",
+        "status": "pending"
+      }
     ],
     "Host": null,
     "Description": "No meditation experience is needed to join our group. The group is for both beginners and experienced meditators alike. Our group is lead by female Buddhist Monks in the Theravada Tradition.The purpose of the meet up is share time together in meditation and in exploring the teachings of the Buddha. All are welcome to join us in meditation and discussion of the Buddha\u0027s teaching. A variety of Buddhist meditation is taught and practiced including mindfulness, loving kindness and insight meditation. These practices bring joy and wellbeing to our lives, improve our relationship with others and foster spiritual awakening.",
     "InviteCode": "e0e940ed-5487-46f9-b0f0-99d64853e2c4",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155434.jpeg",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/17ca54b5ac/?&locale=en&location=trial"
+    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/17ca54b5ac/?\u0026locale=en\u0026location=trial"
   },
   {
     "meetup_id": "59170836-95ac-42a5-833f-9f026c8dc152",
@@ -23,15 +28,20 @@
     "Title": "Feet First Walks",
     "Date": "11/05/2022",
     "Attendees": [
-      "William",
-      "Owen",
-      "Noah"
+      {
+        "user": "Amelia",
+        "status": "pending"
+      },
+      {
+        "user": "Emma",
+        "status": "pending"
+      }
     ],
     "Host": "Will",
     "Description": "Feet First is a local nonprofit working to ensure all communities in Washington are walkable. We organize many fun walking events throughout the year---come walk with us! Most of the walks are led by trained Feet First\u0027s Neighborhood Walking Ambassadors. Our Feet First Walks are for everyone who wants to discover new walking paths, experience other places on foot, and meet friends. Walking together is a healthy, sustainable, and fun form of transportation providing a better understanding of our surroundings and how to improve them and the opportunity to share knowledge. You\u0027ll see a whole lot more at 3mph compared to 30mphTo learn more about the work we do, take a look at: www.feetfirst.org Whether you walk your child to school, walk to the senior center, or walk to your bus, or just enjoy walking in your neighborhood, we work to ensure everyone has a safe way to go by foot.With your support, Feet First is working hard to make that happen.Your tax-deductible donation strengthens our voice for safe, easy, and inviting places for people to walk.",
     "InviteCode": null,
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/okimage-20220509052221826.png",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/0a2218a99c/?accessToken=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiJmYTkzNjRiMC0wYzg4LTRlNDYtODRhMC1mNzBhMzRkYzY3MjQiLCJWaWRlb0lkIjoiMGEyMjE4YTk5YyIsIlBlcm1pc3Npb24iOiJSZWFkZXIiLCJFeHRlcm5hbFVzZXJJZCI6IkYyQUVFQkQ4Q0M2MjQzQkU5RkM4OEZBRjI4Qzc2NUYxIiwiVXNlclR5cGUiOiJNaWNyb3NvZnRDb3JwQWFkIiwiSXNzdWVyTG9jYXRpb24iOiJUcmlhbCIsIm5iZiI6MTY1MjM4ODkwNSwiZXhwIjoxNjUyMzkyODA1LCJpc3MiOiJodHRwczovL2FwaS52aWRlb2luZGV4ZXIuYWkvIiwiYXVkIjoiaHR0cHM6Ly9hcGkudmlkZW9pbmRleGVyLmFpLyJ9.z8lvvuAhxzNBIVk1x04mDKpefgkdLXfLDFgScYLAxuk&locale=en&location=trial"
+    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/0a2218a99c/?accessToken=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJBY2NvdW50SWQiOiJmYTkzNjRiMC0wYzg4LTRlNDYtODRhMC1mNzBhMzRkYzY3MjQiLCJWaWRlb0lkIjoiMGEyMjE4YTk5YyIsIlBlcm1pc3Npb24iOiJSZWFkZXIiLCJFeHRlcm5hbFVzZXJJZCI6IkYyQUVFQkQ4Q0M2MjQzQkU5RkM4OEZBRjI4Qzc2NUYxIiwiVXNlclR5cGUiOiJNaWNyb3NvZnRDb3JwQWFkIiwiSXNzdWVyTG9jYXRpb24iOiJUcmlhbCIsIm5iZiI6MTY1MjM4ODkwNSwiZXhwIjoxNjUyMzkyODA1LCJpc3MiOiJodHRwczovL2FwaS52aWRlb2luZGV4ZXIuYWkvIiwiYXVkIjoiaHR0cHM6Ly9hcGkudmlkZW9pbmRleGVyLmFpLyJ9.z8lvvuAhxzNBIVk1x04mDKpefgkdLXfLDFgScYLAxuk\u0026locale=en\u0026location=trial"
   },
   {
     "meetup_id": "71498a24-daa6-48c9-86e8-e4b7fc65e61d",
@@ -40,16 +50,20 @@
     "Title": "Cafe Matic",
     "Date": "15/05/2022",
     "Attendees": [
-      "Oliver",
-      "Liam",
-      "Theodore",
-      "Henry"
+      {
+        "user": "Amelia",
+        "status": "pending"
+      },
+      {
+        "user": "Emma",
+        "status": "pending"
+      }
     ],
     "Host": "YJ",
     "Description": "Every Sunday at 11:30 am CST, Italian speakers meet via Zoom and practice our skills by conversing with one another. Open to all levels of language facility. Sponsored by the Italian American Heritage Society of Chicago.",
     "InviteCode": "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083445.jpeg",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/7374b27cb9/?&locale=en&location=trial"
+    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/7374b27cb9/?\u0026locale=en\u0026location=trial"
   },
   {
     "meetup_id": "6f23643f-1254-4524-9f4d-439a3d626427",
@@ -58,14 +72,20 @@
     "Title": "K\u0026M \u0027s wedding ceremony",
     "Date": "22/12/2022",
     "Attendees": [
-      "Charlotte",
-      "Olivia"
+      {
+        "user": "Amelia",
+        "status": "pending"
+      },
+      {
+        "user": "Emma",
+        "status": "pending"
+      }
     ],
     "Host": "YJ",
     "Description": "test",
     "InviteCode": "0252dcc7-5564-4901-956c-c11a720331eb",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220429083902.png",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/065c497b4b/?&locale=en&location=trial"
+    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/065c497b4b/?\u0026locale=en\u0026location=trial"
   },
   {
     "meetup_id": "6e1ea3b8-c00d-4018-8986-d95c6a7173c1",
@@ -74,27 +94,67 @@
     "Title": "Party with Border Collies",
     "Date": "22/12/2022",
     "Attendees": [
-      "Evelyn",
-      "Amelia",
-      "Emma"
+      {
+        "user": "ut10@squid.com",
+        "status": "pending"
+      },
+      {
+        "user": "Amelia",
+        "status": "pending"
+      },
+      {
+        "user": "Emma",
+        "status": "pending"
+      }
     ],
     "Host": "YJ",
     "Description": "Meet other Border Collies, Aussies and their mixes. Talk to other BC and Aussie owners at our many play dates, training activities, walks and moreWe love all dogs, but at this time this meetup is just for Border Collies, Australian Shepherds, and recognizable mixes of either of these breeds.",
     "InviteCode": "7ade2133-d224-417b-9e05-9cc7001275b4",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/947135cf30/?&locale=en&location=trial"
+    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/947135cf30/?\u0026locale=en\u0026location=trial"
   },
   {
-    "meetup_id": "ab012001-2db8-4270-8fcb-c2f870dae5f1",
-    "location": "Seattle",
+    "meetup_id": "a335fe3f-48a8-4c88-b5d3-681712a0406a",
+    "location": "ut10@squid.com",
     "LocationType": "Indoor",
-    "Title": "Intro to Javascript",
-    "Date": "11/22/12",
-    "Attendees": null,
-    "Host": "Blanchard Whitehead",
-    "Description": "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
-    "InviteCode": "52553b96-7519-4988-aa0e-999afb46f44c",
-    "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg",
-    "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/c317f4714a/?&locale=en&location=trial"
+    "Title": "ut10@squid.com",
+    "Date": "2022-06-02",
+    "Attendees": [
+      {
+        "user": "Amelia",
+        "status": "accepted"
+      },
+      {
+        "user": "Emma",
+        "status": "accepted"
+      },
+      {
+        "user": "pvrk1992@gmail.com",
+        "status": "accepted"
+      }
+    ],
+    "Host": "ut10@squid.com",
+    "Description": "ut10@squid.com",
+    "InviteCode": "e4bb82c5-927f-4452-9f67-7931e5b94533",
+    "Img": null,
+    "Video": null
+  },
+  {
+    "meetup_id": "3d4424dd-dd5b-4d58-aea8-35ccf362e821",
+    "location": "sdf",
+    "LocationType": "Indoor",
+    "Title": "sdf",
+    "Date": "2022-06-02",
+    "Attendees": [
+      {
+        "user": "ut10@squid.com",
+        "status": "accepted"
+      }
+    ],
+    "Host": "pvrk1992@gmail.com",
+    "Description": "sdf",
+    "InviteCode": "b87e481c-a8af-40c1-98c0-03f37c9f150e",
+    "Img": null,
+    "Video": null
   }
 ]
