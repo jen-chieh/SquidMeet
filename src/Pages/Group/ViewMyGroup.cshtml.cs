@@ -35,7 +35,8 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <param name="HostId"></param>
         public void OnGet(string id)
         {
-            Groups = MeetupService.GetMeetups().Where(g => g.Host == id);
+            Groups = MeetupService.GetMeetups().Where(g => g.Host == id || (g.Attendees != null && g.Attendees.Where(a => a.user.Contains(id)).Any()));
+            
         
         }
 
