@@ -177,5 +177,23 @@
     "InviteCode": "52553b96-7519-4988-aa0e-999afb46f44c",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg",
     "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/c317f4714a/?\u0026locale=en\u0026location=trial"
+  },
+  {
+    "meetup_id": "b4f1bc78-d0d2-46ba-949e-c8e663ddacb6",
+    "location": "kkkk",
+    "LocationType": "Indoor",
+    "Title": "kkkk",
+    "Date": "2022-06-21",
+    "Attendees": [
+      {
+        "user": "333@squid.com",
+        "status": "pending"
+      }
+    ],
+    "Host": "333@squid.com",
+    "Description": "kkkk",
+    "InviteCode": "9d75d76f-8e0e-434a-a0af-9d7100f832c0",
+    "Img": "kkk",
+    "Video": null
   }
 ]
