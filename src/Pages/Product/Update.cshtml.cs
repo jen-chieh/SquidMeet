@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ContosoCrafts.WebSite.Pages.Product
 {
@@ -33,9 +33,14 @@ namespace ContosoCrafts.WebSite.Pages.Product
         /// Loads the Data
         /// </summary>
         /// <param name="id"></param>
-        public void OnGet(string id)
+        public IActionResult OnGet(string id)
         {
-            Product  = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
+            Product = ProductService.GetAllData().FirstOrDefault(m => m.location_id.Equals(id));
+            if (Product == null)
+            {
+                return RedirectToPage("Index");
+            }
+            return Page();
         }
 
         /// <summary>
