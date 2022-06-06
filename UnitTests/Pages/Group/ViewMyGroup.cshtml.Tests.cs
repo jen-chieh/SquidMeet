@@ -48,6 +48,25 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.IsTrue(pageModel.Groups.Any(group => group.Host.Equals("YJ")));
         }
+
+        /// <summary>
+        /// Test to verify OnGet returns correct data with a given id and model state is valid
+        /// </summary>
+        [Test]
+        public void OnGet_InValid_Should_Return_Index()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet("asdaw");
+            var result = pageModel.Groups;
+
+
+            // Assert
+
+            Assert.AreEqual(0, result.Count());
+        }
+
         #endregion OnGet
 
         #region OnPost
