@@ -36,7 +36,7 @@ namespace UnitTests.Controllers
             var result = controller.Get().ToList();
 
             // Assert
-            Assert.AreEqual(15, result.Count());
+            Assert.AreEqual(16, result.Count());
             Assert.AreEqual("Blanchard Whitehead", result[0].name);
 
         }
