@@ -49,6 +49,25 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Blanchard Whitehead", pageModel.UserProfile.name);
         }
+        [Test]
+        public void OnGet_InValid_Should_Return_ProfilePage()
+        {
+
+            // Arrange
+
+            // Act
+         
+            var httpcontextDefault = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(httpcontextDefault, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
+
+            var result = pageModel.OnGet("1000") as RedirectToPageResult;
+            // Assert
+           
+            Assert.AreEqual(true, result.PageName.Contains("Profile"));
+        }
+
         #endregion OnGet
 
         #region OnPostAsync
