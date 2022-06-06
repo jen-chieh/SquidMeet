@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
 using ContosoCrafts.WebSite.Models;
 using ContosoCrafts.WebSite.Services;
+using System.Collections.Generic;
 
 namespace SquidMeet.WebSite.Pages.Group
 {
@@ -54,7 +55,11 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <returns></returns>
         public IActionResult OnPost()
         {
-         
+
+            if (Product.Attendees == null || Product.Attendees.Count() == 0)
+            {
+                Product.Attendees = new List<StatusModel>();
+            }
             ProductService.UpdateMeetup(Product);
             return RedirectToPage("/Group/ViewMyGroup", new { id = TempData["user"] });
 
