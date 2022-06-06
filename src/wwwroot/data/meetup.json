@@ -49,16 +49,7 @@
     "LocationType": "Outdoor",
     "Title": "Cafe Matic",
     "Date": "2022-05-15",
-    "Attendees": [
-      {
-        "user": "Jack",
-        "status": "accepted"
-      },
-      {
-        "user": "Hannah",
-        "status": "pending"
-      }
-    ],
+    "Attendees": [],
     "Host": "abc@gmail.com",
     "Description": "Every Sunday at 11:30 am CST, Italian speakers meet via Zoom and practice our skills by conversing with one another. Open to all levels of language facility. Sponsored by the Italian American Heritage Society of Chicago.",
     "InviteCode": "5f4eab96-d12d-4f8f-9aad-4c12ccdd781b",
@@ -120,50 +111,6 @@
     "InviteCode": "7ade2133-d224-417b-9e05-9cc7001275b4",
     "Img": "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220430155106.jpeg",
     "Video": "https://www.videoindexer.ai/embed/player/fa9364b0-0c88-4e46-84a0-f70a34dc6724/947135cf30/?\u0026locale=en\u0026location=trial"
-  },
-  {
-    "meetup_id": "a335fe3f-48a8-4c88-b5d3-681712a0406a",
-    "location": "ut10@squid.com",
-    "LocationType": "Indoor",
-    "Title": "ut10@squid.com",
-    "Date": "2022-06-02",
-    "Attendees": [
-      {
-        "user": "Sam",
-        "status": "accepted"
-      },
-      {
-        "user": "abc@gmail.com",
-        "status": "accepted"
-      },
-      {
-        "user": "pvrk1992@gmail.com",
-        "status": "declined"
-      }
-    ],
-    "Host": "ut10@squid.com",
-    "Description": "ut10@squid.com",
-    "InviteCode": "e4bb82c5-927f-4452-9f67-7931e5b94533",
-    "Img": null,
-    "Video": null
-  },
-  {
-    "meetup_id": "3d4424dd-dd5b-4d58-aea8-35ccf362e821",
-    "location": "sdf",
-    "LocationType": "Indoor",
-    "Title": "sdf",
-    "Date": "2022-06-02",
-    "Attendees": [
-      {
-        "user": "ut10@squid.com",
-        "status": "pending"
-      }
-    ],
-    "Host": "pvrk1992@gmail.com",
-    "Description": "sdf",
-    "InviteCode": "b87e481c-a8af-40c1-98c0-03f37c9f150e",
-    "Img": null,
-    "Video": null
   },
   {
     "meetup_id": "3d4424dd-dd5b-4d58-aea8-35ccf362e820",
