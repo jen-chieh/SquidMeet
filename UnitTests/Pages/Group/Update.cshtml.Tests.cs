@@ -5,6 +5,7 @@ using SquidMeet.WebSite.Pages.Group;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
+using System.Collections.Generic;
 
 namespace UnitTests.Pages.Group.Update
 {
@@ -102,11 +103,51 @@ namespace UnitTests.Pages.Group.Update
             var result = pageModel.OnPost() as RedirectToPageResult;
 
             // Assert
-            Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual(true, result.PageName.Contains("/Group/ViewMyGroup"));
         }
 
-      
+        /// <summary>
+        /// Test to verify OnPost update meetup with valid values keeps valid model state
+        /// </summary>
+        [Test]
+        public void OnPostAsync_Valid_Should_Return_right_Products()
+        {
+            // Arrange
+            // Initialize new StatusModel
+            StatusModel status = new StatusModel
+            {
+                user = "Jack",
+                status = "pending"
+            };
+
+            // Add status model to list
+            List<StatusModel> statusList = new List<StatusModel>();
+            statusList.Add(status);
+
+            pageModel.Product = new MeetupModel
+            {
+                meetup_id = "ab012001-2db8-4270-8fcb-c2f870dae5f1test",
+                location = "Seattle",
+                LocationType = "Indoor",
+                Title = "Intro to Javascript",
+                Date = "11/22/12",
+                Attendees = statusList,
+                Host = "YJ",
+                Description = "JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites. It is one of the most widely used programming languages (Front-end as well as Back-end) and it has its presence in almost every area of software development. This Workshop is specifically designed to build your JavaScript skills from scratch, we will cover JavaScript\u0027s key fundamental features.",
+                InviteCode = "52553b96-7519-4988-aa0e-999afb46f44c",
+                Img = "https://raw.githubusercontent.com/youjin6/picbed2/main/code/img/store/ok20220506135934.jpeg",
+                Video = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/33372b34-4d33-404b-a296-59691e1af211/pexels-mikhail"
+            };
+            var heetpContext = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(heetpContext, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
+            // Act
+            var result = pageModel.OnPost() as RedirectToPageResult;
+
+            // Assert
+            Assert.AreEqual(true, result.PageName.Contains("/Group/ViewMyGroup"));
+        }
         #endregion OnPostAsync
 
     }
