@@ -148,5 +148,15 @@
     "age": null,
     "gender": null,
     "bio": null
+  },
+  {
+    "user_id": "74",
+    "email": "aaa@squid.com",
+    "password": "123123",
+    "confirmPassword": "123123",
+    "name": null,
+    "age": null,
+    "gender": null,
+    "bio": null
   }
 ]
