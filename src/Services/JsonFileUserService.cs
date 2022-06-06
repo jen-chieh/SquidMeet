@@ -93,7 +93,7 @@ namespace ContosoCrafts.WebSite.Services
                 //name = user.email,
                 //age = user.age,
                 //gender = user.gender,
-                bio = user.gender
+                bio = user.bio
 
             };
 
