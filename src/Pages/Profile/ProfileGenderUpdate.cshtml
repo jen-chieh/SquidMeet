@@ -21,11 +21,16 @@
 
 
         <div class="form-group">
-            <input type="submit" value="Save" class="btn btn-primary" />
+            <input type="submit" value="Save" class="btn btn-primary" id="mySubmit" />
         </div>
     </form>
 
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('#mySubmit').hide();
+    });
+</script>
 
 @section Scripts {
     @{
