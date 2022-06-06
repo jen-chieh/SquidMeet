@@ -1,5 +1,8 @@
 ﻿using ContosoCrafts.WebSite.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Moq;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Product;
 
@@ -47,6 +50,25 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual("Blanchard Whitehead", pageModel.UserProfile.name);
             Assert.AreEqual("male", pageModel.UserProfile.gender);
         }
+        [Test]
+        public void OnGet_InValid_Should_Return_ProfilePage()
+        {
+
+            // Arrange
+
+            // Act
+
+            var httpcontextDefault = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(httpcontextDefault, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
+
+            var result = pageModel.OnGet("1000") as RedirectToPageResult;
+            // Assert
+
+            Assert.AreEqual(true, result.PageName.Contains("Profile"));
+        }
+
         #endregion OnGet
 
         #region OnPostAsync
