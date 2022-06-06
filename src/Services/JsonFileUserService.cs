@@ -86,13 +86,10 @@ namespace ContosoCrafts.WebSite.Services
         {
             var data = new UserModel()
             {
-                user_id = RandomString(2),
+                user_id = RandomString(3),
                 email = user.email,
                 password = user.password,
                 confirmPassword = user.confirmPassword,
-                //name = user.email,
-                //age = user.age,
-                //gender = user.gender,
                 bio = user.bio
 
             };
