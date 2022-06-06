@@ -1,5 +1,8 @@
 ﻿using ContosoCrafts.WebSite.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Moq;
 using NUnit.Framework;
 using SquidMeet.WebSite.Pages.Product;
 
@@ -67,7 +70,10 @@ namespace UnitTests.Pages.Product.Update
                 gender = "female",
                 bio = "hello"
             };
-
+            var httpcontextDefault = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(httpcontextDefault, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
             // Act
             var result = pageModel.OnPost(pageModel.UserProfile) as RedirectToPageResult;
 
