@@ -40,24 +40,26 @@
             <span asp-validation-for="Product.Video" class="text-danger"></span>
         </div>
         @if (Model.Product.Attendees != null)
-        {
-        @for (int i = 0; i < Model.Product.Attendees.Count(); i++)
-        {
-							<div class="form-inline">
-        <label asp-for="Product.Attendees[i]" class="control-label"></label>
-        <input type="text" asp-for="Product.Attendees[i].user" class="form-control"/>
-        <span class="input-group-addon">-</span>
-        <select class="form-control" asp-for="Product.Attendees[i].status" selected>
-            <option value="pending">Pending</option>
-            <option value="accepted">Accepted</option>
-            <option value="declined">Declined</option>
+		{
+			@for (int i = 0; i < Model.Product.Attendees.Count(); i++)
+			{
+				<div class="form-inline">
+					if (Model.Product.Attendees[i].status == "pending")
+					{
+						<label asp-for="Product.Attendees[i]" class="control-label"></label>
+						<input type="text" asp-for="Product.Attendees[i].user" class="form-control"/>
+						<span class="input-group-addon">-</span>
+						<select class="form-control" asp-for="Product.Attendees[i].status" selected>
+							<option value="pending">Pending</option>
+							<option value="accepted">Accepted</option>
+							<option value="declined">Declined</option>
 
-        </select>
-    </div>
+						</select>
+						 </div>
 
-
-        }
-        }
+					}
+				}
+			}
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
