@@ -46,6 +46,24 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Mr. West Cafe Bar - Downtown", pageModel.Product.name);
         }
+
+        /// <summary>
+        /// Test to verify OnGet of invalid data returns index page
+        /// </summary>
+        [Test]
+        public void OnGet_InValid_Should_Return_Index()
+        {
+            // Arrange
+
+            // Act
+            var result = pageModel.OnGet("1230123") as RedirectToPageResult;
+
+            // Assert
+
+            Assert.AreEqual(true, result.PageName.Contains("Index"));
+            
+           
+        }
         #endregion OnGet
 
         #region OnPostAsync
