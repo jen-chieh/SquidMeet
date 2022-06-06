@@ -1512,3 +1512,9 @@ v.layer-18 {
     margin-top: 200px;
     margin-bottom: 400px
 }
+
+.group-detail-img {
+    margin-left: -15px;
+    width: 663px;
+    height: 330px;
+}
