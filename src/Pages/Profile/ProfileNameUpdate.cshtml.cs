@@ -60,8 +60,8 @@ namespace SquidMeet.WebSite.Pages.Product
             }
 
             UserService.UpdateUserName(UserProfile);
-            
-            return RedirectToPage("Profile", new { id = "89" });
+
+            return RedirectToPage("Profile", new { id = TempData["userId"] });
         }
 
     }
