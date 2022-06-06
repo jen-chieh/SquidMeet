@@ -25,7 +25,7 @@ namespace SquidMeet.WebSite.Pages.Group
         }
 
         /// The data to show, bind to it for the post
-       
+
         public IEnumerable<MeetupModel> Groups
         { get; private set; }
         /// <summary>
@@ -33,11 +33,16 @@ namespace SquidMeet.WebSite.Pages.Group
         /// Loads the Data
         /// </summary>
         /// <param name="HostId"></param>
-        public void OnGet(string id)
+        public IActionResult OnGet(string id)
         {
             Groups = MeetupService.GetMeetups().Where(g => g.Host == id || (g.Attendees != null && g.Attendees.Where(a => a.user.Contains(id)).Any()));
-            
-        
+
+            if (Groups == null)
+            {
+                return RedirectToPage("../Index");
+            }
+            return Page();
+
         }
 
         /// <summary>
