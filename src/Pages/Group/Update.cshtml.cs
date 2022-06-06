@@ -48,7 +48,7 @@ namespace SquidMeet.WebSite.Pages.Group
         /// <summary>
         /// Post the model back to the page
         /// The model is in the class variable Product
-        /// Call the data layer to Update that data
+        /// Call the data layer xto Update that data
         /// Then return to the ViewMyGroup page
         /// </summary>
         /// <returns></returns>
