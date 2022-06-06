@@ -48,6 +48,27 @@ namespace UnitTests.Pages.Group.Update
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Feet First Walks", pageModel.Product.Title);
         }
+
+        /// <summary>
+        /// Test to verify OnGet of invalid data returns index page
+        /// </summary>
+        [Test]
+        public void OnGet_InValid_Should_Return_Index()
+        {
+            // Arrange
+            var httpContxtDefault = new DefaultHttpContext();
+            var tempData = new TempDataDictionary(httpContxtDefault, Mock.Of<ITempDataProvider>());
+            tempData["user"] = "user";
+            pageModel.TempData = tempData;
+            // Act
+            var result = pageModel.OnGet("1230123") as RedirectToPageResult;
+
+            // Assert
+
+            Assert.AreEqual(true, result.PageName.Contains("ViewMyGroup"));
+
+
+        }
         #endregion OnGet
 
         #region OnPostAsync
