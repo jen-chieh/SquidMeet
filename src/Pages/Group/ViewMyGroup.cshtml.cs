@@ -37,7 +37,7 @@ namespace SquidMeet.WebSite.Pages.Group
         {
             Groups = MeetupService.GetMeetups().Where(g => g.Host == id || (g.Attendees != null && g.Attendees.Where(a => a.user.Contains(id)).Any()));
 
-            if (Groups == null)
+            if (Groups.ToArray().Length == 0)
             {
                 return RedirectToPage("../Index");
             }
