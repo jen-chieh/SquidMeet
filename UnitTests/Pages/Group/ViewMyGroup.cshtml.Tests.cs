@@ -58,13 +58,12 @@ namespace UnitTests.Pages.Group.ViewMyGroupTests
             // Arrange
 
             // Act
-            pageModel.OnGet("asdaw");
-            var result = pageModel.Groups;
-
+          
+            var result = pageModel.OnGet("1000") as RedirectToPageResult;
 
             // Assert
 
-            Assert.AreEqual(0, result.Count());
+            Assert.AreEqual(true, result.PageName.Contains("Index"));
         }
 
         #endregion OnGet
